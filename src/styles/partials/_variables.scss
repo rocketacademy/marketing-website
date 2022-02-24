@@ -1,0 +1,49 @@
+// typographic defaults
+$primary-font: Raleway, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans",
+  Geneva, Verdana, sans-serif;
+$headings-font-family: $primary-font;
+
+$secondary-font: Open Sans, system-ui, -apple-system, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif,
+  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+// viewport breakpoints
+$screen-sm-min: 576px;
+$screen-md-min: 768px;
+$screen-lg-min: 1024px;
+$screen-xl-min: 1200px;
+
+@mixin sm {
+  @media (min-width: #{$screen-sm-min}) {
+    @content;
+  }
+}
+
+@mixin md {
+  @media (min-width: #{$screen-md-min}) {
+    @content;
+  }
+}
+
+@mixin lg {
+  @media (min-width: #{$screen-lg-min}) {
+    @content;
+  }
+}
+
+@mixin xl {
+  @media (min-width: #{$screen-xl-min}) {
+    @content;
+  }
+}
+
+// https://webaim.org/resources/contrastchecker/
+// our app colors are below the acceptablke contrast range:
+$min-contrast-ratio: 4;
+$red: #e73c3e; //crimson
+$primary: $red;
+$secondary: #af231c; // mercury red
+$blue: #00567e; // agean
+$info: $blue;
+$light: #f9f6e7;
+$success: #d6d6d6;

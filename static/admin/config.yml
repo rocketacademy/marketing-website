@@ -1,0 +1,147 @@
+backend:
+  name: git-gateway
+  branch: main
+
+local_backend: true
+media_folder: static/img
+public_folder: /img
+
+collections:
+- name: "pages"
+    label: "Pages"
+    files:
+      - file: "src/pages/index.md"
+        label: "Homepage"
+        name: "index"
+        fields:
+          - {
+              label: "Template Key",
+              name: "templateKey",
+              widget: "hidden",
+              default: "index-page",
+            }
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Header,
+              name: header,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Subheading, name: subheading, widget: string },
+                  {
+                    label: Headerimage,
+                    name: headerimage,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Success,
+              name: success,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  {
+                    label: Blurbs,
+                    name: blurbs,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Heading, name: heading, widget: string },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Courses,
+              name: courses,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  {
+                    label: Image,
+                    name: image,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                  {
+                    label: Details,
+                    name: details,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Type, name: type, widget: string },
+                        { label: Icon, name: icon, widget: image },
+                        { label: Heading, name: heading, widget: string },
+                        { label: Subheading, name: subheading, widget: string },
+                        { label: Prevprice, name: prevprice, widget: string },
+                        {
+                          label: Currentprice,
+                          name: currentprice,
+                          widget: string,
+                        },
+                        { label: Duration, name: duration, widget: string },
+                        { label: Conditions, name: conditions, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Curriculum,
+              name: curriculum,
+              widget: object,
+              fields:
+                [
+                  { label: Smalltext, name: smalltext, widget: string },
+                  { label: Heading, name: heading, widget: string },
+                  { label: Subheading, name: subheading, widget: string },
+                  {
+                    label: Image,
+                    name: image,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                  {
+                    label: Instructors,
+                    name: instructors,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Name, name: name, widget: string },
+                        { label: Position, name: position, widget: string },
+                        { label: Experience, name: experience, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Formerstudents,
+              name: formerstudents,
+              widget: list,
+              fields:
+                [
+                  { label: Company, name: company, widget: image },
+                  { label: Testimonial, name: testimonial, widget: text },
+                  { label: Studentname, name: studentname, widget: string },
+                  { label: Position, name: position, widget: string },
+                ],
+            }

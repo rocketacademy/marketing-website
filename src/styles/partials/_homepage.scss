@@ -1,0 +1,439 @@
+.homepage-header-container {
+  .homepage-header-heading {
+    padding-top: 20px;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    font-family: variables.$primary-font;
+    @include variables.xl {
+      font-size: 52px;
+      line-height: 61px;
+      margin-bottom: 30px;
+    }
+  }
+  .homepage-header-subheading {
+    font-size: 16px;
+    line-height: 24px;
+    @include variables.xl {
+      font-size: 18px;
+      line-height: 30px;
+    }
+  }
+  .hompage-header-button-container {
+    margin: 30px 0;
+  }
+  .homepage-header-companies-heading {
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    margin-bottom: 20px;
+
+    @include variables.lg {
+      font-size: 16px;
+      text-align: left;
+      line-height: 22px;
+    }
+  }
+  .homepage-header-companies-container {
+    height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include variables.lg {
+      justify-content: space-between;
+    }
+    .homepage-header-individual-company {
+      width: 100px;
+      padding: 0px 10px;
+      @include variables.lg {
+        padding: 0 20px 0 0;
+      }
+    }
+  }
+  .homepage-header-col-right {
+    padding: 20px 60px;
+    .homepage-header-col-right-img {
+      img {
+        border-radius: 10px;
+      }
+      @include variables.xl {
+        width: 70%;
+      }
+    }
+
+    @include variables.xl {
+      padding: 20px 70px 40px;
+    }
+  }
+  .homepage-header-col-left {
+    padding-bottom: 40px;
+  }
+}
+.homepage-message-bubble-row {
+  margin: 20px 0 40px;
+  .homepage-message-bubble-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .homepage-message-bubble {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: variables.$blue;
+  }
+}
+
+.homepage-success-outer-container {
+  background-color: variables.$light;
+  .homepage-success-inner-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include variables.md {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .homepage-success-heading {
+      font-family: variables.$primary-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px;
+      text-align: center;
+      padding: 20px 0;
+      @include variables.md {
+        padding: 40px 0 60px 0;
+        font-size: 36px;
+        line-height: 48px;
+      }
+    }
+    .slide-heading {
+      padding-bottom: 15px;
+      font-family: variables.$secondary-font;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 26px;
+    }
+
+    .homepage-success-row-desktop {
+      display: none;
+
+      @include variables.md {
+        display: flex;
+      }
+    }
+
+    .homepage-success-row-mobile {
+      .carousel-control-prev,
+      .carousel-control-next {
+        display: none;
+      }
+      .slide-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 70px;
+        .slide-text {
+          height: 70px;
+          text-align: center;
+        }
+      }
+      @include variables.md {
+        display: none;
+      }
+    }
+  }
+}
+
+.homepage-courses-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include variables.md {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .homepage-courses-heading-row {
+    padding-bottom: 40px;
+  }
+  .homepage-courses-heading-col-right {
+    display: flex;
+    justify-content: flex-start;
+    padding-bottom: 30px;
+    @include variables.md {
+      justify-content: flex-end;
+    }
+    .image-container {
+      width: 50%;
+    }
+  }
+  .homepage-courses-heading-col-left {
+    font-family: variables.$primary-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 36px;
+    line-height: 48px;
+  }
+  .homepage-courses-cards-row {
+    .card {
+      font-family: variables.$secondary-font;
+      font-style: normal;
+      font-weight: normal;
+      border-radius: 16px;
+      color: #707070;
+      height: 100%;
+      .course-card-type {
+        display: inline-block;
+      }
+      .card-title {
+        padding-top: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 27px;
+        color: variables.$blue;
+      }
+      .basics {
+        color: variables.$red;
+      }
+      .card-subtitle {
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+        min-height: 93px;
+      }
+      .card-text {
+        padding-top: 20px;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 33px;
+        .prev-price {
+          text-decoration-line: line-through;
+        }
+        .current-price {
+          color: black;
+        }
+        ul {
+          padding-left: 0;
+          padding-top: 20px;
+          list-style: none;
+          li {
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 25px;
+          }
+        }
+        .course-card-btn {
+          width: 100%;
+          color: black;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 22px;
+        }
+        .course-card-btn:hover {
+          width: 100%;
+          color: white;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+    }
+  }
+}
+
+.homepage-curriculum-outer-container {
+  background-color: variables.$light;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include variables.md {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .homepage-curriculum-heading-row {
+    padding-bottom: 40px;
+    @include variables.md {
+      padding-bottom: 60px;
+    }
+    .homepage-curriculum-heading-col-left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .curriculum-smalltext {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+
+        letter-spacing: 0.03em;
+      }
+      .curriculum-header {
+        font-family: variables.$primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 48px;
+      }
+      .curriculum-subheading {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+      }
+      .curriculum-link {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 26px;
+        color: variables.$red;
+        display: flex;
+        justify-content: flex-start;
+        .curriculum-arrow-icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+        }
+      }
+    }
+    .homepage-curriculum-heading-col-right {
+      display: none;
+      @include variables.md {
+        display: block;
+      }
+      img {
+        border-radius: 10px;
+      }
+    }
+  }
+
+  .homepage-curriculum-edu-staff-row {
+    border-top: 1px solid variables.$success;
+    border-bottom: 1px solid variables.$success;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    @include variables.md {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .homepage-edu-staff-col {
+      display: flex;
+      .homepage-edu-staff-row {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        @include variables.md {
+          padding-top: 0;
+          padding-bottom: 0;
+        }
+        .homepage-curriculum-edu-staff-img {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+        }
+        .homepage-curriculum-edu-staff-info {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-size: 14px;
+          line-height: 22px;
+
+          .homepage-curriculum-edu-staff-name {
+            font-weight: bold;
+            line-height: 24px;
+            /* identical to box height, or 171% */
+
+            letter-spacing: 0.03em;
+            text-transform: uppercase;
+          }
+        }
+      }
+    }
+  }
+}
+.homepage-formerstudents-container {
+  font-family: variables.$secondary-font;
+  font-style: normal;
+
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @include variables.md {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .homepage-formerstudents-col {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    @include variables.md {
+      padding-top: 0;
+      padding-bottom: 0;
+    }
+    .homepage-formerstudents-company {
+      min-height: 88px;
+      display: flex;
+      align-items: center;
+    }
+    .homepage-formerstudents-testimonial {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 28px;
+    }
+    .homepage-formerstudents-info {
+      .homepage-formerstudent-name {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 26px;
+
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+      }
+      .homepage-formerstudent-position {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        color: rgba(112, 112, 112, 1);
+      }
+    }
+  }
+}
+
+.homepage-startcoding-outer-container {
+  background-color: variables.$light;
+  .homepage-startcoding-inner-container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    @include variables.md {
+      padding-top: 100px;
+      padding-bottom: 100px;
+    }
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .homepage-startcoding-heading {
+      font-family: variables.$primary-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 48px;
+      line-height: 48px;
+      text-align: center;
+    }
+    .homepage-startcoding-text {
+      font-family: variables.$secondary-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 26px;
+      text-align: center;
+      padding: 30px 0;
+      @include variables.md {
+        padding: 60px 0;
+      }
+    }
+  }
+}

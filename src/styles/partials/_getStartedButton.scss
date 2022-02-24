@@ -1,0 +1,13 @@
+.get-started-btn {
+  color: white;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+  @include variables.md {
+    width: 120px;
+  }
+}
+
+.get-started-btn:hover {
+  color: white;
+}

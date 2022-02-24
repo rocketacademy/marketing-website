@@ -1,0 +1,97 @@
+.footer-outer-container {
+  background-color: variables.$blue;
+  .footer-inner-container {
+    color: white;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @include variables.md {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .footer-top-row {
+      border-bottom: 1px solid white;
+      @include variables.md {
+        padding-bottom: 70px;
+      }
+      p {
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 32px;
+        letter-spacing: 0.03em;
+        color: rgba(255, 255, 255, 0.6);
+      }
+      ul {
+        list-style: none;
+        padding-left: 0;
+        li {
+          padding-bottom: 10px;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 22px;
+        }
+      }
+      .footer-top-left-col {
+        padding-bottom: 30px;
+
+        @include variables.md {
+          padding-bottom: 0;
+        }
+        .desktop-brand {
+          display: none;
+          @include variables.md {
+            display: inline-block;
+          }
+        }
+        .mobile-brand {
+          @include variables.md {
+            display: none;
+          }
+        }
+      }
+      .footer-top-middle-col {
+        ul {
+          width: 80%;
+          @include variables.md {
+            width: 100%;
+          }
+        }
+      }
+    }
+    .footer-bottom-row {
+      padding-top: 10px;
+
+      @include variables.md {
+        padding-top: 20px;
+      }
+      .footer-bottom-row-text-col {
+        color: rgba(255, 255, 255, 0.6);
+        .privacy-text {
+          color: white;
+        }
+      }
+      .footer-bottom-row-icons {
+        display: flex;
+        justify-content: flex-start;
+        @include variables.md {
+          justify-content: flex-end;
+        }
+        .icons-container {
+          width: 35%;
+          // display: flex;
+          // justify-content: space-between;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          @include variables.md {
+            width: 30%;
+            padding-top: 0;
+            padding-bottom: 0;
+          }
+          .icon {
+            margin: 0 8px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@use "partials/variables";
+
+$theme-colors: (
+  "primary": variables.$primary,
+  "secondary": variables.$secondary,
+  "info": variables.$info,
+  "light": variables.$light,
+  "blue": variables.$blue,
+  "red": variables.$secondary,
+  "success": variables.$success,
+);
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+@import "partials/homepage", "partials/navbar", "partials/layout",
+  "partials/getStartedButton", "partials/footer";

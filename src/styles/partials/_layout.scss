@@ -1,0 +1,10 @@
+.page-layout {
+  max-width: 100%;
+  @include variables.md {
+    max-width: 90%;
+  }
+  @include variables.lg {
+    max-width: 80%;
+  }
+  margin: 0 auto;
+}

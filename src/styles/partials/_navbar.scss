@@ -1,0 +1,87 @@
+.navbar {
+  font-weight: 500;
+  font-size: 14px;
+
+  .navbar-collapse.collapse.show {
+    height: 100vh;
+
+    .button-container {
+      margin-top: 75%;
+    }
+  }
+
+  .navbar-btn {
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: 500;
+    width: 100%;
+    padding: 10px 0;
+    @include variables.lg {
+      width: 120px;
+      padding: 6px 0;
+      margin-left: 10px;
+    }
+  }
+  .navbar-btn:hover {
+    color: white;
+  }
+
+  .dropdown-toggle[aria-expanded="true"]:after {
+    transform: rotate(180deg);
+  }
+
+  /*for the animation*/
+  .dropdown-toggle:after {
+    transition: 0.5s;
+  }
+
+  .dropdown-menu.show {
+    border: None;
+    background-color: variables.$light;
+    @include variables.lg {
+      border: 0.5px solid grey;
+      background-color: white;
+    }
+  }
+  .dropdown-item {
+    a {
+      color: black;
+      text-decoration: None;
+    }
+  }
+  .navbar-item {
+    padding: 10px 0;
+    a {
+      text-decoration: None;
+    }
+    .nav-link {
+      color: black;
+    }
+
+    .nav-link:hover {
+      color: black;
+      text-decoration: underline;
+      text-decoration-color: variables.$red;
+    }
+
+    @include variables.xl {
+      padding: 0 20px;
+    }
+  }
+
+  .navbar-item-active {
+    text-decoration: underline;
+  }
+  .navbar-brand {
+    width: 50%;
+    height: 20%;
+    @include variables.md {
+      height: 40%;
+      width: 20%;
+    }
+    @include variables.xl {
+      height: 20%;
+      width: 20%;
+    }
+  }
+}
