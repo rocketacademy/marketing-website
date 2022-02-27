@@ -38,7 +38,7 @@ const AboutPagePreview = ({ entry, getAsset }) => {
             position: entry.getIn(['data', 'rocket', 'position']),
         }}
         companies={{
-            heading: entry.getIn(['data', 'rocket', 'heading']),
+            heading: entry.getIn(['data', 'companies', 'heading']),
             icons,
         }}
         leadership={{

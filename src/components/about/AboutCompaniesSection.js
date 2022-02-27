@@ -15,7 +15,7 @@ const AboutCompaniesSection = ({ companies }) => {
             {companies.icons.map((company) => {
                 return (
                     <div className='about-companies-individual-logo'>
-                    <PreviewCompatibleImage imageInfo={company.image} />
+                    <PreviewCompatibleImage imageInfo={company} />
                     </div>
                 )
             })}

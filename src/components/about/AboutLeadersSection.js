@@ -11,7 +11,7 @@ const AboutLeadersSection = ({ leadership }) => {
                     <>
                     <div className='about-leaders-profiles'>
                         <div className='about-leaders-profiles-image'>
-                            <PreviewCompatibleImage imageInfo={profile.image} />
+                            <PreviewCompatibleImage imageInfo={profile} />
                         </div>
                         <div className='about-leaders-profile-name'>
                             {profile.name}

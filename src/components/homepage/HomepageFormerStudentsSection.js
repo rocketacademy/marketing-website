@@ -11,7 +11,7 @@ const HomepageFormerStudentsSection = ({ formerstudents }) => {
             <>
             <div className='col-12 col-md-4 homepage-formerstudents-col'>
               <div className='homepage-formerstudents-company'>
-                <PreviewCompatibleImage imageInfo={student.image} />
+                <PreviewCompatibleImage imageInfo={student} />
               </div>
               <div className='homepage-formerstudents-testimonial'>
                 <p>{student.testimonial}</p>
