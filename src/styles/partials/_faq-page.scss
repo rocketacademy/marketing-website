@@ -1,0 +1,39 @@
+.faq-header-outer-container {
+  background-color: variables.$light;
+  .faq-header-inner-container {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    @include variables.md {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    .faq-header-smalltext {
+      font-family: variables.$secondary-font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+
+      color: rgba(24, 24, 24, 0.5);
+      @include variables.md {
+        font-size: 16px;
+        line-height: 22px;
+      }
+    }
+    .faq-header-heading {
+      font-family: variables.$primary-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 36px;
+      @include variables.md {
+        font-size: 52px;
+        line-height: 61px;
+        width: 50%;
+      }
+    }
+  }
+}
