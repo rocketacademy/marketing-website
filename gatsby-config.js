@@ -99,6 +99,9 @@ module.exports = {
         orderBy: 'startTime',
       }
     },
+    {
+      resolve: "gatsby-plugin-no-sourcemaps",
+    },
     "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 };
