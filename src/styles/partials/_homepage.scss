@@ -110,13 +110,6 @@
         line-height: 48px;
       }
     }
-    .slide-heading {
-      padding-bottom: 15px;
-      font-family: variables.$secondary-font;
-      font-weight: bold;
-      font-size: 16px;
-      line-height: 26px;
-    }
 
     .homepage-success-row-desktop {
       display: none;
@@ -130,17 +123,6 @@
       .carousel-control-prev,
       .carousel-control-next {
         display: none;
-      }
-      .slide-container {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        padding-bottom: 70px;
-        .slide-text {
-          height: 70px;
-          text-align: center;
-        }
       }
       @include variables.md {
         display: none;

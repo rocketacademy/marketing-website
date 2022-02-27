@@ -6,13 +6,15 @@ const CarouselSlide = ({ section }) => {
   
   return (
       <div className='slide-container'>
-            <PreviewCompatibleImage imageInfo={section} />
-            <div className='slide-heading'>
-                {section.heading}
-            </div>
-            <div className='slide-text'>
-                {section.text}
-            </div>
+        <div className='slide-image'>
+          <PreviewCompatibleImage imageInfo={section} />
+        </div>
+        <div className='slide-heading'>
+            {section.heading}
+        </div>
+        <div className='slide-text'>
+            {section.text}
+        </div>
       </div>
 
   )

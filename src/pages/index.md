@@ -79,19 +79,19 @@ curriculum:
 
         Former software engineer at multiple European and US based tech firms
 formerstudents:
-  - company: /img/homepage/govtech-color-logo.png
+  - image: /img/homepage/govtech-color-logo.png
     testimonial: >
       “Rocket Academy gave me a learning structure curated from industry experience. I would not have known what to focus my energy and time on if I were studying on my own.”
     studentname: Samantha Koh
     position: >
       Former Business Analyst | Software Engineer at GovTech
-  - company: /img/homepage/glints-color-logo.png
+  - image: /img/homepage/glints-color-logo.png
     testimonial: >
       “It has been very rewarding. I feel proud of all the projects I've done and have a better sense of what to learn as a software engineer.”
     studentname: Perry Lim
     position: >
       Former Chef | Software Engineer at Glints
-  - company: /img/homepage/xfers-color-logo.png
+  - image: /img/homepage/xfers-color-logo.png
     testimonial: >
       “Rocket understood my situation and helped me achieve my goals, covering topics not found at other bootcamps. The Rocket staff were always available for help. I recommend Rocket Academy.”
     studentname: Loh Eng Liang

@@ -15,8 +15,6 @@ const IndexPagePreview = ({ entry, getAsset }) => {
 
   const entryFormerstudents = entry.getIn(['data', 'formerstudents'])
   const formerstudents = entryFormerstudents ? entryFormerstudents.toJS() : []
-  console.log('instructors', instructors);
-  console.log('former students', formerstudents);
 
   return (
     <IndexPageTemplate

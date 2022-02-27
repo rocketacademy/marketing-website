@@ -1,36 +1,60 @@
 import React from 'react'
 import Layout  from '../components/Layout';
 import { graphql } from 'gatsby';
-import PreviewCompatibleImage from '../components/PreviewCompatibleImage';
 import '../styles/main.scss';
+import AboutHeaderSection from '../components/about/AboutHeaderSection';
+import AboutReasonsSection from '../components/about/AboutReasonsSection';
+import AboutRocketSection from '../components/about/AboutRocketSection';
+import AboutCompaniesSection from '../components/about/AboutCompaniesSection';
+import AboutLeadersSection from '../components/about/AboutLeadersSection';
+import StartCodingSection from '../components/StartCodingSection';
 
 
 // eslint-disable-next-line
 export const AboutPageTemplate = ({
-    title,
     header,
     image,
     why,
     rocket,
-    companies
+    companies,
+    leadership,
+    upcomingCourseDates
 }) => {
 
   return (
-      <div className='container-fluid about-outer-container'>
-        <div className='container about-inner-container'>
-          <div className='about-header-heading'>{header.heading}</div>
-          <div className='about-header-subheading'>{header.subheading}</div>
-          <div className='about-header-image'>
-            <PreviewCompatibleImage imageInfo={image} />
-          </div>
-        </div>
-      </div>
+    <>
+      <AboutHeaderSection 
+        header={header}
+        image={image}
+      />
+      <AboutReasonsSection
+        why={why}
+      />
+      <AboutRocketSection
+        rocket={rocket}
+      />
+      <AboutCompaniesSection
+        companies={companies}
+      />
+      <AboutLeadersSection
+        leadership={leadership}
+      />
+      <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
+    </>
   )
 }
 
 const AboutPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark;
-    console.log('frontmatter', frontmatter);
+
+     // from rocket's gcal events
+    const { edges } = data.allCalendarEvent;
+
+    const today = new Date().toISOString();
+
+    const upcomingCourseDates = edges
+        .filter(event => event.node.start.dateTime > today);
+
 
     return (
         <Layout>
@@ -41,6 +65,8 @@ const AboutPage = ({ data }) => {
                 why={frontmatter.why}
                 rocket={frontmatter.rocket}
                 companies={frontmatter.companies}
+                leadership={frontmatter.leadership}
+                upcomingCourseDates={upcomingCourseDates}
             />
         </Layout>
     )
@@ -54,13 +80,12 @@ query aboutPageQuery {
     id
   }
   markdownRemark(frontmatter: {templateKey: {eq: "about-page"}}) {
-    id
     frontmatter {
       companies {
         heading
         icons {
           image {
-            childrenImageSharp {
+            childImageSharp {
               gatsbyImageData(layout: CONSTRAINED)
             }
           }
@@ -83,7 +108,7 @@ query aboutPageQuery {
         reasons {
           heading
           text
-          icon {
+          image {
             childImageSharp {
               gatsbyImageData(layout: CONSTRAINED)
             }
@@ -93,21 +118,47 @@ query aboutPageQuery {
       rocket {
         text
         heading
-        quote {
-          name
-          position
-          text
-        }
+        name
+        position
+        quote
         image {
           alt
           image {
-            childrenImageSharp {
+            childImageSharp {
               gatsbyImageData(layout: CONSTRAINED)
             }
           }
         }
       }
+      leadership {
+        heading
+        profiles {
+          image {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED)
+            }
+          }
+          name
+          position
+        }
+      }
     }
   }
+  allCalendarEvent {
+      edges {
+        node {
+          description
+          summary
+          end {
+              dateTime
+              date
+          }
+          start {
+              dateTime
+              date
+          }
+        }
+      }
+    }
 }
 `

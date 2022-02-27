@@ -139,7 +139,7 @@ collections:
               widget: list,
               fields:
                 [
-                  { label: Company, name: company, widget: image },
+                  { label: Image, name: image, widget: image },
                   { label: Testimonial, name: testimonial, widget: text },
                   { label: Studentname, name: studentname, widget: string },
                   { label: Position, name: position, widget: string },
@@ -189,7 +189,7 @@ collections:
                     widget: list,
                     fields:
                       [
-                        { label: Icon, name: icon, widget: image },
+                        { label: Image, name: image, widget: image },
                         { label: Heading, name: heading, widget: string },
                         { label: Text, name: text, widget: text },
                       ],
@@ -214,17 +214,9 @@ collections:
                         { label: Image, name: image, widget: image },
                       ],
                   },
-                  {
-                    label: Quote,
-                    name: quote,
-                    widget: object,
-                    fields:
-                      [
-                        { label: Text, name: text, widget: text },
-                        { label: Name, name: name, widget: string },
-                        { label: Position, name: position, widget: string },
-                      ],
-                  },
+                  { label: Quote, name: quote, widget: text },
+                  { label: Name, name: name, widget: string },
+                  { label: Position, name: position, widget: string },
                 ],
             }
           - {
@@ -239,6 +231,26 @@ collections:
                     name: icons,
                     widget: list,
                     fields: [{ label: Image, name: image, widget: image }],
+                  },
+                ],
+            }
+          - {
+              label: Leadership,
+              name: leadership,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  {
+                    label: Profiles,
+                    name: profiles,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Name, name: name, widget: string },
+                        { label: position, name: position, widget: string },
+                      ],
                   },
                 ],
             }

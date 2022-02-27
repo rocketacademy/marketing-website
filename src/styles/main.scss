@@ -8,9 +8,11 @@ $theme-colors: (
   "blue": variables.$blue,
   "red": variables.$secondary,
   "success": variables.$success,
+  "bg-blue": variables.$bg-blue,
 );
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
 @import "partials/homepage", "partials/navbar", "partials/layout",
-  "partials/getStartedButton", "partials/footer";
+  "partials/getStartedButton", "partials/footer", "partials/about-page",
+  "partials/carousel-slide";

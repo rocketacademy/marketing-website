@@ -1,0 +1,24 @@
+.slide-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  padding-bottom: 70px;
+  text-align: center;
+  @include variables.md {
+    text-align: left;
+  }
+  .slide-image {
+    min-height: 100px;
+  }
+  .slide-heading {
+    padding-bottom: 15px;
+    font-family: variables.$secondary-font;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 26px;
+  }
+  .slide-text {
+    height: 70px;
+  }
+}

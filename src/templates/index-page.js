@@ -10,7 +10,7 @@ import HomepageSuccessSection from "../components/homepage/HomepageSuccessSectio
 import HomepageCoursesSection from "../components/homepage/HomepageCoursesSection";
 import HomepageCurriculumSection from "../components/homepage/HomepageCurriculumSection";
 import HomepageFormerStudentsSection from "../components/homepage/HomepageFormerStudentsSection";
-import HomepageStartCodingSection from "../components/homepage/HomepageStartCodingSection";
+import StartCodingSection from "../components/StartCodingSection";
 
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
@@ -79,7 +79,7 @@ export const IndexPageTemplate = ({
     />
     <HomepageCurriculumSection curriculum={curriculum} />
     <HomepageFormerStudentsSection formerstudents={formerstudents} />
-    <HomepageStartCodingSection upcomingCourseDates={upcomingCourseDates} />
+    <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
     </>
 
   );
@@ -223,7 +223,7 @@ export const pageQuery = graphql`
           subheading
         }
         formerstudents {
-          company {
+          image {
             childImageSharp {
               gatsbyImageData(layout: CONSTRAINED)
             }

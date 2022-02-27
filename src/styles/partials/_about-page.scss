@@ -1,0 +1,295 @@
+.about-header-outer-container {
+  background-color: variables.$light;
+  .about-header-inner-container {
+    padding: 20px 0;
+    @include variables.md {
+      padding: 80px 0;
+    }
+    .about-header-text-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding-bottom: 20px;
+      @include variables.md {
+        padding-bottom: 40px;
+      }
+      .about-header-heading {
+        font-family: variables.$primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        text-align: center;
+        padding-bottom: 15px;
+        @include variables.md {
+          font-size: 52px;
+          line-height: 61px;
+          padding-bottom: 30px;
+        }
+      }
+      .about-header-subheading {
+        text-align: center;
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        @include variables.md {
+          font-size: 18px;
+          line-height: 30px;
+          width: 80%;
+        }
+      }
+    }
+  }
+}
+.about-reasons-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid variables.$success;
+
+  @include variables.md {
+    padding-top: 40px;
+  }
+  .about-reasons-heading-col {
+    font-family: variables.$primary-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    line-height: 28px;
+    padding-bottom: 30px;
+    @include variables.md {
+      text-align: left;
+      font-size: 36px;
+      line-height: 48px;
+    }
+  }
+  .about-reasons-row-desktop {
+    display: none;
+
+    @include variables.md {
+      display: flex;
+    }
+  }
+
+  .about-reasons-row-mobile {
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none;
+    }
+    @include variables.md {
+      display: none;
+    }
+  }
+}
+.about-rocket-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
+  padding-bottom: 40px;
+
+  @include variables.md {
+    padding-bottom: 60px;
+  }
+
+  .about-rocket-top-row {
+    text-align: center;
+    padding-bottom: 20px;
+
+    @include variables.md {
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }
+    .about-rocket-top-heading {
+      font-family: variables.$primary-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px;
+
+      @include variables.md {
+        font-size: 36px;
+        line-height: 48px;
+        padding-bottom: 30px;
+      }
+      p {
+        padding: 20px;
+        margin-bottom: 0;
+        @include variables.md {
+          padding: 50px 20px 20px 20px;
+        }
+      }
+    }
+    .about-rocket-top-text {
+      font-family: variables.$secondary-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      @include variables.md {
+        font-size: 16px;
+        line-height: 24px;
+      }
+    }
+  }
+  .about-rocket-bottom-row {
+    .about-rocket-bottom-col-left {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 30px;
+      @include variables.md {
+        padding: 0 30px;
+      }
+    }
+    .about-rocket-bottom-col-right {
+      background-color: variables.$light;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      font-family: variables.$secondary-font;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 20px;
+      line-height: 32px;
+      @include variables.md {
+        padding: 20px;
+      }
+      .about-rocket-bottom-col-right-name {
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        padding-top: 20px;
+
+        .about-rocket-bottom-col-right-position {
+          font-weight: normal;
+        }
+      }
+    }
+  }
+}
+
+.about-companies-outer-container {
+  background-color: variables.$bg-blue;
+  .about-companies-inner-container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    @include variables.md {
+      padding: 100px 50px;
+    }
+    .about-companies-text {
+      text-align: center;
+      font-family: variables.$secondary-font;
+      font-style: normal;
+      font-weight: 600;
+
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.03em;
+      text-transform: uppercase;
+      padding-bottom: 30px;
+      color: rgba(255, 255, 255, 0.5);
+
+      @include variables.md {
+        font-size: 16px;
+        line-height: 22px;
+        padding-bottom: 50px;
+      }
+    }
+    .about-companies-logos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      .about-companies-individual-logo {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 30px;
+        @include variables.md {
+          width: 25%;
+        }
+      }
+    }
+  }
+}
+.about-leaders-container {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  text-align: center;
+  @include variables.md {
+    padding-top: 50px;
+    padding-bottom: 80px;
+  }
+  .about-leaders-heading {
+    font-family: variables.$primary-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    padding: 20px;
+    @include variables.md {
+      font-size: 36px;
+      line-height: 48px;
+      padding: 50px;
+    }
+  }
+  .about-profiles-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    .about-leaders-profiles {
+      font-family: variables.$secondary-font;
+      font-style: normal;
+      font-size: 14px;
+      line-height: 16px;
+
+      letter-spacing: 0.03em;
+      @include variables.md {
+        font-size: 14px;
+        line-height: 16px;
+      }
+      .about-leaders-profile-name {
+        font-weight: bold;
+      }
+    }
+  }
+  .about-leaders-jobs-row {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid variables.$success;
+    border-radius: 10px;
+    padding: 20px 15px;
+    margin-top: 20px;
+    @include variables.md {
+      flex-direction: row;
+      justify-content: space-between;
+      margin-top: 70px;
+      padding: 20px 30px;
+    }
+    .about-leaders-jobs-content {
+      text-align: left;
+    }
+    .about-leaders-jobs-button-container {
+      display: flex;
+      margin-top: 20px;
+
+      @include variables.md {
+        justify-content: center;
+        align-items: center;
+      }
+      .about-leaders-jobs-button {
+        width: 100%;
+      }
+      .about-leaders-jobs-button:hover {
+        color: white;
+      }
+    }
+  }
+}
