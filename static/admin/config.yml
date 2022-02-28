@@ -332,3 +332,172 @@ collections:
                   },
                 ],
             }
+      - file: src/pages/basics.md
+        label: Basics
+        name: basics
+        fields:
+          - {
+              label: Template Key,
+              name: templateKey,
+              widget: hidden,
+              default: basics-page,
+            }
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Header,
+              name: header,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Subheading, name: subheading, widget: string },
+                  {
+                    label: Reasons,
+                    name: reasons,
+                    widget: list,
+                    fields: [{ label: Reason, name: reason, widget: string }],
+                  },
+                ],
+            }
+          - {
+              label: Overview,
+              name: overview,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  {
+                    label: Studentexperience,
+                    name: studentexperience,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Heading, name: heading, widget: string },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Testimonial,
+              name: testimonial,
+              widget: object,
+              fields:
+                [
+                  { label: quote, name: quote, widget: text },
+                  { label: Image, name: image, widget: image },
+                  { label: Name, name: name, widget: string },
+                  { label: Position, name: position, widget: string },
+                ],
+            }
+          - {
+              label: Learningstyle,
+              name: learningstyle,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  {
+                    label: Card,
+                    name: card,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Heading, name: heading, widget: string },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Technicalknowledge,
+              name: technicalknowledge,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  {
+                    label: Topics,
+                    name: topics,
+                    widget: list,
+                    fields: [{ label: Topic, name: topic, widget: string }],
+                  },
+                ],
+            }
+          - {
+              label: Instructors,
+              name: instructors,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  {
+                    label: Profile,
+                    name: profile,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Name, name: name, widget: string },
+                        { label: Position, name: name, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Admissions,
+              name: admissions,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Subheading, name: subheading, widget: string },
+                  { label: Cardheading, name: cardheading, widget: string },
+                  { label: Prevcost, name: prevcost, widget: string },
+                  { label: Currentcost, name: currentcost, widget: string },
+                  {
+                    label: Objectives,
+                    name: objectives,
+                    widget: list,
+                    fields:
+                      [{ label: Objective, name: objective, widget: string }],
+                  },
+                ],
+            }
+          - {
+              {
+                label: Programdates,
+                name: programdates,
+                widget: object,
+                fields:
+                  [
+                    { label: Heading, name: heading, widget: string },
+                    { label: Subheading, name: subheading, widget: string },
+                  ],
+              },
+            }
+          - {
+              label: Lessons,
+              name: lessons,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Subheading, name: subheading, widget: string },
+                  {
+                    label: Lesson,
+                    name: lesson,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Week, name: week, widget: string },
+                        { label: Name, name: name, widget: string },
+                        { label: Preclass, name: preclass, widget: text },
+                        { label: Inclass, name: inclass, widget: text },
+                        { label: Project, name: project, widget: text },
+                      ],
+                  },
+                ],
+            }
