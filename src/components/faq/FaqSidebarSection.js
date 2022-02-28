@@ -1,28 +1,25 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav';
 import Dropdown from 'react-bootstrap/Dropdown';
-
+import { Link } from 'gatsby';
 
 const FaqSidebarSection = ({ general, codingbasics, softwareengineeringbootcamp }) => {
   return (
     <>
       <div className='col-12 col-md-2 faq-content-sidebar-col-desktop'>
         <Nav defaultActiveKey="link-0" className="flex-column">
-              <Nav.Link 
+              <Nav.Link as={Link} to={`/faq/#${general.heading.toLowerCase()}`}
                 eventKey="link-0"
-                href="#general"
               >
                 {general.heading}
               </Nav.Link>
-              <Nav.Link 
+              <Nav.Link as={Link} to={`/faq/#${codingbasics.heading.toLowerCase()}`}
                 eventKey="link-1"
-                href="#codingbasics"
               >
                 {codingbasics.heading}
               </Nav.Link>
-              <Nav.Link 
+              <Nav.Link as={Link} to={`/faq/#${softwareengineeringbootcamp.heading.toLowerCase()}`}
                 eventKey="link-2"
-                href="#softwareengineeringbootcamp"
               >
                 {softwareengineeringbootcamp.heading}
               </Nav.Link>
@@ -35,14 +32,20 @@ const FaqSidebarSection = ({ general, codingbasics, softwareengineeringbootcamp 
           </Dropdown.Toggle>
 
           <Dropdown.Menu>
-            <Dropdown.Item href="#/action-1">
-              {general.heading}
-              </Dropdown.Item>
-            <Dropdown.Item href="#/action-2">
-              {codingbasics.heading}
+            <Dropdown.Item>
+              <Link to={`/faq/#${general.heading.toLowerCase()}`}>
+                {general.heading}
+              </Link>
             </Dropdown.Item>
-            <Dropdown.Item href="#/action-3">
-              {softwareengineeringbootcamp.heading}
+            <Dropdown.Item>
+              <Link to={`/faq/#${codingbasics.heading.toLowerCase()}`}>
+                {codingbasics.heading}
+              </Link>
+            </Dropdown.Item>
+            <Dropdown.Item>
+              <Link to={`/faq/#${softwareengineeringbootcamp.heading.toLowerCase()}`}>
+                {softwareengineeringbootcamp.heading}
+              </Link>
             </Dropdown.Item>
           </Dropdown.Menu>
         </Dropdown>

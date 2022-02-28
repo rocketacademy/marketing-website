@@ -42,7 +42,7 @@ const StartCodingSection = ({ upcomingCourseDates }) => {
     <div className='container-fluid startcoding-outer-container'>
         <div className='container startcoding-inner-container'>
             <h2 className='startcoding-heading'>
-                Start Coding Today  
+                🚀 Start Coding Today  
             </h2>
             <div className='startcoding-text'>
                 <p>Coding Basics - {nextBasicsStartDate}</p>

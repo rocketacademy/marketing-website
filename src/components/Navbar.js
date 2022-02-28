@@ -30,42 +30,22 @@ const SiteNavbar = () => {
                     </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse className="justify-content-end navbar-collapse">
+                <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end navbar-collapse">
                 <Nav>
-                    <Nav.Item className="navbar-item">
-                        <NavDropdown title="Courses"> 
-                            <NavDropdown.Item>
-                                <Link to="/courses/basics">
-                                    Coding Basics
-                                </Link>
-                            </NavDropdown.Item>
-                            <NavDropdown.Item>
-                                <Link to="courses/bootcamp">
-                                    Software Engineering Bootcamp
-                                </Link>
-                            </NavDropdown.Item>
-                        </NavDropdown>
-                    </Nav.Item>
-                    <Nav.Item className="navbar-item">
-                        <NavDropdown title="Community">
-                            <NavDropdown.Item>
-                                <Link to="/community/alumni">
-                                    Alumni
-                                </Link>
-                            </NavDropdown.Item>
-                            <NavDropdown.Item>
-                                <Link to="/community/qanda">
-                                    Q and A
-                                </Link>
-                            </NavDropdown.Item>
-                        </NavDropdown>
-                    </Nav.Item>
-                    <Nav.Item className="navbar-item">
-                        <Link to="/about">
-                            <Nav.Link href="#link">About Us</Nav.Link>
-                        </Link>
-
-                    </Nav.Item>
+                    <NavDropdown title="Courses" id="basic-nav-dropdown"> 
+                        <NavDropdown.Item>
+                            <Link to="/courses/basics">
+                                Coding Basics
+                            </Link>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item>
+                            <Link to="/courses/bootcamp">
+                                Software Engineering Bootcamp
+                            </Link>
+                        </NavDropdown.Item>
+                    </NavDropdown>
+                    <Nav.Link as={ Link } to="/faq" activeClassName="nav-active">FAQ</Nav.Link>
+                    <Nav.Link as={ Link } to="/about" activeClassName="nav-active">About Us</Nav.Link>
                     <Nav.Item className="button-container">
                         <Button variant="outline-primary" className="btn navbar-btn btn-outline-primary">Get Started</Button>
                     </Nav.Item>

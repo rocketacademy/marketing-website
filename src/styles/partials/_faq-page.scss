@@ -42,15 +42,19 @@
   .faq-content-row {
     margin-top: 30px;
     margin-bottom: 30px;
+    .faq-content-col {
+      @include variables.md {
+        border-left: 1px solid variables.$success;
+      }
+    }
     .faq-content-sidebar-col-desktop {
       display: none;
-      border-right: 1px solid variables.$success;
       padding: 30px 30px 30px 0;
       position: sticky;
       top: 40px;
       flex-wrap: nowrap;
       overflow-y: auto;
-      height: 100vh;
+      height: 50vh;
       -ms-overflow-style: none;
       scrollbar-width: none;
       a.nav-link {
@@ -81,6 +85,13 @@
       .dropdown-menu.show {
         width: 98%;
       }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+      a.dropdown-item:hover {
+        background-color: variables.$light;
+      }
     }
     .faq-content-col {
       @include variables.md {
@@ -96,7 +107,10 @@
 
         .faq-content-col-accordion-heading {
           font-weight: bold;
-          padding: 50px 20px 20px 20px;
+          padding: 30px 20px 20px 20px;
+          @include variables.md {
+            padding: 10px 20px 20px 20px;
+          }
 
           font-family: variables.$secondary-font;
           font-style: normal;
