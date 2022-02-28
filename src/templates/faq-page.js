@@ -7,12 +7,18 @@ import FaqContentSection from '../components/faq/FaqContentSection';
 // eslint-disable-next-line
 export const FaqPageTemplate = ({
   header,
-  general
+  general,
+  codingbasics,
+  softwareengineeringbootcamp
 }) => {
     return (
         <>
             <FaqHeaderSection header={header} />
-            <FaqContentSection general={general} />
+            <FaqContentSection 
+                general={general}
+                codingbasics={codingbasics}
+                softwareengineeringbootcamp={softwareengineeringbootcamp} 
+            />
         </>
     )
 }
@@ -24,6 +30,8 @@ const FaqPage = ({ data }) => {
         <FaqPageTemplate
             header={frontmatter.header}
             general={frontmatter.general}
+            codingbasics={frontmatter.codingbasics}
+            softwareengineeringbootcamp={frontmatter.softwareengineeringbootcamp}
         />
     </Layout>
   )
@@ -46,7 +54,21 @@ export const faqPageQuery = graphql`
                 general {
                     heading
                     questions {
-                        answer
+                        answers 
+                        question
+                    }
+                }
+                codingbasics {
+                    heading
+                    questions {
+                        answers 
+                        question
+                    }
+                }
+                softwareengineeringbootcamp {
+                    heading
+                    questions {
+                        answers 
                         question
                     }
                 }

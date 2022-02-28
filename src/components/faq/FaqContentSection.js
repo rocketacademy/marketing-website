@@ -1,34 +1,26 @@
 import React from 'react'
-import Accordion from 'react-bootstrap/Accordion';
+import FaqContentIndividualSection from './FaqContentIndividualSection';
+import FaqSidebarSection from './FaqSidebarSection';
 
 
-const FaqContentSection = ({ general }) => {
-    console.log('general', general.heading);
+const FaqContentSection = ({ 
+    general,
+    codingbasics,
+    softwareengineeringbootcamp
+ }) => {
 
   return (
     <div className='container faq-content-container'>
         <div className='row faq-content-row'>
-            <div className='col-12 col-md-3 faq-content-sidebar-col-desktop'>
-                <ul>
-                    <li key={general.heading}>{general.heading}</li>
-                </ul>
-            </div>
-            <div className='col-12 col-md-9 faq-content-col'>
-                {general.heading}
-                <Accordion flush>
-                    {general.questions.map((question, index) => {
-                        return (
-                            <Accordion.Item eventKey={index + 1}>
-                                <Accordion.Header>
-                                    {question.question}
-                                </Accordion.Header>
-                                <Accordion.Body>
-                                    {question.answer}
-                                </Accordion.Body>
-                            </Accordion.Item>
-                        )
-                    })}
-                </Accordion>
+            <FaqSidebarSection
+                general={general}
+                codingbasics={codingbasics}
+                softwareengineeringbootcamp={softwareengineeringbootcamp}
+            />
+            <div className='col-12 col-md-10 faq-content-col'>
+                <FaqContentIndividualSection content={general} />
+                <FaqContentIndividualSection content={codingbasics} />
+                <FaqContentIndividualSection content={softwareengineeringbootcamp} />
             </div>
         </div>
     </div>

@@ -37,3 +37,109 @@
     }
   }
 }
+
+.faq-content-container {
+  .faq-content-row {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    .faq-content-sidebar-col-desktop {
+      display: none;
+      border-right: 1px solid variables.$success;
+      padding: 30px 30px 30px 0;
+      position: sticky;
+      top: 40px;
+      flex-wrap: nowrap;
+      overflow-y: auto;
+      height: 100vh;
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+      a.nav-link {
+        color: black;
+        font-weight: bold;
+      }
+      a.nav-link.active {
+        color: variables.$red;
+        font-weight: bold;
+      }
+      @include variables.md {
+        display: flex;
+      }
+    }
+    .faq-content-sidebar-col-mobile {
+      @include variables.md {
+        display: none;
+      }
+      .dropdown-toggle.btn.btn-outline-dark {
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border: 1px solid;
+        margin-left: 10px;
+      }
+
+      .dropdown-menu.show {
+        width: 98%;
+      }
+    }
+    .faq-content-col {
+      @include variables.md {
+      }
+      .faq-content-col-accordion {
+        @include variables.md {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-size: 32px;
+          line-height: 44px;
+          padding: 30px;
+        }
+
+        .faq-content-col-accordion-heading {
+          font-weight: bold;
+          padding: 50px 20px 20px 20px;
+
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 20px;
+          line-height: 28px;
+        }
+        .accordion-body {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 26px;
+        }
+        .accordion-button:focus {
+          outline: 0 !important;
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        }
+        .accordion-button:after {
+          background-size: 15px 15px;
+          background-position: center right;
+          background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23E73C3E'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+        }
+
+        .accordion-button.collapsed {
+          color: black;
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 26px;
+          font-family: variables.$secondary-font;
+        }
+        .accordion-button:not(.collapsed) {
+          color: black;
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 26px;
+          font-family: variables.$secondary-font;
+        }
+      }
+    }
+  }
+}

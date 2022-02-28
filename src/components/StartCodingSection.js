@@ -39,15 +39,15 @@ const StartCodingSection = ({ upcomingCourseDates }) => {
     
 
     return (
-    <div className='container-fluid homepage-startcoding-outer-container'>
-        <div className='container homepage-startcoding-inner-container'>
-            <h2 className='homepage-startcoding-heading'>
+    <div className='container-fluid startcoding-outer-container'>
+        <div className='container startcoding-inner-container'>
+            <h2 className='startcoding-heading'>
                 Start Coding Today  
             </h2>
-            <div className='homepage-startcoding-text'>
-                <p>🚀 Coding Basics - {nextBasicsStartDate}</p>
-                <p>🚀 Software Engineering Bootcamp (Full Time) - {nextFulltimeStartDate} </p>
-                <p>🚀 Software Engineering Bootcamp (Part Time) - {nextParttimeStartDate} </p>
+            <div className='startcoding-text'>
+                <p>Coding Basics - {nextBasicsStartDate}</p>
+                <p>Software Engineering Bootcamp (Full Time) - {nextFulltimeStartDate} </p>
+                <p>Software Engineering Bootcamp (Part Time) - {nextParttimeStartDate} </p>
             </div>
             <GetStartedButton />
         </div>
