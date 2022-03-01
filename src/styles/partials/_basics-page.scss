@@ -8,48 +8,54 @@
       padding-top: 60px;
       padding-bottom: 100px;
     }
-    .basics-header-heading {
-      font-family: variables.$primary-font;
-      font-style: normal;
-      font-weight: bold;
-      font-size: 28px;
-      line-height: 36px;
-      padding-bottom: 15px;
+    .basics-header-text-container {
       @include variables.md {
-        font-size: 52px;
-        line-height: 61px;
-        padding-bottom: 30px;
+        width: 95%;
+      }
+      .basics-header-heading {
+        font-family: variables.$primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        padding-bottom: 15px;
+        @include variables.md {
+          font-size: 52px;
+          line-height: 61px;
+          padding-bottom: 30px;
+        }
+      }
+      .basics-header-subheading {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 15px;
+        @include variables.md {
+          font-size: 18px;
+          line-height: 26px;
+          padding-bottom: 30px;
+        }
+      }
+      .basics-header-list {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        list-style: none;
+        padding-left: 0;
+        @include variables.md {
+          font-size: 18px;
+          line-height: 26px;
+        }
+        li {
+          margin: 15px 0;
+        }
       }
     }
-    .basics-header-subheading {
-      font-family: variables.$secondary-font;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 24px;
-      padding-bottom: 15px;
-      @include variables.md {
-        font-size: 18px;
-        line-height: 26px;
-        padding-bottom: 30px;
-      }
-    }
-    .basics-header-list {
-      font-family: variables.$secondary-font;
-      font-style: normal;
-      font-weight: 600;
-      font-size: 14px;
-      line-height: 20px;
-      list-style: none;
-      padding-left: 0;
-      @include variables.md {
-        font-size: 18px;
-        line-height: 26px;
-      }
-      li {
-        margin: 15px 0;
-      }
-    }
+
     .basics-headerimage-container-desktop {
       display: none;
       @include variables.md {
@@ -58,11 +64,259 @@
     }
     .basics-headerimage-container-mobile {
       padding-bottom: 30px;
-      img {
-        width: 100%;
-      }
+
       @include variables.md {
         display: none;
+      }
+    }
+  }
+}
+
+.basics-content-container {
+  padding-top: 100px;
+  padding-bottom: 20px;
+  @include variables.md {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .basics-content-col {
+    border-left: 1px solid variables.$success;
+    .basics-overview-container {
+      @include variables.md {
+        padding-left: 50px;
+      }
+      .basics-overview-heading {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        @include variables.md {
+          font-size: 32px;
+          line-height: 44px;
+        }
+      }
+      .basics-overview-row-desktop {
+        display: none;
+
+        @include variables.md {
+          display: flex;
+        }
+        .basics-overview-slide-container {
+          width: 95%;
+        }
+      }
+
+      .basics-overview-row-mobile {
+        .carousel-control-prev,
+        .carousel-control-next {
+          display: none;
+        }
+        @include variables.md {
+          display: none;
+        }
+      }
+      .basics-testimonial-row {
+        background-color: variables.$light;
+        padding-top: 30px;
+        padding-bottom: 10px;
+        @include variables.md {
+          padding: 50px 20px 30px 20px;
+        }
+        .basics-testimonial-image-container {
+          padding-bottom: 30px;
+        }
+        .basics-testimonial-quote {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px;
+          @include variables.md {
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+        .basics-testimonial-name,
+        .basics-testimonial-position {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: 0.03em;
+          @include variables.md {
+            font-size: 14px;
+            line-height: 21px;
+          }
+        }
+        .basics-testimonial-name {
+          margin-bottom: 0;
+        }
+        .basics-testimonial-position {
+          font-weight: normal;
+        }
+      }
+      .basics-learning-row-desktop {
+        display: none;
+        @include variables.md {
+          display: flex;
+        }
+      }
+      .basics-learning-row-mobile {
+        @include variables.md {
+          display: none;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          display: none;
+        }
+        @include variables.md {
+          display: none;
+        }
+      }
+      .basics-learning-heading {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        @include variables.md {
+          font-size: 32px;
+          line-height: 44px;
+        }
+      }
+      .card-body {
+        min-height: 290px;
+        .card-title {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 24px;
+          padding-top: 20px;
+          @include variables.md {
+            font-size: 20px;
+            line-height: 26px;
+          }
+        }
+        .card-text {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 22px;
+          @include variables.md {
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+    .basics-curriculum-container {
+      padding-top: 20px;
+      @include variables.md {
+        padding-top: 50px;
+        padding-left: 50px;
+      }
+      .basics-curriculum-heading {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.03em;
+        padding-bottom: 20px;
+        padding-top: 20px;
+        text-transform: uppercase;
+        @include variables.md {
+          font-size: 18px;
+          line-height: 25px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+      .basics-curriculum-row {
+        display: flex;
+        flex-wrap: wrap;
+        .basics-curriculum-topic {
+          display: flex;
+          align-items: center;
+          background-color: variables.$light;
+          height: 58px;
+          border-radius: 16px;
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 26px;
+          margin: 10px 0;
+          padding-left: 20px;
+          @include variables.md {
+            height: 74px;
+            font-size: 18px;
+            line-height: 26px;
+            width: 48%;
+            padding-left: 40px;
+            margin: 10px 5px;
+          }
+        }
+      }
+    }
+    .basics-instructors-container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      @include variables.md {
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .basics-instructors-heading {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @include variables.md {
+          font-size: 32px;
+          line-height: 44px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+      .basics-instructors-row {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+      .basics-instructors-profile {
+        @include variables.md {
+          width: 25%;
+        }
+        .basics-instructors-name {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 16px;
+          padding-top: 15px;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+        }
+        .basics-instructors-position {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.03em;
+        }
       }
     }
   }

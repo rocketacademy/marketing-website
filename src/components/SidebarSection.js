@@ -6,7 +6,7 @@ import { Link } from 'gatsby';
 const SidebarSection = ({ sectionArray }) => {
   return (
     <>
-      <div className='col-12 col-md-2 sidebar-col-desktop'>
+      <div className='col-12 col-md-3 sidebar-col-desktop'>
         <Nav defaultActiveKey="link-0" className="flex-column">
           {sectionArray.map((section, index) => {
             const eventKey = `link-${index}`;

@@ -90,7 +90,7 @@ query basicsPageQuery {
             alt
             image {
                 childImageSharp {
-                    gatsbyImageData(layout: CONSTRAINED)
+                    gatsbyImageData(layout: FULL_WIDTH)
                 }
             }
         }
@@ -161,7 +161,7 @@ query basicsPageQuery {
           position
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
+              gatsbyImageData(layout: FULL_WIDTH)
             }
           }
         }

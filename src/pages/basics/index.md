@@ -29,8 +29,8 @@ overview:
   testimonial:
     quote: >
       “It has been very rewarding. I feel proud of all the projects I've done and have a better sense of what to learn as a software engineer.”
-    image: /img/homepage/glints-logo.png
-    name: Perry Lim
+    image: /img/homepage/glints-color-logo.png
+    name: PERRY LIM
     position: Former Chef Software Engineer at Glints
   learningstyle:
     heading: Learn Online With Guidance

@@ -17,7 +17,7 @@ const FaqContentSection = ({
                 <SidebarSection
                     sectionArray={sectionArray}
                 />
-                <div className='col-12 col-md-10 faq-content-col'>
+                <div className='col-12 col-md-9 faq-content-col'>
                     <FaqContentIndividualSection content={general} />
                     <FaqContentIndividualSection content={codingbasics} />
                     <FaqContentIndividualSection content={softwareengineeringbootcamp} />
