@@ -9,6 +9,7 @@ $theme-colors: (
   "red": variables.$secondary,
   "success": variables.$success,
   "bg-blue": variables.$bg-blue,
+  "bg-red": variables.$bg-red,
 );
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
@@ -16,4 +17,4 @@ $theme-colors: (
 @import "partials/homepage", "partials/navbar", "partials/layout",
   "partials/getStartedButton", "partials/footer", "partials/about-page",
   "partials/carousel-slide", "partials/faq-page", "partials/basics-page",
-  "partials/start-coding";
+  "partials/start-coding", "partials/sidebar-section";

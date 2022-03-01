@@ -47,52 +47,7 @@
         border-left: 1px solid variables.$success;
       }
     }
-    .faq-content-sidebar-col-desktop {
-      display: none;
-      padding: 30px 30px 30px 0;
-      position: sticky;
-      top: 40px;
-      flex-wrap: nowrap;
-      overflow-y: auto;
-      height: 50vh;
-      -ms-overflow-style: none;
-      scrollbar-width: none;
-      a.nav-link {
-        color: black;
-        font-weight: bold;
-      }
-      a.nav-link.active {
-        color: variables.$red;
-        font-weight: bold;
-      }
-      @include variables.md {
-        display: flex;
-      }
-    }
-    .faq-content-sidebar-col-mobile {
-      @include variables.md {
-        display: none;
-      }
-      .dropdown-toggle.btn.btn-outline-dark {
-        width: 95%;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        border: 1px solid;
-        margin-left: 10px;
-      }
 
-      .dropdown-menu.show {
-        width: 98%;
-      }
-      a {
-        text-decoration: none;
-        color: black;
-      }
-      a.dropdown-item:hover {
-        background-color: variables.$light;
-      }
-    }
     .faq-content-col {
       @include variables.md {
       }

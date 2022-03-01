@@ -57,7 +57,7 @@ courses:
       duration: ✓ 24 Weeks (6 Months)
       conditions: ✓ Live and online
 curriculum:
-  smalltext: 🚀 Q&A With Industy experts
+  smalltext: 🚀 Q&A with Industry Experts
   heading: Curriculum designed by industry experts
   subheading: Our concept-focused courses are designed to support students at every level as they progress as professional programmers.
   image:
