@@ -289,7 +289,7 @@ collections:
                     fields:
                       [
                         { label: Question, name: question, widget: string },
-                        { label: Answers, name: answers, widget: text },
+                        { label: Answers, name: answers, widget: markdown },
                       ],
                   },
                 ],
@@ -308,7 +308,7 @@ collections:
                     fields:
                       [
                         { label: Question, name: question, widget: string },
-                        { label: Answers, name: answers, widget: text },
+                        { label: Answers, name: answers, widget: markdown },
                       ],
                   },
                 ],
@@ -327,12 +327,12 @@ collections:
                     fields:
                       [
                         { label: Question, name: question, widget: string },
-                        { label: Answers, name: answers, widget: text },
+                        { label: Answers, name: answers, widget: markdown },
                       ],
                   },
                 ],
             }
-      - file: src/pages/basics.md
+      - file: src/pages/basics/index.md
         label: Basics
         name: basics
         fields:
@@ -464,7 +464,7 @@ collections:
                       [
                         { label: Image, name: image, widget: image },
                         { label: Name, name: name, widget: string },
-                        { label: Position, name: name, widget: string },
+                        { label: Position, name: position, widget: string },
                       ],
                   },
                 ],
@@ -491,17 +491,15 @@ collections:
                 ],
             }
           - {
-              {
-                label: Programdates,
-                name: programdates,
-                widget: object,
-                fields:
-                  [
-                    { label: Heading, name: heading, widget: string },
-                    { label: Subheading, name: subheading, widget: string },
-                    { label: Sidebarlabel, name: sidebarlabel, widget: string },
-                  ],
-              },
+              label: Programdates,
+              name: programdates,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Subheading, name: subheading, widget: string },
+                  { label: Sidebarlabel, name: sidebarlabel, widget: string },
+                ],
             }
           - {
               label: Lessons,
@@ -519,7 +517,6 @@ collections:
                     fields:
                       [
                         { label: Number, name: number, widget: string },
-                        { label: Time, name: time, widget: string },
                         { label: Title, name: title, widget: string },
                         { label: Preclass, name: preclass, widget: text },
                         { label: Inclass, name: inclass, widget: text },

@@ -319,5 +319,210 @@
         }
       }
     }
+    .basics-admissions-container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      @include variables.md {
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .basics-admissions-heading {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+        @include variables.md {
+          font-size: 32px;
+          line-height: 44px;
+          margin-bottom: 20px;
+        }
+      }
+      .basics-admissions-subheading {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 20px;
+        @include variables.md {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+      .basics-admissions-row {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+
+        .basics-admissions-top {
+          margin: 20px;
+
+          .basics-admissions-cardheading {
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 26px;
+            @include variables.md {
+              font-size: 16px;
+              line-height: 26px;
+            }
+          }
+          .basics-admissions-prevcost {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+            color: #b3b3b3;
+            text-decoration-line: line-through;
+            @include variables.md {
+              font-size: 24px;
+              line-height: 26px;
+            }
+          }
+          .basics-admissions-currentcost {
+            font-weight: bold;
+            font-size: 22px;
+            line-height: 26px;
+            color: black;
+            @include variables.md {
+              font-size: 24px;
+              line-height: 26px;
+            }
+          }
+        }
+        .basics-admissions-bottom {
+          margin: 20px;
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            gap: 1rem;
+          }
+          li {
+            display: grid;
+            grid-template-columns: 0 1fr;
+            gap: 1.75em;
+            align-items: start;
+            font-size: 16px;
+            line-height: 26px;
+          }
+          ul li::before {
+            content: attr(data-icon);
+            font-size: 14px;
+          }
+        }
+      }
+      .basics-admissions-get-started-button-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @include variables.md {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+    .basics-program-dates-container {
+      font-family: variables.$secondary-font;
+      font-style: normal;
+      @include variables.md {
+        padding-left: 50px;
+      }
+      .basics-program-dates-heading {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        @include variables.md {
+          padding-top: 30px;
+          padding-bottom: 30px;
+          font-size: 32px;
+          line-height: 44px;
+        }
+      }
+      .basics-program-dates-subheading {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 40px;
+        @include variables.md {
+          font-size: 18px;
+          line-height: 26px;
+          padding-bottom: 20px;
+        }
+      }
+      .basics-program-dates-row-desktop {
+        display: none;
+        @include variables.md {
+          display: block;
+        }
+        th {
+          border-top: 1px solid variables.$success;
+          border-bottom: 1px solid variables.$success;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: 0.03em;
+          color: #999999;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        td {
+          border-top: 1px solid variables.$success;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px;
+          color: black;
+          width: 25%;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        .basics-program-dates-duration {
+          font-weight: bold;
+        }
+
+        .basics-program-dates-firstclass {
+          .basics-program-dates-content {
+            display: flex;
+            justify-content: space-between;
+            .basics-program-dates-arrow-container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+      .basics-program-dates-row-mobile {
+        border: 1px solid variables.$success;
+        border-radius: 10px;
+        @include variables.md {
+          display: none;
+        }
+        .basics-program-dates-col {
+          margin: 0 auto;
+          width: 90%;
+          border-bottom: 1px solid variables.$success;
+          padding: 30px 20px;
+          .basics-program-dates-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            line-height: 22px;
+            .basics-program-dates-arrow-container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .basics-program-dates-deadline {
+            padding-top: 15px;
+          }
+        }
+      }
+    }
   }
 }

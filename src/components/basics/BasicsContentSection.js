@@ -1,10 +1,10 @@
 import React from 'react'
 import SidebarSection from '../SidebarSection'
 import BasicsCurriculumSection from './BasicsCurriculumSection';
-import BasicsOverviewSection
- from './BasicsOverviewSection';
- import BasicsInstructorsSection from './BasicsInstructorsSection';
+import BasicsOverviewSection from './BasicsOverviewSection';
+import BasicsInstructorsSection from './BasicsInstructorsSection';
 import BasicsAdmissionsSection from './BasicsAdmissionsSection';
+import BasicsProgramDatesSection from './BasicsProgramDatesSection';
 
 
 const BasicsContentSection = ({ 
@@ -14,6 +14,7 @@ const BasicsContentSection = ({
     admissions,
     programdates,
     lessons,
+    upcomingCourseDates
  }) => {
 
     const sectionArray = [
@@ -35,6 +36,10 @@ const BasicsContentSection = ({
                         <BasicsCurriculumSection curriculum={curriculum} />
                         <BasicsInstructorsSection instructors={instructors} />
                         <BasicsAdmissionsSection admissions={admissions} />
+                        <BasicsProgramDatesSection 
+                            programdates={programdates}
+                            upcomingCourseDates={upcomingCourseDates} 
+                        />
                     </div>
                 </div>
             </div>

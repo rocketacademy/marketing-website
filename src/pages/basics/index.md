@@ -72,9 +72,9 @@ admissions:
   prevcost: $S999
   currentcost: FREE
   objectives:
-    - objective: ✓  Build simple apps
-    - objective: ✓  Learn coding fundamentals
-    - objective: ✓  Understand software engineering
+    - objective: Build simple apps
+    - objective: Learn coding fundamentals
+    - objective: Understand software engineering
 programdates:
   heading: Upcoming Program Dates
   subheading: New Batch Every 6 Weeks
@@ -85,13 +85,19 @@ lessons:
   subheading: "Coding Basics applies a flipped classroom model that consists of 2 components: self-learning and live classes. See full course curriculum here"
   lesson:
     - number: "0"
-      time: Saturday
-      title:
-      preclass:
-      inclass:
+      title: Pre-Course Briefing
+      preclass: |
+        Course Overview
+
+        Course methodology
+      inclass: |
+        • Opening Brief
+
+        • Look ahead: Deliverables for Day 1:
+          • Required Hardware and Software
+
       project:
     - number: "1"
-      time: Monday, 7:30 - 9:30pm
       title: Set-up
       preclass: "8 videos. Total watch time: ~48 mins"
       inclass: "Basic file and data manipulation"

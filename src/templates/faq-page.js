@@ -22,19 +22,21 @@ export const FaqPageTemplate = ({
         </>
     )
 }
+
+
 const FaqPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark;
 
-  return (
-    <Layout>
-        <FaqPageTemplate
-            header={frontmatter.header}
-            general={frontmatter.general}
-            codingbasics={frontmatter.codingbasics}
-            softwareengineeringbootcamp={frontmatter.softwareengineeringbootcamp}
-        />
-    </Layout>
-  )
+    return (
+        <Layout>
+            <FaqPageTemplate
+                header={frontmatter.header}
+                general={frontmatter.general}
+                codingbasics={frontmatter.codingbasics}
+                softwareengineeringbootcamp={frontmatter.softwareengineeringbootcamp}
+            />
+        </Layout>
+    )
 }
 
 export default FaqPage;

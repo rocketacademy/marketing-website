@@ -16,7 +16,7 @@ const FaqContentIndividualSection = ({ content }) => {
                             {question.question}
                         </Accordion.Header>
                         <Accordion.Body>
-                            {question.answers}
+                            <div>{question.answers}</div>
                         </Accordion.Body>
                     </Accordion.Item>
                 )

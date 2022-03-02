@@ -28,6 +28,7 @@ export const BasicsPageTemplate = ({
             admissions={admissions}
             programdates={programdates}
             lessons={lessons}
+            upcomingCourseDates={upcomingCourseDates}
           />
           <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
       </>
@@ -174,7 +175,6 @@ query basicsPageQuery {
           inclass
           number
           preclass
-          time
           title
         }
       }

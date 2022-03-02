@@ -1,7 +1,5 @@
 import React from 'react'
 import PreviewCompatibleImage from '../PreviewCompatibleImage'
-import Carousel from 'react-bootstrap/Carousel';
-import CarouselSlide from '../CarouselSlide';
 
 
 const BasicsInstructorsSection = ({ instructors }) => {

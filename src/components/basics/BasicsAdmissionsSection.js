@@ -1,5 +1,7 @@
 import React from 'react'
-import { Card } from 'react-bootstrap'
+import Card from 'react-bootstrap/Card';
+import GetStartedButton from '../GetStartedButton';
+
 
 const BasicsAdmissionsSection = ({ admissions }) => {
   return (
@@ -11,28 +13,38 @@ const BasicsAdmissionsSection = ({ admissions }) => {
             {admissions.subheading}
         </div>
         <div className='row basics-admissions-row'>
+            <div className='col-12 col-md-4 basics-admissions-col'>
             <Card>
                 <Card.Body>
                     <div className='basics-admissions-top'>
-                        <p>{admissions.cardheading}</p>
-                        <p>
-                            {admissions.prevcost}
-                            <span>
-                                {admissions.currentcost}
-                            </span>
-                        </p>
+                        <div className='basics-admissions-cardheading'>
+                            {admissions.cardheading}
+                        </div>
+                        <span className='basics-admissions-prevcost'>
+                            {admissions.prevcost}&nbsp;
+                        </span>
+                        <span className='basics-admissions-currentcost'>
+                            &nbsp;&nbsp;{admissions.currentcost}
+                        </span>
                     </div>
                     <div className='basics-admissions-bottom'>
                         <ul>
-                        {admissions.objectives.map(objective => {
-                            return (
-                                <li>{objective.objective}</li>
-                            )
-                        })}
+                            {admissions.objectives.map(objective => {
+                                return (
+                                    <li data-icon="🌈">
+                                        {objective.objective}
+                                    </li>
+                                )
+                                })
+                            }
                         </ul>
                     </div>
                 </Card.Body>
             </Card>
+            </div>
+        </div>
+        <div className='basics-admissions-get-started-button-container'>
+            <GetStartedButton />
         </div>
     </div>
   )
