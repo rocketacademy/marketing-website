@@ -2,7 +2,7 @@ import React from 'react'
 import { FaqPageTemplate } from '../../templates/faq-page';
 
 
-const FaqPagePreview = ({ entry, getAsset }) => {
+const FaqPagePreview = ({ entry }) => {
 
     const entryGeneralQuestions = entry.getIn(['data', 'general', 'questions'])
     const generalQuestions = entryGeneralQuestions ? entryGeneralQuestions.toJS() : [];
@@ -12,7 +12,7 @@ const FaqPagePreview = ({ entry, getAsset }) => {
 
     const entrySoftwareengineeringbootcampQuestions = entry.getIn(['data', 'softwareengineeringbootcamp', 'questions'])
     const softwareengineeringbootcampQuestions = entrySoftwareengineeringbootcampQuestions ? entrySoftwareengineeringbootcampQuestions.toJS() : [];
-
+    
     
     return (
         <FaqPageTemplate 
@@ -22,15 +22,16 @@ const FaqPagePreview = ({ entry, getAsset }) => {
             }}
             general={{
                 heading: entry.getIn(['data', 'general', 'heading']),
-                generalQuestions,
+                questions: generalQuestions
             }}
             codingbasics={{
                 heading: entry.getIn(['data', 'codingbasics', 'heading']),
-                codingbasicsQuestions,
+                questions: codingbasicsQuestions
             }}
             softwareengineeringbootcamp={{
                 heading: entry.getIn(['data', 'softwareengineeringbootcamp', 'heading']),
-                softwareengineeringbootcampQuestions,
+                questions: softwareengineeringbootcampQuestions
+
             }}
         />
     )

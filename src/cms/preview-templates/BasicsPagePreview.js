@@ -9,7 +9,7 @@ const BasicsPagePreview = ({  entry, getAsset }) => {
     const entryStudentexperience = entry.getIn(['data', 'overview', 'studentexperience'])
     const studentexperience = entryStudentexperience ? entryStudentexperience.toJS() : []
 
-    const entryCards = entry.getIn(['data', 'overview', 'card'])
+    const entryCards = entry.getIn(['data', 'overview', 'learningstyle', 'card'])
     const cards = entryCards ? entryCards.toJS() : []
 
     const entryTopics = entry.getIn(['data', 'curriculum', 'topics'])
@@ -51,7 +51,7 @@ const BasicsPagePreview = ({  entry, getAsset }) => {
                 },
                 learningstyle: {
                     heading: entry.getIn(['data', 'overview', 'learningstyle', 'heading']),
-                    cards,
+                    card: cards,
                 }
             }}
             curriculum={{
@@ -62,16 +62,16 @@ const BasicsPagePreview = ({  entry, getAsset }) => {
             instructors={{
                 heading: entry.getIn(['data', 'instructors', 'heading']),
                 sidebarlabel: entry.getIn(['data', 'instructors', 'sidebarlabel']),
-                profiles,
+                profile: profiles,
             }}
             admissions={{
                 heading: entry.getIn(['data', 'admissions', 'heading']),
                 subheading: entry.getIn(['data', 'admissions', 'subheading']),
                 sidebarlabel: entry.getIn(['data', 'admissions', 'aidebarlabel']),
                 cardheading: entry.getIn(['data', 'admissions', 'cardheading']),
-                prevcost: entry.getIn(['data', 'admissions', 'precost']),
+                prevcost: entry.getIn(['data', 'admissions', 'prevcost']),
                 currentcost: entry.getIn(['data', 'admissions', 'currentcost']),
-                objectives
+                objectives,
             }}
             programdates={{
                 heading: entry.getIn(['data', 'programdates', 'heading']),
@@ -82,7 +82,7 @@ const BasicsPagePreview = ({  entry, getAsset }) => {
                 heading: entry.getIn(['data', 'lessons', 'heading']),
                 subheading: entry.getIn(['data', 'lessons', 'subheading']),
                 sidebarlabel: entry.getIn(['data', 'lessons', 'sidebarlabel']),
-                lessons
+                lesson: lessons
             }}
         />
     )

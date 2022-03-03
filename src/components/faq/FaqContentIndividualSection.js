@@ -6,13 +6,16 @@ import remarkHtml from 'remark-html';
 
  
 const FaqContentIndividualSection = ({ content }) => {
+
+    const questions = content.questions;
+
   return (
     <div className='faq-content-col-accordion'>
         <div className='faq-content-col-accordion-heading' id={content.heading.toLowerCase()}>
             {content.heading}
         </div>
         <Accordion flush>
-            {content.questions.map((question, index) => {
+            {questions.map((question, index) => {
                 question.answers = remark()
                     .use(recommended)
                     .use(remarkHtml)

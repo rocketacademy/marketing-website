@@ -511,3 +511,115 @@ collections:
                   },
                 ],
             }
+      - file: src/pages/bootcamp/index.md
+        label: Bootcamp
+        name: bootcamp
+        fields:
+          - {
+              label: Template Key,
+              name: templateKey,
+              widget: hidden,
+              default: bootcamp-page,
+            }
+          - { label: Title, name: title, widget: string }
+          - {
+              label: Header,
+              name: header,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Subheading, name: heading, widget: string },
+                  {
+                    label: Image,
+                    name: image,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widgt: string },
+                      ],
+                  },
+                  {
+                    label: Reasons,
+                    name: reasons,
+                    widget: list,
+                    fields: [{ label: Reason, name: reason, widget: string }],
+                  },
+                ],
+            }
+          - {
+              label: Overview,
+              name: overview,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Sidebarlabel, name: sidebarlabel, widget: string },
+                  {
+                    label: Reasons,
+                    name: reasons,
+                    widget: list,
+                    fields:
+                      [
+                        { label: image, name: image, widget: image },
+                        { label: tet, name: text, widget: string },
+                      ],
+                  },
+                  {
+                    label: Testimonial,
+                    name: testimonial,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Quote, name: quote, widgt: text },
+                        { label: Image, name: image, widget: image },
+                        { label: Name, name: name, widget: string },
+                        { label: Position, name: position, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Curriculum,
+              name: curriculum,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Subheading, name: subheading, widget: string },
+                  {
+                    label: Sections,
+                    name: sections,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Heading, name: heading, widget: string },
+                        { label: Section1, name: section1, widget: string },
+                        { label: Section2, name: section2, widget: string },
+                        { label: Section3, name: section3, widget: string },
+                      ],
+                  },
+                  {
+                    label: Modulesheading,
+                    name: modulesheading,
+                    widget: string,
+                  },
+                  {
+                    label: Modules,
+                    name: modules,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Heading, name: heading, widget: string },
+                        {
+                          label: Topics,
+                          name: topics,
+                          widget: list,
+                          fields:
+                            [{ label: Topic, name: topic, widget: string }],
+                        },
+                      ],
+                  },
+                ],
+            }
