@@ -10,7 +10,7 @@ const FaqPagePreview = ({ entry, getAsset }) => {
     const entryCodingbasicsQuestions = entry.getIn(['data', 'codingbasics', 'questions'])
     const codingbasicsQuestions = entryCodingbasicsQuestions ? entryCodingbasicsQuestions.toJS() : []
 
-    const entrySoftwareengineeringbootcampQuestions = entry.getIn(['data', 'general', 'questions'])
+    const entrySoftwareengineeringbootcampQuestions = entry.getIn(['data', 'softwareengineeringbootcamp', 'questions'])
     const softwareengineeringbootcampQuestions = entrySoftwareengineeringbootcampQuestions ? entrySoftwareengineeringbootcampQuestions.toJS() : [];
 
     
