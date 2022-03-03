@@ -34,15 +34,6 @@ rocket:
     “Teaching has been incredibly rewarding because of the professional and social impact on students. I look forward to helping more students achieve their potential, and seeing our graduates reach greater heights.”
   name: KAI YUAN NEO
   position: Former Facebook engineer
-companies:
-  heading: Rocket Academy in technology & business press media
-  icons:
-    - image: /img/about-page/newsdirect-icon.png
-    - image: /img/about-page/singapore-business-icon.png
-    - image: /img/about-page/forbes-icon.png
-    - image: /img/about-page/edtech-review-icon.png
-    - image: /img/about-page/tech-asia-icon.png
-    - image: /img/about-page/mashable-icon.png
 leadership:
   heading: Meet Our Leadership Team
   profiles:

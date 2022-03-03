@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import BasicsHeaderSection from '../components/basics/BasicsHeaderSection';
 import BasicsContentSection from '../components/basics/BasicsContentSection';
 import StartCodingSection from '../components/StartCodingSection';
+import BasicsNextBatchSection from '../components/basics/BasicsNextBatchSection';
 
 
 // eslint-disable-next-line
@@ -31,6 +32,7 @@ export const BasicsPageTemplate = ({
             upcomingCourseDates={upcomingCourseDates}
           />
           <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
+          <BasicsNextBatchSection upcomingCourseDates={upcomingCourseDates} />
       </>
   )
 }
@@ -172,10 +174,12 @@ query basicsPageQuery {
         sidebarlabel
         subheading
         lesson {
+          week
           inclass
           number
           preclass
           title
+          project
         }
       }
     }

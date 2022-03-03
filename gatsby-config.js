@@ -13,6 +13,7 @@ module.exports = {
     title: "Rocket Academy: Leading Coding Bootcamp",
     description:
       "Get ahead with a new career. Learn from the best with an easy-to-follow curriculum taught by industry experts. Top alumni, strong industry networks.",
+    keywords: "coding, bootcamp, fullstack, developer, education, career, transition, software, engineering, programming, learning",
   },
   plugins: [
     "gatsby-plugin-react-helmet",

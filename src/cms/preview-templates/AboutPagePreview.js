@@ -6,9 +6,6 @@ const AboutPagePreview = ({ entry, getAsset }) => {
     const entryReasons = entry.getIn(['data', 'why', 'reasons'])
     const reasons = entryReasons ? entryReasons.toJS() : []
 
-    const entryIcons = entry.getIn(['data', 'companies', 'icons'])
-    const icons = entryIcons ? entryIcons.toJS() : []
-
     const entryProfiles = entry.getIn(['data', 'leadership', 'profiles'])
     const profiles = entryProfiles ? entryProfiles.toJS() : []
 
@@ -36,10 +33,6 @@ const AboutPagePreview = ({ entry, getAsset }) => {
             quote: entry.getIn(['data', 'rocket', 'quote']),
             name: entry.getIn(['data', 'rocket', 'name']),
             position: entry.getIn(['data', 'rocket', 'position']),
-        }}
-        companies={{
-            heading: entry.getIn(['data', 'companies', 'heading']),
-            icons,
         }}
         leadership={{
             heading: entry.getIn(['data', 'leadership', 'heading']),

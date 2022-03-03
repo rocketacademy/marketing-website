@@ -1,9 +1,10 @@
 .basics-header-outer-container {
   background-color: variables.$bg-red;
+  position: relative;
   .basics-header-inner-container {
     color: white;
     padding-top: 30px;
-    padding-bottom: 70px;
+    padding-bottom: 110px;
     @include variables.md {
       padding-top: 60px;
       padding-bottom: 100px;
@@ -73,10 +74,9 @@
 }
 
 .basics-content-container {
-  padding-top: 100px;
+  padding-top: 120px;
   padding-bottom: 20px;
   @include variables.md {
-    padding-top: 40px;
     padding-bottom: 40px;
   }
   .basics-content-col {
@@ -358,7 +358,9 @@
 
         .basics-admissions-top {
           margin: 20px;
-
+          .card {
+            border-radius: 10px;
+          }
           .basics-admissions-cardheading {
             font-weight: 600;
             font-size: 16px;
@@ -523,6 +525,178 @@
           }
         }
       }
+    }
+    .basics-course-container {
+      font-family: variables.$secondary-font;
+      padding-top: 40px;
+      font-style: normal;
+      @include variables.md {
+        padding-left: 50px;
+      }
+      .basics-course-header {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 10px;
+
+        @include variables.md {
+          font-size: 32px;
+          line-height: 44px;
+        }
+      }
+      .basics-course-subheading {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        @include variables.md {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+      .basics-course-content-desktop {
+        display: none;
+        @include variables.md {
+          display: block;
+        }
+        .nav.nav-tabs {
+          padding-top: 40px;
+          .nav-link {
+            border: none;
+            margin: 10px 40px 0 10px;
+            padding-bottom: 10px;
+            color: black;
+          }
+          .nav-link.active {
+            border-bottom: 2px solid variables.$red;
+            margin: 10px 40px 0 10px;
+            padding-bottom: 10px;
+            font-weight: bold;
+          }
+        }
+        th {
+          padding-bottom: 24px;
+          border-bottom: 1px solid rgb(222, 226, 230);
+          font-size: 14px;
+          line-height: 19px;
+          color: #999999;
+          letter-spacing: 0.03em;
+        }
+        td {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px;
+          padding: 15px 15px 15px 10px;
+        }
+
+        .basics-course-lesson-number,
+        .basics-course-lesson-title {
+          margin-bottom: 0;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 23px;
+        }
+      }
+      .basics-course-content-mobile {
+        padding-top: 30px;
+        @include variables.md {
+          display: none;
+        }
+        .basics-course-accordion-lesson {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 0;
+        }
+        .basics-course-accordion-heading {
+          font-weight: bold;
+          font-size: 14px;
+        }
+        .accordion-button:focus {
+          outline: 0 !important;
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        }
+        .accordion-button:after {
+          background-size: 15px 15px;
+          background-position: center right;
+          background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23E73C3E'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+        }
+
+        .accordion-button.collapsed {
+          color: black;
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 26px;
+          font-family: variables.$secondary-font;
+        }
+        .accordion-button:not(.collapsed) {
+          color: black;
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 26px;
+          font-family: variables.$secondary-font;
+        }
+      }
+    }
+  }
+}
+
+.basics-next-batch-container {
+  position: absolute;
+  top: 76%;
+  left: 5%;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid variables.$success;
+  border-radius: 15px;
+  padding: 20px 20px;
+  width: 90%;
+  background-color: white;
+  @include variables.md {
+    padding: 30px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 67%;
+    left: 5%;
+  }
+  @include variables.lg {
+    padding: 30px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 43%;
+    left: 5%;
+  }
+  @include variables.xl {
+    padding: 30px 30px;
+    flex-direction: row;
+    justify-content: space-between;
+    top: 40%;
+    left: 5%;
+  }
+  .basics-next-batch-button-container {
+    display: flex;
+    align-items: center;
+  }
+  .basics-next-batch-heading {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+  }
+  .basics-next-batch-text {
+    font-family: variables.$primary-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 30px;
+    @include variables.md {
+      font-size: 24px;
+      line-height: 28px;
+      margin-bottom: 0;
     }
   }
 }

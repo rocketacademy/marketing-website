@@ -5,7 +5,6 @@ import '../styles/main.scss';
 import AboutHeaderSection from '../components/about/AboutHeaderSection';
 import AboutReasonsSection from '../components/about/AboutReasonsSection';
 import AboutRocketSection from '../components/about/AboutRocketSection';
-import AboutCompaniesSection from '../components/about/AboutCompaniesSection';
 import AboutLeadersSection from '../components/about/AboutLeadersSection';
 import StartCodingSection from '../components/StartCodingSection';
 
@@ -16,7 +15,6 @@ export const AboutPageTemplate = ({
     image,
     why,
     rocket,
-    companies,
     leadership,
     upcomingCourseDates
 }) => {
@@ -32,9 +30,6 @@ export const AboutPageTemplate = ({
       />
       <AboutRocketSection
         rocket={rocket}
-      />
-      <AboutCompaniesSection
-        companies={companies}
       />
       <AboutLeadersSection
         leadership={leadership}
@@ -64,7 +59,6 @@ const AboutPage = ({ data }) => {
                 image={frontmatter.image}
                 why={frontmatter.why}
                 rocket={frontmatter.rocket}
-                companies={frontmatter.companies}
                 leadership={frontmatter.leadership}
                 upcomingCourseDates={upcomingCourseDates}
             />
@@ -81,16 +75,6 @@ query aboutPageQuery {
   }
   markdownRemark(frontmatter: {templateKey: {eq: "about-page"}}) {
     frontmatter {
-      companies {
-        heading
-        icons {
-          image {
-            childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
-            }
-          }
-        }
-      }
       header {
         heading
         subheading

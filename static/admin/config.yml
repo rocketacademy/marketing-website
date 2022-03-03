@@ -220,21 +220,6 @@ collections:
                 ],
             }
           - {
-              label: Companies,
-              name: companies,
-              widget: object,
-              fields:
-                [
-                  { label: Heading, name: heading, widget: string },
-                  {
-                    label: Icons,
-                    name: icons,
-                    widget: list,
-                    fields: [{ label: Image, name: image, widget: image }],
-                  },
-                ],
-            }
-          - {
               label: Leadership,
               name: leadership,
               widget: object,
@@ -516,11 +501,12 @@ collections:
                     widget: list,
                     fields:
                       [
+                        { label: Week, name: week, widget: string },
                         { label: Number, name: number, widget: string },
                         { label: Title, name: title, widget: string },
-                        { label: Preclass, name: preclass, widget: text },
-                        { label: Inclass, name: inclass, widget: text },
-                        { label: Project, name: project, widget: text },
+                        { label: Preclass, name: preclass, widget: markdown },
+                        { label: Inclass, name: inclass, widget: markdown },
+                        { label: Project, name: project, widget: markdown },
                       ],
                   },
                 ],

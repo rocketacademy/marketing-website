@@ -84,22 +84,151 @@ lessons:
   sidebarlabel: Course Overview
   subheading: "Coding Basics applies a flipped classroom model that consists of 2 components: self-learning and live classes. See full course curriculum here"
   lesson:
-    - number: "0"
+    - week: "0-1"
+      number: "0"
       title: Pre-Course Briefing
       preclass: |
-        Course Overview
+        * Course Overview
+        * Course methodology
 
-        Course methodology
+        Module 0: Introduction
+
+        * 0.1: What is coding? 
+        * 0.2: Web Browsers
       inclass: |
-        • Opening Brief
+        * Opening Brief
 
-        • Look ahead: Deliverables for Day 1:
-          • Required Hardware and Software
-
+        * Look ahead: Deliverables for Day 1:
+          * Required Hardware and Software
+          * Pre-Class Material
+        * Section Introductions and Icebreakers
       project:
-    - number: "1"
-      title: Set-up
-      preclass: "8 videos. Total watch time: ~48 mins"
-      inclass: "Basic file and data manipulation"
+    - week: "0-1"
+      number: "1"
+      title:
+      preclass: |
+        Module 1: Data Structures and Manipulation:
+          * 1.1 Operations
+          * 1.2 Variables
+        Module 2: Structuring and Debugging Code:
+          * 2.1 Pseudo Coding
+          * 2.2 Our First Program
+          * 2.3.1 Functions I
+      inclass: |
+        * Data Manipulation and Functions
       project:
+    - week: "0-1"
+      number: "2"
+      title:
+      preclass: |
+        Module 2: Structuring and Debugging Code
+          * 2.3.2 Functions II
+          * 2.4 Errors
+        Module 3: Logic and Control Flow
+          * 3.1 Intro to Logic and Control Flow
+          * 3.2 Conditionals
+          * 3.3 Boolean Operators
+      inclass: |
+        * If Statements, Boolean Operators
+      project: |
+        Scissors Paper Stone 
+        * Coding Strategies: Getting Started
+        * Project Planning: Scissors Paper Stone
+        * Project 1: Scissors Paper Stone (Part 1)
+    - week: "2"
+      number: "3"
+      title:
+      preclass: |
+        Module 4: Scope
+        * 4.1 Intro to Scope
+        * 4.2 Global Variables
+        * 4.3 Program State for Game Modes
+      inclass: |
+        * Program State
+      project: |
+        Scissors Paper Stone 
+          * Project 1: Scissors Paper Stone (Part 2)
+    - week: "2"
+      number: "4"
+      title:
+      preclass: |
+        Module 3: Control Flow
+        * 3.4 Loops
+      inclass: |
+        * Loops
+        * Redux: Scissors Paper Stone (30min)
+      project: |
+        * Scissors Paper Stone
+    - week: "3"
+      number: "5"
+      title:
+      preclass: |
+        Module 1: Data Structures and Manipulation
+        * 1.3 Arrays
+        Module 3: Control Flow
+        * 3.5: Looping over an Array
+      inclass: |
+        * Mad Libs
+      project: |
+        * Project 2: Beat That!
+    - week: "3"
+      number: "6"
+      title:
+      preclass: |
+        Module 3: Logic and Control Flow
+          * 3.6: Input Validation
+        Module 5: HTML & CSS
+          * 5.1 HTML
+          * 5.2 CSS
+      inclass: |
+        * Pairwork: Beat That!
+      project:
+    - week: "4"
+      number: "7"
+      title:
+      preclass: |
+        Module 1: Data Structures and Manipulation
+        * 1.4 Objects
+        Module 3: Logic and Control Flow
+        * 3.7: Creating Objects with Loops
+      inclass: |
+        * Moar Cards / Chat Bot
+        * Redux: Beat That! (30min)
+      project: |
+        * Project Due: Beat That!
+        * Project 3: Blackjack
+    - week: "4"
+      number: "8"
+      title:
+      preclass: |
+        Module 6: Document Object Model
+        * 6.1 Browser Application with DOM
+        * 6.2 DOM Manipulation
+      inclass: |
+        * Pairwork: Blackjack
+      project:
+    - week: "5"
+      number: "9"
+      title:
+      preclass: |
+        Module 2: Structuring and Debugging Code
+        * 2.5: Advanced Debugger with Sources Tab
+      inclass: |
+        * Redux: Blackjack
+        * Pairwork: Blackjack (More Comfortable)
+      project: |
+        * Project Due : Blackjack (Base)
+        * Project 3: Blackjack (More Comfortable)
+    - week: "5"
+      number: "10"
+      title:
+      preclass:
+      inclass: |
+        * Project presentations
+        * Course Feedback and Reviews
+        * LinkedIn certificate presentations
+        * Class Photo 🥳
+        * Closing Ceremony 🎓
+      project: |
+        * Projet 3: Blackjack
 ---

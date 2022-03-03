@@ -4,6 +4,7 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import FaqContentSection from '../components/faq/FaqContentSection';
 
+
 // eslint-disable-next-line
 export const FaqPageTemplate = ({
   header,

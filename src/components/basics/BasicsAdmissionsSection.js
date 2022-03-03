@@ -13,7 +13,7 @@ const BasicsAdmissionsSection = ({ admissions }) => {
             {admissions.subheading}
         </div>
         <div className='row basics-admissions-row'>
-            <div className='col-12 col-md-4 basics-admissions-col'>
+            <div className='col-12 col-md-5 basics-admissions-col'>
             <Card>
                 <Card.Body>
                     <div className='basics-admissions-top'>

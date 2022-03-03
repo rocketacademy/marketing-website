@@ -6,14 +6,14 @@ import useSiteMetadata from "./SiteMetadata";
 import Footer from "./Footer";
 
 const TemplateWrapper = ({ children }) => {
-  const { title, description } = useSiteMetadata();
+  const { title, description, keywords } = useSiteMetadata();
   return (
     <div>
       <Helmet>
         <html lang="en" />
         <title>{title}</title>
         <meta name="description" content={description} />
-
+        <meta name="keywords" content={keywords} />
         <link rel="apple-touch-icon" sizes="180x180" href="https://ra-web-files.s3.ap-southeast-1.amazonaws.com/all/favicons/apple-touch-icon.png?v=2" />
         <link rel="icon" type="image/png" sizes="32x32" href="https://ra-web-files.s3.ap-southeast-1.amazonaws.com/all/favicons/favicon-32x32.png?v=2" />
         <link rel="icon" type="image/png" sizes="16x16" href="https://ra-web-files.s3.ap-southeast-1.amazonaws.com/all/favicons/favicon-16x16.png?v=2" />

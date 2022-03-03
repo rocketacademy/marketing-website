@@ -5,6 +5,7 @@ import BasicsOverviewSection from './BasicsOverviewSection';
 import BasicsInstructorsSection from './BasicsInstructorsSection';
 import BasicsAdmissionsSection from './BasicsAdmissionsSection';
 import BasicsProgramDatesSection from './BasicsProgramDatesSection';
+import BasicsCourseSection from './BasicsCourseSection';
 
 
 const BasicsContentSection = ({ 
@@ -40,6 +41,7 @@ const BasicsContentSection = ({
                             programdates={programdates}
                             upcomingCourseDates={upcomingCourseDates} 
                         />
+                        <BasicsCourseSection lessons={lessons} />
                     </div>
                 </div>
             </div>
