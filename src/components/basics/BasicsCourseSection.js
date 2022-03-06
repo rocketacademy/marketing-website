@@ -14,7 +14,7 @@ const BasicsCourseSection = ({ lessons }) => {
 
     return (
         <div className='container basics-course-container'>
-            <div className='basics-course-header'>
+            <div className='basics-course-header' id={lessons.sidebarlabel.replace(/ /g, "-").toLowerCase()} >
                 {lessons.heading}
             </div>
             <div className='basics-course-subheading'>

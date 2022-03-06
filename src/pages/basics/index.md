@@ -1,6 +1,7 @@
 ---
 templateKey: basics-page
 title: Coding Basics
+pagename: basics
 header:
   heading: Coding Basics
   subheading: A live and online, 6-week part-time  intro to coding course for beginners, taught in JavaScript.
@@ -65,8 +66,8 @@ instructors:
       name: MICHAEL ALBANO
       position: Co-Head of Bootcamp
 admissions:
-  heading: Admission & Tuition
-  sidebarlabel: Admission & Tuition
+  heading: Admission and Tuition
+  sidebarlabel: Admission and Tuition
   subheading: No math or coding background required, just a computer with internet, webcam and passion!
   cardheading: Free Limited time only
   prevcost: $S999

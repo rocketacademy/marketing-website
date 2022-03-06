@@ -10,6 +10,7 @@ import BasicsCourseSection from './BasicsCourseSection';
 
 const BasicsContentSection = ({ 
     overview,
+    pagename,
     curriculum,
     instructors,
     admissions,
@@ -31,7 +32,7 @@ const BasicsContentSection = ({
         <>
             <div className='container basics-content-container'>
                 <div className='row basics content-row'>
-                    <SidebarSection sectionArray={sectionArray} />
+                    <SidebarSection sectionArray={sectionArray} pagename={pagename} />
                     <div className='col-12 col-md-9 basics-content-col'>
                         <BasicsOverviewSection overview={overview} />
                         <BasicsCurriculumSection curriculum={curriculum} />

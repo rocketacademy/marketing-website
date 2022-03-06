@@ -6,7 +6,7 @@ import GetStartedButton from '../GetStartedButton';
 const BasicsAdmissionsSection = ({ admissions }) => {
   return (
     <div className='container basics-admissions-container'>
-        <div className='basics-admissions-heading'>
+        <div className='basics-admissions-heading' id={admissions.sidebarlabel.replace(/ /g, "-").toLowerCase()} >
             {admissions.heading}
         </div>
         <div className='basics-admissions-subheading'>

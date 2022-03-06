@@ -10,12 +10,14 @@ export const FaqPageTemplate = ({
   header,
   general,
   codingbasics,
+  pagename,
   softwareengineeringbootcamp
 }) => {
     return (
         <>
             <FaqHeaderSection header={header} />
             <FaqContentSection 
+                pagename={pagename}
                 general={general}
                 codingbasics={codingbasics}
                 softwareengineeringbootcamp={softwareengineeringbootcamp} 
@@ -28,9 +30,12 @@ export const FaqPageTemplate = ({
 const FaqPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark;
 
+        console.log('frontmatte', frontmatter.general);
+        
     return (
         <Layout>
             <FaqPageTemplate
+                pagename={frontmatter.pagename}
                 header={frontmatter.header}
                 general={frontmatter.general}
                 codingbasics={frontmatter.codingbasics}
@@ -50,12 +55,14 @@ export const faqPageQuery = graphql`
         markdownRemark(frontmatter: {templateKey: {eq: "faq-page"}}) {
             id
             frontmatter {
+                pagename
                 header {
                     smalltext
                     heading
                 }
                 general {
                     heading
+                    sidebarlabel
                     questions {
                         answers 
                         question
@@ -63,6 +70,7 @@ export const faqPageQuery = graphql`
                 }
                 codingbasics {
                     heading
+                    sidebarlabel
                     questions {
                         answers 
                         question
@@ -70,6 +78,7 @@ export const faqPageQuery = graphql`
                 }
                 softwareengineeringbootcamp {
                     heading
+                    sidebarlabel
                     questions {
                         answers 
                         question

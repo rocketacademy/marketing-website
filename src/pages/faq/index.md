@@ -1,11 +1,13 @@
 ---
 templateKey: faq-page
 title: Frequently Asked Questions
+pagename: faq
 header:
   heading: Frequently Asked Questions
   smalltext: WE’RE HERE TO HELP
 general:
   heading: General
+  sidebarlabel: General
   questions:
     - question: Why choose Rocket’s Basics course?
       answers: |
@@ -93,6 +95,7 @@ general:
         2. Software Engineering Bootcamp tuition is payable upfront.
 codingbasics:
   heading: Coding Basics
+  sidebarlabel: Coding Basics
   questions:
     - question: What languages will I learn in Basics?
       answers: |
@@ -106,6 +109,7 @@ codingbasics:
       answers: Coding Basics teaches basic coding syntax, tools, and computational thinking, not web development. Rocket accepts top Basics graduates to Software Engineering Bootcamp where we dive deeper into web and general application development.
 softwareengineeringbootcamp:
   heading: Software Engineering Bootcamp
+  sidebarlabel: Software Engineering Bootcamp
   questions:
     - question: What languages will I learn in Bootcamp?
       answers: |

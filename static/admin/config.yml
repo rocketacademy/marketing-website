@@ -250,6 +250,7 @@ collections:
               default: faq-page,
             }
           - { label: Title, name: title, widget: string }
+          - { label: Pagename, name: pagename, widget: string }
           - {
               label: Header,
               name: header,
@@ -267,6 +268,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
+                  { label: Sidebarlabel, name: sidebarlabel, widget: string },
                   {
                     label: Questions,
                     name: questions,
@@ -286,6 +288,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
+                  { label: Sidebarlabel, name: sidebarlabel, widget: string },
                   {
                     label: Questions,
                     name: questions,
@@ -305,6 +308,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
+                  { label: Sidebarlabel, name: sidebarlabel, widget: string },
                   {
                     label: Questions,
                     name: questions,
@@ -328,6 +332,7 @@ collections:
               default: basics-page,
             }
           - { label: Title, name: title, widget: string }
+          - { label: Pagename, name: pagename, widget: string }
           - {
               label: Header,
               name: header,
@@ -522,6 +527,7 @@ collections:
               default: bootcamp-page,
             }
           - { label: Title, name: title, widget: string }
+          - { label: Pagename, name: pagename, widget: string }
           - {
               label: Header,
               name: header,
@@ -529,7 +535,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
-                  { label: Subheading, name: heading, widget: string },
+                  { label: Subheading, name: subheading, widget: string },
                   {
                     label: Image,
                     name: image,
@@ -555,6 +561,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
+                  { label: Subheading, name: subheading, widgt: text },
                   { label: Sidebarlabel, name: sidebarlabel, widget: string },
                   {
                     label: Reasons,
@@ -563,7 +570,7 @@ collections:
                     fields:
                       [
                         { label: image, name: image, widget: image },
-                        { label: tet, name: text, widget: string },
+                        { label: text, name: text, widget: string },
                       ],
                   },
                   {
@@ -587,6 +594,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
+                  { label: Sidebarlabel, name: sidebarlabel, widget: string },
                   { label: Subheading, name: subheading, widget: string },
                   {
                     label: Sections,
@@ -606,12 +614,155 @@ collections:
                     widget: string,
                   },
                   {
-                    label: Modules,
-                    name: modules,
-                    widget: object,
+                    label: Modules1,
+                    name: modules1,
+                    widget: list,
                     fields:
                       [
                         { label: Heading, name: heading, widget: string },
+                        {
+                          label: Topics,
+                          name: topics,
+                          widget: list,
+                          fields:
+                            [{ label: Topic, name: topic, widget: string }],
+                        },
+                      ],
+                  },
+                  {
+                    label: Modules2,
+                    name: modules2,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Heading, name: heading, widget: string },
+                        {
+                          label: Topics,
+                          name: topics,
+                          widget: list,
+                          fields:
+                            [{ label: Topic, name: topic, widget: string }],
+                        },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Instructors,
+              name: instructors,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Sidebarlabel, name: sidebarlabel, widget: string },
+                  {
+                    label: Profiles,
+                    name: profiles,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Name, name: name, widget: string },
+                        { label: Position, name: position, widget: string },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Admissions,
+              name: admissions,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Sidebarlabel, name: sidebarlabel, widget: string },
+                  { label: Subheading, name: subheading, widget: markdown },
+                  {
+                    label: Steps,
+                    name: steps,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Heading, name: heading, widget: string },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
+                  {
+                    label: Suitabilityheading,
+                    name: suitabilityheading,
+                    widget: string,
+                  },
+                  {
+                    label: Suitabilitysubheading,
+                    name: suitabilitysubheading,
+                    widget: text,
+                  },
+                  {
+                    label: suitabilityobjectives,
+                    name: suitabilityobjectives,
+                    widget: list,
+                    fields:
+                      [{ label: Objective, name: objective, widget: string }],
+                  },
+                ],
+            }
+          - {
+              label: Tuition,
+              name: tuition,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Sidebarlabel, name: sidebarlabel, widget: string },
+                  { label: Subheading, name: subheading, widget: string },
+                  { label: Payment, name: payment, widget: string },
+                  {
+                    label: Card,
+                    name: card,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Frequency, name: frequency, widget: string },
+                        { label: Prevcost, name: prevcost, widgt: string },
+                        {
+                          label: Currentcost,
+                          name: currentcost,
+                          widget: string,
+                        },
+                        { label: Text, name: text, widget: text },
+                      ],
+                  },
+                ],
+            }
+          - {
+              label: Programdates,
+              name: programdates,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Sidebarlabel, name: sidebarlabel, widget: string },
+                  { label: Subheading, name: subheading, widget: string },
+                ],
+            }
+          - {
+              label: Course,
+              name: course,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Sidebarlabel, name: sidebarlabel, widget: string },
+                  { label: Subheading, name: subheading, widget: text },
+                  {
+                    label: Schedule,
+                    name: schedule,
+                    widget: list,
+                    fields:
+                      [
+                        { label: Heading, name: heading, widget: string },
+                        { label: Project, name: project, widget: string },
                         {
                           label: Topics,
                           name: topics,

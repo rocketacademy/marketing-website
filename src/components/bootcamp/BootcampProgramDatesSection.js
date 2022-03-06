@@ -3,30 +3,32 @@ import Table from 'react-bootstrap/Table';
 import { StaticImage } from 'gatsby-plugin-image';
 
 
-const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
-  let basicsDates;
+const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
+  let bootcampDates;
 
   const getFormattedDate = (d) => {
-      const dateObj = new Date(d);
-      const ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(dateObj);
-      const mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(dateObj);
-      const da = new Intl.DateTimeFormat('en', { day: 'numeric' }).format(dateObj);
-      return `${da} ${mo} ${ye}`;
+    const dateObj = new Date(d);
+    const ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(dateObj);
+    const mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(dateObj);
+    const da = new Intl.DateTimeFormat('en', { day: 'numeric' }).format(dateObj);
+    return `${da} ${mo} ${ye}`;
   }
 
-  const BasicsProgramDatesRow = ({ batch }) => {
+  const BootcampProgramDatesRow = ({ batch }) => {
+    console.log('batch', batch);
+
     const startDate = new Date(batch.node.start.dateTime);
     const deadline = startDate.setDate(startDate.getDate() - 2);
 
     return (
       <tr>
-        <td className='basics-program-dates-duration'>5 weeks</td>
-        <td className='basics-program-dates-firstclass'>
-          <div className='basics-program-dates-content'>
+        <td className='bootcamp-program-dates-frequency'>{batch.node.description}</td>
+        <td className='bootcamp-program-dates-firstclass'>
+          <div className='bootcamp-program-dates-content'>
             <div>
               {getFormattedDate(batch.node.start.dateTime)}
             </div>
-            <div className='basics-program-dates-arrow-container'>
+            <div className='bootcamp-program-dates-arrow-container'>
               <StaticImage src="../../img/basics-arrow-right.png" />
             </div>
           </div>
@@ -38,24 +40,24 @@ const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
   }
 
   if (upcomingCourseDates) {
-    basicsDates = upcomingCourseDates.filter(course => course.node.summary.includes('Basics'));
+    bootcampDates = upcomingCourseDates.filter(course => course.node.description.includes('Full Time') || course.node.description.includes('Part Time') );
   }
 
   return (
-    <div className='container basics-program-dates-container'>
-      <div className='basics-program-dates-heading' id={programdates.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+    <div className='container bootcamp-program-dates-container'>
+      <div className='bootcamp-program-dates-heading' id={programdates.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
         {programdates.heading}
       </div>
 
-      <div className='basics-program-dates-subheading'>
+      <div className='bootcamp-program-dates-subheading'>
         {programdates.subheading}
       </div>
 
-      <div className='row basics-program-dates-row-desktop'>
-        <Table borderless className='basics-program-dates-row'>
+      <div className='row bootcamp-program-dates-row-desktop'>
+        <Table borderless className='bootcamp-program-dates-row'>
           <thead>
               <tr>
-                <th>DURATION</th>
+                <th>PACE</th>
                 <th>FIRST CLASS</th>
                 <th>LAST CLASS</th>
                 <th>ADMISSIONS DEADLINE</th>
@@ -63,9 +65,9 @@ const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
             </thead> 
             <tbody>
               {upcomingCourseDates ? (
-                basicsDates.map((batch) => {
+                bootcampDates.map((batch) => {
                 return (
-                  <BasicsProgramDatesRow batch={batch} />
+                  <BootcampProgramDatesRow batch={batch} />
                 )
               })
               ) : (
@@ -74,26 +76,26 @@ const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
             </tbody>
         </Table>
       </div>
-      <div className='row basics-program-dates-row-mobile'>
+      <div className='row bootcamp-program-dates-row-mobile'>
         {upcomingCourseDates ? (
-          basicsDates.map((batch) => {
+          bootcampDates.map((batch) => {
             const startDate = new Date(batch.node.start.dateTime);
             const deadline = startDate.setDate(startDate.getDate() - 2);
 
             return (
-              <div className='col-12 basics-program-dates-col'>
-                <div className='basics-program-dates-container'>
+              <div className='col-12 bootcamp-program-dates-col'>
+                <div className='bootcamp-program-dates-container'>
                   <span>
                     {getFormattedDate(batch.node.start.dateTime)}
                   </span>
-                  <span className='basics-program-dates-arrow-container'>
+                  <span className='bootcamp-program-dates-arrow-container'>
                     <StaticImage src="../../img/basics-arrow-right.png" />
                   </span>
                   <span>
                     {getFormattedDate(batch.node.end.dateTime)}
                   </span>
                 </div>
-                <div className='basics-program-dates-deadline'>
+                <div className='bootcamp-program-dates-deadline'>
                   Admissions deadline: {getFormattedDate(deadline)}
                 </div>
               </div>
@@ -107,4 +109,4 @@ const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
   )
 }
 
-export default BasicsProgramDatesSection
+export default BootcampProgramDatesSection

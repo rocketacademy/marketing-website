@@ -9,9 +9,11 @@ const FaqContentIndividualSection = ({ content }) => {
 
     const questions = content.questions;
 
+    console.log('csidebarlabel', content.sidebarlabel);
+    
   return (
     <div className='faq-content-col-accordion'>
-        <div className='faq-content-col-accordion-heading' id={content.heading.toLowerCase()}>
+        <div className='faq-content-col-accordion-heading' id={content.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
             {content.heading}
         </div>
         <Accordion flush>

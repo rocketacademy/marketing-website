@@ -10,6 +10,7 @@ import BasicsNextBatchSection from '../components/basics/BasicsNextBatchSection'
 // eslint-disable-next-line
 export const BasicsPageTemplate = ({
     header,
+    pagename,
     overview,
     curriculum,
     instructors,
@@ -23,6 +24,7 @@ export const BasicsPageTemplate = ({
       <>
           <BasicsHeaderSection header={header} />
           <BasicsContentSection 
+            pagename={pagename}
             overview={overview}
             curriculum={curriculum}
             instructors={instructors}
@@ -52,6 +54,7 @@ const BasicsPage = ({ data }) => {
     return (
         <Layout>
             <BasicsPageTemplate 
+                pagename={frontmatter.pagename}
                 header={frontmatter.header}
                 overview={frontmatter.overview}
                 curriculum={frontmatter.curriculum}
@@ -75,6 +78,7 @@ query basicsPageQuery {
   markdownRemark(frontmatter: {templateKey: {eq: "basics-page"}}) {
     id
     frontmatter {
+      pagename
       admissions {
         cardheading
         currentcost

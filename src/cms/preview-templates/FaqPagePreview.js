@@ -22,14 +22,17 @@ const FaqPagePreview = ({ entry }) => {
             }}
             general={{
                 heading: entry.getIn(['data', 'general', 'heading']),
+                sidebarlabel: entry.getIn(['data', 'general', 'sidebarlabel']),
                 questions: generalQuestions
             }}
             codingbasics={{
                 heading: entry.getIn(['data', 'codingbasics', 'heading']),
+                sidebarlabel: entry.getIn(['data', 'codingbasics', 'sidebarlabel']),
                 questions: codingbasicsQuestions
             }}
             softwareengineeringbootcamp={{
                 heading: entry.getIn(['data', 'softwareengineeringbootcamp', 'heading']),
+                sidebarlabel: entry.getIn(['data', 'softwareengineeringbootcamp', 'sidebarlabel']),
                 questions: softwareengineeringbootcampQuestions
 
             }}

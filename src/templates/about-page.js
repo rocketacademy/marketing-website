@@ -129,20 +129,20 @@ query aboutPageQuery {
     }
   }
   allCalendarEvent {
-      edges {
-        node {
-          description
-          summary
-          end {
-              dateTime
-              date
-          }
-          start {
-              dateTime
-              date
-          }
+    edges {
+      node {
+        description
+        summary
+        end {
+            dateTime
+            date
+        }
+        start {
+            dateTime
+            date
         }
       }
     }
+  }
 }
 `

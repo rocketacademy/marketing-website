@@ -1,0 +1,910 @@
+.bootcamp-header-outer-container {
+  background-color: variables.$bg-blue;
+  position: relative;
+  .bootcamp-header-inner-container {
+    color: white;
+    padding-top: 30px;
+    padding-bottom: 110px;
+    @include variables.md {
+      padding-top: 60px;
+      padding-bottom: 100px;
+    }
+    .bootcamp-header-text-container {
+      @include variables.md {
+        width: 95%;
+      }
+      .bootcamp-header-heading {
+        font-family: variables.$primary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 28px;
+        line-height: 36px;
+        padding-bottom: 15px;
+        @include variables.md {
+          font-size: 52px;
+          line-height: 61px;
+          padding-bottom: 30px;
+        }
+      }
+      .bootcamp-header-subheading {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 15px;
+        @include variables.md {
+          font-size: 18px;
+          line-height: 26px;
+          padding-bottom: 30px;
+        }
+      }
+      .bootcamp-header-list {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 20px;
+        list-style: none;
+        padding-left: 0;
+        @include variables.md {
+          font-size: 18px;
+          line-height: 26px;
+        }
+        li {
+          margin: 15px 0;
+        }
+      }
+    }
+
+    .bootcamp-headerimage-container {
+      display: none;
+      @include variables.md {
+        display: block;
+      }
+    }
+  }
+}
+
+.bootcamp-content-container {
+  padding-top: 120px;
+  padding-bottom: 20px;
+  @include variables.md {
+    padding-bottom: 40px;
+  }
+  .bootcamp-content-col {
+    border-left: 1px solid variables.$success;
+    .bootcamp-overview-container {
+      @include variables.md {
+        padding-left: 50px;
+      }
+      .bootcamp-overview-heading {
+        padding-top: 30px;
+        padding-bottom: 40px;
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        @include variables.md {
+          font-size: 32px;
+          line-height: 44px;
+        }
+      }
+      .bootcamp-overview-subheading {
+        font-size: 14px;
+        line-height: 24px;
+        padding-bottom: 20px;
+        @include variables.md {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+      .bootcamp-overview-row-desktop {
+        display: none;
+
+        @include variables.md {
+          display: flex;
+        }
+        .bootcamp-overview-slide-container {
+          .card {
+            min-height: 180px;
+            border: none;
+            .card-title {
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 24px;
+            }
+          }
+        }
+      }
+
+      .bootcamp-overview-row-mobile {
+        .card {
+          min-height: 180px;
+          border: none;
+          .bootcamp-overview-image-container {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+          }
+
+          .card-text {
+            text-align: center;
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 600;
+          }
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          display: none;
+        }
+        @include variables.md {
+          display: none;
+        }
+      }
+      .bootcamp-testimonial-row {
+        background-color: variables.$light;
+        margin-top: 20px;
+        padding-bottom: 10px;
+        @include variables.md {
+          padding: 20px 20px;
+        }
+        .bootcamp-testimonial-image-container {
+          padding-bottom: 30px;
+        }
+        .bootcamp-testimonial-quote {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px;
+          @include variables.md {
+            font-size: 18px;
+            line-height: 30px;
+          }
+        }
+        .bootcamp-testimonial-name,
+        .bootcamp-testimonial-position {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: 0.03em;
+          @include variables.md {
+            font-size: 14px;
+            line-height: 21px;
+          }
+        }
+        .bootcamp-testimonial-name {
+          margin-bottom: 0;
+        }
+        .bootcamp-testimonial-position {
+          font-weight: normal;
+        }
+      }
+    }
+
+    .bootcamp-curriculum-container {
+      @include variables.md {
+        padding-left: 50px;
+      }
+      .bootcamp-curriculum-row-desktop {
+        display: none;
+        @include variables.md {
+          display: flex;
+        }
+      }
+      .bootcamp-curriculum-row-mobile {
+        @include variables.md {
+          display: none;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          display: none;
+        }
+        @include variables.md {
+          display: none;
+        }
+      }
+      .bootcamp-curriculum-heading {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        padding-top: 50px;
+        padding-bottom: 10px;
+        @include variables.md {
+          font-size: 32px;
+          line-height: 44px;
+        }
+      }
+      .bootcamp-curriculum-subheading {
+        padding-bottom: 20px;
+      }
+      .card {
+        border-radius: 10px;
+
+        .card-body {
+          min-height: 350px;
+          @include variables.md {
+            min-height: 412px;
+          }
+          .card-title {
+            font-family: variables.$secondary-font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            line-height: 24px;
+            padding-top: 10px;
+            padding-left: 16px;
+            padding-right: 16px;
+            @include variables.md {
+              font-size: 20px;
+              line-height: 26px;
+            }
+          }
+          .card-text {
+            font-family: variables.$secondary-font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            @include variables.md {
+              font-size: 16px;
+              line-height: 26px;
+            }
+          }
+          .list-group-item {
+            padding-top: 15px;
+            padding-bottom: 15px;
+          }
+        }
+      }
+    }
+
+    .bootcamp-curriculum-accordions-heading {
+      font-family: variables.$secondary-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.03em;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      text-transform: uppercase;
+      @include variables.md {
+        font-size: 18px;
+        line-height: 25px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+      }
+    }
+    .bootcamp-curriculum-accordions-row {
+      .bootcamp-curriculum-accordions-col {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 26px;
+        @include variables.md {
+          font-size: 18px;
+          line-height: 26px;
+        }
+        .accordion-item {
+          background-color: variables.$light;
+        }
+        .accordion-button:focus {
+          outline: 0 !important;
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        }
+        .accordion-button:after {
+          background-size: 15px 15px;
+          background-position: center right;
+          background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23000000'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+        }
+
+        .accordion-button.collapsed {
+          color: black;
+          font-family: variables.$secondary-font;
+          background-color: variables.$light;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 26px;
+          margin-bottom: 10px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          border-radius: 10px;
+          font-family: variables.$secondary-font;
+        }
+        .accordion-button:not(.collapsed) {
+          color: black;
+          font-family: variables.$secondary-font;
+          background-color: variables.$light;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 26px;
+          margin-bottom: 10px;
+          padding-top: 8px;
+          padding-bottom: 8px;
+          border-bottom: none;
+          font-family: variables.$secondary-font;
+        }
+        .accordion-body {
+          ul {
+            padding-left: none;
+            list-style: none;
+            font-weight: normal;
+            font-size: 12px;
+            line-height: 26px;
+          }
+        }
+      }
+    }
+
+    .basics-instructors-container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      @include variables.md {
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .basics-instructors-heading {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @include variables.md {
+          font-size: 32px;
+          line-height: 44px;
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+      .basics-instructors-row-desktop {
+        display: none;
+
+        @include variables.md {
+          display: flex;
+        }
+      }
+      .basics-instructors-row-mobile {
+        @include variables.md {
+          display: none;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          display: none;
+        }
+        .card {
+          min-height: 500px;
+          border: none;
+          .card-body {
+            padding: none;
+          }
+        }
+      }
+      .basics-instructors-profile {
+        @include variables.md {
+          width: 25%;
+        }
+
+        .basics-instructors-name {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 16px;
+          padding-top: 15px;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+        }
+        .basics-instructors-position {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          letter-spacing: 0.03em;
+        }
+      }
+    }
+    .bootcamp-admissions-container {
+      @include variables.md {
+        padding-left: 50px;
+      }
+      .bootcamp-admissions-header {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        padding-top: 50px;
+        padding-bottom: 30px;
+        @include variables.md {
+          font-size: 32px;
+          line-height: 44px;
+        }
+      }
+      .bootcamp-admissions-subheading {
+        a {
+          color: variables.$red;
+        }
+      }
+      .card-body {
+        min-height: 290px;
+        .card-title {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 24px;
+          padding-top: 20px;
+          @include variables.md {
+            font-size: 20px;
+            line-height: 26px;
+            padding-left: 0;
+          }
+        }
+        .card-text {
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 22px;
+          @include variables.md {
+            font-size: 16px;
+            line-height: 26px;
+          }
+        }
+      }
+      .bootcamp-admissions-row-desktop {
+        display: none;
+        padding-bottom: 10px;
+        border-bottom: 1px solid variables.$success;
+
+        @include variables.md {
+          display: flex;
+        }
+        .card {
+          border: none;
+        }
+      }
+      .bootcamp-admissions-row-mobile {
+        padding-bottom: 30px;
+        border-bottom: 1px solid variables.$success;
+
+        @include variables.md {
+          display: none;
+        }
+        .carousel-control-prev,
+        .carousel-control-next {
+          display: none;
+        }
+      }
+      .bootcamp-admissions-suitability-row {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @include variables.md {
+          padding-top: 30px;
+          padding-bottom: 10px;
+        }
+        .bootcamp-suitability-header {
+          font-weight: bold;
+          font-size: 18px;
+          line-height: 25px;
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+        }
+        .bootcamp-suitability-subheading {
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px;
+        }
+        .bootcamp-suitability-objectives {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          padding: 15px;
+          @include variables.md {
+            padding: 20px;
+          }
+          background-color: variables.$light;
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: grid;
+            gap: 1rem;
+          }
+          li {
+            display: grid;
+            grid-template-columns: 0 1fr;
+            gap: 1.75em;
+            align-items: start;
+            font-size: 16px;
+            line-height: 26px;
+          }
+          ul li::before {
+            content: attr(data-icon);
+            font-size: 14px;
+          }
+        }
+      }
+    }
+
+    .bootcamp-tuition-container {
+      padding-top: 30px;
+      padding-bottom: 30px;
+      @include variables.md {
+        padding-left: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
+      .bootcamp-tuition-heading {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 10px;
+        @include variables.md {
+          font-size: 32px;
+          line-height: 44px;
+          margin-bottom: 20px;
+        }
+      }
+      .bootcamp-tuition-subheading {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 22px;
+        margin-bottom: 20px;
+        @include variables.md {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+      .bootcamp-tuition-row {
+        font-family: variables.$secondary-font;
+        font-style: normal;
+
+        .card {
+          border-radius: 10px;
+          min-height: 238px;
+          margin-bottom: 20px;
+          @include variables.md {
+            margin-bottom: 30px;
+          }
+          .bootcamp-tuition-top {
+            margin: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid variables.$success;
+
+            .bootcamp-tuition-cardheading {
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 24px;
+
+              letter-spacing: 0.03em;
+              text-transform: uppercase;
+
+              color: #999999;
+            }
+            .bootcamp-tuition-prevcost {
+              font-weight: bold;
+              font-size: 22px;
+              line-height: 26px;
+              color: #b3b3b3;
+              text-decoration-line: line-through;
+              @include variables.md {
+                font-size: 24px;
+                line-height: 26px;
+              }
+            }
+            .bootcamp-tuition-currentcost {
+              font-weight: bold;
+              font-size: 22px;
+              line-height: 26px;
+              color: black;
+              @include variables.md {
+                font-size: 24px;
+                line-height: 26px;
+              }
+            }
+          }
+          .bootcamp-tuition-bottom {
+            margin: 20px;
+            ul {
+              margin: 0;
+              padding: 0;
+              list-style: none;
+              display: grid;
+              gap: 1rem;
+            }
+            li {
+              display: grid;
+              grid-template-columns: 0 1fr;
+              gap: 1.75em;
+              align-items: start;
+              font-size: 16px;
+              line-height: 26px;
+            }
+            ul li::before {
+              content: attr(data-icon);
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .bootcamp-tuition-payment {
+        background-color: variables.$light;
+        padding: 15px;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 26px;
+        @include variables.md {
+          padding: 30px;
+        }
+      }
+      .bootcamp-tuition-get-started-button-container {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        @include variables.md {
+          padding-top: 30px;
+          padding-bottom: 30px;
+        }
+      }
+    }
+    .bootcamp-program-dates-container {
+      font-family: variables.$secondary-font;
+      font-style: normal;
+      @include variables.md {
+        padding-left: 50px;
+      }
+      .bootcamp-program-dates-heading {
+        padding-top: 30px;
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        @include variables.md {
+          padding-top: 30px;
+          padding-bottom: 30px;
+          font-size: 32px;
+          line-height: 44px;
+        }
+      }
+      .bootcamp-program-dates-subheading {
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        padding-bottom: 40px;
+        @include variables.md {
+          font-size: 18px;
+          line-height: 26px;
+          padding-bottom: 20px;
+        }
+      }
+      .bootcamp-program-dates-row-desktop {
+        display: none;
+        @include variables.md {
+          display: block;
+        }
+        th {
+          border-top: 1px solid variables.$success;
+          border-bottom: 1px solid variables.$success;
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 21px;
+          letter-spacing: 0.03em;
+          color: #999999;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        td {
+          border-top: 1px solid variables.$success;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px;
+          color: black;
+          width: 25%;
+          padding-top: 20px;
+          padding-bottom: 20px;
+        }
+        .bootcamp-program-dates-duration {
+          font-weight: bold;
+        }
+
+        .bootcamp-program-dates-firstclass {
+          .bootcamp-program-dates-content {
+            display: flex;
+            justify-content: space-between;
+            .bootcamp-program-dates-arrow-container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              margin-right: 20px;
+            }
+          }
+        }
+      }
+      .bootcamp-program-dates-row-mobile {
+        border: 1px solid variables.$success;
+        border-radius: 10px;
+        @include variables.md {
+          display: none;
+        }
+        .bootcamp-program-dates-col {
+          margin: 0 auto;
+          width: 90%;
+          border-bottom: 1px solid variables.$success;
+          padding: 30px 20px;
+          .bootcamp-program-dates-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 14px;
+            line-height: 22px;
+            .bootcamp-program-dates-arrow-container {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+          .bootcamp-program-dates-deadline {
+            padding-top: 15px;
+          }
+        }
+      }
+    }
+    .bootcamp-course-container {
+      font-family: variables.$secondary-font;
+      padding-top: 40px;
+      font-style: normal;
+      @include variables.md {
+        padding-left: 50px;
+      }
+      .bootcamp-course-header {
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 28px;
+        padding-bottom: 10px;
+
+        @include variables.md {
+          font-size: 32px;
+          line-height: 44px;
+        }
+      }
+      .bootcamp-course-subheading {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 24px;
+        @include variables.md {
+          font-size: 16px;
+          line-height: 26px;
+        }
+      }
+      .bootcamp-course-content-desktop {
+        display: none;
+        @include variables.md {
+          display: block;
+        }
+        .nav.nav-tabs {
+          padding-top: 40px;
+          .nav-link {
+            border: none;
+            margin: 10px 40px 0 10px;
+            padding-bottom: 10px;
+            color: black;
+          }
+          .nav-link.active {
+            border-bottom: 2px solid variables.$red;
+            margin: 10px 40px 0 10px;
+            padding-bottom: 10px;
+            font-weight: bold;
+          }
+        }
+        th {
+          padding-bottom: 24px;
+          border-bottom: 1px solid rgb(222, 226, 230);
+          font-size: 14px;
+          line-height: 19px;
+          color: #999999;
+          letter-spacing: 0.03em;
+        }
+        td {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 20px;
+          padding: 15px 15px 15px 10px;
+          span {
+            color: variables.$red;
+            background: #fef2f2;
+            border-radius: 4px;
+            padding: 5px;
+            margin-right: 5px;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+          }
+        }
+
+        .bootcamp-course-lesson-number,
+        .bootcamp-course-lesson-title {
+          margin-bottom: 0;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 23px;
+        }
+      }
+      .bootcamp-course-content-mobile {
+        padding-top: 30px;
+        @include variables.md {
+          display: none;
+        }
+        .accordion-body {
+          padding: 20px;
+        }
+        .bootcamp-course-accordion-lesson {
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        .bootcamp-course-accordion-content {
+          font-weight: 600;
+          font-size: 12px;
+          line-height: 16px;
+          color: variables.$red;
+          background: #fef2f2;
+          border-radius: 4px;
+          padding: 5px;
+          margin: 10px 5px 10px 0;
+          width: 95%;
+        }
+        .bootcamp-course-accordion-heading {
+          font-weight: bold;
+          font-size: 14px;
+        }
+        .accordion-button:focus {
+          outline: 0 !important;
+          box-shadow: 0 0 0 0 rgba(0, 0, 0, 0) !important;
+        }
+        .accordion-button:after {
+          background-size: 15px 15px;
+          background-position: center right;
+          background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23E73C3E'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
+        }
+
+        .accordion-button.collapsed {
+          color: black;
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 26px;
+          font-family: variables.$secondary-font;
+        }
+        .accordion-button:not(.collapsed) {
+          color: black;
+          font-family: variables.$secondary-font;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 18px;
+          line-height: 26px;
+          font-family: variables.$secondary-font;
+        }
+      }
+    }
+  }
+}

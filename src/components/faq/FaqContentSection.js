@@ -6,7 +6,8 @@ import SidebarSection from '../SidebarSection';
 const FaqContentSection = ({ 
     general,
     codingbasics,
-    softwareengineeringbootcamp
+    softwareengineeringbootcamp,
+    pagename
  }) => {
 
     const sectionArray = [general, codingbasics, softwareengineeringbootcamp];
@@ -15,7 +16,7 @@ const FaqContentSection = ({
         <div className='container faq-content-container'>
             <div className='row faq-content-row'>
                 <SidebarSection
-                    sectionArray={sectionArray}
+                    sectionArray={sectionArray} pagename={pagename}
                 />
                 <div className='col-12 col-md-9 faq-content-col'>
                     <FaqContentIndividualSection content={general} />
