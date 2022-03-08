@@ -774,3 +774,35 @@ collections:
                   },
                 ],
             }
+      - file: src/pages/careers/index.md
+        label: Careers
+        name: careers
+        fields:
+          - {
+              label: Template Key,
+              name: templateKey,
+              widget: hidden,
+              default: careers-page,
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Pagename, name: pagename, widget: string }
+          - {
+              label: Header,
+              name: header,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  { label: Subheading, name: subheading, widget: string },
+                  {
+                    label: Headerimage,
+                    name: headerimage,
+                    widget: object,
+                    fields:
+                      [
+                        { label: Image, name: image, widget: image },
+                        { label: Alt, name: alt, widget: string },
+                      ],
+                  },
+                ],
+            }

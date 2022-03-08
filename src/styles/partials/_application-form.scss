@@ -1,0 +1,46 @@
+.application-form-header-outer-container {
+  background-color: variables.$light;
+  padding: 30px 20px;
+  @include variables.md {
+    padding: 50px 30px;
+  }
+  .application-form-header-inner-container {
+    font-family: variables.$primary-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    @include variables.md {
+      font-size: 52px;
+      line-height: 61px;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .application-form-header-text-col {
+      display: flex;
+      justify-content: flex-start;
+    }
+    .application-form-header-icon-col {
+      display: none;
+      @include variables.md {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+
+.application-form-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include variables.md {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .submit-button {
+    color: white;
+    margin: 30px 0;
+  }
+}

@@ -1,38 +1,40 @@
 import React from 'react'
 import { BootcampPageTemplate } from '../../templates/bootcamp-page'
 
-const entryHeaderReasons = entry.getIn(['data', 'header', 'reasons'])
-const headerReasons = entryHeaderReasons ? entryHeaderReasons.toJS() : []
-
-const entryOverviewReasons = entry.getIn(['data', 'overview', 'reasons'])
-const overviewReasons = entryOverviewReasons ? entryOverviewReasons.toJS() : []
-
-const entrySections = entry.getIn(['data', 'curriculum', 'sections'])
-const sections = entrySections ? entrySections.toJS() : []
-
-const entryModules1 = entry.getIn(['data', 'curriculum', 'modules1'])
-const modules1 = entryModules1 ? entryModules1.toJS() : []
-
-const entryModules2 = entry.getIn(['data', 'curriculum', 'modules2'])
-const modules2 = entryModules2 ? entryModules2.toJS() : []
-
-const entryProfiles = entry.getIn(['data', 'instructors', 'profiles'])
-const profiles = entryProfiles ? entryProfiles.toJS() : []
-
-const entrySteps = entry.getIn(['data', 'admissions', 'steps'])
-const steps = entrySteps ? entrySteps.toJS() : []
-
-const entrySuitabilityobjectives = entry.getIn(['data', 'admissions', 'suitabilityobjectives'])
-const suitabilityobjectives = entrySuitabilityobjectives ? entrySuitabilityobjectives.toJS() : []
-
-const entryCard = entry.getIn(['data', 'tuition', 'card'])
-const card = entryCard ? entryCard.toJS() : []
-
-const entrySchedule = entry.getIn(['data', 'course', 'schedule'])
-const schedule = entrySchedule ? entrySchedule.toJS() : []
 
 
 const BootcampPagePreview = ({ entry, getAsset }) => {
+
+    const entryHeaderReasons = entry.getIn(['data', 'header', 'reasons'])
+    const headerReasons = entryHeaderReasons ? entryHeaderReasons.toJS() : []
+
+    const entryOverviewReasons = entry.getIn(['data', 'overview', 'reasons'])
+    const overviewReasons = entryOverviewReasons ? entryOverviewReasons.toJS() : []
+
+    const entrySections = entry.getIn(['data', 'curriculum', 'sections'])
+    const sections = entrySections ? entrySections.toJS() : []
+
+    const entryModules1 = entry.getIn(['data', 'curriculum', 'modules1'])
+    const modules1 = entryModules1 ? entryModules1.toJS() : []
+
+    const entryModules2 = entry.getIn(['data', 'curriculum', 'modules2'])
+    const modules2 = entryModules2 ? entryModules2.toJS() : []
+
+    const entryProfiles = entry.getIn(['data', 'instructors', 'profiles'])
+    const profile = entryProfiles ? entryProfiles.toJS() : []
+
+    const entrySteps = entry.getIn(['data', 'admissions', 'steps'])
+    const steps = entrySteps ? entrySteps.toJS() : []
+
+    const entrySuitabilityobjectives = entry.getIn(['data', 'admissions', 'suitabilityobjectives'])
+    const suitabilityobjectives = entrySuitabilityobjectives ? entrySuitabilityobjectives.toJS() : []
+
+    const entryCard = entry.getIn(['data', 'tuition', 'card'])
+    const card = entryCard ? entryCard.toJS() : []
+
+    const entrySchedule = entry.getIn(['data', 'course', 'schedule'])
+    const schedule = entrySchedule ? entrySchedule.toJS() : []
+
   return (
     <BootcampPageTemplate 
         header={{
@@ -68,7 +70,7 @@ const BootcampPagePreview = ({ entry, getAsset }) => {
         instructors={{
             heading: entry.getIn(['data', 'instructors', 'heading']),
             sidebarlabel: entry.getIn(['data', 'instructors', 'sidebarlabel']),
-            profiles,
+            profile,
         }}
         admissions={{
             heading: entry.getIn(['data', 'admissions', 'heading']),

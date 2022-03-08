@@ -1,0 +1,53 @@
+.careers-header-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  .careers-header-col-left {
+    @include variables.md {
+      padding-top: 30px;
+    }
+    .careers-header-heading {
+      font-family: variables.$primary-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 28px;
+      line-height: 36px;
+      @include variables.md {
+        font-size: 52px;
+        line-height: 60px;
+      }
+    }
+    .career-header-subheading {
+      font-family: variables.$secondary-font;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 24px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      @include variables.md {
+        font-size: 18px;
+        line-height: 30px;
+      }
+    }
+    .careers-header-btn {
+      display: none;
+      color: white;
+      width: 100%;
+      @include variables.md {
+        width: 30%;
+        display: block;
+      }
+    }
+  }
+  .careers-header-col-right {
+    .careers-header-btn-right {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      color: white;
+      width: 100%;
+      @include variables.md {
+        display: none;
+      }
+    }
+  }
+}
