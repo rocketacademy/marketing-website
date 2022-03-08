@@ -38,7 +38,7 @@ query careersPageQuery {
           alt
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
             }
           }
         }

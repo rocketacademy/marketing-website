@@ -234,7 +234,8 @@ collections:
                       [
                         { label: Image, name: image, widget: image },
                         { label: Name, name: name, widget: string },
-                        { label: position, name: position, widget: string },
+                        { label: Position, name: position, widget: string },
+                        { label: Experience, name: experience, widget: text },
                       ],
                   },
                 ],

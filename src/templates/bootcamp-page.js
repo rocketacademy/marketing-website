@@ -5,6 +5,8 @@ import '../styles/main.scss';
 import getUpcomingCourseDates from '../helper/getUpcomingCourseDates';
 import BootcampHeaderSection from '../components/bootcamp/BootcampHeaderSection';
 import BootcampContentSection from '../components/bootcamp/BootcampContentSection';
+import StartCodingSection from '../components/StartCodingSection';
+
 
 // eslint-disable-next-line
 export const BootcampPageTemplate = ({
@@ -32,7 +34,8 @@ export const BootcampPageTemplate = ({
               tuition={tuition}
               course={course}
               upcomingCourseDates={upcomingCourseDates}
-            />
+      />
+      <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
     </>
   )
 }
@@ -76,7 +79,7 @@ query bootcampPageQuery {
           alt
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
             }
           }
         }
@@ -92,7 +95,7 @@ query bootcampPageQuery {
         reasons {
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
             }
           }
           text
@@ -103,7 +106,7 @@ query bootcampPageQuery {
           name
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
             }
           }
         }
@@ -159,7 +162,7 @@ query bootcampPageQuery {
           text
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
             }
           }
         }

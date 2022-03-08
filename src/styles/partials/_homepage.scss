@@ -1,4 +1,8 @@
 .homepage-header-container {
+  @include variables.md {
+    padding-top: 30px;
+    padding-bottom: 30px;
+  }
   .homepage-header-heading {
     padding-top: 20px;
     font-weight: bold;
@@ -42,6 +46,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 
     @include variables.lg {
       justify-content: space-between;
@@ -310,14 +315,12 @@
         padding-top: 15px;
         padding-bottom: 15px;
         @include variables.md {
-          padding-top: 0;
-          padding-bottom: 0;
+          padding: 30px 10px;
         }
         .homepage-curriculum-edu-staff-img {
           display: flex;
           justify-content: center;
-          align-items: center;
-          width: 100%;
+          align-items: flex-start;
         }
         .homepage-curriculum-edu-staff-info {
           font-family: variables.$secondary-font;

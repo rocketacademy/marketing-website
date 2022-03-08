@@ -4,9 +4,20 @@
 
   .navbar-collapse.collapse.show {
     height: 100vh;
-
-    .button-container {
-      margin-top: 75%;
+    .navbar-nav {
+      height: 100vh;
+      position: relative;
+      padding-top: 30px;
+      .button-container {
+        position: absolute;
+        bottom: 10%;
+        width: 100%;
+      }
+    }
+  }
+  .navbar-items-container {
+    @include variables.md {
+      display: flex;
     }
   }
 
@@ -14,16 +25,22 @@
     border-radius: 7px;
     font-size: 14px;
     font-weight: 500;
-    width: 100%;
+    min-width: 120px;
     padding: 10px 0;
     @include variables.lg {
       width: 120px;
       padding: 6px 0;
       margin-left: 10px;
     }
+    a {
+      text-decoration: none;
+      color: variables.$red;
+    }
   }
   .navbar-btn:hover {
-    color: white;
+    a {
+      color: white;
+    }
   }
 
   .dropdown-toggle[aria-expanded="true"]:after {
@@ -54,7 +71,10 @@
     color: black;
     width: 80px;
     text-decoration: none;
-    text-align: center;
+    text-align: left;
+    @include variables.md {
+      text-align: center;
+    }
   }
 
   a.nav-link:hover {

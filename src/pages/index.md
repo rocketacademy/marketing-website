@@ -71,9 +71,9 @@ curriculum:
         Former Facebook engineer
 
         Masters in Computer Science from Stanford
-    - image: /img/homepage/mike-curriculum.png
+    - image: /img/homepage/mike-homepage.jpg
       name: MICHAEL ALBANO
-      position: Co-Head of Bootcamp
+      position: Head of Curriculum
       experience: >
         18 years’ experience in tech development, start ups, and education
 

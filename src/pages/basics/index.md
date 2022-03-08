@@ -78,7 +78,9 @@ admissions:
     - objective: Understand software engineering
 programdates:
   heading: Upcoming Program Dates
-  subheading: New Batch Every 6 Weeks
+  subheading: >
+    New Batch Every 6 Weeks
+    Every Monday, Thursday from 7.30pm-9.30pm
   sidebarlabel: Program Dates
 lessons:
   heading: Course Overview

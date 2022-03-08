@@ -43,29 +43,34 @@ export const IndexPageTemplate = ({
                   <StaticImage src="../../static/img/homepage/govtech-logo.png" alt="govtech logo" />
               </div>
               <div className="homepage-header-individual-company">
-                  <StaticImage src='../../static/img/homepage/xfers-logo.png' alt="xfers logo" />
+                  <StaticImage 
+                    src='../../static/img/homepage/xfers-logo.png' alt="xfers logo"
+                    placeholder="blurred"
+                    />
               </div>
               <div className="homepage-header-individual-company">
-                  <StaticImage src='../../static/img/homepage/ninetynineco-logo.png' alt="ninetynineco logo" />
+                  <StaticImage 
+                    src='../../static/img/homepage/ninetynineco-logo.png' alt="ninetynineco logo" 
+                    placeholder="blurred"
+                    />
               </div>
               <div className="homepage-header-individual-company">
-                  <StaticImage src='../../static/img/homepage/ninjavan-logo.png' alt="ninjavan logo" />
+                  <StaticImage 
+                    src='../../static/img/homepage/ninjavan-logo.png' alt="ninjavan logo"
+                    placeholder="blurred"
+                    />
               </div>
               <div className="homepage-header-individual-company">
-                  <StaticImage src='../../static/img/homepage/glints-logo.png' alt="glints logo" />
+                  <StaticImage 
+                    src='../../static/img/homepage/glints-logo.png' alt="glints logo" 
+                    placeholder="blurred"
+                    />
               </div>
               </div>
           </div> 
           <div className="col-12 col-md-6 order-1 order-md-2 homepage-header-col-right">
               <div className="homepage-header-col-right-img">
                   <PreviewCompatibleImage imageInfo={header.headerimage} />
-              </div>
-          </div>
-      </div>
-      <div className="container homepage-message-bubble-container">
-          <div className="row d-none d-md-block homepage-message-bubble-row">
-              <div className="homepage-message-bubble-container">
-              <StaticImage src='../../static/img/homepage/chat-icon.png' alt="chat bubble" width={70} />
               </div>
           </div>
       </div>
@@ -157,7 +162,7 @@ export const pageQuery = graphql`
             alt
             image {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
               }
             }
           }
@@ -169,7 +174,7 @@ export const pageQuery = graphql`
             heading
             image {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
               }
             }
           }
@@ -179,7 +184,7 @@ export const pageQuery = graphql`
             alt
             image {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
               }
             }
           }
@@ -193,7 +198,7 @@ export const pageQuery = graphql`
             type
             icon {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
               }
             }
           }
@@ -205,7 +210,7 @@ export const pageQuery = graphql`
             alt
             image {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
               }
             }
           }
@@ -213,7 +218,7 @@ export const pageQuery = graphql`
             experience
             image {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, height: 200, width: 200)
               }
             }
             position
@@ -225,7 +230,7 @@ export const pageQuery = graphql`
         formerstudents {
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
             }
           }
           position

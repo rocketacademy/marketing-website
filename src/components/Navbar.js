@@ -14,7 +14,7 @@ const SiteNavbar = () => {
         query NavbarLogo {
         rocketBrand: file(relativePath: {eq: "navbar-logo.png"}) {
             childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
             }
         }
     }
@@ -22,11 +22,15 @@ const SiteNavbar = () => {
 
     const navbarBrand = getImage(data.rocketBrand)
     return (
-        <Navbar expand="xl" >
+        <Navbar expand="md" >
             <Container>
                 <Navbar.Brand>
                     <Link to="/">
-                        <GatsbyImage image={navbarBrand} alt="rocket brand image" />
+                        <GatsbyImage 
+                            image={navbarBrand} 
+                            alt="rocket brand image"
+                            placeholder="blurred"
+                             />
                     </Link>
                 </Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -34,12 +38,12 @@ const SiteNavbar = () => {
                 <Nav>
                     <NavDropdown title="Courses" id="basic-nav-dropdown"> 
                         <NavDropdown.Item>
-                            <Link to="/courses/basics">
+                            <Link to="/basics">
                                 Coding Basics
                             </Link>
                         </NavDropdown.Item>
                         <NavDropdown.Item>
-                            <Link to="/courses/bootcamp">
+                            <Link to="/bootcamp">
                                 Software Engineering Bootcamp
                             </Link>
                         </NavDropdown.Item>
@@ -47,7 +51,11 @@ const SiteNavbar = () => {
                     <Nav.Link as={ Link } to="/faq" activeClassName="nav-active">FAQ</Nav.Link>
                     <Nav.Link as={ Link } to="/about" activeClassName="nav-active">About Us</Nav.Link>
                     <Nav.Item className="button-container">
-                        <Button variant="outline-primary" className="btn navbar-btn btn-outline-primary">Get Started</Button>
+                        <Button variant="outline-primary" className="btn navbar-btn btn-outline-primary">
+                            <Link to="/application">
+                                Get Started
+                            </Link>   
+                        </Button>
                     </Nav.Item>
                 </Nav>
                 </Navbar.Collapse>

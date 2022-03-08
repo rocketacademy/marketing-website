@@ -83,7 +83,7 @@ query aboutPageQuery {
         alt
         image {
           childImageSharp {
-            gatsbyImageData(layout: CONSTRAINED)
+            gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
           }
         }
       }
@@ -94,7 +94,7 @@ query aboutPageQuery {
           text
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
             }
           }
         }
@@ -109,7 +109,7 @@ query aboutPageQuery {
           alt
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
             }
           }
         }
@@ -119,11 +119,12 @@ query aboutPageQuery {
         profiles {
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, height: 200, width: 200)
             }
           }
           name
           position
+          experience
         }
       }
     }

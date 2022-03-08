@@ -33,16 +33,16 @@ const ApplicationForm = () => {
 
 
   const handleSubmit = (event) => {
-    console.log('inputs', inputs);
     const form = event.currentTarget;
-    console.log('form', form);
     
-    if (form.checkValidity() === false || checkCheckboxes(form) === false) {
+    if (form.checkValidity() === false && checkCheckboxes(form) === false) {
       event.preventDefault();
       event.stopPropagation();
     }
 
     setValidated(true);
+    event.preventDefault();
+
 
 
   fetch('/.netlify/functions/apply-now', {
@@ -71,15 +71,7 @@ const ApplicationForm = () => {
           <div className='col-12 col-md-8 application-form-header-text-col'>
             Start Your Coding Journey Today
           </div>
-          <div className='col-12 col-md-4 application-form-header-icon-col'>
-            <div className='application-form-header-image'>
-            <StaticImage 
-              src="../../static/img/bootcamp-page/bootcamp-projects-icon.png" 
-              alt="projects icon"
-              placholder="blurred"
-              layout="constrained"
-            />
-              </div>
+          <div className='col-12 col-md-4'>
           </div>
         </div>
       </div>

@@ -240,15 +240,18 @@
     }
   }
   .about-profiles-row {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    .about-leaders-profiles {
+    .about-leaders-col {
+      margin-bottom: 30px;
+      @include variables.md {
+        margin-bottom: 50px;
+      }
+    }
+    .about-leaders-profile-container {
       font-family: variables.$secondary-font;
       font-style: normal;
       font-size: 14px;
       line-height: 16px;
+      text-align: left;
 
       letter-spacing: 0.03em;
       @include variables.md {
@@ -257,6 +260,10 @@
       }
       .about-leaders-profile-name {
         font-weight: bold;
+      }
+      .about-leaders-profile-position {
+        padding-top: 15px;
+        padding-bottom: 15px;
       }
     }
   }
@@ -285,10 +292,18 @@
         align-items: center;
       }
       .about-leaders-jobs-button {
+        a {
+          text-decoration: none;
+          color: variables.$red;
+        }
         width: 100%;
       }
       .about-leaders-jobs-button:hover {
         color: white;
+        a {
+          text-decoration: none;
+          color: white;
+        }
       }
     }
   }

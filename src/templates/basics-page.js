@@ -97,7 +97,7 @@ query basicsPageQuery {
             alt
             image {
                 childImageSharp {
-                    gatsbyImageData(layout: FULL_WIDTH)
+                    gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
                 }
             }
         }
@@ -105,7 +105,7 @@ query basicsPageQuery {
             alt
             image {
                 childImageSharp {
-                    gatsbyImageData(layout: FULL_WIDTH)
+                    gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
                 }
             }
         }
@@ -122,7 +122,7 @@ query basicsPageQuery {
             heading
             image {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED)
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
               }
             }
             text
@@ -133,7 +133,7 @@ query basicsPageQuery {
           text
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
             }
           }
         }
@@ -143,7 +143,7 @@ query basicsPageQuery {
           quote
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
             }
           }
         }

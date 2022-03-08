@@ -23,9 +23,9 @@ export const checkCheckboxes = () => {
     checkBoxes.push(checkBox3);
 
     // if none checked, add required
-    if( document.querySelector('input[name="course_type1"]:checked') === false &&
-        document.querySelector('input[name="course_type2"]:checked') === false &&
-        document.querySelector('input[name="course_type3"]:checked') === false
+    if( document.querySelector('input[name="course_type1"]:checked') === null &&
+        document.querySelector('input[name="course_type2"]:checked') === null &&
+        document.querySelector('input[name="course_type3"]:checked') === null
     ){
         checkBoxes.forEach(e=> e.setAttribute("required",''));
         return false;
