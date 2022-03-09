@@ -9,6 +9,11 @@
       padding-top: 60px;
       padding-bottom: 60px;
     }
+
+    a {
+      color: white;
+      text-decoration: none;
+    }
     .footer-top-row {
       border-bottom: 1px solid white;
       @include variables.md {

@@ -1,6 +1,6 @@
 import React from 'react';
 import { StaticImage } from 'gatsby-plugin-image';
-
+import { Link } from 'gatsby';
 
 
 const Footer = () => {
@@ -13,35 +13,52 @@ const Footer = () => {
               <StaticImage className='desktop-brand' src="../img/rocket-brand-footer.png" alt="footer brand desktop logo" />
               <StaticImage className='mobile-brand' src="../img/rocket-footer-mobile-logo.png" alt="footer brand mobile logo" />
             </div>
-            <div className="col-12 col-md-4 footer-top-middle-col">
+            <div className="col-12 col-md-8 footer-top-middle-col">
               <div className="row footer-top-middle-row">
-                <div className="col-6 footer-top-middle-col">
-                    <p className="footer-top-middle-col-heading">COURSES</p>
+                <div className="col-6 col-md-4 footer-top-middle-col">
+                  <p className="footer-top-middle-col-heading">COURSES</p>
                     <ul className='footer-top-middle-col-list'>
-                        <li>Coding Basics</li>
-                        <li>Software Engineering Bootcamp</li>
+                        <li>
+                          <Link to="/basics">
+                            Coding Basics
+                          </Link>
+                          </li>
+                        <li>
+                          <Link to="/bootcamp">
+                            Software Engineering Bootcamp
+                          </Link>     
+                        </li>
                     </ul>
                 </div>
-                <div className="col-6 footer-top-middle-col">
-                  <p className="footer-top-right-col-heading">COMPANY</p>
-                  <ul className='footer-top-right-col-list'>
-                      <li>About us</li>
-                      <li>Careers</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-             <div className="col-12 col-md-4 footer-top-right-col">
-              <div className="row footer-top-right-row">
-                <div className="col-6 footer-top-right-col">
+                <div className="col-6 col-md-4 footer-top-right-col">
                   <p className="footer-top-right-col-heading">SUPPORT</p>
-                  <ul className='footer-top-right-col-list'>
-                      <li>FAQ</li>
-                      <li>hello@rocketacademy.co</li>
-                  </ul>
+                    <ul className='footer-top-right-col-list'>
+                      <li>
+                        <Link to="/faq">
+                          FAQ
+                        </Link>
+                      </li>
+                      <li>
+                        <a href="mailto:hello@rocketacademy.co" >
+                          hello@rocketacademy.co
+                        </a>
+                      </li>
+                    </ul>
                 </div>
-                <div className="col-6 footer-top-right-col">
-                     
+                <div className="col-6 col-md-4 footer-top-right-col">
+                   <p className="footer-top-right-col-heading">COMPANY</p>
+                    <ul className='footer-top-right-col-list'>
+                        <li>
+                          <Link to="/about">
+                            About us
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/careers">
+                            Careers
+                          </Link>
+                        </li>
+                    </ul>
                 </div>
               </div>
             </div>

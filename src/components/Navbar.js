@@ -48,8 +48,19 @@ const SiteNavbar = () => {
                             </Link>
                         </NavDropdown.Item>
                     </NavDropdown>
+                    <NavDropdown title="Company" id="basic-nav-dropdown"> 
+                        <NavDropdown.Item>
+                            <Link to="/about">
+                                About Us
+                            </Link>
+                        </NavDropdown.Item>
+                        <NavDropdown.Item>
+                            <Link to="/careers">
+                                Careers
+                            </Link>
+                        </NavDropdown.Item>
+                    </NavDropdown>
                     <Nav.Link as={ Link } to="/faq" activeClassName="nav-active">FAQ</Nav.Link>
-                    <Nav.Link as={ Link } to="/about" activeClassName="nav-active">About Us</Nav.Link>
                     <Nav.Item className="button-container">
                         <Button variant="outline-primary" className="btn navbar-btn btn-outline-primary">
                             <Link to="/application">

@@ -10,6 +10,7 @@ import '../styles/main.scss';
 import Layout from '../components/Layout';
 import { initializeCheckboxes } from '../helper/initializeCheckboxes';
 import { checkCheckboxes } from '../helper/initializeCheckboxes';
+import Modal from 'react-bootstrap/Modal';
 
 
 const ApplicationForm = () => {
@@ -23,7 +24,10 @@ const ApplicationForm = () => {
 
   const [inputs, setInputs] = useState({});
   
-  
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
   const handleChange = (event) => {
     const name = event.target.name;
@@ -38,27 +42,29 @@ const ApplicationForm = () => {
     if (form.checkValidity() === false && checkCheckboxes(form) === false) {
       event.preventDefault();
       event.stopPropagation();
+      setValidated(true);
+
+    } else {
+      event.preventDefault();
+      handleShow();
+
+      fetch('/.netlify/functions/apply-now', {
+        method: 'POST', 
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(inputs),
+      })
+      .then(response => response.json())
+      .then(data => {
+        console.log('Success:', data);
+      })
+      .catch((error) => {
+        console.error('Error:', error);
+      }); 
     }
 
-    setValidated(true);
-    event.preventDefault();
-
-
-
-  fetch('/.netlify/functions/apply-now', {
-    method: 'POST', 
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(inputs),
-  })
-  .then(response => response.json())
-  .then(data => {
-    console.log('Success:', data);
-  })
-  .catch((error) => {
-    console.error('Error:', error);
-  }); 
+   
     
   };
 
@@ -217,6 +223,17 @@ const ApplicationForm = () => {
       </Form.Group>
       <Button className="submit-button" type="submit">Submit form</Button>
     </Form>
+    <Modal show={show} onHide={handleClose}>
+      <Modal.Header closeButton>
+        <Modal.Title>Thanks for your application 🙂</Modal.Title>
+      </Modal.Header>
+      <Modal.Body>You'll receive an email confirmation from us shortly.</Modal.Body>
+      <Modal.Footer>
+        <Button variant="secondary" onClick={handleClose}>
+          Close
+        </Button>
+      </Modal.Footer>
+    </Modal>
     </div>
     </Layout>
   </>

@@ -22,7 +22,7 @@ export const BasicsPageTemplate = ({
 
   return (
       <>
-          <BasicsHeaderSection header={header} />
+          <BasicsHeaderSection header={header} upcomingCourseDates={upcomingCourseDates} />
           <BasicsContentSection 
             pagename={pagename}
             overview={overview}
@@ -34,7 +34,6 @@ export const BasicsPageTemplate = ({
             upcomingCourseDates={upcomingCourseDates}
           />
           <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
-          <BasicsNextBatchSection upcomingCourseDates={upcomingCourseDates} />
       </>
   )
 }
@@ -168,7 +167,7 @@ query basicsPageQuery {
           position
           image {
             childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 200, height: 200)
             }
           }
         }

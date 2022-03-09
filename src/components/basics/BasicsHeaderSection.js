@@ -1,9 +1,10 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react'
 import PreviewCompatibleImage from '../PreviewCompatibleImage';
+import BasicsNextBatchSection from './BasicsNextBatchSection';
 
 
-const BasicsHeaderSection = ({ header }) => {
+const BasicsHeaderSection = ({ header, upcomingCourseDates }) => {
   return (
     <div className='container-fluid basics-header-outer-container'>
         <div className='container basics-header-inner-container'>
@@ -40,8 +41,10 @@ const BasicsHeaderSection = ({ header }) => {
                     </div>
                 </div>
             </div>
-
         </div>
+        {upcomingCourseDates && (
+            <BasicsNextBatchSection upcomingCourseDates={upcomingCourseDates} />
+        )}
     </div> 
   )
 }

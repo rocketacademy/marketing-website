@@ -71,6 +71,47 @@
       }
     }
   }
+  .basics-next-batch-container {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid variables.$success;
+    border-radius: 15px;
+    padding: 20px 20px;
+    width: 90%;
+    bottom: -14%;
+    left: 5%;
+    background-color: white;
+    @include variables.md {
+      padding: 30px 30px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .basics-next-batch-button-container {
+      display: flex;
+      align-items: center;
+    }
+    .basics-next-batch-heading {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.03em;
+    }
+    .basics-next-batch-text {
+      font-family: variables.$primary-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 30px;
+      @include variables.md {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .basics-content-container {
@@ -291,24 +332,33 @@
         }
       }
       .basics-instructors-row-desktop {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
         display: none;
         @include variables.md {
-          display: block;
+          display: flex;
         }
       }
       .basics-instructors-row-mobile {
+        text-align: center;
+        .carousel-control-prev,
+        .carousel-control-next {
+          display: none;
+        }
+        .bootcamp-instructors-image-container {
+          display: flex;
+          justify-content: center;
+        }
         @include variables.md {
           display: none;
         }
+        .card {
+          border: none;
+
+          .card-body {
+            min-height: 350px;
+          }
+        }
       }
       .basics-instructors-profile {
-        @include variables.md {
-          width: 25%;
-        }
-
         .basics-instructors-name {
           font-family: variables.$secondary-font;
           font-style: normal;
@@ -648,64 +698,6 @@
           font-family: variables.$secondary-font;
         }
       }
-    }
-  }
-}
-
-.basics-next-batch-container {
-  position: absolute;
-  top: 76%;
-  left: 5%;
-  z-index: 100;
-  display: flex;
-  flex-direction: column;
-  border: 1px solid variables.$success;
-  border-radius: 15px;
-  padding: 20px 20px;
-  width: 90%;
-  background-color: white;
-  @include variables.md {
-    padding: 30px 30px;
-    flex-direction: row;
-    justify-content: space-between;
-    top: 67%;
-    left: 5%;
-  }
-  @include variables.lg {
-    padding: 30px 30px;
-    flex-direction: row;
-    justify-content: space-between;
-    top: 43%;
-    left: 5%;
-  }
-  @include variables.xl {
-    padding: 30px 30px;
-    flex-direction: row;
-    justify-content: space-between;
-    top: 40%;
-    left: 5%;
-  }
-  .basics-next-batch-button-container {
-    display: flex;
-    align-items: center;
-  }
-  .basics-next-batch-heading {
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 19px;
-    letter-spacing: 0.03em;
-  }
-  .basics-next-batch-text {
-    font-family: variables.$primary-font;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 20px;
-    line-height: 28px;
-    margin-bottom: 30px;
-    @include variables.md {
-      font-size: 24px;
-      line-height: 28px;
-      margin-bottom: 0;
     }
   }
 }

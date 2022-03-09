@@ -13,7 +13,7 @@ const BasicsInstructorsSection = ({ instructors }) => {
         <div className='row basics-instructors-row-desktop'>
             {instructors.profile.map((profile) => {
                 return (
-                    <div className='basics-instructors-profile'>
+                    <div className='col-12 col-md-3 basics-instructors-profile'>
                         <div className='basics-instructors-image'>
                         <PreviewCompatibleImage imageInfo={profile} />
                         </div>

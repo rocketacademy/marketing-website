@@ -8,6 +8,9 @@
       height: 100vh;
       position: relative;
       padding-top: 30px;
+      .nav-item.dropdown {
+        width: 100%;
+      }
       .button-container {
         position: absolute;
         bottom: 10%;

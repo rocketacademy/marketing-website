@@ -143,7 +143,7 @@ query bootcampPageQuery {
           name
           image {
             childImageSharp {
-              gatsbyImageData(layout: FULL_WIDTH)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, height: 200, width: 200)
             }
           }
         }
