@@ -75,13 +75,13 @@ general:
 
         3. Data analysts derive business insights through querying data and generating reports. This is typically a less skill-intensive job that more people can do, hence there is a comparatively lower average compensation and job security than software engineer and data scientist roles.
     - question: Do I need a Computer Science degree or diploma to be a software engineer?
-      answers: >
+      answers: >-
         1. 100% of Rocket Academy’s graduates do not have CS degrees or
         diplomas, and 100% are employed as software engineers.
 
-        2. Rocket Academy has even had successful graduates from unrelated fields like cooking and horse racing.
+        2. Rocket Academy has had successful graduates from unrelated fields like cooking and horse racing.
 
-        3. Bootcamps exist because universities are unable to produce enough engineers. Companies will hire great engineers, degree or not.
+        3. Bootcamps exist because universities are unable to produce enough engineers. Companies will hire great engineers, regardless of professional qualifications.
     - question: I’m bad at math. Can I be a software engineer?
       answers: |
         1. Math is not a pre-requisite for coding but logical thinking is.
