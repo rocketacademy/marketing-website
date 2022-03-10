@@ -74,7 +74,7 @@ admissions:
   sidebarlabel: Admission and Tuition
   subheading: No math or coding background required, just a computer with
     internet, webcam and passion!
-  cardheading: Free Limited time only
+  cardheading: Free for a limited time only
   prevcost: $S999
   currentcost: FREE
   objectives:
@@ -109,10 +109,10 @@ lessons:
           * Required Hardware and Software
           * Pre-Class Material
         * Section Introductions and Icebreakers
-      project: Lorem ipsum
+      project: \
     - week: 0-1
       number: "1"
-      title: Lorem ipsum
+      title: "     "
       preclass: |
         Module 1: Data Structures and Manipulation:
           * 1.1 Operations
@@ -123,10 +123,10 @@ lessons:
           * 2.3.1 Functions I
       inclass: |
         * Data Manipulation and Functions
-      project: Lorem ipsum
+      project: \
     - week: 0-1
       number: "2"
-      title: Lorem ipsum
+      title: "      "
       preclass: |
         Module 2: Structuring and Debugging Code
           * 2.3.2 Functions II
@@ -145,7 +145,7 @@ lessons:
         * Project 1: Scissors Paper Stone (Part 1)
     - week: "2"
       number: "3"
-      title: Lorem ipsum
+      title: "      "
       preclass: |
         Module 4: Scope
         * 4.1 Intro to Scope
@@ -158,7 +158,7 @@ lessons:
           * Project 1: Scissors Paper Stone (Part 2)
     - week: "2"
       number: "4"
-      title: Lorem ipsum
+      title: "       "
       preclass: |
         Module 3: Control Flow
         * 3.4 Loops
@@ -169,7 +169,7 @@ lessons:
         * Scissors Paper Stone
     - week: "3"
       number: "5"
-      title: Lorem ipsum
+      title: "      "
       preclass: |
         Module 1: Data Structures and Manipulation
         * 1.3 Arrays
@@ -181,7 +181,7 @@ lessons:
         * Project 2: Beat That!
     - week: "3"
       number: "6"
-      title: Lorem ipsum
+      title: "      "
       preclass: |
         Module 3: Logic and Control Flow
           * 3.6: Input Validation
@@ -190,10 +190,10 @@ lessons:
           * 5.2 CSS
       inclass: |
         * Pairwork: Beat That!
-      project: Lorem ipsum
+      project: \
     - week: "4"
       number: "7"
-      title: Lorem ipsum
+      title: "       "
       preclass: |
         Module 1: Data Structures and Manipulation
         * 1.4 Objects
@@ -207,17 +207,17 @@ lessons:
         * Project 3: Blackjack
     - week: "4"
       number: "8"
-      title: Lorem ipsum
+      title: "       "
       preclass: |
         Module 6: Document Object Model
         * 6.1 Browser Application with DOM
         * 6.2 DOM Manipulation
       inclass: |
         * Pairwork: Blackjack
-      project: Lorem ipsum
+      project: \
     - week: "5"
       number: "9"
-      title: Lorem ipsum
+      title: "      "
       preclass: |
         Module 2: Structuring and Debugging Code
         * 2.5: Advanced Debugger with Sources Tab
@@ -229,7 +229,7 @@ lessons:
         * Project 3: Blackjack (More Comfortable)
     - week: "5"
       number: "10"
-      title: Lorem ipsum
+      title: "       "
       preclass: Lorem ipsum
       inclass: |
         * Project presentations
