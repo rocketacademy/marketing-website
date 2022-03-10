@@ -107,19 +107,13 @@ general:
 
         3. Many of our most successful graduates have had prior coding experience before joining Rocket. Our Software Engineering Bootcamp then provided them with the conceptual foundations, interview prep, and professional network they needed to complete their career switch.
     - question: Can I join Rocket’s courses while working a full-time job?
-      answers: >
-        1. Coding Basics is Rocket’s introductory course and a pre-requisite for
-        Software Engineering Bootcamp. Basics is a part-time course, roughly 10
-        hours of work per week, and meets from 7-9pm on Tuesday evenings and
-        1-3pm on Saturday afternoons.
+      answers: >-
+        1. Software Engineering Bootcamp has both full-time and part-time
+        options.
 
-        2. Software Engineering Bootcamp has both full-time and part-time options.
+        2. Full-Time Bootcamp requires students to commit 10am-6pm SGT Mon-Fri for 24 weeks. We discourage working a full-time job while enrolled in the full-time Bootcamp.
 
-
-        1. Full-Time Bootcamp requires students to commit 10am-6pm SGT Mon-Fri for 24 weeks. We discourage working a full-time job while enrolled in the full-time Bootcamp.
-
-
-        2. Part-Time Bootcamp requires students to commit 7.30-9.30pm SGT Tuesday evenings, and 10am-12pm SGT Saturday mornings, with roughly 20 hours of work per week for 48 weeks.
+        3. Part-Time Bootcamp requires students to commit 7.30-9.30pm SGT Tuesday evenings, and 10am-12pm SGT Saturday mornings, with roughly 20 hours of work per week for 48 weeks.
     - question: How many classes can I miss?
       answers: >
         1. Classes are mandatory, live Zoom meetings where we review and
