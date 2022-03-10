@@ -89,8 +89,8 @@ general:
         3. If you’re unsure whether coding is for you, try Coding Basics!
     - question: I’ve tried coding but find it difficult. Can I still be a software
         engineer?
-      answers: >
-        1. It is normal to find coding challenging - this common among all
+      answers: >-
+        1. It is normal to find coding challenging - this is common among all
         software engineers. If you’re wondering whether you’re struggling more
         than normal, try Coding Basics.
 
@@ -98,14 +98,14 @@ general:
 
         3. Rocket Academy fosters a tight-knit community of learners that help each other. You will always have peers working through the same material that you can work together with and get help from. With time, you will learn.
     - question: I can code but struggle to get a job. Should I still join Rocket Academy?
-      answers: >
+      answers: >-
         1. If you already code but need help getting a software job, chat with
         us and we can advise whether self-studying or joining a course is
         appropriate.
 
-        2. If you already code and join Rocket, we may waive the Coding Basics requirement depending on your experience.
+        2. If you already have some prior experience/knowledge in coding and would like to join Rocket's Bootcamp program, we may waive the Coding Basics requirement - reach out to us at hello at rocketacademy.co to find out more!
 
-        3. Many of our most successful graduates had coding experience prior to joining Rocket. Software Engineering Bootcamp provided them with the conceptual foundations, interview prep, and professional network they needed to complete their career switch.
+        3. Many of our most successful graduates have had prior coding experience before joining Rocket. Our Software Engineering Bootcamp then provided them with the conceptual foundations, interview prep, and professional network they needed to complete their career switch.
     - question: Can I join Rocket’s courses while working a full-time job?
       answers: >
         1. Coding Basics is Rocket’s introductory course and a pre-requisite for
