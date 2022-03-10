@@ -115,11 +115,11 @@ general:
 
         3. Part-Time Bootcamp requires students to commit 7.30-9.30pm SGT Tuesday evenings, and 10am-12pm SGT Saturday mornings, with roughly 20 hours of work per week for 48 weeks.
     - question: How many classes can I miss?
-      answers: >
+      answers: >-
         1. Classes are mandatory, live Zoom meetings where we review and
         solidify concepts through discussion and exercises.
 
-        2. There is no strict attendance requirement for Rocket’s courses, but students that are not performing will be removed from their course.
+        2. There is no strict attendance requirement for Rocket’s courses, but students who are not performing will be removed from their course.
 
         3. If you need to miss class for any reason, please let your instructor know ahead of time.
     - question: What payment plans do you offer?
