@@ -7,6 +7,9 @@ import { Link } from 'gatsby';
 
 const CourseCard = ({ details, upcomingCourseDates }) => {
 
+  console.log('details', details);
+  console.log(upcomingCourseDates);
+  
   let courseLink;
 
   if (details.heading === 'Basics') {

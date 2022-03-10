@@ -2,8 +2,11 @@ import React from 'react'
 
 
 const NextBatchDates = ({ details, upcomingCourseDates }) => {
+
     if (upcomingCourseDates) {
-        const relevantDates = upcomingCourseDates.filter(course => course.node.summary.includes(details.heading));
+        
+        const relevantDates = upcomingCourseDates.filter(course =>
+            course.node.summary.includes(details.heading));
 
         let nextStartDate = '';
         let nextEndDate = '';

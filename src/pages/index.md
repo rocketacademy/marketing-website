@@ -3,7 +3,8 @@ templateKey: index-page
 title: Become a Software Engineer
 header:
   heading: Become a Software Engineer
-  subheading: 100% of our Coding Bootcamp grads have received software engineering
+  subheading:
+    100% of our Coding Bootcamp grads have received software engineering
     offers from companies like 99.co, Xfers and GovTech.
   headerimage:
     alt: kai's photo
