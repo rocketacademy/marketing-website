@@ -155,12 +155,12 @@ softwareengineeringbootcamp:
   sidebarlabel: Software Engineering Bootcamp
   questions:
     - question: What languages will I learn in Bootcamp?
-      answers: >
+      answers: >-
         1. Rocket’s courses focus on teaching coding concepts, not languages.
         This is because coding concepts are applicable to all languages, but
         language syntax may only be relevant to that specific language.
 
-        2. Rocket teaches Software Engineering Bootcamp with the most popular languages and frameworks such as JavaScript, Python, SQL, Bash, Express, and React.
+        2. Rocket's Software Engineering Bootcamp teaches the most popular languages and frameworks such as JavaScript, Python, SQL, Bash, Express, and React.
 
         3. More important than languages, Bootcamp concepts will be applicable to almost all languages, frameworks, and apps.
     - question: What career support does Rocket provide?
