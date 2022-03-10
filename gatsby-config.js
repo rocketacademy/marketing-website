@@ -95,7 +95,7 @@ module.exports = {
         ],
         // options to retrieve the next 10 upcoming events
         timeMin: (new Date().toISOString()),
-        maxResults: 10,
+        maxResults: 5,
         singleEvents: true,
         orderBy: 'startTime',
       }
