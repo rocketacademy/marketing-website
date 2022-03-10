@@ -45,12 +45,12 @@ general:
 
         3. Rocket provides a powerful network of peers and alumni that you can draw on for your future career.
     - question: Does Rocket offer in-person classes?
-      answers: >
+      answers: >-
         1. Rocket has no physical campus and conducts classes over Zoom and
         Slack. This helps reduce course fees and commute time, while still
         achieving the best bootcamp outcomes in Singapore.
 
-        2.Students code together daily over video call and group chat. There are fewer than 10 students per instructor, enabling interactive classes where students ask questions and get feedback.
+        2. Students code together daily over video call and group chat. There are fewer than 10 students per instructor, enabling interactive classes where students ask questions and get feedback.
     - question: How is Rocket different from online courses?
       answers: >
         1. Rocket Academy is live and cohort-based. Students ask questions in
@@ -60,18 +60,20 @@ general:
         2. Rocket Academy cultivates a strong alumni network that significantly helps graduates with their careers.
     - question: What is the difference between software engineering, programming, and
         coding?
-      answers: There is no practical difference. Software engineering is a more
-        professional term.
+      answers: There is no practical difference. Software engineering is a
+        professional term describing strong proficiency in following a
+        systematic process of understanding requirements, working effectively
+        with stakeholders, and developing a solution that fulfils their needs.
     - question: What is the difference between software engineering, data science, and
         data analytics?
-      answers: >
+      answers: >-
         1. Software engineers build apps and the underlying “pipes” for data to
         flow through. There are many parts of software to work on, hence the
         greater demand for software roles than data roles.
 
         2. Data scientists build statistical models to improve products, for example to make spam classifications, product recommendations, or match drivers and riders. Data scientists typically do the math, and software engineers build the product.
 
-        3. Data analysts derive business insights through querying data and generating reports. This is typically a less skill-intensive job that more people can do, hence lower average compensation and job security than software engineer and data scientist roles.
+        3. Data analysts derive business insights through querying data and generating reports. This is typically a less skill-intensive job that more people can do, hence there is a comparatively lower average compensation and job security than software engineer and data scientist roles.
     - question: Do I need a Computer Science degree or diploma to be a software engineer?
       answers: >
         1. 100% of Rocket Academy’s graduates do not have CS degrees or
