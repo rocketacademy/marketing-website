@@ -79,12 +79,9 @@ leadership:
       experience: >
         Teresa is an accomplished marketing professional, with expertise in
         designing demand generation and digital marketing strategies to increase
-        profit margins for global multibillion-dollar organisations. She has
-        worked in regional and global marketing positions in established firms
-        such as Razer, Colliers, Cushman & Wakefield, and Jones Lang Lasalle.
-        Every day, Teresa is excited about creating and realising plans that
+        profit margins for global multibillion-dollar organisations. She
+        received her MBA with Merit from the University of Nottingham, for which
+        she received a distinction in her thesis on behavioral economics. Every
+        day, Teresa is excited about creating and realising plans that
         accelerate growth and revenue across multiple time zones and cultures.
-
-
-        Teresa received her MBA with Merit from the University of Nottingham, for which she received a distinction in her thesis on behavioral economics. To maintain a logical approach, she often uses math and data to back her decisions.
 ---
