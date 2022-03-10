@@ -122,12 +122,14 @@ general:
         2. There is no strict attendance requirement for Rocket’s courses, but students who are not performing will be removed from their course.
 
         3. If you need to miss class for any reason, please let your instructor know ahead of time.
-    - question: How do I pay for Rocket Academy's courses?
+    - question: How much do Rocket Academy's courses cost?
       answers: >-
         1. Coding Basics is currently free for all interested students. Apply
         now!
 
-        2. Software Engineering Bootcamp tuition fees are payable upfront, via credit card or PayNow. Payment is required prior to the start of the course to secure your spot in the program.
+        2. Details on Software Engineering Bootcamp tuition fees can be found here. We accept payment via credit card, or if you are based in Singapore, PayNow. 
+
+        3. Payment is required prior to the start of the course to secure your spot in the program.
 codingbasics:
   heading: Coding Basics
   sidebarlabel: Coding Basics
