@@ -75,7 +75,7 @@ leadership:
         Now, Foong pursues both passions in operations and software engineering at Rocket Academy. He keeps operations running smoothly for the delivery of quality education and helps others pursue their goals in software engineering.
     - image: /img/homepage/teresa-homepage.jpeg
       name: TERESA CHANG
-      position: Head of Marketing
+      position: Head of Growth
       experience: >
         Teresa is an accomplished marketing professional, with expertise in
         designing demand generation and digital marketing strategies to increase
