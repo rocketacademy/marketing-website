@@ -4,7 +4,8 @@ title: Coding Basics
 pagename: basics
 header:
   heading: Coding Basics
-  subheading: A live and online, 6-week part-time  intro to coding course for beginners, taught in JavaScript.
+  subheading: A live and online, 5-week part-time intro to coding course for
+    beginners, taught in JavaScript.
   image1:
     image: /img/basics-page/basics-header-desktop.jpg
     alt: basics page header desktop image
@@ -20,34 +21,37 @@ overview:
   sidebarlabel: Overview
   studentexperience:
     - image: /img/basics-page/basics-computer.png
-      heading: Are you thinking to switch your careers?
-      text: >
+      heading: Are you thinking about a career switch?
+      text: |
         Join Coding Basics to see if you enjoy coding before joining a bootcamp.
     - image: /img/basics-page/basics-tech.png
       heading: Are you a tech worker?
-      text: >
+      text: |
         Boost your career by learning how software engineers think and work.
   testimonial:
     quote: >
-      “It has been very rewarding. I feel proud of all the projects I've done and have a better sense of what to learn as a software engineer.”
+      “It has been very rewarding. I feel proud of all the projects I've done
+      and have a better sense of what to learn as a software engineer.”
     image: /img/homepage/glints-color-logo.png
     name: PERRY LIM
-    position: Former Chef Software Engineer at Glints
+    position: Former Chief Software Engineer at Glints
   learningstyle:
     heading: Learn Online With Guidance
     card:
       - image: /img/basics-page/basics-1.png
         heading: Time-efficient remote learning
-        text: >
-          Pre-class lectures, readings, and coding exercises independently.
+        text: |
+          Pre-class lectures, readings, and coding exercises done independently.
       - image: /img/basics-page/basics-2.png
         heading: Live class twice a week
         text: >
-          Clarify concepts with instructors, network with peers, and apply what you’ve learned via pair programming.
+          Clarify concepts with instructors, network with peers, and apply what
+          you’ve learned via pair programming.
       - image: /img/basics-page/basics-3.png
         heading: Expert help over Slack
         text: >
-          Get on-demand help over group chat any time of day. Never let yourself get stuck!
+          Get on-demand help over group chat any time of day. Never let yourself
+          get stuck!
 curriculum:
   heading: 💻 Technical Knowledge you will learn
   sidebarlabel: Curriculum
@@ -68,8 +72,9 @@ instructors:
 admissions:
   heading: Admission and Tuition
   sidebarlabel: Admission and Tuition
-  subheading: No math or coding background required, just a computer with internet, webcam and passion!
-  cardheading: Free Limited time only
+  subheading: No math or coding background required, just a computer with
+    internet, webcam and passion!
+  cardheading: Free for a limited time only
   prevcost: $S999
   currentcost: FREE
   objectives:
@@ -80,14 +85,16 @@ programdates:
   heading: Upcoming Program Dates
   subheading: >
     New Batch Every 6 Weeks
-    Every Monday, Thursday from 7.30pm-9.30pm GMT +08
+    Every Monday and Thursday from 7.30pm-9.30pm GMT +08
   sidebarlabel: Program Dates
 lessons:
   heading: Course Overview
   sidebarlabel: Course Overview
-  subheading: "Coding Basics applies a flipped classroom model that consists of 2 components: self-learning and live classes. See full course curriculum here"
+  subheading:
+    "Coding Basics applies a flipped classroom model that consists of 2
+    components: self-learning and live classes. See full course curriculum here"
   lesson:
-    - week: "0-1"
+    - week: 0-1
       number: "0"
       title: Pre-Course Briefing
       preclass: |
@@ -105,10 +112,10 @@ lessons:
           * Required Hardware and Software
           * Pre-Class Material
         * Section Introductions and Icebreakers
-      project:
-    - week: "0-1"
+      project: \
+    - week: 0-1
       number: "1"
-      title:
+      title: "     "
       preclass: |
         Module 1: Data Structures and Manipulation:
           * 1.1 Operations
@@ -119,10 +126,10 @@ lessons:
           * 2.3.1 Functions I
       inclass: |
         * Data Manipulation and Functions
-      project:
-    - week: "0-1"
+      project: \
+    - week: 0-1
       number: "2"
-      title:
+      title: "      "
       preclass: |
         Module 2: Structuring and Debugging Code
           * 2.3.2 Functions II
@@ -133,14 +140,15 @@ lessons:
           * 3.3 Boolean Operators
       inclass: |
         * If Statements, Boolean Operators
-      project: |
+      project: |-
         Scissors Paper Stone 
+
         * Coding Strategies: Getting Started
         * Project Planning: Scissors Paper Stone
         * Project 1: Scissors Paper Stone (Part 1)
     - week: "2"
       number: "3"
-      title:
+      title: "      "
       preclass: |
         Module 4: Scope
         * 4.1 Intro to Scope
@@ -153,7 +161,7 @@ lessons:
           * Project 1: Scissors Paper Stone (Part 2)
     - week: "2"
       number: "4"
-      title:
+      title: "       "
       preclass: |
         Module 3: Control Flow
         * 3.4 Loops
@@ -164,7 +172,7 @@ lessons:
         * Scissors Paper Stone
     - week: "3"
       number: "5"
-      title:
+      title: "      "
       preclass: |
         Module 1: Data Structures and Manipulation
         * 1.3 Arrays
@@ -176,7 +184,7 @@ lessons:
         * Project 2: Beat That!
     - week: "3"
       number: "6"
-      title:
+      title: "      "
       preclass: |
         Module 3: Logic and Control Flow
           * 3.6: Input Validation
@@ -185,10 +193,10 @@ lessons:
           * 5.2 CSS
       inclass: |
         * Pairwork: Beat That!
-      project:
+      project: \
     - week: "4"
       number: "7"
-      title:
+      title: "       "
       preclass: |
         Module 1: Data Structures and Manipulation
         * 1.4 Objects
@@ -202,17 +210,17 @@ lessons:
         * Project 3: Blackjack
     - week: "4"
       number: "8"
-      title:
+      title: "       "
       preclass: |
         Module 6: Document Object Model
         * 6.1 Browser Application with DOM
         * 6.2 DOM Manipulation
       inclass: |
         * Pairwork: Blackjack
-      project:
+      project: \
     - week: "5"
       number: "9"
-      title:
+      title: "      "
       preclass: |
         Module 2: Structuring and Debugging Code
         * 2.5: Advanced Debugger with Sources Tab
@@ -224,8 +232,8 @@ lessons:
         * Project 3: Blackjack (More Comfortable)
     - week: "5"
       number: "10"
-      title:
-      preclass:
+      title: "       "
+      preclass: Lorem ipsum
       inclass: |
         * Project presentations
         * Course Feedback and Reviews
