@@ -14,7 +14,10 @@ header:
     - reason: Part-time or Full-time
 overview:
   heading: Become a Software Engineer
-  subheading: Software Engineering Bootcamp is Rocket Academy's flagship career conversion course, primarily taught in JavaScript and Python. On successful completion of the Bootcamp course, students can expect to be job-ready full-stack software engineers.
+  subheading: Software Engineering Bootcamp is Rocket Academy's flagship career
+    conversion course, primarily taught in JavaScript and Python. On successful
+    completion of the Bootcamp course, students can expect to be job-ready
+    full-stack software engineers.
   sidebarlabel: Overview
   reasons:
     - image: /img/bootcamp-page/bootcamp-projects-icon.png
@@ -25,14 +28,19 @@ overview:
       text: Unlimited interview prep
   testimonial:
     quote: >
-      “Rocket Academy gave me a learning structure curated from industry experience. I would not have known what to focus my energy and time on if I were studying on my own.”
+      “Rocket Academy gave me a learning structure curated from industry
+      experience. I would not have known what to focus my energy and time on if
+      I were studying on my own.”
     image: /img/homepage/govtech-color-logo.png
     name: SAMANTHA KOH
     position: Former Business Analyst  | Software Engineer at GovTech
 curriculum:
   heading: Curriculum
   sidebarlabel: Curriculum
-  subheading: Rocket Academy focuses on coding concepts, not languages. Throughout the program, we cover key topics in software engineering that are highly relevant to today's industry, subject to minor alterations to match the changing demands of our students and industry needs.
+  subheading: Rocket Academy focuses on coding concepts, not languages. Throughout
+    the program, we cover key topics in software engineering that are highly
+    relevant to today's industry, subject to minor alterations to match the
+    changing demands of our students and industry needs.
   sections:
     - heading: Technical Excellence
       section1: Frontend and backend frameworks
@@ -106,40 +114,54 @@ instructors:
 admissions:
   heading: The Admissions Process
   sidebarlabel: Admissions
-  subheading: |
-    Rocket’s Basics course is recommended as a pre-requisite for joining our Bootcamp program. Learn more about [Rocket’s Coding Basics](https://codingbasics.rocketacademy.co/).
+  subheading: >-
+    Rocket’s Basics course is recommended as a pre-requisite for joining our
+    Bootcamp program. Learn more about [Rocket’s Coding
+    Basics](https://codingbasics.rocketacademy.co/).
+
+
+    If you already have some prior experience/knowledge in coding and would like to join Rocket's Bootcamp program, we may waive the Coding Basics requirement - reach out to us at hello at rocketacademy.co to find out more!
   steps:
     - image: /img/basics-page/basics-1.png
       heading: Applicant screening
       text: >
-        Submit a project you’ve done in Basics. We will review the project according to these guidelines.
+        Submit a project you’ve done in Basics. We will review the project
+        according to these guidelines.
     - image: /img/basics-page/basics-2.png
       heading: Video application
       text: >
-        Submit a 3-5 minute video describing a concept taught in our Basics course.
+        Submit a 3-5 minute video describing a concept taught in our Basics
+        course.
     - image: /img/basics-page/basics-3.png
       heading: Join the program
-      text: >
+      text: |
         If you pass the video application, we will send you a registration link.
   suitabilityheading: Is this program right for me?
-  suitabilitysubheading: "The Rocket Bootcamp is designed for motivated people who have basic skills in JavaScript, and aptitude for problem solving, and strong communication and collaboration skills. We welcome students from all work experiences and fields of study who are looking to boost their career. If you are:"
+  suitabilitysubheading: "The Rocket Bootcamp is designed for motivated people who
+    have basic skills in JavaScript, and aptitude for problem solving, and
+    strong communication and collaboration skills. We welcome students from all
+    work experiences and fields of study who are looking to boost their career.
+    If you are:"
   suitabilityobjectives:
     - objective: Proficiency with technical syntax and tools
     - objective: Code quality (naming, code comments)
-    - objective: Computational thinking (i.e. ability to translate application requirements to code)
+    - objective: Computational thinking (i.e. ability to translate application
+        requirements to code)
 tuition:
   heading: Tuition
   sidebarlabel: Tuition
   subheading: Fees are payable upfront before course commencement.
-  payment: 🇸🇬  We plan to offer a deferred payment option for Singaporeans that will be more expensive than upfront or during-course instalments. If this is of interest to you, please let us know when you apply!
+  payment: Fees are payable upfront before course commencement.
   card:
     - frequency: PART TIME
       prevcost: S$9,999
       currentcost: S$4,999
-      text: Part-Time Bootcamp covers the same material over twice the time (12 months)
+      text: Part-Time Bootcamp covers the same material over twice the time (12
+        months)
     - frequency: FULL TIME
       prevcost: S$9,999
       currentcost: S$4,999
+      text: "     "
 programdates:
   heading: Upcoming Program Dates
   sidebarlabel: Program Dates
@@ -148,7 +170,10 @@ course:
   heading: Course Overview
   sidebarlabel: Course Overview
   subheading: >
-    Our Full-Time Bootcamp schedule runs from Mondays to Fridays, 10am-12pm SGT. Part-Time Bootcamp covers the same material over twice the time (12 months), meeting Tuesdays 7:30-9:30pm SGT and Saturdays 10am-12pm SGT. See full course curriculum here
+    Our Full-Time Bootcamp schedule runs from Mondays to Fridays, 10am-12pm SGT.
+    Part-Time Bootcamp covers the same material over twice the time (12 months),
+    meeting Tuesdays 7:30-9:30pm SGT and Saturdays 10am-12pm SGT. See full
+    course curriculum here
   schedule:
     - heading: 1-3
       project: "Front-End Application: Video Poker"
