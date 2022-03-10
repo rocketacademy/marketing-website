@@ -123,11 +123,11 @@ general:
 
         3. If you need to miss class for any reason, please let your instructor know ahead of time.
     - question: What payment plans do you offer?
-      answers: >
+      answers: >-
         1. Coding Basics is currently free for all interested students. Apply
         now!
 
-        2. Software Engineering Bootcamp tuition is payable upfront.
+        2. Software Engineering Bootcamp tuition fees are payable upfront. Payment is required prior to the start of the course to secure your spot in the program.
 codingbasics:
   heading: Coding Basics
   sidebarlabel: Coding Basics
