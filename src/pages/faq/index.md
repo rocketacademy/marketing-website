@@ -147,9 +147,9 @@ codingbasics:
         2. The concepts we learn in Basics will give students the foundation to better harness frameworks such as React or Redux during Software Engineering Bootcamp.
     - question: Will Basics teach me how to make a website?
       answers: Coding Basics teaches basic coding syntax, tools, and computational
-        thinking, not web development. Rocket accepts top Basics graduates to
-        Software Engineering Bootcamp where we dive deeper into web and general
-        application development.
+        thinking, not web development. Rocket accepts top Basics students into
+        our Software Engineering Bootcamp where we dive deeper into web and
+        general application development.
 softwareengineeringbootcamp:
   heading: Software Engineering Bootcamp
   sidebarlabel: Software Engineering Bootcamp
