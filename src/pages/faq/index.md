@@ -174,8 +174,4 @@ softwareengineeringbootcamp:
         3. Comprehensive and unlimited resume and portfolio review.
 
         4. Comprehensive and unlimited referrals to companies in Rocket Academy’s network (most tech companies in Singapore so far). Rocket Academy only accepts high-performing Coding Basics students to Software Engineering Bootcamp, and companies trust that Rocket attracts and produces top talent.
-    - question: Do you offer refunds?
-      answers: In general, Rocket Academy's courses are non-refundable once the
-        program has commenced. If you are facing an extenuating circumstance,
-        please reach out to our Admissions team for further assistance.
 ---
