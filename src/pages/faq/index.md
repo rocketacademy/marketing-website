@@ -19,15 +19,13 @@ general:
 
         3. Basics is free.
     - question: Why choose Rocket’s Bootcamp course?
-      answers: >
-        
-        1. Rocket’s past students received offers from companies such as GovTech, Ninja Van, Xfers, 99.co, Glints, and more.
+      answers: >-
+        1. Rocket’s past students received offers from companies such as
+        GovTech, Ninja Van, Xfers, 99.co, Glints, and more.
 
+        2. Rocket’s Bootcamp is longer, comprehensively covering topics in frontend, backend, cloud, and algorithms that other bootcamps typically skim over, resulting in a more standout portfolio.
 
-        2. Rocket’s Bootcamp is longer (6 months FT, 12 months PT), comprehensively covering topics in frontend, backend, cloud, and algorithms that other bootcamps typically skim over, resulting in a more standout portfolio.
-
-
-        3. Rocket’s Bootcamp only accepts top students from Coding Basics, guaranteeing a strong network of classmates and alumni.
+        3. Rocket’s Bootcamp only accepts top students, guaranteeing a strong network of classmates and alumni.
     - question: Why choose Rocket over university or polytechnic courses?
       answers: >
         1. Rocket is project-based, not exam-based. You will graduate with a
