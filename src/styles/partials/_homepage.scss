@@ -95,11 +95,11 @@
 .homepage-success-outer-container {
   background-color: variables.$light;
   .homepage-success-inner-container {
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     @include variables.md {
-      padding-top: 60px;
-      padding-bottom: 60px;
+      padding-top: 30px;
+      padding-bottom: 30px;
     }
     .homepage-success-heading {
       font-family: variables.$primary-font;
@@ -110,7 +110,6 @@
       text-align: center;
       padding: 20px 0;
       @include variables.md {
-        padding: 40px 0 60px 0;
         font-size: 36px;
         line-height: 48px;
       }
@@ -137,15 +136,13 @@
 }
 
 .homepage-courses-container {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   @include variables.md {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
-  .homepage-courses-heading-row {
-    padding-bottom: 40px;
-  }
+
   .homepage-courses-heading-col-right {
     display: flex;
     justify-content: flex-start;
@@ -220,6 +217,10 @@
           font-weight: bold;
           font-size: 16px;
           line-height: 22px;
+          a {
+            text-decoration: none;
+            color: black;
+          }
         }
         .course-card-btn:hover {
           width: 100%;
@@ -235,11 +236,11 @@
 
 .homepage-curriculum-outer-container {
   background-color: variables.$light;
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   @include variables.md {
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .homepage-curriculum-heading-row {
     padding-bottom: 40px;
@@ -345,12 +346,6 @@
   font-family: variables.$secondary-font;
   font-style: normal;
 
-  padding-top: 40px;
-  padding-bottom: 40px;
-  @include variables.md {
-    padding-top: 60px;
-    padding-bottom: 60px;
-  }
   .homepage-formerstudents-col {
     padding-top: 15px;
     padding-bottom: 15px;
@@ -358,30 +353,40 @@
       padding-top: 0;
       padding-bottom: 0;
     }
-    .homepage-formerstudents-company {
-      min-height: 88px;
+    .homepage-formerstudents-container {
+      min-height: 3px;
       display: flex;
-      align-items: center;
-    }
-    .homepage-formerstudents-testimonial {
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 28px;
-    }
-    .homepage-formerstudents-info {
-      .homepage-formerstudent-name {
-        font-weight: bold;
-        font-size: 14px;
-        line-height: 26px;
-
-        letter-spacing: 0.03em;
-        text-transform: uppercase;
+      justify-content: center;
+      flex-direction: column;
+      @include variables.md {
+        min-height: 430px;
+        justify-content: space-between;
       }
-      .homepage-formerstudent-position {
+      .homepage-formerstudents-company {
+        min-height: 88px;
+        display: flex;
+        align-items: center;
+      }
+      .homepage-formerstudents-testimonial {
         font-weight: normal;
-        font-size: 14px;
-        line-height: 22px;
-        color: rgba(112, 112, 112, 1);
+        font-size: 18px;
+        line-height: 28px;
+      }
+      .homepage-formerstudents-info {
+        .homepage-formerstudent-name {
+          font-weight: bold;
+          font-size: 14px;
+          line-height: 26px;
+
+          letter-spacing: 0.03em;
+          text-transform: uppercase;
+        }
+        .homepage-formerstudent-position {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 22px;
+          color: rgba(112, 112, 112, 1);
+        }
       }
     }
   }

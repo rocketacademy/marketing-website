@@ -2,7 +2,6 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import ListGroup from 'react-bootstrap/ListGroup';
 import Carousel from 'react-bootstrap/Carousel';
-import Dropdown from 'react-bootstrap/Dropdown';
 import { Accordion } from 'react-bootstrap';
 
 

@@ -1,7 +1,7 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react'
 import Card from 'react-bootstrap/Card';
 import GetStartedButton from '../GetStartedButton';
+import PreviewCompatibleImage from '../PreviewCompatibleImage';
 
 
 const BootcampTuitionSection = ({ tuition }) => {
@@ -22,8 +22,7 @@ const BootcampTuitionSection = ({ tuition }) => {
                                 <div className='bootcamp-tuition-top'>
 
                                     <div className='bootcamp-tuition-cardheading'>
-                                        <StaticImage src="../../../static/img/homepage/schedule-icon.png" />
-                                        <span>{card.frequency}</span>
+                                        <PreviewCompatibleImage imageInfo={card.frequency} />
                                     </div>
                                     <span className='bootcamp-tuition-prevcost'>
                                         {card.prevcost}&nbsp;
@@ -40,9 +39,6 @@ const BootcampTuitionSection = ({ tuition }) => {
                     </div>
                 )
             })}
-        </div>
-        <div className='bootcamp-tuition-payment'>
-            {tuition.payment}
         </div>
         <div className='bootcamp-tuition-get-started-button-container'>
             <GetStartedButton />

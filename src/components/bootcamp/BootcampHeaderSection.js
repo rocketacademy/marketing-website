@@ -1,9 +1,10 @@
 import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react'
+import NextBatchSection from '../NextBatchSection';
 import PreviewCompatibleImage from '../PreviewCompatibleImage';
 
 
-const BasicsHeaderSection = ({ header }) => {
+const BootcampHeaderSection = ({ header, upcomingCourseDates, pagename }) => {
     console.log('header.image', header.image);
 
   return (
@@ -38,11 +39,11 @@ const BasicsHeaderSection = ({ header }) => {
                         <PreviewCompatibleImage imageInfo={header.image} />
                     </div>
                 </div>
-            </div>
-
+            </div>      
         </div>
+        <NextBatchSection upcomingCourseDates={upcomingCourseDates} pagename={pagename} />
     </div> 
   )
 }
 
-export default BasicsHeaderSection
+export default BootcampHeaderSection

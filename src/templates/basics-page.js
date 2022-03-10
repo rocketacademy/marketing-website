@@ -4,7 +4,6 @@ import { graphql } from 'gatsby';
 import BasicsHeaderSection from '../components/basics/BasicsHeaderSection';
 import BasicsContentSection from '../components/basics/BasicsContentSection';
 import StartCodingSection from '../components/StartCodingSection';
-import BasicsNextBatchSection from '../components/basics/BasicsNextBatchSection';
 
 
 // eslint-disable-next-line
@@ -22,7 +21,7 @@ export const BasicsPageTemplate = ({
 
   return (
       <>
-          <BasicsHeaderSection header={header} upcomingCourseDates={upcomingCourseDates} />
+          <BasicsHeaderSection header={header} upcomingCourseDates={upcomingCourseDates} pagename={pagename} />
           <BasicsContentSection 
             pagename={pagename}
             overview={overview}

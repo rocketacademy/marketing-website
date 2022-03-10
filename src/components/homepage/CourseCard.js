@@ -3,9 +3,17 @@ import Card from 'react-bootstrap/Card';
 import PreviewCompatibleImage from '../PreviewCompatibleImage';
 import Button from 'react-bootstrap/Button';
 import NextBatchDates from './NextBatchDates';
-
+import { Link } from 'gatsby';
 
 const CourseCard = ({ details, upcomingCourseDates }) => {
+
+  let courseLink;
+
+  if (details.heading === 'Basics') {
+    courseLink = '/basics';
+  } else {
+    courseLink = '/bootcamp';
+  }
 
   return (
     <Card>
@@ -27,7 +35,11 @@ const CourseCard = ({ details, upcomingCourseDates }) => {
                       upcomingCourseDates={upcomingCourseDates} 
                     />
                 </ul>
-                <Button variant="outline-success" className="btn btn-outline-success course-card-btn">Learn More</Button>
+                <Button variant="outline-success" className="btn btn-outline-success course-card-btn">
+                  <Link to={courseLink}>
+                    Learn More
+                  </Link>
+                </Button>
             </Card.Text>
         </Card.Body>
     </Card>

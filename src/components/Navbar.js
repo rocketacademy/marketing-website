@@ -54,18 +54,16 @@ const SiteNavbar = () => {
                                 About Us
                             </Link>
                         </NavDropdown.Item>
-                        <NavDropdown.Item>
-                            <Link to="/careers">
-                                Careers
-                            </Link>
+                        <NavDropdown.Item href="https://angel.co/company/rocketacademy/jobs" target="_blank"  rel="noopener noreferrer">
+                            Careers
                         </NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link as={ Link } to="/faq" activeClassName="nav-active">FAQ</Nav.Link>
                     <Nav.Item className="button-container">
                         <Button variant="outline-primary" className="btn navbar-btn btn-outline-primary">
-                            <Link to="/application">
+                            <a href="/application" target="_blank"  rel="noopener noreferrer">
                                 Get Started
-                            </Link>   
+                            </a>   
                         </Button>
                     </Nav.Item>
                 </Nav>

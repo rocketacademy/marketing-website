@@ -62,9 +62,9 @@ instructors:
   heading: Meet some of our instructors
   sidebarlabel: Instructors
   profile:
-    - image: /img/homepage/mike-curriculum.png
-      name: MICHAEL ALBANO
-      position: Co-Head of Bootcamp
+    - image: /img/basics-page/basics-bryan-image.jpg
+      name: BRYAN TAN
+      position: Head of Basics
 admissions:
   heading: Admission and Tuition
   sidebarlabel: Admission and Tuition
@@ -80,7 +80,7 @@ programdates:
   heading: Upcoming Program Dates
   subheading: >
     New Batch Every 6 Weeks
-    Every Monday, Thursday from 7.30pm-9.30pm
+    Every Monday, Thursday from 7.30pm-9.30pm GMT +08
   sidebarlabel: Program Dates
 lessons:
   heading: Course Overview

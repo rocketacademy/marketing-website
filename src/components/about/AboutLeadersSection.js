@@ -1,6 +1,5 @@
 import React from 'react'
 import PreviewCompatibleImage from '../PreviewCompatibleImage'
-import { Link } from 'gatsby'
 
 
 const AboutLeadersSection = ({ leadership }) => {
@@ -45,9 +44,9 @@ const AboutLeadersSection = ({ leadership }) => {
             </div>
             <div className='about-leaders-jobs-button-container'>
                 <div className='btn btn-outline-primary about-leaders-jobs-button'>
-                    <Link to="https://angel.co/company/rocketacademy/jobs">
+                    <a href="https://angel.co/company/rocketacademy/jobs" target="_blank"  rel="noopener noreferrer">
                         See Job Openings
-                    </Link>
+                    </a>
                 </div>
             </div>
         </div>

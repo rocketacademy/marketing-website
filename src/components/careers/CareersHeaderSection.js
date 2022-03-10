@@ -13,11 +13,19 @@ const CareersHeaderSection = ({ header }) => {
                 <p className='careers-header-subheading'>
                     {header.subheading}
                 </p>
-                <button className='btn btn-primary careers-header-btn'>See open roles</button>
+                <button className='btn btn-primary careers-header-btn'>
+                    <a href="https://angel.co/company/rocketacademy/jobs" target="_blank"  rel="noopener noreferrer">
+                        See open roles
+                    </a>
+                </button>
             </div>
             <div className='col-12 col-md-6 careers-header-col-right'>
                 <PreviewCompatibleImage imageInfo={header.headerimage} />
-                <button className='btn btn-primary careers-header-btn-right'>See open roles</button>
+                <button className='btn btn-primary careers-header-btn-right'>
+                    <a href="https://angel.co/company/rocketacademy/jobs" target="_blank"  rel="noopener noreferrer">
+                        See open roles
+                    </a>
+                </button>
             </div>
         </div>
     </div>

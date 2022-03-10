@@ -3,7 +3,7 @@
   .about-header-inner-container {
     padding: 20px 0;
     @include variables.md {
-      padding: 80px 0;
+      padding: 40px 0;
     }
     .about-header-text-container {
       display: flex;
@@ -90,7 +90,6 @@
   align-items: center;
   justify-content: center;
   width: 70%;
-  padding-bottom: 40px;
 
   @include variables.md {
     padding-bottom: 60px;
@@ -119,9 +118,6 @@
       p {
         padding: 20px;
         margin-bottom: 0;
-        @include variables.md {
-          padding: 50px 20px 20px 20px;
-        }
       }
     }
     .about-rocket-top-text {
@@ -222,10 +218,7 @@
   padding-top: 30px;
   padding-bottom: 50px;
   text-align: center;
-  @include variables.md {
-    padding-top: 50px;
-    padding-bottom: 80px;
-  }
+
   .about-leaders-heading {
     font-family: variables.$primary-font;
     font-style: normal;
@@ -236,7 +229,6 @@
     @include variables.md {
       font-size: 36px;
       line-height: 48px;
-      padding: 50px;
     }
   }
   .about-profiles-row {
@@ -277,7 +269,6 @@
     @include variables.md {
       flex-direction: row;
       justify-content: space-between;
-      margin-top: 70px;
       padding: 20px 30px;
     }
     .about-leaders-jobs-content {

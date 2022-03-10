@@ -94,7 +94,7 @@ const BasicsCourseSection = ({ lessons }) => {
                             <Accordion.Item eventKey={index + 1}>
                                 <Accordion.Header>{weekLabel}</Accordion.Header>
                                         {lessons.lesson.filter(lesson => lesson.week === week).map((lesson, index) => {
-                                            
+
                                             return (
                                                 <Accordion.Body key={index} >
                                                     <p className='basics-course-accordion-lesson'>

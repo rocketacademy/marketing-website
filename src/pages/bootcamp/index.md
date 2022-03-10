@@ -97,6 +97,9 @@ instructors:
   heading: Meet some of our instructors
   sidebarlabel: Instructors
   profile:
+    - image: /img/homepage/kai-curriculum.png
+      name: KAI YUAN NEO
+      position: Founder & CEO
     - image: /img/bootcamp-page/bootcamp-mike-profile.jpg
       name: MIKE ALBANO
       position: Head of Curriculum
@@ -133,11 +136,11 @@ tuition:
   subheading: Fees are payable upfront before course commencement.
   payment: 🇸🇬  We plan to offer a deferred payment option for Singaporeans that will be more expensive than upfront or during-course instalments. If this is of interest to you, please let us know when you apply!
   card:
-    - frequency: PART TIME
+    - frequency: /img/homepage/part-time-icon.png
       prevcost: S$9,999
       currentcost: S$4,999
       text: Part-Time Bootcamp covers the same material over twice the time (12 months)
-    - frequency: FULL TIME
+    - frequency: /img/homepage/full-time-icon.png
       prevcost: S$9,999
       currentcost: S$4,999
 programdates:

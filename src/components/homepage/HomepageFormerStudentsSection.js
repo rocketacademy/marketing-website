@@ -10,6 +10,7 @@ const HomepageFormerStudentsSection = ({ formerstudents }) => {
           return (
             <>
             <div className='col-12 col-md-4 homepage-formerstudents-col'>
+              <div className='homepage-formerstudents-container'>
               <div className='homepage-formerstudents-company'>
                 <PreviewCompatibleImage imageInfo={student} />
               </div>
@@ -19,6 +20,7 @@ const HomepageFormerStudentsSection = ({ formerstudents }) => {
               <div className='homepage-formerstudents-info'>
                 <p className='homepage-formerstudent-name'>{student.studentname}</p>
                 <p className='homepage-formerstudent-position'>{student.position}</p>
+              </div>
               </div>
             </div>
             </>

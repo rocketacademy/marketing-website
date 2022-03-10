@@ -1,5 +1,4 @@
 import React from 'react'
-import CarouselSlide from '../CarouselSlide';
 import Carousel from 'react-bootstrap/Carousel';
 import PreviewCompatibleImage from '../PreviewCompatibleImage';
 import Card from 'react-bootstrap/Card';

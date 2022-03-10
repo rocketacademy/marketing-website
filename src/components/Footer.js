@@ -65,14 +65,19 @@ const Footer = () => {
           </div>
           <div className="row footer-bottom-row">
                 <div className="col-12 col-md-6 order-2 order-md-1 footer-bottom-row-text-col">
-                  © Rocket Academy. 2021 All rights reserved.
-                  <span className='privacy-text'><strong> Privacy and cookies policy</strong></span> 
+                  © Rocket Academy, 2022 All rights reserved.
                 </div>
                 <div className='col-12 col-md-6 order-1 order-md-2 footer-bottom-row-icons'>
                   <div className='icons-container'>
-                    <StaticImage className="icon" src="../img/social/facebook-logo.png" alt="facebook logo" />
-                    <StaticImage className="icon" src="../img/social/instagram-logo.png" alt="instagram logo" />
-                    <StaticImage className="icon" src="../img/social/linkedin-logo.png" alt="linkedin logo" />
+                    <a href="https://www.facebook.com/rocketacademy.co/" target="_blank"  rel="noopener noreferrer">
+                      <StaticImage className="icon" src="../img/social/facebook-logo.png" alt="facebook logo" />
+                    </a>
+                    <a href="https://www.instagram.com/rocketacademy.co/?hl=en" target="_blank"  rel="noopener noreferrer">
+                      <StaticImage className="icon" src="../img/social/instagram-logo.png" alt="instagram logo" />
+                    </a>
+                    <a href="https://www.linkedin.com/school/rocketacademyco/?originalSubdomain=sg" target="_blank"  rel="noopener noreferrer">
+                      <StaticImage className="icon" src="../img/social/linkedin-logo.png" alt="linkedin logo" />
+                    </a>
                   </div>
                 </div>
               </div>

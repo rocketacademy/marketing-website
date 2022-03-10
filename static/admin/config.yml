@@ -28,7 +28,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
-                  { label: Subheading, name: subheading, widget: string },
+                  { label: Subheading, name: subheading, widget: text },
                   {
                     label: Headerimage,
                     name: headerimage,
@@ -87,7 +87,7 @@ collections:
                         { label: Type, name: type, widget: string },
                         { label: Icon, name: icon, widget: image },
                         { label: Heading, name: heading, widget: string },
-                        { label: Subheading, name: subheading, widget: string },
+                        { label: Subheading, name: subheading, widget: text },
                         { label: Prevprice, name: prevprice, widget: string },
                         {
                           label: Currentprice,
@@ -108,7 +108,7 @@ collections:
                 [
                   { label: Smalltext, name: smalltext, widget: string },
                   { label: Heading, name: heading, widget: string },
-                  { label: Subheading, name: subheading, widget: string },
+                  { label: Subheading, name: subheading, widget: text },
                   {
                     label: Image,
                     name: image,
@@ -163,7 +163,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
-                  { label: Subheading, name: subheading, widget: string },
+                  { label: Subheading, name: subheading, widget: text },
                 ],
             }
           - {
@@ -251,7 +251,7 @@ collections:
               default: faq-page,
             }
           - { label: Title, name: title, widget: string }
-          - { label: Pagename, name: pagename, widget: string }
+          - { label: Pagename, name: pagename, widget: hidden }
           - {
               label: Header,
               name: header,
@@ -333,7 +333,7 @@ collections:
               default: basics-page,
             }
           - { label: Title, name: title, widget: string }
-          - { label: Pagename, name: pagename, widget: string }
+          - { label: Pagename, name: pagename, widget: hidden }
           - {
               label: Header,
               name: header,
@@ -341,7 +341,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
-                  { label: Subheading, name: subheading, widget: string },
+                  { label: Subheading, name: subheading, widget: text },
                   {
                     label: Image1,
                     name: image1,
@@ -467,7 +467,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
-                  { label: Subheading, name: subheading, widget: string },
+                  { label: Subheading, name: subheading, widget: text },
                   { label: Sidebarlabel, name: sidebarlabel, widget: string },
                   { label: Cardheading, name: cardheading, widget: string },
                   { label: Prevcost, name: prevcost, widget: string },
@@ -488,7 +488,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
-                  { label: Subheading, name: subheading, widget: string },
+                  { label: Subheading, name: subheading, widget: text },
                   { label: Sidebarlabel, name: sidebarlabel, widget: string },
                 ],
             }
@@ -499,7 +499,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
-                  { label: Subheading, name: subheading, widget: string },
+                  { label: Subheading, name: subheading, widget: text },
                   { label: Sidebarlabel, name: sidebarlabel, widget: string },
                   {
                     label: Lesson,
@@ -528,7 +528,7 @@ collections:
               default: bootcamp-page,
             }
           - { label: Title, name: title, widget: string }
-          - { label: Pagename, name: pagename, widget: string }
+          - { label: Pagename, name: pagename, widget: hidden }
           - {
               label: Header,
               name: header,
@@ -536,7 +536,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
-                  { label: Subheading, name: subheading, widget: string },
+                  { label: Subheading, name: subheading, widget: text },
                   {
                     label: Image,
                     name: image,
@@ -596,7 +596,7 @@ collections:
                 [
                   { label: Heading, name: heading, widget: string },
                   { label: Sidebarlabel, name: sidebarlabel, widget: string },
-                  { label: Subheading, name: subheading, widget: string },
+                  { label: Subheading, name: subheading, widget: text },
                   {
                     label: Sections,
                     name: sections,
@@ -716,7 +716,7 @@ collections:
                 [
                   { label: Heading, name: heading, widget: string },
                   { label: Sidebarlabel, name: sidebarlabel, widget: string },
-                  { label: Subheading, name: subheading, widget: string },
+                  { label: Subheading, name: subheading, widget: text },
                   { label: Payment, name: payment, widget: string },
                   {
                     label: Card,
@@ -724,7 +724,7 @@ collections:
                     widget: list,
                     fields:
                       [
-                        { label: Frequency, name: frequency, widget: string },
+                        { label: Frequency, name: frequency, widget: image },
                         { label: Prevcost, name: prevcost, widgt: string },
                         {
                           label: Currentcost,
@@ -744,7 +744,7 @@ collections:
                 [
                   { label: Heading, name: heading, widget: string },
                   { label: Sidebarlabel, name: sidebarlabel, widget: string },
-                  { label: Subheading, name: subheading, widget: string },
+                  { label: Subheading, name: subheading, widget: text },
                 ],
             }
           - {
@@ -794,7 +794,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
-                  { label: Subheading, name: subheading, widget: string },
+                  { label: Subheading, name: subheading, widget: text },
                   {
                     label: Headerimage,
                     name: headerimage,

@@ -23,7 +23,7 @@ export const BootcampPageTemplate = ({
 }) => {
   return (
     <>
-      <BootcampHeaderSection header={header} />
+      <BootcampHeaderSection header={header} upcomingCourseDates={upcomingCourseDates} pagename={pagename} />
       <BootcampContentSection 
               pagename={pagename}
               overview={overview}
@@ -174,7 +174,11 @@ query bootcampPageQuery {
         subheading
         card {
           currentcost
-          frequency
+          frequency {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+            }
+          }
           prevcost
           text
         }

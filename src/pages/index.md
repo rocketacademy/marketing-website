@@ -6,7 +6,7 @@ header:
   subheading: 100% of our Coding Bootcamp grads have received software engineering offers from companies like 99.co, Xfers and GovTech.
   headerimage:
     alt: kai's photo
-    image: /img/homepage/kai-homepage-header.jpg
+    image: /img/homepage/homepage_image.png
 success:
   heading: Everything You Need to Succeed
   blurbs:

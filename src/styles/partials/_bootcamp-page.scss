@@ -64,6 +64,51 @@
       }
     }
   }
+  .basics-next-batch-container {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid variables.$success;
+    border-radius: 15px;
+    padding: 20px 20px;
+    width: 90%;
+    bottom: -22%;
+    left: 5%;
+    background-color: white;
+    @include variables.md {
+      bottom: -11%;
+      padding: 30px 30px;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    @include variables.xxl {
+      left: 24%;
+    }
+    .basics-next-batch-button-container {
+      display: flex;
+      align-items: center;
+    }
+    .basics-next-batch-heading {
+      font-weight: 600;
+      font-size: 14px;
+      line-height: 19px;
+      letter-spacing: 0.03em;
+    }
+    .basics-next-batch-text {
+      font-family: variables.$primary-font;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 20px;
+      line-height: 28px;
+      margin-bottom: 30px;
+      @include variables.md {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 0;
+      }
+    }
+  }
 }
 
 .bootcamp-content-container {
@@ -80,7 +125,7 @@
       }
       .bootcamp-overview-heading {
         padding-top: 30px;
-        padding-bottom: 40px;
+        padding-bottom: 10px;
         font-family: variables.$secondary-font;
         font-style: normal;
         font-weight: bold;
@@ -94,7 +139,6 @@
       .bootcamp-overview-subheading {
         font-size: 14px;
         line-height: 24px;
-        padding-bottom: 20px;
         @include variables.md {
           font-size: 16px;
           line-height: 26px;
@@ -108,7 +152,6 @@
         }
         .bootcamp-overview-slide-container {
           .card {
-            min-height: 180px;
             border: none;
             .card-title {
               font-weight: 600;
@@ -121,7 +164,7 @@
 
       .bootcamp-overview-row-mobile {
         .card {
-          min-height: 180px;
+          min-height: 160px;
           border: none;
           .bootcamp-overview-image-container {
             width: 100%;
@@ -146,7 +189,6 @@
       }
       .bootcamp-testimonial-row {
         background-color: variables.$light;
-        margin-top: 20px;
         padding-bottom: 10px;
         @include variables.md {
           padding: 20px 20px;
@@ -215,16 +257,15 @@
         font-weight: bold;
         font-size: 20px;
         line-height: 28px;
-        padding-top: 50px;
+        padding-top: 20px;
         padding-bottom: 10px;
         @include variables.md {
           font-size: 32px;
           line-height: 44px;
+          padding-top: 30px;
         }
       }
-      .bootcamp-curriculum-subheading {
-        padding-bottom: 20px;
-      }
+
       .card {
         border-radius: 10px;
 
@@ -336,6 +377,8 @@
           font-family: variables.$secondary-font;
         }
         .accordion-body {
+          padding-top: 0;
+          padding-bottom: 5px;
           ul {
             padding-left: none;
             list-style: none;
@@ -348,12 +391,10 @@
     }
 
     .basics-instructors-container {
-      padding-top: 30px;
-      padding-bottom: 30px;
       @include variables.md {
         padding-left: 50px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+
+        padding-bottom: 20px;
       }
       .basics-instructors-heading {
         font-family: variables.$secondary-font;
@@ -429,11 +470,11 @@
         font-weight: bold;
         font-size: 20px;
         line-height: 28px;
-        padding-top: 30px;
         padding-bottom: 30px;
         @include variables.md {
           font-size: 32px;
           line-height: 44px;
+          padding-top: 20px;
         }
       }
       .bootcamp-admissions-subheading {
@@ -442,7 +483,7 @@
         }
       }
       .card-body {
-        min-height: 290px;
+        min-height: 250px;
         .card-title {
           font-family: variables.$secondary-font;
           font-style: normal;
@@ -478,6 +519,9 @@
         }
         .card {
           border: none;
+          .card-body {
+            min-height: 230px;
+          }
         }
       }
       .bootcamp-admissions-row-mobile {
@@ -544,12 +588,11 @@
     }
 
     .bootcamp-tuition-container {
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 10px;
+      padding-bottom: 10px;
       @include variables.md {
         padding-left: 50px;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        padding-top: 20px;
       }
       .bootcamp-tuition-heading {
         font-family: variables.$secondary-font;
@@ -586,6 +629,7 @@
           margin-bottom: 20px;
           @include variables.md {
             margin-bottom: 30px;
+            min-height: 258px;
           }
           .bootcamp-tuition-top {
             margin: 20px;
@@ -599,7 +643,7 @@
 
               letter-spacing: 0.03em;
               text-transform: uppercase;
-
+              padding-bottom: 20px;
               color: #999999;
             }
             .bootcamp-tuition-prevcost {
@@ -661,10 +705,6 @@
       .bootcamp-tuition-get-started-button-container {
         padding-top: 20px;
         padding-bottom: 20px;
-        @include variables.md {
-          padding-top: 30px;
-          padding-bottom: 30px;
-        }
       }
     }
     .bootcamp-program-dates-container {
@@ -674,13 +714,11 @@
         padding-left: 50px;
       }
       .bootcamp-program-dates-heading {
-        padding-top: 30px;
         padding-bottom: 10px;
         font-weight: bold;
         font-size: 20px;
         line-height: 28px;
         @include variables.md {
-          padding-top: 30px;
           padding-bottom: 30px;
           font-size: 32px;
           line-height: 44px;
@@ -690,7 +728,7 @@
         font-weight: 600;
         font-size: 16px;
         line-height: 24px;
-        padding-bottom: 40px;
+        padding-bottom: 20px;
         @include variables.md {
           font-size: 18px;
           line-height: 26px;
@@ -771,7 +809,7 @@
     }
     .bootcamp-course-container {
       font-family: variables.$secondary-font;
-      padding-top: 40px;
+      padding-top: 20px;
       font-style: normal;
       @include variables.md {
         padding-left: 50px;
@@ -802,7 +840,7 @@
           display: block;
         }
         .nav.nav-tabs {
-          padding-top: 40px;
+          padding-top: 20px;
           .nav-link {
             border: none;
             margin: 10px 40px 0 10px;
@@ -855,7 +893,7 @@
           display: none;
         }
         .accordion-body {
-          padding: 20px;
+          padding: 20px 20px 0;
         }
         .bootcamp-course-accordion-lesson {
           font-size: 16px;

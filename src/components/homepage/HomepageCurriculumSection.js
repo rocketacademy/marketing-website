@@ -1,6 +1,5 @@
 import React from 'react'
 import PreviewCompatibleImage from '../PreviewCompatibleImage'
-import { StaticImage } from 'gatsby-plugin-image';
 
 
 const HomepageCurriculumSection = ({ curriculum }) => {
@@ -12,11 +11,6 @@ const HomepageCurriculumSection = ({ curriculum }) => {
                   <p className='curriculum-smalltext'>{curriculum.smalltext}</p>
                   <h2 className='curriculum-header'>{curriculum.heading}</h2>
                   <p className='curriculum-subheading'>{curriculum.subheading}</p>
-                  <p className='curriculum-link'>Learn more about us&nbsp;&nbsp;
-                    <span className='curriculum-arrow-icon'>
-                      <StaticImage src='../../../static/img/homepage/right-arrow.png' alt="right arrow icon" />
-                    </span>
-                  </p>
                 </div>
                 <div className='col-12 col-md-6 homepage-curriculum-heading-col-right'>
                   <PreviewCompatibleImage imageInfo={curriculum.image} />

@@ -1,4 +1,3 @@
-import { StaticImage } from 'gatsby-plugin-image';
 import React from 'react'
 import { useEffect, useState } from 'react';
 import countries from '../helper/countries';
@@ -11,7 +10,7 @@ import Layout from '../components/Layout';
 import { initializeCheckboxes } from '../helper/initializeCheckboxes';
 import { checkCheckboxes } from '../helper/initializeCheckboxes';
 import Modal from 'react-bootstrap/Modal';
-
+import { navigate } from 'gatsby';
 
 const ApplicationForm = () => {
 
@@ -26,7 +25,11 @@ const ApplicationForm = () => {
   
   const [show, setShow] = useState(false);
 
-  const handleClose = () => setShow(false);
+  const handleClose = () => {
+    setShow(false);
+    navigate('/');
+  } 
+  
   const handleShow = () => setShow(true);
 
   const handleChange = (event) => {
@@ -223,7 +226,7 @@ const ApplicationForm = () => {
       </Form.Group>
       <Button className="submit-button" type="submit">Submit form</Button>
     </Form>
-    <Modal show={show} onHide={handleClose}>
+    <Modal show={show} onHide={handleClose} centered>
       <Modal.Header closeButton>
         <Modal.Title>Thanks for your application 🙂</Modal.Title>
       </Modal.Header>
