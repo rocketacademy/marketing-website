@@ -2,19 +2,10 @@ import React from 'react'
 import Card from 'react-bootstrap/Card'
 import PreviewCompatibleImage from '../PreviewCompatibleImage';
 import Carousel from 'react-bootstrap/Carousel';
-import { remark } from 'remark';
-import recommended from 'remark-preset-lint-recommended';
-import remarkHtml from 'remark-html';
 import MarkdownContent from '../ConvertMarkdown';
 
 
 const BootcampAdmissionsSection = ({ admissions }) => {
-    console.log('admissions', admissions.suitability);
-
-    admissions.subheading = remark()
-                    .use(recommended)
-                    .use(remarkHtml)
-                    .processSync(admissions.subheading).toString();
 
   return (
     <div className='container bootcamp-admissions-container'>
