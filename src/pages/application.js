@@ -223,7 +223,10 @@ const ApplicationForm = () => {
               value="basics"
               onChange={handleChange}
               required />
-            <Form.Check.Label>Coding Basics</Form.Check.Label>
+            <Form.Check.Label>
+              <h6>Coding Basics</h6>
+              <p>I just want to learn something new</p>
+            </Form.Check.Label>
           </Form.Check>
           <Form.Check>
             <Form.Check.Input 
@@ -232,7 +235,10 @@ const ApplicationForm = () => {
               value="basics;bootcamp"
               onChange={handleChange}
               required />
-            <Form.Check.Label>Coding Basics and Software Engineering Bootcamp</Form.Check.Label>
+            <Form.Check.Label>
+              <h6>Coding Basics and Software Engineering Bootcamp</h6>
+              <p>I'm new to coding but I am thinking about becoming a software engineer</p>
+            </Form.Check.Label>
           </Form.Check>
           <Form.Check>
             <Form.Check.Input 
@@ -241,7 +247,10 @@ const ApplicationForm = () => {
               value="bootcamp"
               onChange={handleChange}
               required />
-            <Form.Check.Label>Software Engineering Bootcamp</Form.Check.Label>
+            <Form.Check.Label>
+              <h6>Software Engineering Bootcamp</h6>
+              <p>I have some experience with coding but want to learn more advanced software engineering concepts</p>
+            </Form.Check.Label>
             <Form.Control.Feedback type="invalid">Please select a course.</Form.Control.Feedback>
           </Form.Check>
         </Form.Group>
