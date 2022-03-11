@@ -2,7 +2,6 @@ import React from 'react'
 import PreviewCompatibleImage from '../PreviewCompatibleImage';
 
 const AboutRocketSection = ({ rocket }) => {
-  console.log('rocket image', rocket.image);
 
   return (
     <div className='container about-rocket-container'>

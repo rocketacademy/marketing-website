@@ -29,8 +29,6 @@ export const FaqPageTemplate = ({
 
 const FaqPage = ({ data }) => {
     const { frontmatter } = data.markdownRemark;
-
-        console.log('frontmatte', frontmatter.general);
         
     return (
         <Layout>

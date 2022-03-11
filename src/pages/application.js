@@ -47,7 +47,6 @@ const ApplicationForm = () => {
     } else {
       event.preventDefault();
       handleShow();
-      console.log('inputs', inputs);
       fetch('/.netlify/functions/apply-now', {
         method: 'POST', 
         headers: {

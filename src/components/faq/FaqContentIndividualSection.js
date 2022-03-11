@@ -6,7 +6,6 @@ const FaqContentIndividualSection = ({ content }) => {
 
     const questions = content.questions;
 
-    console.log('csidebarlabel', content.sidebarlabel);
     
   return (
     <div className='faq-content-col-accordion'>

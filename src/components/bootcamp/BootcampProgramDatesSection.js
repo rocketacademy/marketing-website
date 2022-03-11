@@ -15,7 +15,6 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
   }
 
   const BootcampProgramDatesRow = ({ batch }) => {
-    console.log('batch', batch);
 
     const startDate = new Date(batch.node.start.dateTime);
     const deadline = startDate.setDate(startDate.getDate() - 2);

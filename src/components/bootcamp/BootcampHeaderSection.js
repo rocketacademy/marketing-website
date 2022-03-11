@@ -5,7 +5,6 @@ import PreviewCompatibleImage from '../PreviewCompatibleImage';
 
 
 const BootcampHeaderSection = ({ header, upcomingCourseDates, pagename }) => {
-    console.log('header.image', header.image);
 
   return (
     <div className='container-fluid bootcamp-header-outer-container'>

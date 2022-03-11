@@ -4,7 +4,6 @@ import '../../styles/main.scss';
 
 
 const AboutHeaderSection = ({ header, image }) => {
-  console.log('header image', image);
   
   return (
     <div className='container-fluid about-header-outer-container'>
