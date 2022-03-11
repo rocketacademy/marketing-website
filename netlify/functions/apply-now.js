@@ -12,35 +12,18 @@ exports.handler = async (event, context) => {
     const hubspotClient = new hubspot.Client({"apiKey":process.env.HUBSPOT_API_KEY});
 
     const data = JSON.parse(event.body)
- 
-    const course_type = [];
-    Object.values(data).forEach(value => {
-      if (value.includes('bootcamp') || value.includes('basics')) {
-        course_type.push(value);
-      }
-    })
 
     let bootcampFunnelStatus;
 
-    if (course_type.includes('basics')) {
+    if (data.course_type.includes('basics')) {
       bootcampFunnelStatus = 'basics_apply';
     } else {
       bootcampFunnelStatus = 'bootcamp_apply';
     }
 
-
     const hubspotData = {
       properties: {
-        firstname: data.firstname,
-        lastname: data.lastname,
-        email: data.email,
-        country: data.country,
-        age: data.age,
-        phone: data.phone,
-        experience: data.experience,
-        source: data.source,
-        background: data.background,
-        course_type: course_type.join(';'),
+        ...data,
         bootcamp_funnel_status: bootcampFunnelStatus,
       }
     };

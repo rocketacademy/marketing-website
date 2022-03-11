@@ -2,6 +2,8 @@ import React from 'react'
 import Nav from 'react-bootstrap/Nav';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { Link } from 'gatsby';
+import { AnchorLink } from 'gatsby-plugin-anchor-links';
+
 
 const SidebarSection = ({ sectionArray, pagename }) => {
   
@@ -38,9 +40,9 @@ const SidebarSection = ({ sectionArray, pagename }) => {
 
               return (
                 <Dropdown.Item>
-                  <Link to={`/${pagename}/#${sectionId}`}>
+                  <AnchorLink to={`/${pagename}/#${sectionId}`}>
                     {section.sidebarlabel}
-                  </Link>
+                  </AnchorLink>
                 </Dropdown.Item>
               )
             })}

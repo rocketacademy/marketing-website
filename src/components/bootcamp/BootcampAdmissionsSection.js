@@ -5,6 +5,7 @@ import Carousel from 'react-bootstrap/Carousel';
 import { remark } from 'remark';
 import recommended from 'remark-preset-lint-recommended';
 import remarkHtml from 'remark-html';
+import MarkdownContent from '../ConvertMarkdown';
 
 
 const BootcampAdmissionsSection = ({ admissions }) => {
@@ -20,7 +21,7 @@ const BootcampAdmissionsSection = ({ admissions }) => {
         <div className='bootcamp-admissions-header' id={admissions.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
             {admissions.heading}
         </div>
-        <div className='bootcamp-admissions-subheading' dangerouslySetInnerHTML={{__html: admissions.subheading}} />
+        <MarkdownContent content={admissions.subheading} className={'bootcamp-admissions-subheading'} />
         <div className='row bootcamp-admissions-row-desktop'>
             {admissions.steps.map((card) => {
                 return (

@@ -499,7 +499,7 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
-                  { label: Subheading, name: subheading, widget: text },
+                  { label: Subheading, name: subheading, widget: markdown },
                   { label: Sidebarlabel, name: sidebarlabel, widget: string },
                   {
                     label: Lesson,

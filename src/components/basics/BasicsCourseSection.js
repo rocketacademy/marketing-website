@@ -1,11 +1,9 @@
 import React from 'react'
 import Table from 'react-bootstrap/Table';
-import { remark } from 'remark';
-import recommended from 'remark-preset-lint-recommended';
-import remarkHtml from 'remark-html';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
 import Accordion from 'react-bootstrap/Accordion';
+import MarkdownContent from '../ConvertMarkdown';
 
 
 const BasicsCourseSection = ({ lessons }) => {
@@ -18,7 +16,7 @@ const BasicsCourseSection = ({ lessons }) => {
                 {lessons.heading}
             </div>
             <div className='basics-course-subheading'>
-                {lessons.subheading}
+                <MarkdownContent content={lessons.subheading} className={'basics-course-subheading'} />
             </div>
             <div className='basics-course-content-desktop'>
                 <Tabs defaultActiveKey="Week 0-1" className="mb-3">
@@ -38,23 +36,7 @@ const BasicsCourseSection = ({ lessons }) => {
                                     </thead>
                                     <tbody>
                                         {lessons.lesson.filter(lesson => lesson.week === week).map(lesson => {
-                                            
-                                            lesson.preclass = remark()
-                                                .use(recommended)
-                                                .use(remarkHtml)
-                                                .processSync(lesson.preclass).toString();
 
-                                            lesson.inclass = remark()
-                                                .use(recommended)
-                                                .use(remarkHtml)
-                                                .processSync(lesson.inclass).toString();
-
-                                            lesson.project = remark()
-                                                .use(recommended)
-                                                .use(remarkHtml)
-                                                .processSync(lesson.project).toString();
-
-                                            
                                             return (
                                                 <tr>
                                                     <td>
@@ -66,13 +48,22 @@ const BasicsCourseSection = ({ lessons }) => {
                                                         </p>
                                                     </td>
                                                     <td>
-                                                        <div dangerouslySetInnerHTML={{__html: lesson.preclass}} />
+                                                        <MarkdownContent 
+                                                            content={lesson.preclass}
+                                                            className={"basics-course-lesson-preclass"}
+                                                        />
                                                     </td>
                                                     <td>
-                                                        <div dangerouslySetInnerHTML={{__html: lesson.inclass}} />
+                                                        <MarkdownContent 
+                                                            content={lesson.inclass}
+                                                            className={"basics-course-lesson-inclass"}
+                                                        />
                                                     </td>
                                                     <td>
-                                                        <div dangerouslySetInnerHTML={{__html: lesson.project}} />
+                                                        <MarkdownContent 
+                                                            content={lesson.project}
+                                                            className={"basics-course-lesson-project"}
+                                                        />
                                                     </td>
                                                 </tr>
                                             )
@@ -106,15 +97,24 @@ const BasicsCourseSection = ({ lessons }) => {
                                                     <p className='basics-course-accordion-heading'>
                                                         Pre Class:
                                                     </p>
-                                                    <div dangerouslySetInnerHTML={{__html: lesson.preclass}} />
+                                                    <MarkdownContent 
+                                                        content={lesson.preclass}
+                                                        className={"basics-course-lesson-preclass"}
+                                                    />
                                                     <p className='basics-course-accordion-heading'>
                                                         In Class:
                                                     </p>
-                                                    <div dangerouslySetInnerHTML={{__html: lesson.inclass}} />
+                                                    <MarkdownContent 
+                                                        content={lesson.inclass}
+                                                        className={"basics-course-lesson-inclass"}
+                                                    />
                                                     <p className='basics-course-accordion-heading'>
                                                         Projects :
                                                     </p>
-                                                    <div dangerouslySetInnerHTML={{__html: lesson.project}} />
+                                                    <MarkdownContent 
+                                                        content={lesson.project}
+                                                        className={"basics-course-lesson-project"}
+                                                    />
                                                 </Accordion.Body>
                                             )
                                         })}

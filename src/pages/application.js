@@ -7,8 +7,6 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import '../styles/main.scss';
 import Layout from '../components/Layout';
-import { initializeCheckboxes } from '../helper/initializeCheckboxes';
-import { checkCheckboxes } from '../helper/initializeCheckboxes';
 import Modal from 'react-bootstrap/Modal';
 import { navigate } from 'gatsby';
 
@@ -16,7 +14,6 @@ const ApplicationForm = () => {
 
   useEffect(() => {
     countries();
-    initializeCheckboxes();
   }, []);
 
   const [validated, setValidated] = useState(false);
@@ -42,7 +39,7 @@ const ApplicationForm = () => {
   const handleSubmit = (event) => {
     const form = event.currentTarget;
     
-    if (form.checkValidity() === false && checkCheckboxes(form) === false) {
+    if (form.checkValidity() === false) {
       event.preventDefault();
       event.stopPropagation();
       setValidated(true);
@@ -50,7 +47,7 @@ const ApplicationForm = () => {
     } else {
       event.preventDefault();
       handleShow();
-
+      console.log('inputs', inputs);
       fetch('/.netlify/functions/apply-now', {
         method: 'POST', 
         headers: {
@@ -218,12 +215,37 @@ const ApplicationForm = () => {
             Please tell us about yourself.
           </Form.Control.Feedback>
         </Form.Group>
-      <Form.Group className="mb-3">
-        <Form.Label>Please select the courses you are interested in: </Form.Label>
-        <Form.Check type="checkbox"  name="course_type1" value="basics" label="Coding Basics" onChange={handleChange}/>
-        <Form.Check type="checkbox" name="course_type2" value="bootcamp_fulltime" label="Software Engineering Bootcamp Full Time (24 weeks)" onChange={handleChange}/>
-        <Form.Check type="checkbox" name="course_type3" value="bootcamp_parttime" label="Software Engineering Bootcamp Part Time (48 weeks)" onChange={handleChange}/>
-      </Form.Group>
+        <Form.Group as={Col} className="mb-3" md="6" controlId="validationCustom09">
+          <Form.Label>Which courses are you interested in? </Form.Label>
+          <Form.Check>
+            <Form.Check.Input 
+              name="course_type"
+              type="radio"
+              value="basics"
+              onChange={handleChange}
+              required />
+            <Form.Check.Label>Coding Basics</Form.Check.Label>
+          </Form.Check>
+          <Form.Check>
+            <Form.Check.Input 
+              name="course_type"
+              type="radio"
+              value="basics;bootcamp"
+              onChange={handleChange}
+              required />
+            <Form.Check.Label>Coding Basics and Software Engineering Bootcamp</Form.Check.Label>
+          </Form.Check>
+          <Form.Check>
+            <Form.Check.Input 
+              name="course_type"
+              type="radio"
+              value="bootcamp"
+              onChange={handleChange}
+              required />
+            <Form.Check.Label>Software Engineering Bootcamp</Form.Check.Label>
+            <Form.Control.Feedback type="invalid">Please select a course.</Form.Control.Feedback>
+          </Form.Check>
+        </Form.Group>
       <Button className="submit-button" type="submit">Submit form</Button>
     </Form>
     <Modal show={show} onHide={handleClose} centered>

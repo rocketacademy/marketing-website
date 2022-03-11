@@ -1,9 +1,6 @@
 import React from 'react'
 import Accordion from 'react-bootstrap/Accordion';
-import { remark } from 'remark';
-import recommended from 'remark-preset-lint-recommended';
-import remarkHtml from 'remark-html';
-
+import MarkdownContent from '../ConvertMarkdown';
  
 const FaqContentIndividualSection = ({ content }) => {
 
@@ -18,19 +15,17 @@ const FaqContentIndividualSection = ({ content }) => {
         </div>
         <Accordion flush>
             {questions.map((question, index) => {
-                question.answers = remark()
-                    .use(recommended)
-                    .use(remarkHtml)
-                    .processSync(question.answers).toString();
-                
-
+               
                 return (
                     <Accordion.Item eventKey={index + 1}>
                         <Accordion.Header>
                             {question.question}
                         </Accordion.Header>
                         <Accordion.Body>
-                            <div dangerouslySetInnerHTML={{__html: question.answers}} />
+                            <MarkdownContent 
+                                content={question.answers} 
+                                className={'faq-content-col-content'}
+                            />
                         </Accordion.Body>
                     </Accordion.Item>
                 )

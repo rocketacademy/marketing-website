@@ -90,9 +90,9 @@ programdates:
 lessons:
   heading: Course Overview
   sidebarlabel: Course Overview
-  subheading:
-    "Coding Basics applies a flipped classroom model that consists of 2
-    components: self-learning and live classes. See full course curriculum here"
+  subheading: |
+    Coding Basics applies a flipped classroom model that consists of 2
+    components: self-learning and live classes. Refer to our [course curriculum](https://codingbasics.rocketacademy.co/) for more information.
   lesson:
     - week: 0-1
       number: "0"
@@ -112,7 +112,7 @@ lessons:
           * Required Hardware and Software
           * Pre-Class Material
         * Section Introductions and Icebreakers
-      project: \
+      project:
     - week: 0-1
       number: "1"
       title: "     "
@@ -126,7 +126,7 @@ lessons:
           * 2.3.1 Functions I
       inclass: |
         * Data Manipulation and Functions
-      project: \
+      project:
     - week: 0-1
       number: "2"
       title: "      "
@@ -193,7 +193,7 @@ lessons:
           * 5.2 CSS
       inclass: |
         * Pairwork: Beat That!
-      project: \
+      project:
     - week: "4"
       number: "7"
       title: "       "
@@ -217,7 +217,7 @@ lessons:
         * 6.2 DOM Manipulation
       inclass: |
         * Pairwork: Blackjack
-      project: \
+      project:
     - week: "5"
       number: "9"
       title: "      "

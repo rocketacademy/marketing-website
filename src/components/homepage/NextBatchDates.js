@@ -17,7 +17,9 @@ const NextBatchDates = ({ details, upcomingCourseDates }) => {
         } else {
             if (details.type === 'Full Time' || details.type === 'Part Time') {
             let nextCourse = relevantDates.filter(course => course.node.description === details.type);
+            
             nextStartDate = nextCourse[0].node.start.dateTime;
+
             nextEndDate = nextCourse[0].node.end.dateTime;
             }
         }

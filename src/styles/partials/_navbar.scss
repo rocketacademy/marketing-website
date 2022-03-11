@@ -69,6 +69,13 @@
       text-decoration: None;
     }
   }
+  .dropdown-item:active {
+    background-color: variables.$blue;
+    a {
+      color: white;
+      text-decoration: None;
+    }
+  }
 
   a.nav-link {
     color: black;

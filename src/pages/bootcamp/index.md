@@ -124,7 +124,7 @@ admissions:
     Basics](https://codingbasics.rocketacademy.co/).
 
 
-    If you already have some prior experience/knowledge in coding and would like to join Rocket's Bootcamp program, we may waive the Coding Basics requirement - reach out to us at hello at rocketacademy.co to find out more!
+    If you already have some prior experience/knowledge in coding and would like to join Rocket's Bootcamp program, we may waive the Coding Basics requirement - reach out to us at [hello@rocketacademy.co](mailto:hello@rocketacademy.co) to find out more!
   steps:
     - image: /img/basics-page/basics-1.png
       heading: Applicant screening
@@ -176,8 +176,8 @@ course:
   subheading: >
     Our Full-Time Bootcamp schedule runs from Mondays to Fridays, 10am-12pm SGT.
     Part-Time Bootcamp covers the same material over twice the time (12 months),
-    meeting Tuesdays 7:30-9:30pm SGT and Saturdays 10am-12pm SGT. See full
-    course curriculum here
+    meeting Tuesdays 7:30-9:30pm SGT and Saturdays 10am-12pm SGT. [See full
+    course curriculum here](http://swebootcamp.rocketacademy.co/)
   schedule:
     - heading: 1-3
       project: "Front-End Application: Video Poker"
