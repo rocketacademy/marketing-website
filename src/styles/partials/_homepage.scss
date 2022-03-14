@@ -343,25 +343,27 @@
     }
   }
 }
+
 .homepage-formerstudents-container {
   font-family: variables.$secondary-font;
   font-style: normal;
-
-  .homepage-formerstudents-col {
-    padding-top: 15px;
-    padding-bottom: 15px;
-    @include variables.md {
-      padding-top: 0;
-      padding-bottom: 0;
-    }
-    .homepage-formerstudents-container {
-      min-height: 3px;
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
+  min-height: 3px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  @include variables.md {
+    min-height: 320px;
+    justify-content: space-between;
+  }
+  .homepage-formerstudents-row {
+    display: flex;
+    justify-content: center;
+    .homepage-formerstudents-col {
+      padding-top: 15px;
+      padding-bottom: 15px;
       @include variables.md {
-        min-height: 430px;
-        justify-content: space-between;
+        padding-top: 0;
+        padding-bottom: 0;
       }
       .homepage-formerstudents-company {
         min-height: 88px;

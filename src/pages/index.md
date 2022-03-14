@@ -98,12 +98,4 @@ formerstudents:
     studentname: Perry Lim
     position: |
       Former Chef | Software Engineer at Glints
-  - image: /img/homepage/xfers-color-logo.png
-    testimonial: >
-      “Rocket understood my situation and helped me achieve my goals, covering
-      topics not found at other bootcamps. The Rocket staff were always
-      available for help. I recommend Rocket Academy.”
-    studentname: Loh Eng Liang
-    position: |
-      Former Electrical Engineer | Software Engineer at Xfers
 ---
