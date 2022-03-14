@@ -69,7 +69,7 @@ const BootcampAdmissionsSection = ({ admissions }) => {
                 <ul>
                     {admissions.suitabilityobjectives.map((objective) => {
                         return (
-                            <li data-icon="🌈">{objective.objective}</li>
+                            <li data-icon="✔">{objective.objective}</li>
                         )
                     })}
                 </ul>
