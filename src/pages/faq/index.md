@@ -4,7 +4,7 @@ title: Frequently Asked Questions
 pagename: faq
 header:
   heading: Frequently Asked Questions
-  smalltext: WE’RE HERE TO HELP this is a test
+  smalltext: WE’RE HERE TO HELP
 general:
   heading: General
   sidebarlabel: General
@@ -58,13 +58,15 @@ general:
         pace.
 
         2. Rocket Academy cultivates a strong alumni network that significantly helps graduates with their careers.
-    - question: What is the difference between software engineering, programming, and
+    - question:
+        What is the difference between software engineering, programming, and
         coding?
       answers: There is no practical difference. Software engineering is a
         professional term describing strong proficiency in following a
         systematic process of understanding requirements, working effectively
         with stakeholders, and developing a solution that fulfils their needs.
-    - question: What is the difference between software engineering, data science, and
+    - question:
+        What is the difference between software engineering, data science, and
         data analytics?
       answers: >-
         1. Software engineers build apps and the underlying “pipes” for data to
@@ -89,7 +91,8 @@ general:
         2. We believe anyone can coding given sufficient time and determination.
 
         3. If you’re unsure whether coding is for you, try Coding Basics!
-    - question: I’ve tried coding but find it difficult. Can I still be a software
+    - question:
+        I’ve tried coding but find it difficult. Can I still be a software
         engineer?
       answers: >-
         1. It is normal to find coding challenging - this is common among all
@@ -150,7 +153,8 @@ codingbasics:
 
         2. The concepts we learn in Basics will give students the foundation to better harness frameworks such as React or Redux during Software Engineering Bootcamp.
     - question: Will Basics teach me how to make a website?
-      answers: Coding Basics teaches basic coding syntax, tools, and computational
+      answers:
+        Coding Basics teaches basic coding syntax, tools, and computational
         thinking, not web development. Rocket accepts top Basics students into
         our Software Engineering Bootcamp where we dive deeper into web and
         general application development.
