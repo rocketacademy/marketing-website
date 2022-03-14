@@ -44,10 +44,33 @@ const StartCodingSection = ({ upcomingCourseDates }) => {
             <h2 className='startcoding-heading'>
                 🚀 Start Coding Today  
             </h2>
-            <div className='startcoding-text'>
-                <p>Coding Basics - {nextBasicsStartDate}</p>
-                <p>Software Engineering Bootcamp (Full Time) - {nextFulltimeStartDate} </p>
-                <p>Software Engineering Bootcamp (Part Time) - {nextParttimeStartDate} </p>
+            <div className='row startcoding-text-row'>
+                <div className='startcoding-info-container'>
+                    <div className='startcoding-info'>
+                    <div className='startcoding-basics-text'>
+                        Coding Basics
+                    </div>
+                    <div className='startcoding-basics-date'>
+                        {nextBasicsStartDate}
+                    </div>
+                    </div>
+                    <div className='startcoding-info'>
+                        <div className='startcoding-bootcampft-text'>
+                            Bootcamp (Full Time)
+                        </div>
+                        <div className='startcoding-bootcampft-date'>
+                            {nextFulltimeStartDate}
+                        </div>
+                    </div>
+                    <div className='startcoding-info'>
+                        <div className='startcoding-bootcampft-text'>
+                            Bootcamp (Part Time)
+                        </div>
+                        <div className='startcoding-bootcampft-date'>
+                            {nextParttimeStartDate}
+                        </div>
+                    </div>
+                    </div>
             </div>
             <GetStartedButton />
         </div>

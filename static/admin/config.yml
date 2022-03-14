@@ -85,7 +85,7 @@ collections:
                     fields:
                       [
                         { label: Type, name: type, widget: string },
-                        { label: Icon, name: icon, widget: image },
+                        { label: Image, name: image, widget: image },
                         { label: Heading, name: heading, widget: string },
                         { label: Subheading, name: subheading, widget: text },
                         { label: Prevprice, name: prevprice, widget: string },
@@ -197,6 +197,21 @@ collections:
                 ],
             }
           - {
+              label: Companies,
+              name: companies,
+              widget: object,
+              fields:
+                [
+                  { label: Heading, name: heading, widget: string },
+                  {
+                    label: Icons,
+                    name: icons,
+                    widget: list,
+                    fields: [{ label: Image, name: image, widget: image }],
+                  },
+                ],
+            }
+          - {
               label: Rocket,
               name: rocket,
               widget: object,
@@ -235,7 +250,11 @@ collections:
                         { label: Image, name: image, widget: image },
                         { label: Name, name: name, widget: string },
                         { label: Position, name: position, widget: string },
-                        { label: Experience, name: experience, widget: text },
+                        {
+                          label: Experience,
+                          name: experience,
+                          widget: markdown,
+                        },
                       ],
                   },
                 ],

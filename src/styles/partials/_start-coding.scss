@@ -24,14 +24,23 @@
         line-height: 48px;
       }
     }
-    .startcoding-text {
+    .startcoding-text-row {
       font-family: variables.$secondary-font;
       font-style: normal;
       font-weight: normal;
-      font-size: 18px;
+      font-size: 14px;
       line-height: 26px;
       text-align: center;
       padding: 20px 0;
+      width: 100%;
+      @include variables.md {
+        width: 40%;
+        font-size: 18px;
+      }
+      .startcoding-info {
+        display: flex;
+        justify-content: space-between;
+      }
     }
   }
 }

@@ -7,13 +7,14 @@ import AboutReasonsSection from '../components/about/AboutReasonsSection';
 import AboutRocketSection from '../components/about/AboutRocketSection';
 import AboutLeadersSection from '../components/about/AboutLeadersSection';
 import StartCodingSection from '../components/StartCodingSection';
-
+import AboutCompaniesSection from '../components/about/AboutCompaniesSection';
 
 // eslint-disable-next-line
 export const AboutPageTemplate = ({
     header,
     image,
     why,
+    companies,
     rocket,
     leadership,
     upcomingCourseDates
@@ -34,6 +35,7 @@ export const AboutPageTemplate = ({
       <AboutLeadersSection
         leadership={leadership}
       />
+      <AboutCompaniesSection companies={companies} />
       <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
     </>
   )
@@ -58,6 +60,7 @@ const AboutPage = ({ data }) => {
                 header={frontmatter.header}
                 image={frontmatter.image}
                 why={frontmatter.why}
+                companies={frontmatter.companies}
                 rocket={frontmatter.rocket}
                 leadership={frontmatter.leadership}
                 upcomingCourseDates={upcomingCourseDates}
@@ -92,6 +95,16 @@ query aboutPageQuery {
         reasons {
           heading
           text
+          image {
+            childImageSharp {
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+            }
+          }
+        }
+      }
+      companies {
+        heading
+        icons {
           image {
             childImageSharp {
               gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)

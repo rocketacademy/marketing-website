@@ -9,6 +9,9 @@ const AboutPagePreview = ({ entry, getAsset }) => {
     const entryProfiles = entry.getIn(['data', 'leadership', 'profiles'])
     const profiles = entryProfiles ? entryProfiles.toJS() : []
 
+     const entryIcons = entry.getIn(['data', 'companies', 'icons'])
+    const icons = entryIcons ? entryIcons.toJS() : []
+
   return (
     <AboutPageTemplate 
         header={{
@@ -22,6 +25,10 @@ const AboutPagePreview = ({ entry, getAsset }) => {
         why={{
             heading: entry.getIn(['data', 'why', 'heading']),
             reasons,
+        }}
+        companies={{
+            heading: entry.getIn(['data', 'companies', 'heading']),
+            icons,
         }}
         rocket={{
             heading: entry.getIn(['data', 'rocket', 'heading']),

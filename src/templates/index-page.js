@@ -44,19 +44,7 @@ export const IndexPageTemplate = ({
               </div>
               <div className="homepage-header-individual-company">
                   <StaticImage 
-                    src='../../static/img/homepage/xfers-logo.png' alt="xfers logo"
-                    placeholder="blurred"
-                    />
-              </div>
-              <div className="homepage-header-individual-company">
-                  <StaticImage 
                     src='../../static/img/homepage/ninetynineco-logo.png' alt="ninetynineco logo" 
-                    placeholder="blurred"
-                    />
-              </div>
-              <div className="homepage-header-individual-company">
-                  <StaticImage 
-                    src='../../static/img/homepage/ninjavan-logo.png' alt="ninjavan logo"
                     placeholder="blurred"
                     />
               </div>
@@ -162,7 +150,7 @@ export const pageQuery = graphql`
             alt
             image {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 660)
               }
             }
           }
@@ -196,7 +184,7 @@ export const pageQuery = graphql`
             prevprice
             subheading
             type
-            icon {
+            image {
               childImageSharp {
                 gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
               }

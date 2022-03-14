@@ -1,5 +1,6 @@
 import React from 'react'
 import PreviewCompatibleImage from '../PreviewCompatibleImage'
+import ConvertMarkdown from '../ConvertMarkdown';
 
 
 const AboutLeadersSection = ({ leadership }) => {
@@ -24,7 +25,7 @@ const AboutLeadersSection = ({ leadership }) => {
                             {profile.position}
                         </div>
                         <div className='about-leaders-profile-experience'>
-                            {profile.experience}
+                            <ConvertMarkdown content={profile.experience} className={'about-leaders-profile-experience-text'} />
                         </div>
                         </div>
                     </div>

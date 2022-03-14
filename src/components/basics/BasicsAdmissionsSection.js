@@ -2,7 +2,6 @@ import React from 'react'
 import Card from 'react-bootstrap/Card';
 import GetStartedButton from '../GetStartedButton';
 
-
 const BasicsAdmissionsSection = ({ admissions }) => {
   return (
     <div className='container basics-admissions-container'>
@@ -31,7 +30,7 @@ const BasicsAdmissionsSection = ({ admissions }) => {
                         <ul>
                             {admissions.objectives.map(objective => {
                                 return (
-                                    <li data-icon="🌈">
+                                    <li data-icon="✔">
                                         {objective.objective}
                                     </li>
                                 )

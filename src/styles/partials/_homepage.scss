@@ -49,7 +49,7 @@
     align-items: center;
 
     @include variables.lg {
-      justify-content: space-between;
+      justify-content: flex-start;
     }
     .homepage-header-individual-company {
       width: 100px;
@@ -60,18 +60,17 @@
     }
   }
   .homepage-header-col-right {
-    padding: 20px 60px;
+    padding: 20px;
     .homepage-header-col-right-img {
       img {
         border-radius: 10px;
       }
-      @include variables.xl {
-        width: 70%;
-      }
     }
 
     @include variables.xl {
-      padding: 20px 70px 40px;
+      padding: 20px 0;
+      display: flex;
+      align-items: center;
     }
   }
   .homepage-header-col-left {

@@ -2,7 +2,10 @@ import React from 'react'
 
 
 const NextBatchDates = ({ details, upcomingCourseDates }) => {
-
+console.log('details', details);
+  console.log(details.type);
+    console.log('upcoming coue dates', upcomingCourseDates);
+    
     if (upcomingCourseDates) {
         
         const relevantDates = upcomingCourseDates.filter(course =>
@@ -29,7 +32,9 @@ const NextBatchDates = ({ details, upcomingCourseDates }) => {
 
         const getFormattedDate = (d) => {
         const dateObj = new Date(d);
+        console.log('date obj', dateObj);
         const ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(dateObj);
+        console.log('year', ye);
         const mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(dateObj);
         const da = new Intl.DateTimeFormat('en', { day: 'numeric' }).format(dateObj);
         return `${da} ${mo} ${ye}`;

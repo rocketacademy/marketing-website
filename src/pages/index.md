@@ -7,7 +7,7 @@ header:
     offers from companies like 99.co, Xfers and GovTech.
   headerimage:
     alt: kai's photo
-    image: /img/homepage/homepage_image.png
+    image: /img/homepage/homepage-image.png
 success:
   heading: Everything You Need to Succeed
   blurbs:
@@ -38,7 +38,7 @@ courses:
     image: /img/homepage/building-blocks-icon.png
   details:
     - type: Part Time
-      icon: /img/homepage/schedule-icon.png
+      image: /img/homepage/part-time-icon.png
       heading: Basics
       subheading: Learn basic coding by building simple apps.
       prevprice: S$999
@@ -46,7 +46,7 @@ courses:
       duration: ✓ 5 weeks
       conditions: ✓ Live and online
     - type: Part Time
-      icon: /img/homepage/schedule-icon.png
+      image: /img/homepage/part-time-icon.png
       heading: Bootcamp
       subheading: Switch careers to coding. Basics course recommended.
       prevprice: S$9999
@@ -54,7 +54,7 @@ courses:
       duration: ✓ 48 Weeks (12 Months)
       conditions: ✓ Live and online
     - type: Full Time
-      icon: /img/homepage/schedule-icon.png
+      image: /img/homepage/full-time-icon.png
       heading: Bootcamp
       subheading: Switch careers to coding. Basics course recommended.
       prevprice: S$9999

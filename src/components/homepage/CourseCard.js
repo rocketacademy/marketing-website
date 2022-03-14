@@ -19,8 +19,7 @@ const CourseCard = ({ details, upcomingCourseDates }) => {
     <Card>
         <Card.Body>
           <div className='card-type'>
-            <span><PreviewCompatibleImage imageInfo={details.icon} /></span>
-            <span>&nbsp;&nbsp;{details.type}</span>
+            <PreviewCompatibleImage imageInfo={details.image} />
           </div>
             <Card.Title className={`${details.heading === 'Basics' ? "basics" : "bootcamp"}`}>{details.heading}</Card.Title>
             <Card.Subtitle>{details.subheading}</Card.Subtitle>
