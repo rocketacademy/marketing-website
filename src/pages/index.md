@@ -3,8 +3,8 @@ templateKey: index-page
 title: Become a Software Engineer
 header:
   heading: Become a Software Engineer
-  subheading: 100% of our Bootcamp grads have received software engineering
-    offers from companies like 99.co, Xfers and GovTech.
+  subheading: 100% of our Bootcamp grads have received software engineering offers
+    from companies like 99.co, Xfers and GovTech.
   headerimage:
     alt: kai's photo
     image: /img/homepage/homepage-image.png
@@ -76,7 +76,7 @@ curriculum:
       experience: |
         Former Facebook engineer
         Masters in Computer Science from Stanford
-    - image: /img/homepage/mike-homepage.jpg
+    - image: /img/mike-profile.jpg
       name: MICHAEL ALBANO
       position: Head of Curriculum
       experience: |
