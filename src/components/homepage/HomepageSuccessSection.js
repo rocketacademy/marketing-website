@@ -23,8 +23,8 @@ const HomepageSuccessSection = ({ success }) => {
                     <Carousel variant="dark">
                         {success.blurbs.map((blurb, index) => {
                             return (
-                                <Carousel.Item>
-                                    <div key={index} className='homepage-success-col'>
+                                <Carousel.Item key={index}>
+                                    <div className='homepage-success-col'>
                                         <CarouselSlide section={blurb} />
                                     </div>
                                 </Carousel.Item>

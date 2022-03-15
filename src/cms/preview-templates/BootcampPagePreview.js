@@ -20,7 +20,7 @@ const BootcampPagePreview = ({ entry, getAsset }) => {
     const entryModules2 = entry.getIn(['data', 'curriculum', 'modules2'])
     const modules2 = entryModules2 ? entryModules2.toJS() : []
 
-    const entryProfiles = entry.getIn(['data', 'instructors', 'profiles'])
+    const entryProfiles = entry.getIn(['data', 'instructors', 'profile'])
     const profile = entryProfiles ? entryProfiles.toJS() : []
 
     const entrySteps = entry.getIn(['data', 'admissions', 'steps'])

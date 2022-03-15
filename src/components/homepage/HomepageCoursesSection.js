@@ -19,9 +19,9 @@ const HomepageCoursesSection = ({ courses, upcomingCourseDates }) => {
             </div>
         </div>
         <div className='row homepage-courses-cards-row'>
-          {courses.details.map((detail) => {
+          {courses.details.map((detail, index) => {
             return (
-              <div className='col-12 col-md-4 mb-3 homepage-courses-cards-col'>
+              <div className='col-12 col-md-4 mb-3 homepage-courses-cards-col' key={index}>
                 <CourseCard 
                   details={detail} 
                   upcomingCourseDates={upcomingCourseDates}/>

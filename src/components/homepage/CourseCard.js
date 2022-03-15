@@ -14,7 +14,7 @@ const CourseCard = ({ details, upcomingCourseDates }) => {
   } else {
     courseLink = '/bootcamp';
   }
-
+  
   return (
     <Card>
         <Card.Body>
