@@ -17,9 +17,9 @@ const HomepageCurriculumSection = ({ curriculum }) => {
                 </div>
             </div>
             <div className='row homepage-curriculum-edu-staff-row'>
-                {curriculum.instructors.map((instructor) => {
+                {curriculum.instructors.map((instructor, index) => {
                   return (
-                    <>
+                    <React.Fragment key={index}>
                     <div className='col-12 col-md-6 homepage-edu-staff-col'>
                       <div className='row homepage-edu-staff-row'>
                       <div className='col-4 homepage-curriculum-edu-staff-img'>
@@ -33,7 +33,7 @@ const HomepageCurriculumSection = ({ curriculum }) => {
                       </div>
                       </div>
                     </div>
-                    </>
+                    </React.Fragment>
                   )
                 })}
             </div>

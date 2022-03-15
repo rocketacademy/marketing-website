@@ -676,8 +676,8 @@ collections:
                   { label: Heading, name: heading, widget: string },
                   { label: Sidebarlabel, name: sidebarlabel, widget: string },
                   {
-                    label: Profiles,
-                    name: profiles,
+                    label: Profile,
+                    name: profile,
                     widget: list,
                     fields:
                       [

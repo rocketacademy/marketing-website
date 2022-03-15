@@ -6,9 +6,9 @@ const HomepageFormerStudentsSection = ({ formerstudents }) => {
   return (
     <div className='container homepage-formerstudents-container'>
       <div className='row homepage-formerstudents-row'>
-        {formerstudents.map((student) => {
+        {formerstudents.map((student, index) => {
           return (
-            <>
+            <React.Fragment key={index}>
             <div className='col-12 col-md-4 homepage-formerstudents-col'>
               <div className='homepage-formerstudents-container'>
               <div className='homepage-formerstudents-company'>
@@ -23,7 +23,7 @@ const HomepageFormerStudentsSection = ({ formerstudents }) => {
               </div>
               </div>
             </div>
-            </>
+            </React.Fragment>
           )
         })}
       </div>
