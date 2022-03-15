@@ -37,7 +37,7 @@ export const IndexPageTemplate = ({
               <div className="hompage-header-button-container">
               <GetStartedButton />
               </div>
-              <h6 className="homepage-header-companies-heading">COMPANIES THAT HAVE HIRED OUR GRADUATES</h6>
+              <h6 className="homepage-header-companies-heading">OUR HIRING PARTNERS</h6>
               <div className="homepage-header-companies-container">
               <div className="homepage-header-individual-company">
                   <StaticImage src="../../static/img/homepage/govtech-logo.png" alt="govtech logo" />

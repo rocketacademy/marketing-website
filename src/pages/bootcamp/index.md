@@ -109,12 +109,9 @@ instructors:
     - image: /img/homepage/kai-curriculum.png
       name: KAI YUAN NEO
       position: Founder & CEO
-    - image: /img/bootcamp-page/bootcamp-mike-profile.jpg
+    - image: /img/mike-profile.jpg
       name: MIKE ALBANO
       position: Head of Curriculum
-    - image: /img/bootcamp-page/bootcamp-jiachen-profile.png
-      name: LIOW JIA CHEN
-      position: Bootcamp Section Leader
 admissions:
   heading: The Admissions Process
   sidebarlabel: Admissions
@@ -193,7 +190,7 @@ course:
       topics:
         - topic: HTTP requests
         - topic: Relationship models
-        - topic: Database & data storage fundamentals
+        - topic: Database & Data storage fundamentals
         - topic: Promises
         - topic: Web authentication
         - topic: SQL, Express, Heroku
@@ -219,9 +216,9 @@ course:
         - topic: React router
         - topic: React hooks
         - topic: Styled components
-        - topic: Integration of APIs / complex user interfaces
+        - topic: Integration of APIs / Complex user interfaces
     - heading: 4-6
       project: Capstone
       topics:
-        - topic: student's choice
+        - topic: Student's choice
 ---

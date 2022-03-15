@@ -7,8 +7,8 @@ import Card from 'react-bootstrap/Card';
 
 const BasicsOverviewSection = ({ overview }) => {
   return (
-        <div className='container basics-overview-container'>
-            <h2 className='basics-overview-heading' id={overview.sidebarlabel.replace(/ /g, "-").toLowerCase()} >
+        <div className='container basics-overview-container section' id={overview.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+            <h2 className='basics-overview-heading' >
                 {overview.heading}
             </h2>
             <div className='row basics-overview-row-desktop'>

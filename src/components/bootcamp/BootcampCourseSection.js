@@ -9,8 +9,8 @@ const BootcampCourseSection = ({ course }) => {
   const months = ["1-3", "4-6"];
 
     return (
-        <div className='container bootcamp-course-container'>
-            <div className='bootcamp-course-header' id={course.sidebarlabel.replace(/ /g, "-").toLowerCase()} >
+        <div className='container bootcamp-course-container section' id={course.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+            <div className='bootcamp-course-header' >
                 {course.heading}
             </div>
             <div className='bootcamp-course-subheading'>
@@ -40,12 +40,12 @@ const BootcampCourseSection = ({ course }) => {
                                                             {section.project}
                                                         </p> 
                                                     </td>
-                                                    <td>
+                                                    <td className='bootcamp-course-lesson-topics'>
                                                         {section.topics.map(topic => {
                                                             return (
-                                                            <span>
+                                                            <div className='bootcamp-course-lesson-topic'>
                                                                 {topic.topic}
-                                                            </span>
+                                                            </div>
                                                             )
                                                             
                                                         })}

@@ -11,8 +11,8 @@ const BasicsCourseSection = ({ lessons }) => {
     const weeks = ["0-1", "2", "3", "4", "5"];
 
     return (
-        <div className='container basics-course-container'>
-            <div className='basics-course-header' id={lessons.sidebarlabel.replace(/ /g, "-").toLowerCase()} >
+        <div className='container basics-course-container section' id={lessons.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+            <div className='basics-course-header'>
                 {lessons.heading}
             </div>
             <div className='basics-course-subheading'>

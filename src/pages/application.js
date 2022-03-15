@@ -114,7 +114,8 @@ const ApplicationForm = () => {
           <InputGroup hasValidation>
             <InputGroup.Text id="inputGroupPrepend">@</InputGroup.Text>
             <Form.Control
-              type="text"
+              required
+              type="email"
               placeholder="username@email.com"
               aria-describedby="inputGroupPrepend"
               name="email"
@@ -122,7 +123,7 @@ const ApplicationForm = () => {
               onChange={handleChange}
             />
             <Form.Control.Feedback type="invalid">
-              Please provide an email address
+              Please provide a valid email address
             </Form.Control.Feedback>
           </InputGroup>
         </Form.Group>
@@ -142,7 +143,7 @@ const ApplicationForm = () => {
         </Form.Group>
         <Form.Group as={Col} className="mb-3" md="3" controlId="validationCustom04">
         <Form.Label>Age</Form.Label>
-         <Form.Control required as="select" name="age"
+         <Form.Select required name="age"
             value={inputs.age || ""}
             onChange={handleChange} id="age" custom>
             <option value="">--</option>
@@ -153,7 +154,7 @@ const ApplicationForm = () => {
             <option value="45 - 54">45-54</option>
             <option value="55 - 64">55-54</option>
             <option value=">= 65">&gt;= 65</option>
-        </Form.Control>
+        </Form.Select>
           <Form.Control.Feedback type="invalid">
             Please provide a valid age.
           </Form.Control.Feedback>
@@ -169,14 +170,14 @@ const ApplicationForm = () => {
         </Form.Group>
         <Form.Group as={Col} className="mb-3" md="6" controlId="validationCustom06">
         <Form.Label>Describe your coding experience</Form.Label>
-         <Form.Control required as="select" id="experience" name="experience"
+         <Form.Select required id="experience" name="experience"
             value={inputs.experience || ""}
             onChange={handleChange} custom>
             <option value="">--</option>
             <option value="Beginner">Beginner</option>
             <option value="Intermediate">Intermediate</option>
             <option value="Advanced">Advanced</option>
-        </Form.Control>
+        </Form.Select>
           <Form.Control.Feedback type="invalid">
             Please make a valid choice.
           </Form.Control.Feedback>
@@ -189,7 +190,7 @@ const ApplicationForm = () => {
         </Form.Group>
          <Form.Group as={Col} className="mb-3" md="6" controlId="validationCustom08">
         <Form.Label>How did you hear about us? </Form.Label>
-         <Form.Control required as="select" id="source" name="source"
+         <Form.Select required id="source" name="source"
             value={inputs.source || ""}
             onChange={handleChange} custom>
             <option value="">--</option>
@@ -200,7 +201,7 @@ const ApplicationForm = () => {
             <option value="Instagram">Instagram</option>
             <option value="Facebook">Facebook</option>
             <option value="Other">Other</option>
-        </Form.Control>
+        </Form.Select>
           <Form.Control.Feedback type="invalid">
             Please make a valid choice.
           </Form.Control.Feedback>
@@ -225,7 +226,7 @@ const ApplicationForm = () => {
               required />
             <Form.Check.Label>
               <h6>Coding Basics</h6>
-              <p>I just want to learn something new</p>
+              <p><em>I just want to learn something new</em></p>
             </Form.Check.Label>
           </Form.Check>
           <Form.Check>
@@ -237,7 +238,7 @@ const ApplicationForm = () => {
               required />
             <Form.Check.Label>
               <h6>Coding Basics and Software Engineering Bootcamp</h6>
-              <p>I'm new to coding but I am thinking about becoming a software engineer</p>
+              <p><em>I'm new to coding but I am thinking about becoming a software engineer</em></p>
             </Form.Check.Label>
           </Form.Check>
           <Form.Check>
@@ -249,7 +250,7 @@ const ApplicationForm = () => {
               required />
             <Form.Check.Label>
               <h6>Software Engineering Bootcamp</h6>
-              <p>I have written small programs before and am thinking about becoming a software engineer</p>
+              <p><em>I have written small programs before and am thinking about becoming a software engineer</em></p>
             </Form.Check.Label>
             <Form.Control.Feedback type="invalid">Please select a course.</Form.Control.Feedback>
           </Form.Check>

@@ -42,8 +42,8 @@ const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
   }
 
   return (
-    <div className='container basics-program-dates-container'>
-      <div className='basics-program-dates-heading' id={programdates.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+    <div className='container basics-program-dates-container section' id={programdates.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+      <div className='basics-program-dates-heading'>
         {programdates.heading}
       </div>
 

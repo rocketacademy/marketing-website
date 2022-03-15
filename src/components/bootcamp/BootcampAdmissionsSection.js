@@ -8,8 +8,8 @@ import MarkdownContent from '../ConvertMarkdown';
 const BootcampAdmissionsSection = ({ admissions }) => {
 
   return (
-    <div className='container bootcamp-admissions-container'>
-        <div className='bootcamp-admissions-header' id={admissions.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+    <div className='container bootcamp-admissions-container section' id={admissions.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+        <div className='bootcamp-admissions-header'>
             {admissions.heading}
         </div>
         <MarkdownContent content={admissions.subheading} className={'bootcamp-admissions-subheading'} />

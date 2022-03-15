@@ -6,8 +6,8 @@ import Card from 'react-bootstrap/Card';
 
 const BasicsInstructorsSection = ({ instructors }) => {
   return (
-    <div className='container basics-instructors-container'>
-        <div className='basics-instructors-heading' id={instructors.sidebarlabel.replace(/ /g, "-").toLowerCase()} >
+    <div className='container basics-instructors-container section' id={instructors.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+        <div className='basics-instructors-heading'>
             {instructors.heading}
         </div>
         <div className='row basics-instructors-row-desktop'>

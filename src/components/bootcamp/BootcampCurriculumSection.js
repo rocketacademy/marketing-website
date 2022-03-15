@@ -44,8 +44,8 @@ const BootcampCurriculumSection = ({ curriculum }) => {
     }
 
   return (
-      <div className='container bootcamp-curriculum-container'>
-          <h2 className='bootcamp-curriculum-heading' id={curriculum.sidebarlabel.replace(/ /g, "-").toLowerCase()} >
+      <div className='container bootcamp-curriculum-container section'  id={curriculum.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+          <h2 className='bootcamp-curriculum-heading'>
                 {curriculum.heading}
             </h2>
             <p className='bootcamp-curriculum-subheading'>

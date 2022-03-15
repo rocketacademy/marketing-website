@@ -43,8 +43,8 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
   }
 
   return (
-    <div className='container bootcamp-program-dates-container'>
-      <div className='bootcamp-program-dates-heading' id={programdates.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+    <div className='container bootcamp-program-dates-container section' id={programdates.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+      <div className='bootcamp-program-dates-heading'>
         {programdates.heading}
       </div>
 
