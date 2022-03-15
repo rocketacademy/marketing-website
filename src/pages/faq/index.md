@@ -4,7 +4,7 @@ title: Frequently Asked Questions
 pagename: faq
 header:
   heading: Frequently Asked Questions
-  smalltext: WE’RE HERE TO HELP checking if this works
+  smalltext: WE’RE HERE TO HELP
 general:
   heading: General
   sidebarlabel: General
