@@ -43,10 +43,12 @@ export const IndexPageTemplate = ({
                   <StaticImage src="../../static/img/homepage/govtech-logo.png" alt="govtech logo" />
               </div>
               <div className="homepage-header-individual-company">
+                <a href="https://www.99.co/team/" target="_blank" rel="noopener noreferrer">
                   <StaticImage 
                     src='../../static/img/homepage/ninetynineco-logo.png' alt="ninetynineco logo" 
                     placeholder="blurred"
-                    />
+                  />
+                </a>
               </div>
               <div className="homepage-header-individual-company">
                   <StaticImage 
