@@ -28,9 +28,9 @@ const BasicsAdmissionsSection = ({ admissions }) => {
                     </div>
                     <div className='basics-admissions-bottom'>
                         <ul>
-                            {admissions.objectives.map(objective => {
+                            {admissions.objectives.map((objective, index) => {
                                 return (
-                                    <li data-icon="✔">
+                                    <li key={index} data-icon="✔">
                                         {objective.objective}
                                     </li>
                                 )

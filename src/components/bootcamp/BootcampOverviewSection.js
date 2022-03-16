@@ -36,8 +36,8 @@ const BootcampOverviewSection = ({ overview }) => {
                     <Carousel variant="dark">
                         {overview.reasons.map((reason, index) => {
                             return (
-                                <Carousel.Item>
-                                    <div key={index} className='bootcamp-overview-col'>
+                                <Carousel.Item key={index}>
+                                    <div className='bootcamp-overview-col'>
                                         <Card>
                                             <Card.Body>
                                                 <div className='bootcamp-overview-image-container'>

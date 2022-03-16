@@ -40,19 +40,31 @@ export const IndexPageTemplate = ({
               <h6 className="homepage-header-companies-heading">OUR HIRING PARTNERS</h6>
               <div className="homepage-header-companies-container">
               <div className="homepage-header-individual-company">
-                  <StaticImage src="../../static/img/homepage/govtech-logo.png" alt="govtech logo" />
+                  <StaticImage src="../../static/img/homepage/govtech-color-logo.png" alt="govtech logo" />
               </div>
               <div className="homepage-header-individual-company">
                 <a href="https://www.99.co/team/" target="_blank" rel="noopener noreferrer">
                   <StaticImage 
-                    src='../../static/img/homepage/ninetynineco-logo.png' alt="ninetynineco logo" 
+                    src='../../static/img/homepage/ninetynineco-color-logo.png' alt="ninetynineco logo" 
                     placeholder="blurred"
                   />
                 </a>
               </div>
               <div className="homepage-header-individual-company">
                   <StaticImage 
-                    src='../../static/img/homepage/glints-logo.png' alt="glints logo" 
+                    src='../../static/img/homepage/glints-color-logo.png' alt="glints logo" 
+                    placeholder="blurred"
+                    />
+              </div>
+              <div className="homepage-header-individual-company">
+                  <StaticImage 
+                    src='../../static/img/about-page/about-carousell-icon.png' alt="carousell logo" 
+                    placeholder="blurred"
+                    />
+              </div>
+              <div className="homepage-header-individual-company">
+                  <StaticImage 
+                    src='../../static/img/about-page/about-stashaway-icon.png' alt="stashaway logo" 
                     placeholder="blurred"
                     />
               </div>

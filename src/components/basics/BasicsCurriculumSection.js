@@ -7,9 +7,9 @@ const BasicsCurriculumSection = ({ curriculum }) => {
             {curriculum.heading}
         </div>
         <div className='row basics-curriculum-row'>
-                {curriculum.topics.map(topic => {
+                {curriculum.topics.map((topic, index) => {
                     return (
-                        <div className='basics-curriculum-topic'>
+                        <div key={index} className='basics-curriculum-topic'>
                             {topic.topic}
                         </div>
                     )

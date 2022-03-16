@@ -31,10 +31,10 @@ const BootcampCourseSection = ({ course }) => {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {course.schedule.filter(section => section.heading === month).map(section => {
+                                        {course.schedule.filter(section => section.heading === month).map((section, index) => {
 
                                             return (
-                                                <tr>
+                                                <tr key={index}>
                                                     <td>
                                                         <p className='bootcamp-course-lesson-number'>
                                                             {section.project}

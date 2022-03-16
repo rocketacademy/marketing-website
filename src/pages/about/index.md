@@ -33,10 +33,10 @@ companies:
     - image: /img/about-page/about-advanceai-icon.png
     - image: /img/about-page/about-carousell-icon.png
     - image: /img/about-page/about-kargo-icon.png
-    - image: /img/about-page/about-payfazz-icon.png
     - image: /img/about-page/about-stashaway-icon.png
     - image: /img/about-page/about-Unit21-icon.png
     - image: /img/about-page/about-xendit-icon.png
+    - image: /img/about-page/about-payfazz-icon.png
 rocket:
   heading: A little bit about our company
   text: >

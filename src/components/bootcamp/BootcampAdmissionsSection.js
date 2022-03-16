@@ -14,9 +14,9 @@ const BootcampAdmissionsSection = ({ admissions }) => {
         </div>
         <MarkdownContent content={admissions.subheading} className={'bootcamp-admissions-subheading'} />
         <div className='row bootcamp-admissions-row-desktop'>
-            {admissions.steps.map((card) => {
+            {admissions.steps.map((card, index) => {
                 return (
-                    <div className='col-12 col-md-4 bootcamp-admissions-card'>
+                    <div key={index} className='col-12 col-md-4 bootcamp-admissions-card'>
                         <Card>
                             <Card.Body>
                                 <PreviewCompatibleImage imageInfo={card} />
@@ -37,8 +37,8 @@ const BootcampAdmissionsSection = ({ admissions }) => {
 
             {admissions.steps.map((card, index) => {
                 return (
-                        <Carousel.Item>
-                            <div key={index} className='bootcamp-instructors-col'>
+                        <Carousel.Item key={index}>
+                            <div className='bootcamp-instructors-col'>
                                 <Card>
                                     <Card.Body>
                                         <div className='bootcamp-instructors-image-container'>
@@ -67,9 +67,9 @@ const BootcampAdmissionsSection = ({ admissions }) => {
             </p>
             <div className='bootcamp-suitability-objectives'>
                 <ul>
-                    {admissions.suitabilityobjectives.map((objective) => {
+                    {admissions.suitabilityobjectives.map((objective, index) => {
                         return (
-                            <li data-icon="✔">{objective.objective}</li>
+                            <li key={index} data-icon="✔">{objective.objective}</li>
                         )
                     })}
                 </ul>

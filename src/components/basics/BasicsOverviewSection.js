@@ -26,8 +26,8 @@ const BasicsOverviewSection = ({ overview }) => {
                     <Carousel variant="dark">
                         {overview.studentexperience.map((experience, index) => {
                             return (
-                                <Carousel.Item>
-                                    <div key={index} className='basics-overview-col'>
+                                <Carousel.Item key={index}>
+                                    <div className='basics-overview-col'>
                                         <CarouselSlide section={experience} />
                                     </div>
                                 </Carousel.Item>
@@ -55,9 +55,9 @@ const BasicsOverviewSection = ({ overview }) => {
                     <h2 className='basics-learning-heading' >
                         {overview.learningstyle.heading}
                     </h2>
-                    {overview.learningstyle.card.map((card) => {
+                    {overview.learningstyle.card.map((card, index) => {
                         return (
-                            <div className='col-12 col-md-4 basics-learning-card'>
+                            <div key={index} className='col-12 col-md-4 basics-learning-card'>
                                 <Card>
                                     <Card.Body>
                                         <PreviewCompatibleImage imageInfo={card} />
@@ -78,9 +78,9 @@ const BasicsOverviewSection = ({ overview }) => {
                         {overview.learningstyle.heading}
                     </h2>
                      <Carousel variant="dark">
-                        {overview.learningstyle.card.map((card) => {
+                        {overview.learningstyle.card.map((card, index) => {
                             return (
-                                <Carousel.Item>
+                                <Carousel.Item key={index}>
                                     <Card>
                                         <Card.Body>
                                             <PreviewCompatibleImage imageInfo={card} />

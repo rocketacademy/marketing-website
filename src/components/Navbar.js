@@ -54,8 +54,10 @@ const SiteNavbar = () => {
                                 About Us
                             </Link>
                         </NavDropdown.Item>
-                        <NavDropdown.Item href="https://angel.co/company/rocketacademy/jobs" target="_blank"  rel="noopener noreferrer">
-                            Careers
+                        <NavDropdown.Item>
+                            <Link to="/careers">
+                                Careers
+                            </Link>
                         </NavDropdown.Item>
                     </NavDropdown>
                     <Nav.Link as={ Link } to="/faq" activeClassName="nav-active">FAQ</Nav.Link>
