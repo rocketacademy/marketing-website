@@ -28,15 +28,15 @@ why:
         Classmates and alumni from top companies and schools committed to
         helping each other succeed.
 companies:
-  heading: "We are endorsed by"
+  heading: "Our hiring partners"
   icons:
     - image: /img/about-page/about-advanceai-icon.png
     - image: /img/about-page/about-carousell-icon.png
     - image: /img/about-page/about-kargo-icon.png
-    - image: /img/about-page/about-payfazz-icon.png
     - image: /img/about-page/about-stashaway-icon.png
-    - image: /img/about-page/about-UNit21-icon.png
-    - image: /img/about-page/about-XENDIT-icon.png
+    - image: /img/about-page/about-Unit21-icon.png
+    - image: /img/about-page/about-xendit-icon.png
+    - image: /img/about-page/about-payfazz-icon.png
 rocket:
   heading: A little bit about our company
   text: >
@@ -65,13 +65,13 @@ leadership:
         Cita in San Francisco, New York, Singapore, and Jakarta.
 
         Kai started Rocket Academy after experiencing the industry-wide shortage of good software engineers. RA’s 6-month Bootcamp is a middle ground between long and expensive university courses and short and insufficient 12-week software engineering bootcamps.
-    - image: /img/homepage/mike-homepage.jpg
+    - image: /img/mike-profile.jpg
       name: MICHAEL ALBANO
       position: Head of Curriculum
       experience: |
-        18 years’ experience in tech development, start ups, and education.
+        Mike has 18 years’ experience in tech development, start ups, and education. He is a former software and firmware engineer at multiple European and US based tech firms, who has taught tech courses at many educational levels, including professionals looking to upskill. 
 
-        Former software engineer at multiple European and US based tech firms.
+        Aside from technical experience, Mike is also a trained Coaching professional, helping people to move forward in their personal and professional lives. Mike is passionate about the educational experience. He believes that any learning experience should be fun to be memorable and lasting. He hopes to create meaningful and enjoyable educational experiences here at Rocket Academy.
 
     - image: /img/homepage/foong-homepage.jpg
       name: FOONG LEUNG

@@ -6,8 +6,8 @@ import Card from 'react-bootstrap/Card';
 
 const BootcampOverviewSection = ({ overview }) => {
   return (
-        <div className='container bootcamp-overview-container'>
-            <h2 className='bootcamp-overview-heading' id={overview.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+        <div className='container bootcamp-overview-container section' id={overview.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+            <h2 className='bootcamp-overview-heading'>
                 {overview.heading}
             </h2>
             <p className='bootcamp-overview-subheading'>
@@ -36,8 +36,8 @@ const BootcampOverviewSection = ({ overview }) => {
                     <Carousel variant="dark">
                         {overview.reasons.map((reason, index) => {
                             return (
-                                <Carousel.Item>
-                                    <div key={index} className='bootcamp-overview-col'>
+                                <Carousel.Item key={index}>
+                                    <div className='bootcamp-overview-col'>
                                         <Card>
                                             <Card.Body>
                                                 <div className='bootcamp-overview-image-container'>
@@ -72,53 +72,6 @@ const BootcampOverviewSection = ({ overview }) => {
                         {overview.testimonial.position}
                     </p>
                 </div>
-
-                {/* <div className='row bootcamp-curriculum-row-desktop'>
-                    <h2 className='bootcamp-curriculum-heading'>
-                        {overview.learningstyle.heading}
-                    </h2>
-                    {overview.learningstyle.card.map((card) => {
-                        return (
-                            <div className='col-12 col-md-4 bootcamp-curriculum-card'>
-                                <Card>
-                                    <Card.Body>
-                                        <PreviewCompatibleImage imageInfo={card} />
-                                        <Card.Title>
-                                            {card.heading}
-                                        </Card.Title>
-                                        <Card.Text>
-                                            {card.text}
-                                        </Card.Text>
-                                    </Card.Body>
-                                </Card>
-                            </div>
-                        )
-                    })}
-                </div>
-                <div className='row bootcamp-curriculum-row-mobile'>
-                    <h2 className='bootcamp-curriculum-heading'>
-                        {overview.learningstyle.heading}
-                    </h2>
-                     <Carousel variant="dark">
-                        {overview.learningstyle.card.map((card) => {
-                            return (
-                                <Carousel.Item>
-                                    <Card>
-                                        <Card.Body>
-                                            <PreviewCompatibleImage imageInfo={card} />
-                                            <Card.Title>
-                                                {card.heading}
-                                            </Card.Title>
-                                            <Card.Text>
-                                                {card.text}
-                                            </Card.Text>
-                                        </Card.Body>
-                                    </Card>
-                                </Carousel.Item>
-                            )
-                        })}
-                    </Carousel>
-                </div> */}
         </div>
   )
 }

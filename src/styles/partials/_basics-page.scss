@@ -664,7 +664,7 @@
           line-height: 20px;
           padding: 15px 15px 15px 10px;
           ul {
-            padding-left: 10px;
+            padding-left: 18px;
           }
         }
 
@@ -680,6 +680,11 @@
         padding-top: 30px;
         @include variables.md {
           display: none;
+        }
+        .accordion-body {
+          ul {
+            padding-left: 18px;
+          }
         }
         .basics-course-accordion-lesson {
           font-size: 16px;

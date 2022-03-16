@@ -6,17 +6,17 @@ import PreviewCompatibleImage from '../PreviewCompatibleImage';
 
 const BootcampTuitionSection = ({ tuition }) => {
   return (
-    <div className='container bootcamp-tuition-container'>
-        <div className='bootcamp-tuition-heading' id={tuition.sidebarlabel.replace(/ /g, "-").toLowerCase()} >
+    <div className='container bootcamp-tuition-container section' id={tuition.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+        <div className='bootcamp-tuition-heading'>
             {tuition.heading}
         </div>
         <div className='bootcamp-tuition-subheading'>
             {tuition.subheading}
         </div>
         <div className='row bootcamp-tuition-row'>
-            {tuition.card.map((card) => {
+            {tuition.card.map((card, index) => {
                 return (
-                    <div className='col-12 col-md-6 bootcamp-tuition-col'>
+                    <div key={index} className='col-12 col-md-6 bootcamp-tuition-col'>
                         <Card>
                             <Card.Body>
                                 <div className='bootcamp-tuition-top'>

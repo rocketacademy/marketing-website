@@ -4,8 +4,8 @@ import GetStartedButton from '../GetStartedButton';
 
 const BasicsAdmissionsSection = ({ admissions }) => {
   return (
-    <div className='container basics-admissions-container'>
-        <div className='basics-admissions-heading' id={admissions.sidebarlabel.replace(/ /g, "-").toLowerCase()} >
+    <div className='container basics-admissions-container section' id={admissions.sidebarlabel.replace(/ /g, "-").toLowerCase()} >
+        <div className='basics-admissions-heading'>
             {admissions.heading}
         </div>
         <div className='basics-admissions-subheading'>
@@ -28,9 +28,9 @@ const BasicsAdmissionsSection = ({ admissions }) => {
                     </div>
                     <div className='basics-admissions-bottom'>
                         <ul>
-                            {admissions.objectives.map(objective => {
+                            {admissions.objectives.map((objective, index) => {
                                 return (
-                                    <li data-icon="✔">
+                                    <li key={index} data-icon="✔">
                                         {objective.objective}
                                     </li>
                                 )

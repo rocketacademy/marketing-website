@@ -103,6 +103,18 @@ module.exports = {
     {
       resolve: "gatsby-plugin-no-sourcemaps",
     },
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Rocket Academy`,
+        short_name: `Rocket Academy`,
+        start_url: `/`,
+        background_color: `#ffffff`,
+        theme_color: `#ffffff`,
+        display: `standalone`,
+        icon: `src/img/rocketfavicon.png`,
+      },
+    },
     `gatsby-plugin-remove-fingerprints`,
     "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],

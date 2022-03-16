@@ -18,9 +18,9 @@ const BasicsHeaderSection = ({ header, upcomingCourseDates, pagename }) => {
                             {header.subheading}
                         </p>
                         <ul className='basics-header-list'>
-                            {header.reasons.map(reason => {
+                            {header.reasons.map((reason, index) => {
                                 return (
-                                    <li>
+                                    <li key={index}>
                                         <StaticImage src="../../img/check-icon.png" alt="check icon" />
                                         
                                         &nbsp;&nbsp;&nbsp;

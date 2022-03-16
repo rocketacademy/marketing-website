@@ -9,10 +9,10 @@ const FaqContentIndividualSection = ({ content }) => {
     
   return (
     <div className='faq-content-col-accordion'>
-        <div className='faq-content-col-accordion-heading' id={content.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+        <div className='faq-content-col-accordion-heading'>
             {content.heading}
         </div>
-        <Accordion flush>
+        <Accordion className='section' id={content.sidebarlabel.replace(/ /g, "-").toLowerCase()} flush>
             {questions.map((question, index) => {
                
                 return (

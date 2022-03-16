@@ -11,8 +11,8 @@ const BasicsCourseSection = ({ lessons }) => {
     const weeks = ["0-1", "2", "3", "4", "5"];
 
     return (
-        <div className='container basics-course-container'>
-            <div className='basics-course-header' id={lessons.sidebarlabel.replace(/ /g, "-").toLowerCase()} >
+        <div className='container basics-course-container section' id={lessons.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+            <div className='basics-course-header'>
                 {lessons.heading}
             </div>
             <div className='basics-course-subheading'>
@@ -35,10 +35,10 @@ const BasicsCourseSection = ({ lessons }) => {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {lessons.lesson.filter(lesson => lesson.week === week).map(lesson => {
+                                        {lessons.lesson.filter(lesson => lesson.week === week).map((lesson, index) => {
 
                                             return (
-                                                <tr>
+                                                <tr key={index}>
                                                     <td>
                                                         <p className='basics-course-lesson-number'>
                                                             Lesson {lesson.number}:
@@ -82,7 +82,7 @@ const BasicsCourseSection = ({ lessons }) => {
                         const weekLabel = `Week ${week}`;
 
                         return (
-                            <Accordion.Item eventKey={index + 1}>
+                            <Accordion.Item eventKey={index + 1} key={index}>
                                 <Accordion.Header>{weekLabel}</Accordion.Header>
                                         {lessons.lesson.filter(lesson => lesson.week === week).map((lesson, index) => {
 

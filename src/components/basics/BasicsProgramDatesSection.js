@@ -27,7 +27,7 @@ const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
               {getFormattedDate(batch.node.start.dateTime)}
             </div>
             <div className='basics-program-dates-arrow-container'>
-              <StaticImage src="../../img/basics-arrow-right.png" />
+              <StaticImage src="../../img/basics-arrow-right.png" alt="right arrow" />
             </div>
           </div>
         </td>
@@ -42,8 +42,8 @@ const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
   }
 
   return (
-    <div className='container basics-program-dates-container'>
-      <div className='basics-program-dates-heading' id={programdates.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+    <div className='container basics-program-dates-container section' id={programdates.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+      <div className='basics-program-dates-heading'>
         {programdates.heading}
       </div>
 
@@ -63,9 +63,9 @@ const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
             </thead> 
             <tbody>
               {upcomingCourseDates ? (
-                basicsDates.map((batch) => {
+                basicsDates.map((batch, index) => {
                 return (
-                  <BasicsProgramDatesRow batch={batch} />
+                  <BasicsProgramDatesRow batch={batch} key={index} />
                 )
               })
               ) : (
@@ -76,18 +76,18 @@ const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
       </div>
       <div className='row basics-program-dates-row-mobile'>
         {upcomingCourseDates ? (
-          basicsDates.map((batch) => {
+          basicsDates.map((batch, index) => {
             const startDate = new Date(batch.node.start.dateTime);
             const deadline = startDate.setDate(startDate.getDate() - 2);
 
             return (
-              <div className='col-12 basics-program-dates-col'>
+              <div key={index} className='col-12 basics-program-dates-col'>
                 <div className='basics-program-dates-container'>
                   <span>
                     {getFormattedDate(batch.node.start.dateTime)}
                   </span>
                   <span className='basics-program-dates-arrow-container'>
-                    <StaticImage src="../../img/basics-arrow-right.png" />
+                    <StaticImage src="../../img/basics-arrow-right.png" alt="right arrow" />
                   </span>
                   <span>
                     {getFormattedDate(batch.node.end.dateTime)}

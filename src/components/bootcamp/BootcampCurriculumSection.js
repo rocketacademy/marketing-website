@@ -26,7 +26,7 @@ const BootcampCurriculumSection = ({ curriculum }) => {
 
     const BootcampCurriculumTopics = ({ module }, index) => {
         return (
-             <Accordion flush>
+             <Accordion key={index} flush>
                 <Accordion.Item eventKey={index}> 
                     <Accordion.Header>{module.heading}</Accordion.Header>
                     <Accordion.Body>
@@ -44,8 +44,8 @@ const BootcampCurriculumSection = ({ curriculum }) => {
     }
 
   return (
-      <div className='container bootcamp-curriculum-container'>
-          <h2 className='bootcamp-curriculum-heading' id={curriculum.sidebarlabel.replace(/ /g, "-").toLowerCase()} >
+      <div className='container bootcamp-curriculum-container section'  id={curriculum.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+          <h2 className='bootcamp-curriculum-heading'>
                 {curriculum.heading}
             </h2>
             <p className='bootcamp-curriculum-subheading'>
@@ -53,9 +53,9 @@ const BootcampCurriculumSection = ({ curriculum }) => {
             </p>
         <div className='row bootcamp-curriculum-row-desktop'>
             
-            {curriculum.sections.map((card) => {
+            {curriculum.sections.map((card, index) => {
                 return (
-                    <div className='col-12 col-md-4 bootcamp-curriculum-card'>
+                    <div key={index} className='col-12 col-md-4 bootcamp-curriculum-card'>
                         <BootcampCurriculumCard card={card} />
                     </div>
                 )
@@ -66,8 +66,8 @@ const BootcampCurriculumSection = ({ curriculum }) => {
             <Carousel variant="dark">
                 {curriculum.sections.map((card, index) => {
                     return (
-                        <Carousel.Item>
-                            <div key={index} className='bootcamp-overview-col'>
+                        <Carousel.Item key={index}>
+                            <div className='bootcamp-overview-col'>
                                 <BootcampCurriculumCard card={card} />
                             </div>
                         </Carousel.Item>

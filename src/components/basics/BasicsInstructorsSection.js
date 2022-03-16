@@ -6,14 +6,14 @@ import Card from 'react-bootstrap/Card';
 
 const BasicsInstructorsSection = ({ instructors }) => {
   return (
-    <div className='container basics-instructors-container'>
-        <div className='basics-instructors-heading' id={instructors.sidebarlabel.replace(/ /g, "-").toLowerCase()} >
+    <div className='container basics-instructors-container section' id={instructors.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
+        <div className='basics-instructors-heading'>
             {instructors.heading}
         </div>
         <div className='row basics-instructors-row-desktop'>
-            {instructors.profile.map((profile) => {
+            {instructors.profile.map((profile, index) => {
                 return (
-                    <div className='col-12 col-md-3 basics-instructors-profile'>
+                    <div key={index} className='col-12 col-md-3 basics-instructors-profile'>
                         <div className='basics-instructors-image'>
                         <PreviewCompatibleImage imageInfo={profile} />
                         </div>
@@ -32,8 +32,8 @@ const BasicsInstructorsSection = ({ instructors }) => {
 
             {instructors.profile.map((profile, index) => {
                 return (
-                        <Carousel.Item>
-                            <div key={index} className='bootcamp-instructors-col'>
+                        <Carousel.Item key={index}>
+                            <div className='bootcamp-instructors-col'>
                                 <Card>
                                     <Card.Body>
                                         <div className='bootcamp-instructors-image-container'>
