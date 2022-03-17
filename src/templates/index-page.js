@@ -68,6 +68,12 @@ export const IndexPageTemplate = ({
                     placeholder="blurred"
                     />
               </div>
+              <div className="homepage-header-individual-company">
+                  <StaticImage 
+                    src='../../static/img/homepage/xfers-straitsx-logo.jpeg' alt="xfers-straitsx logo" 
+                    placeholder="blurred"
+                    />
+              </div>
               </div>
           </div> 
           <div className="col-12 col-md-6 order-1 order-md-2 homepage-header-col-right">

@@ -8,7 +8,7 @@ header:
     our students succeed, we succeed."
 image:
   alt: picture of students
-  image: /img/about-page/about-header.jpg
+  image: /img/about-page/about-header.png
 why:
   heading: Why Rocket Academy?
   reasons:
@@ -36,14 +36,13 @@ companies:
     - image: /img/about-page/about-stashaway-icon.png
     - image: /img/about-page/about-Unit21-icon.png
     - image: /img/about-page/about-xendit-icon.png
-    - image: /img/about-page/about-payfazz-icon.png
+    - image: /img/about-page/about-payfazz-icon.jpeg
 rocket:
   heading: A little bit about our company
   text: >
-    We aspire to improve students’ learning journey based on their past
-    experiences. With Rocket Academy, they plan to create comprehensive courses
-    to support students at every level as they progress as professional
-    programmers.
+    We aspire to improve students’ learning journeys based on their past experiences.
+    Our comprehensive courses at Rocket Academy are designed to support students at every level
+    as they progress as professional programmers.
   image:
     alt: photo of kai
     image: /img/about-page/kai-about-page.jpg

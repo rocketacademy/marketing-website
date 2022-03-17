@@ -78,7 +78,7 @@ const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
         {upcomingCourseDates ? (
           basicsDates.map((batch, index) => {
             const startDate = new Date(batch.node.start.dateTime);
-            const deadline = startDate.setDate(startDate.getDate() - 2);
+            const deadline = startDate.setDate(startDate.getDate() - 14);
 
             return (
               <div key={index} className='col-12 basics-program-dates-col'>
