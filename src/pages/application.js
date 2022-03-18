@@ -129,14 +129,13 @@ const ApplicationForm = () => {
         </Form.Group>
         <Form.Group as={Col} className="mb-3" md="6" controlId="validationCustom03">
           <Form.Label>Country</Form.Label>
-          <Form.Control 
-            required as="select" 
+          <Form.Select
             id="country" 
             name="country"
             value={inputs.country || ""}
             onChange={handleChange}
             custom>
-          </Form.Control>
+          </Form.Select>
           <Form.Control.Feedback type="invalid">
             Please choose a valid country.
           </Form.Control.Feedback>
