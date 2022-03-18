@@ -8,11 +8,11 @@ const FaqContentIndividualSection = ({ content }) => {
 
     
   return (
-    <div className='faq-content-col-accordion'>
+    <div className='section' className='faq-content-col-accordion'>
         <div className='faq-content-col-accordion-heading'>
             {content.heading}
         </div>
-        <Accordion className='section' id={content.sidebarlabel.replace(/ /g, "-").toLowerCase()} flush>
+        <Accordion id={content.sidebarlabel.replace(/ /g, "-").toLowerCase()} flush>
             {questions.map((question, index) => {
                
                 return (

@@ -64,7 +64,7 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
             </thead> 
             <tbody>
               {upcomingCourseDates ? (
-                bootcampDates.map((batch, index) => {
+                bootcampDates.map((batch) => {
                 return (
                   <BootcampProgramDatesRow batch={batch}/>
                 )
@@ -77,12 +77,12 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
       </div>
       <div className='row bootcamp-program-dates-row-mobile'>
         {upcomingCourseDates ? (
-          bootcampDates.map((batch, index) => {
+          bootcampDates.map((batch) => {
             const startDate = new Date(batch.node.start.dateTime);
             const deadline = startDate.setDate(startDate.getDate() - 2);
 
             return (
-              <div key={index} className='col-12 bootcamp-program-dates-col'>
+              <div className='col-12 bootcamp-program-dates-col'>
                 <div className='bootcamp-program-dates-container'>
                   <span>
                     {getFormattedDate(batch.node.start.dateTime)}

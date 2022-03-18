@@ -11,9 +11,9 @@ const BasicsInstructorsSection = ({ instructors }) => {
             {instructors.heading}
         </div>
         <div className='row basics-instructors-row-desktop'>
-            {instructors.profile.map((profile, index) => {
+            {instructors.profile.map((profile) => {
                 return (
-                    <div key={index} className='col-12 col-md-3 basics-instructors-profile'>
+                    <div className='col-12 col-md-3 basics-instructors-profile'>
                         <div className='basics-instructors-image'>
                         <PreviewCompatibleImage imageInfo={profile} />
                         </div>
@@ -30,9 +30,9 @@ const BasicsInstructorsSection = ({ instructors }) => {
         <div className='row basics-instructors-row-mobile'>
             <Carousel variant="dark">
 
-            {instructors.profile.map((profile, index) => {
+            {instructors.profile.map((profile) => {
                 return (
-                        <Carousel.Item key={index}>
+                        <Carousel.Item>
                             <div className='bootcamp-instructors-col'>
                                 <Card>
                                     <Card.Body>

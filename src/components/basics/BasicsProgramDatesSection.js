@@ -63,9 +63,9 @@ const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
             </thead> 
             <tbody>
               {upcomingCourseDates ? (
-                basicsDates.map((batch, index) => {
+                basicsDates.map((batch) => {
                 return (
-                  <BasicsProgramDatesRow batch={batch} key={index} />
+                  <BasicsProgramDatesRow batch={batch} />
                 )
               })
               ) : (
@@ -76,12 +76,12 @@ const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
       </div>
       <div className='row basics-program-dates-row-mobile'>
         {upcomingCourseDates ? (
-          basicsDates.map((batch, index) => {
+          basicsDates.map((batch) => {
             const startDate = new Date(batch.node.start.dateTime);
             const deadline = startDate.setDate(startDate.getDate() - 14);
 
             return (
-              <div key={index} className='col-12 basics-program-dates-col'>
+              <div className='col-12 basics-program-dates-col'>
                 <div className='basics-program-dates-container'>
                   <span>
                     {getFormattedDate(batch.node.start.dateTime)}

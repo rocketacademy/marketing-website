@@ -10,9 +10,9 @@ const AboutReasonsSection = ({ why }) => {
           <div className='col-3 about-reasons-heading-col'>
             {why.heading}
           </div>
-          {why.reasons.map((reason, index) => {
+          {why.reasons.map((reason) => {
             return (
-              <div key={index} className='col-3 about-reasons-content-col'>
+              <div className='col-3 about-reasons-content-col'>
                 <CarouselSlide section={reason} />
               </div>
             )
@@ -23,10 +23,10 @@ const AboutReasonsSection = ({ why }) => {
             {why.heading}
         </div>
         <Carousel variant="dark">
-            {why.reasons.map((reason, index) => {
+            {why.reasons.map((reason) => {
                 return (
                     <Carousel.Item>
-                        <div key={index} className='about-reasons-col'>
+                        <div className='about-reasons-col'>
                             <CarouselSlide section={reason} />
                         </div>
                     </Carousel.Item>

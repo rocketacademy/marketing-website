@@ -34,9 +34,9 @@ const BootcampOverviewSection = ({ overview }) => {
             </div>
             <div className="row bootcamp-overview-row-mobile">
                     <Carousel variant="dark">
-                        {overview.reasons.map((reason, index) => {
+                        {overview.reasons.map((reason) => {
                             return (
-                                <Carousel.Item key={index}>
+                                <Carousel.Item>
                                     <div className='bootcamp-overview-col'>
                                         <Card>
                                             <Card.Body>

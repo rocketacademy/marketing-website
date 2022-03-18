@@ -22,7 +22,7 @@ const BootcampCourseSection = ({ course }) => {
                         const monthLabel = `Months ${month}`;
 
                         return (
-                            <Tab eventKey={index} key={index} title={monthLabel}>
+                            <Tab eventKey={index} title={monthLabel}>
                                 <Table borderless>
                                     <thead>
                                         <tr>
@@ -31,10 +31,10 @@ const BootcampCourseSection = ({ course }) => {
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {course.schedule.filter(section => section.heading === month).map((section, index) => {
+                                        {course.schedule.filter(section => section.heading === month).map((section) => {
 
                                             return (
-                                                <tr key={index}>
+                                                <tr>
                                                     <td>
                                                         <p className='bootcamp-course-lesson-number'>
                                                             {section.project}
@@ -69,10 +69,10 @@ const BootcampCourseSection = ({ course }) => {
                         return (
                             <Accordion.Item eventKey={index + 1}>
                                 <Accordion.Header>{monthLabel}</Accordion.Header>
-                                        {course.schedule.filter(section => section.heading === month).map((section, index) => {
+                                        {course.schedule.filter(section => section.heading === month).map((section) => {
                                             
                                             return (
-                                                <Accordion.Body key={index} >
+                                                <Accordion.Body >
                                                     <p className='bootcamp-course-accordion-lesson'>
                                                         {section.project}
                                                     </p>

@@ -26,14 +26,14 @@ const BootcampCurriculumSection = ({ curriculum }) => {
 
     const BootcampCurriculumTopics = ({ module }, index) => {
         return (
-             <Accordion key={index} flush>
+             <Accordion flush>
                 <Accordion.Item eventKey={index}> 
                     <Accordion.Header>{module.heading}</Accordion.Header>
                     <Accordion.Body>
                     <ul>
-                        {module.topics.map((topic, index) => {
+                        {module.topics.map((topic) => {
                             return (
-                                <li key={index}>{topic.topic}</li>
+                                <li>{topic.topic}</li>
                             )
                         })}
                     </ul>
@@ -64,9 +64,9 @@ const BootcampCurriculumSection = ({ curriculum }) => {
 
         <div className='row bootcamp-curriculum-row-mobile'>
             <Carousel variant="dark">
-                {curriculum.sections.map((card, index) => {
+                {curriculum.sections.map((card) => {
                     return (
-                        <Carousel.Item key={index}>
+                        <Carousel.Item>
                             <div className='bootcamp-overview-col'>
                                 <BootcampCurriculumCard card={card} />
                             </div>

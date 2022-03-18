@@ -22,6 +22,7 @@ const SidebarSection = ({ sectionArray, pagename }) => {
       })
 
       sidebarItems.forEach( item => {      
+        
         item.classList.remove('active');
           if (item.classList.contains(current)) {
             item.classList.add('active');

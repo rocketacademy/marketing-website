@@ -14,9 +14,9 @@ const BootcampTuitionSection = ({ tuition }) => {
             {tuition.subheading}
         </div>
         <div className='row bootcamp-tuition-row'>
-            {tuition.card.map((card, index) => {
+            {tuition.card.map((card) => {
                 return (
-                    <div key={index} className='col-12 col-md-6 bootcamp-tuition-col'>
+                    <div className='col-12 col-md-6 bootcamp-tuition-col'>
                         <Card>
                             <Card.Body>
                                 <div className='bootcamp-tuition-top'>

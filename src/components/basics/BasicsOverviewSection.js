@@ -12,9 +12,9 @@ const BasicsOverviewSection = ({ overview }) => {
                 {overview.heading}
             </h2>
             <div className='row basics-overview-row-desktop'>
-            {overview.studentexperience.map((experience, index) => {
+            {overview.studentexperience.map((experience) => {
                 return (
-                    <div key={index} className='col-md-6 basics-overview-col-desktop'>
+                    <div className='col-md-6 basics-overview-col-desktop'>
                         <div className='basics-overview-slide-container'>
                             <CarouselSlide section={experience} />
                         </div>
@@ -24,9 +24,9 @@ const BasicsOverviewSection = ({ overview }) => {
             </div>
             <div className="row basics-overview-row-mobile">
                     <Carousel variant="dark">
-                        {overview.studentexperience.map((experience, index) => {
+                        {overview.studentexperience.map((experience) => {
                             return (
-                                <Carousel.Item key={index}>
+                                <Carousel.Item>
                                     <div className='basics-overview-col'>
                                         <CarouselSlide section={experience} />
                                     </div>
@@ -55,9 +55,9 @@ const BasicsOverviewSection = ({ overview }) => {
                     <h2 className='basics-learning-heading' >
                         {overview.learningstyle.heading}
                     </h2>
-                    {overview.learningstyle.card.map((card, index) => {
+                    {overview.learningstyle.card.map((card) => {
                         return (
-                            <div key={index} className='col-12 col-md-4 basics-learning-card'>
+                            <div className='col-12 col-md-4 basics-learning-card'>
                                 <Card>
                                     <Card.Body>
                                         <PreviewCompatibleImage imageInfo={card} />
@@ -78,9 +78,9 @@ const BasicsOverviewSection = ({ overview }) => {
                         {overview.learningstyle.heading}
                     </h2>
                      <Carousel variant="dark">
-                        {overview.learningstyle.card.map((card, index) => {
+                        {overview.learningstyle.card.map((card) => {
                             return (
-                                <Carousel.Item key={index}>
+                                <Carousel.Item>
                                     <Card>
                                         <Card.Body>
                                             <PreviewCompatibleImage imageInfo={card} />
