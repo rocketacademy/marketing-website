@@ -1,4 +1,11 @@
 require('dotenv').config()
+const Sentry = require("@sentry/node");
+
+Sentry.init({
+  dsn: "https://c6497440e5e84175ba59a75d392559c0@o1031692.ingest.sentry.io/6264710",
+  tracesSampleRate: 1.0,
+  maxValueLength: 8000, // without this error output gets truncated
+});
 
 exports.handler = async (event, context) => {
   try {
@@ -34,8 +41,15 @@ exports.handler = async (event, context) => {
     return { statusCode: 200, body: JSON.stringify({ success: true }) }
 
   } catch (e) {
-      e.message === 'HTTP request failed'
+    Sentry.captureException(e);
+
+    e.message === 'HTTP request failed'
     ? console.error(JSON.stringify(e.response, null, 2))
     : console.error(e)
+
+    return {
+      statusCode: 500,
+      body: 'request failed',
+    }
   }
 }
