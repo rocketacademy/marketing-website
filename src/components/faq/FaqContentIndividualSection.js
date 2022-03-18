@@ -8,7 +8,7 @@ const FaqContentIndividualSection = ({ content }) => {
 
     
   return (
-    <div className='section' className='faq-content-col-accordion'>
+    <div className='faq-content-col-accordion section'>
         <div className='faq-content-col-accordion-heading'>
             {content.heading}
         </div>

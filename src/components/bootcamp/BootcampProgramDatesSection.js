@@ -17,7 +17,7 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
   const BootcampProgramDatesRow = ({ batch }) => {
 
     const startDate = new Date(batch.node.start.dateTime);
-    const deadline = startDate.setDate(startDate.getDate() - 2);
+    const deadline = startDate.setDate(startDate.getDate() - 14);
 
     return (
       <tr>
@@ -79,8 +79,8 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
         {upcomingCourseDates ? (
           bootcampDates.map((batch) => {
             const startDate = new Date(batch.node.start.dateTime);
-            const deadline = startDate.setDate(startDate.getDate() - 2);
-
+            const deadline = startDate.setDate(startDate.getDate() - 14);
+          
             return (
               <div className='col-12 bootcamp-program-dates-col'>
                 <div className='bootcamp-program-dates-container'>
