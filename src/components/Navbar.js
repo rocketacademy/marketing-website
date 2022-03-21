@@ -38,12 +38,12 @@ const SiteNavbar = () => {
                 <Nav>
                     <NavDropdown title="Courses" id="basic-nav-dropdown"> 
                         <NavDropdown.Item>
-                            <Link to="/basics">
+                            <Link to="/courses/basics">
                                 Coding Basics
                             </Link>
                         </NavDropdown.Item>
                         <NavDropdown.Item>
-                            <Link to="/bootcamp">
+                            <Link to="/courses/bootcamp">
                                 Software Engineering Bootcamp
                             </Link>
                         </NavDropdown.Item>
