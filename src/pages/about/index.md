@@ -66,7 +66,7 @@ leadership:
         assistant. He has worked at Facebook, Alibaba, Nuna Health, and Dana
         Cita in San Francisco, New York, Singapore, and Jakarta.
 
-        Kai started Rocket Academy after experiencing the industry-wide shortage of good software engineers. Rocket’s 6-month Bootcamp is a middle ground between long and expensive university courses and short and insufficient 12-week software engineering bootcamps.
+        Kai started Rocket Academy after experiencing the industry-wide shortage of good software engineers. Rocket’s 6-month full time Bootcamp is a middle ground between long and expensive university courses and short and insufficient 12-week software engineering bootcamps.
     - image: /img/mike-profile.jpg
       name: Michael Albano
       position: Head of Curriculum
