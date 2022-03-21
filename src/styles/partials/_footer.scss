@@ -57,9 +57,6 @@
       .footer-top-middle-col {
         ul {
           width: 80%;
-          @include variables.md {
-            width: 100%;
-          }
         }
       }
     }
