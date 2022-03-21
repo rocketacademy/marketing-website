@@ -342,7 +342,7 @@ collections:
                   },
                 ],
             }
-      - file: src/pages/basics/index.md
+      - file: src/pages/courses/basics/index.md
         label: Basics
         name: basics
         fields:
@@ -537,7 +537,7 @@ collections:
                   },
                 ],
             }
-      - file: src/pages/bootcamp/index.md
+      - file: src/pages/courses/bootcamp/index.md
         label: Bootcamp
         name: bootcamp
         fields:
