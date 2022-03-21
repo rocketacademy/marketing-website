@@ -154,6 +154,10 @@
       line-height: 32px;
       @include variables.md {
         padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
       }
       .about-rocket-bottom-col-right-name {
         font-weight: bold;
@@ -256,8 +260,21 @@
         padding-top: 15px;
         padding-bottom: 15px;
       }
-      .about-leaders-profile-experience {
-        line-height: 20px;
+      .about-leaders-experience-button {
+        background-color: white;
+        border: none;
+        text-align: left;
+        padding: 0;
+        width: 40%;
+        .experience-button-display {
+          display: flex;
+          .experience-button-arrow {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding-left: 15px;
+          }
+        }
       }
     }
   }

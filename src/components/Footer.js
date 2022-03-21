@@ -50,7 +50,7 @@ const Footer = () => {
                     <ul className='footer-top-right-col-list'>
                         <li>
                           <Link to="/about">
-                            About us
+                            About Us
                           </Link>
                         </li>
                         <li>
