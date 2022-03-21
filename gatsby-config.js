@@ -106,7 +106,6 @@ module.exports = {
         icon: `src/img/rocketfavicon.png`,
       },
     },
-    `gatsby-plugin-remove-fingerprints`,
     "gatsby-plugin-netlify", // make sure to keep it last in the array
   ],
 };
