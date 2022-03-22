@@ -98,16 +98,8 @@ leadership:
       name: Teresa Chang
       position: Head of Growth
       description: >
-        Teresa is an accomplished marketing professional, with expertise in
-        designing demand generation and digital marketing strategies to increase
-        profit margins ...
+        Teresa has 20 years of experience in global and regional integrated marketing, demand generation, and digital marketing for multinational firms and startups...
       experience: |
-        Teresa is an accomplished marketing professional, with expertise in
-        designing demand generation and digital marketing strategies to increase
-        profit margins for global multibillion-dollar organisations. 
-
-        She received her MBA with Merit from the University of Nottingham, for which
-        she received a distinction in her thesis on behavioral economics. Every
-        day, Teresa is excited about creating and realising plans that
-        accelerate growth and revenue across multiple time zones and cultures.
+        Teresa has 20 years of experience in global and regional integrated marketing, demand generation, and digital marketing for multinational firms and startups. 
+        She received her MBA with Merit from the University of Nottingham, for which she received a distinction in her thesis on behavioral economics.
 ---
