@@ -260,7 +260,7 @@ const ApplicationForm = () => {
       <Modal.Header closeButton>
         <Modal.Title>Thanks for your application 🙂</Modal.Title>
       </Modal.Header>
-      <Modal.Body>You'll receive an email confirmation from us shortly.</Modal.Body>
+      <Modal.Body>You'll receive an email acknowledgement from us shortly.</Modal.Body>
       <Modal.Footer>
         <Button variant="secondary" onClick={handleClose}>
           Close
