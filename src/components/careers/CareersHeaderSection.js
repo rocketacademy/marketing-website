@@ -22,8 +22,8 @@ const CareersHeaderSection = ({ header }) => {
             <div className='col-12 col-md-6 careers-header-col-right'>
                 <PreviewCompatibleImage imageInfo={header.headerimage} />
                 <button className='btn btn-primary careers-header-btn-right'>
-                    <a href="https://angel.co/company/rocketacademy/jobs" target="_blank"  rel="noopener noreferrer">
-                        See open roles
+                    <a href="https://boards.greenhouse.io/rocketacademy" target="_blank"  rel="noopener noreferrer">
+                        Open Positions
                     </a>
                 </button>
             </div>
