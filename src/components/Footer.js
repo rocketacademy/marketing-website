@@ -23,12 +23,12 @@ const Footer = () => {
                   <p className="footer-top-middle-col-heading">COURSES</p>
                     <ul className='footer-top-middle-col-list'>
                         <li>
-                          <Link to="/basics">
+                          <Link to="/courses/basics">
                             Coding Basics
                           </Link>
                           </li>
                         <li>
-                          <Link to="/bootcamp">
+                          <Link to="/courses/bootcamp">
                             Software Engineering Bootcamp
                           </Link>     
                         </li>
