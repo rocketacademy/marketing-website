@@ -26,8 +26,8 @@ const BootcampContentSection = ({
         curriculum,
         instructors,
         admissions,
-        programdates,
         tuition,
+        programdates,
         course,
       ];
 

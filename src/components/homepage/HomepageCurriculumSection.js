@@ -16,7 +16,7 @@ const HomepageCurriculumSection = ({ curriculum }) => {
                   <PreviewCompatibleImage imageInfo={curriculum.image} />
                 </div>
             </div>
-            <div className='row homepage-curriculum-edu-staff-row'>
+            {/* <div className='row homepage-curriculum-edu-staff-row'>
                 {curriculum.instructors.map((instructor, index) => {
                   return (
                     <React.Fragment key={index}>
@@ -36,7 +36,7 @@ const HomepageCurriculumSection = ({ curriculum }) => {
                     </React.Fragment>
                   )
                 })}
-            </div>
+            </div> */}
         </div>
     </div>
   )

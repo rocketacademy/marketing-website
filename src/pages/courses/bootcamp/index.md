@@ -103,15 +103,12 @@ curriculum:
         - topic: Continuous integration
         - topic: Guarding against SQL injections
 instructors:
-  heading: Meet some of our instructors
+  heading: Meet our Head Instructor
   sidebarlabel: Instructors
   profile:
     - image: /img/homepage/kai-curriculum.png
       name: KAI YUAN NEO
       position: Founder & CEO
-    - image: /img/mike-profile.jpg
-      name: MIKE ALBANO
-      position: Head of Curriculum
 admissions:
   heading: The Admissions Process
   sidebarlabel: Admissions
