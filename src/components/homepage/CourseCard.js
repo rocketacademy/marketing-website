@@ -10,9 +10,9 @@ const CourseCard = ({ details, upcomingCourseDates }) => {
   let courseLink;
 
   if (details.heading === 'Basics') {
-    courseLink = '/basics';
+    courseLink = '/courses/basics';
   } else {
-    courseLink = '/bootcamp';
+    courseLink = '/courses/bootcamp';
   }
   
   return (

@@ -49,6 +49,9 @@
     }
 
     .faq-content-col {
+      a {
+        color: variables.$red;
+      }
       @include variables.md {
       }
       .faq-content-col-accordion {

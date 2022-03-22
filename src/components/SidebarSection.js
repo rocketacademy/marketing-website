@@ -22,7 +22,6 @@ const SidebarSection = ({ sectionArray, pagename }) => {
       })
 
       sidebarItems.forEach( item => {      
-        
         item.classList.remove('active');
           if (item.classList.contains(current)) {
             item.classList.add('active');
@@ -39,10 +38,16 @@ const SidebarSection = ({ sectionArray, pagename }) => {
           {sectionArray.map((section, index) => {
             const sectionId = section.sidebarlabel.replace(/ /g, "-").toLowerCase();
             const eventKey = `link-${index}`;
-            
+            let pagelink = '';
+            if (pagename === 'basics' || pagename === 'bootcamp') {
+              pagelink = `/courses/${pagename}/#${sectionId}`;
+            } else {
+              pagelink = `/${pagename}/#${sectionId}`;
+            }
+
             return (
               <Nav.Link 
-                as={Link} to={`/${pagename}/#${sectionId}`}
+                as={Link} to={pagelink}
                 eventKey={eventKey}
                 className={sectionId}
                 key={index}
@@ -63,10 +68,16 @@ const SidebarSection = ({ sectionArray, pagename }) => {
           <Dropdown.Menu>
             {sectionArray.map(section => {
               const sectionId = section.sidebarlabel.replace(/ /g, "-").toLowerCase();
+              let pagelink = '';
+              if (pagename === 'basics' || pagename === 'bootcamp') {
+                pagelink = `/courses/${pagename}/#${sectionId}`;
+              } else {
+                pagelink = `/${pagename}/#${sectionId}`;
+              }
 
               return (
                 <Dropdown.Item key={section.sidebarlabel}>
-                  <AnchorLink to={`/${pagename}/#${sectionId}`}>
+                  <AnchorLink to={pagelink}>
                     {section.sidebarlabel}
                   </AnchorLink>
                 </Dropdown.Item>
