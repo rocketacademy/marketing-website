@@ -2,7 +2,6 @@
   background-color: variables.$bg-blue;
   .footer-inner-container {
     color: white;
-    padding-top: 40px;
     padding-bottom: 40px;
 
     @include variables.md {
@@ -37,29 +36,27 @@
         }
       }
       .footer-top-left-col {
-        padding-bottom: 30px;
-
-        @include variables.md {
-          padding-bottom: 0;
-        }
-        .desktop-brand {
-          display: none;
-          @include variables.md {
-            display: inline-block;
+        .rocket-logo-container-desktop {
+          width: 50%;
+          .desktop-brand {
+            display: none;
+            @include variables.md {
+              display: inline-block;
+            }
           }
         }
-        .mobile-brand {
-          @include variables.md {
-            display: none;
+        .rocket-logo-container-mobile {
+          width: 50%;
+          .mobile-brand {
+            @include variables.md {
+              display: none;
+            }
           }
         }
       }
       .footer-top-middle-col {
         ul {
           width: 80%;
-          @include variables.md {
-            width: 100%;
-          }
         }
       }
     }

@@ -137,6 +137,7 @@ query aboutPageQuery {
           }
           name
           position
+          description
           experience
         }
       }

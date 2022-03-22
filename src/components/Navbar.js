@@ -38,12 +38,12 @@ const SiteNavbar = () => {
                 <Nav>
                     <NavDropdown title="Courses" id="basic-nav-dropdown"> 
                         <NavDropdown.Item>
-                            <Link to="/basics">
+                            <Link to="/courses/basics">
                                 Coding Basics
                             </Link>
                         </NavDropdown.Item>
                         <NavDropdown.Item>
-                            <Link to="/bootcamp">
+                            <Link to="/courses/bootcamp">
                                 Software Engineering Bootcamp
                             </Link>
                         </NavDropdown.Item>
@@ -60,7 +60,7 @@ const SiteNavbar = () => {
                             </Link>
                         </NavDropdown.Item>
                     </NavDropdown>
-                    <Nav.Link as={ Link } to="/faq" activeClassName="nav-active">FAQ</Nav.Link>
+                    <Nav.Link as={ Link } to="/faq" activeClassName="nav-active" className="no-dropdown">FAQ</Nav.Link>
                     <Nav.Item className="button-container">
                         <Button variant="outline-primary" className="btn navbar-btn btn-outline-primary">
                             <a href="/application" target="_blank"  rel="noopener noreferrer">

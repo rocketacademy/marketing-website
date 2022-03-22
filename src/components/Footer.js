@@ -10,8 +10,12 @@ const Footer = () => {
         <div className="container footer-inner-container">
           <div className="row footer-top-row">
             <div className="col-12 col-md-4 footer-top-left-col">
-              <StaticImage className='desktop-brand' src="../img/rocket-brand-footer.png" alt="footer brand desktop logo" />
-              <StaticImage className='mobile-brand' src="../img/rocket-footer-mobile-logo.png" alt="footer brand mobile logo" />
+              <div className='rocket-logo-container-desktop'>
+                <StaticImage className='desktop-brand' src="../img/rocket-brand-footer.png" alt="footer brand desktop logo" />
+              </div>
+              <div className='rocket-logo-container-mobile'>
+                <StaticImage className='mobile-brand' src="../img/rocket-footer-mobile-logo.png" alt="footer brand mobile logo"/>
+              </div>
             </div>
             <div className="col-12 col-md-8 footer-top-middle-col">
               <div className="row footer-top-middle-row">
@@ -19,14 +23,29 @@ const Footer = () => {
                   <p className="footer-top-middle-col-heading">COURSES</p>
                     <ul className='footer-top-middle-col-list'>
                         <li>
-                          <Link to="/basics">
+                          <Link to="/courses/basics">
                             Coding Basics
                           </Link>
                           </li>
                         <li>
-                          <Link to="/bootcamp">
+                          <Link to="/courses/bootcamp">
                             Software Engineering Bootcamp
                           </Link>     
+                        </li>
+                    </ul>
+                </div>
+                <div className="col-6 col-md-4 footer-top-right-col">
+                   <p className="footer-top-right-col-heading">COMPANY</p>
+                    <ul className='footer-top-right-col-list'>
+                        <li>
+                          <Link to="/about">
+                            About Us
+                          </Link>
+                        </li>
+                        <li>
+                          <Link to="/careers">
+                            Careers
+                          </Link>
                         </li>
                     </ul>
                 </div>
@@ -43,21 +62,6 @@ const Footer = () => {
                           hello@rocketacademy.co
                         </a>
                       </li>
-                    </ul>
-                </div>
-                <div className="col-6 col-md-4 footer-top-right-col">
-                   <p className="footer-top-right-col-heading">COMPANY</p>
-                    <ul className='footer-top-right-col-list'>
-                        <li>
-                          <Link to="/about">
-                            About us
-                          </Link>
-                        </li>
-                        <li>
-                          <Link to="/careers">
-                            Careers
-                          </Link>
-                        </li>
                     </ul>
                 </div>
               </div>

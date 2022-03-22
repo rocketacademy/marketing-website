@@ -1,9 +1,14 @@
 import React from 'react'
+import { StaticImage } from 'gatsby-plugin-image';
 import PreviewCompatibleImage from '../PreviewCompatibleImage'
 import ConvertMarkdown from '../ConvertMarkdown';
+import OverlayTrigger from 'react-bootstrap/OverlayTrigger'
+import Button from 'react-bootstrap/Button';
+import Popover from 'react-bootstrap/Popover';
 
 
 const AboutLeadersSection = ({ leadership }) => {
+
   return (
     <div className='container about-leaders-container'>
         <h2 className='about-leaders-heading'>{leadership.heading}</h2>
@@ -19,14 +24,36 @@ const AboutLeadersSection = ({ leadership }) => {
                         </div>
                         <div className='col-8 about-leaders-profile-container'>
                         <div className='about-leaders-profile-name'>
-                            {profile.name}
+                            {profile.name.toUpperCase()}
                         </div>
                         <div className='about-leaders-profile-position'>
                             {profile.position}
                         </div>
-                        <div className='about-leaders-profile-experience'>
-                            <ConvertMarkdown content={profile.experience} className={'about-leaders-profile-experience-text'} />
+                        <div className='about-leaders-profile-position'>
+                            {profile.description}
                         </div>
+                        <OverlayTrigger
+                            placement="top"
+                            delay={{ show: 250, hide: 400 }}
+                            overlay={<Popover id="popover-basic">
+                                <Popover.Header as="h3">{profile.name}'s work experience</Popover.Header>
+                                <Popover.Body>
+                                    <ConvertMarkdown content={profile.experience} className={'popover-content'} />
+                                </Popover.Body>
+                            </Popover>}
+                        >
+                            <Button className='about-leaders-experience-button'>
+                                <div className='experience-button-display'>
+                                    <div className='experience-button-text'>
+                                        Read more
+                                    </div>
+                                    <div className='experience-button-arrow'>
+                                        <StaticImage src="../../../static/img/homepage/right-arrow.png" alt="right-arrow" />
+                                    </div>
+                                </div>
+                                
+                            </Button>
+                        </OverlayTrigger>
                         </div>
                     </div>
                     </div>
@@ -45,8 +72,8 @@ const AboutLeadersSection = ({ leadership }) => {
             </div>
             <div className='about-leaders-jobs-button-container'>
                 <div className='btn btn-outline-primary about-leaders-jobs-button'>
-                    <a href="https://angel.co/company/rocketacademy/jobs" target="_blank"  rel="noopener noreferrer">
-                        See Job Openings
+                    <a href="https://boards.greenhouse.io/rocketacademy" target="_blank"  rel="noopener noreferrer">
+                        Open Positions
                     </a>
                 </div>
             </div>

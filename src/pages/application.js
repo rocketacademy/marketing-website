@@ -146,13 +146,13 @@ const ApplicationForm = () => {
             value={inputs.age || ""}
             onChange={handleChange} id="age" custom>
             <option value="">--</option>
-            <option value="< 18">&lt; 18</option>
+            <option value="less than 18">&lt; 18</option>
             <option value="18 - 24">18-24</option>
             <option value="25 - 34">25-34</option>
             <option value="35 - 44">35-44</option>
             <option value="45 - 54">45-54</option>
             <option value="55 - 64">55-54</option>
-            <option value=">= 65">&gt;= 65</option>
+            <option value="more than 65">&gt;= 65</option>
         </Form.Select>
           <Form.Control.Feedback type="invalid">
             Please provide a valid age.
