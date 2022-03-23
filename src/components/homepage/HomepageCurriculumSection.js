@@ -8,7 +8,7 @@ const HomepageCurriculumSection = ({ curriculum }) => {
         <div className='container homepage-curriculum-inner-container'>
             <div className='row homepage-curriculum-heading-row'>
                 <div className='col-12 col-md-6 homepage-curriculum-heading-col-left'>
-                  <p className='curriculum-smalltext'>{curriculum.smalltext}</p>
+                  {/* <p className='curriculum-smalltext'>{curriculum.smalltext}</p> */}
                   <h2 className='curriculum-header'>{curriculum.heading}</h2>
                   <p className='curriculum-subheading'>{curriculum.subheading}</p>
                 </div>

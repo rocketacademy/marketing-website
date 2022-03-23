@@ -48,7 +48,7 @@ const SiteNavbar = () => {
                             </Link>
                         </NavDropdown.Item>
                     </NavDropdown>
-                    <NavDropdown title="Company" id="basic-nav-dropdown"> 
+                    {/* <NavDropdown title="Company" id="basic-nav-dropdown"> 
                         <NavDropdown.Item>
                             <Link to="/about">
                                 About Us
@@ -59,7 +59,8 @@ const SiteNavbar = () => {
                                 Careers
                             </Link>
                         </NavDropdown.Item>
-                    </NavDropdown>
+                    </NavDropdown> */}
+                    <Nav.Link as={ Link } to="/about" activeClassName="nav-active" className="no-dropdown">About Us</Nav.Link>
                     <Nav.Link as={ Link } to="/faq" activeClassName="nav-active" className="no-dropdown">FAQ</Nav.Link>
                     <Nav.Item className="button-container">
                         <Button variant="outline-primary" className="btn navbar-btn btn-outline-primary">
