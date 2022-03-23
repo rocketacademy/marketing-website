@@ -33,10 +33,10 @@ const AboutLeadersSection = ({ leadership }) => {
                             {profile.description}
                         </div>
                         <OverlayTrigger
-                            placement="top"
+                            placement="bottom"
                             delay={{ show: 250, hide: 400 }}
                             overlay={<Popover id="popover-basic">
-                                <Popover.Header as="h3">{profile.name}'s work experience</Popover.Header>
+                                <Popover.Header as="h3">{profile.name.split(' ')[0]}'s work experience</Popover.Header>
                                 <Popover.Body>
                                     <ConvertMarkdown content={profile.experience} className={'popover-content'} />
                                 </Popover.Body>

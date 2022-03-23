@@ -237,11 +237,11 @@
 
 .homepage-curriculum-outer-container {
   background-color: variables.$light;
-  padding-top: 20px;
+  padding-top: 30px;
   padding-bottom: 20px;
   @include variables.md {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
   }
   .homepage-curriculum-heading-row {
     .homepage-curriculum-heading-col-left {
@@ -347,9 +347,12 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+
   @include variables.md {
     min-height: 320px;
     justify-content: space-between;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
   .homepage-formerstudents-row {
     display: flex;
