@@ -360,14 +360,16 @@
     .homepage-formerstudents-col {
       padding-top: 15px;
       padding-bottom: 15px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
       @include variables.md {
         padding-top: 0;
         padding-bottom: 0;
       }
       .homepage-formerstudents-company {
+        width: 150px;
         min-height: 88px;
-        display: flex;
-        align-items: center;
       }
       .homepage-formerstudents-testimonial {
         font-weight: normal;

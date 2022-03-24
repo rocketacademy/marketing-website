@@ -226,7 +226,7 @@ export const pageQuery = graphql`
             experience
             image {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, height: 200, width: 200)
+                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
               }
             }
             position
@@ -238,7 +238,7 @@ export const pageQuery = graphql`
         formerstudents {
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 300, height: 100)
             }
           }
           position
