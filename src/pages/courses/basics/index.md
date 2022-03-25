@@ -75,7 +75,7 @@ admissions:
   subheading: No math or coding background required, just a computer with
     internet, webcam and passion!
   cardheading: Free for a limited time only
-  prevcost: $S999
+  prevcost: S$999
   currentcost: FREE
   objectives:
     - objective: Build simple apps
