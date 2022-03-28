@@ -87,7 +87,7 @@ formerstudents:
     testimonial: >
       “I chose Rocket Academy over other programs as it was a more comprehensive
       and rigorous program that took only 6 months to complete." 
-    studentname: Samantha Koh
+    studentname: Jia En Chiew
     position: Former Architectural graduate | Software Engineer at GoTrade
   - image: /img/homepage/glints-color-logo.png
     testimonial: >
