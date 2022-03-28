@@ -83,7 +83,7 @@ curriculum:
         18 years’ experience in tech development, start ups, and education
         Former software engineer at multiple European and US based tech firms
 formerstudents:
-  - image: /img/376x188-partner-logo-gotrade.png
+  - image: /img/gotrade.png
     testimonial: >
       “I chose Rocket Academy over other programs as it was a more comprehensive
       and rigorous program that took only 6 months to complete." 
