@@ -40,7 +40,10 @@ export const IndexPageTemplate = ({
               <h6 className="homepage-header-companies-heading">OUR HIRING PARTNERS</h6>
               <div className="homepage-header-companies-container">
               <div className="homepage-header-individual-company">
-                  <StaticImage src="../../static/img/homepage/govtech-color-logo.png" alt="govtech logo" />
+                  <StaticImage src="../../static/img/homepage/govtech-color-logo.png" alt="govtech logo" placeholder="blurred" />
+              </div>
+              <div className="homepage-header-individual-company">
+                  <StaticImage src="../../static/img/gotrade.png" alt="gotrade logo" placeholder="blurred" />
               </div>
               <div className="homepage-header-individual-company">
                 <a href="https://www.99.co/team/" target="_blank" rel="noopener noreferrer">
