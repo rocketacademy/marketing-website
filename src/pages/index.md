@@ -83,14 +83,12 @@ curriculum:
         18 years’ experience in tech development, start ups, and education
         Former software engineer at multiple European and US based tech firms
 formerstudents:
-  - image: /img/homepage/govtech-color-logo.png
+  - image: /img/376x188-partner-logo-gotrade.png
     testimonial: >
-      “Rocket Academy gave me a learning structure curated from industry
-      experience. I would not have known what to focus my energy and time on if
-      I were studying on my own.”
+      “I chose Rocket Academy over other programs as it was a more comprehensive
+      and rigorous program that took only 6 months to complete." 
     studentname: Samantha Koh
-    position: |
-      Former Business Analyst | Software Engineer at GovTech
+    position: Former Architectural graduate | Software Engineer at GoTrade
   - image: /img/homepage/glints-color-logo.png
     testimonial: >
       “It has been very rewarding. I feel proud of all the projects I've done
