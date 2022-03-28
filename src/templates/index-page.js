@@ -238,7 +238,7 @@ export const pageQuery = graphql`
         formerstudents {
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 300, height: 100)
+              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 300)
             }
           }
           position
