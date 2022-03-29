@@ -50,7 +50,7 @@ courses:
       heading: Bootcamp
       subheading: Switch careers to coding. Basics course recommended.
       prevprice: S$9999
-      currentprice: S$4999
+      currentprice: S$4,999/ HK$29,999/ AU$4,999
       duration: ✓ 48 Weeks (12 Months)
       conditions: ✓ Live and online
     - type: Full Time
@@ -58,7 +58,7 @@ courses:
       heading: Bootcamp
       subheading: Switch careers to coding. Basics course recommended.
       prevprice: S$9999
-      currentprice: S$4999
+      currentprice: S$4,999/ HK$29,999/ AU$4,999
       duration: ✓ 24 Weeks (6 Months)
       conditions: ✓ Live and online
 curriculum:
