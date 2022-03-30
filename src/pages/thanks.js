@@ -6,26 +6,16 @@ import Layout from '../components/Layout';
 
 const ApplicationSuccessful = () => {
 
-  const [show, setShow] = useState(true);
-
-  const handleClose = () => {
-    setShow(false);
-    navigate('/');
-  } 
-
   return (
     <Layout>
-        <Modal show={show} onHide={handleClose} centered>
-        <Modal.Header closeButton>
-            <Modal.Title>Thanks for your application 🙂</Modal.Title>
-        </Modal.Header>
-        <Modal.Body>You'll receive an email acknowledgement from us shortly.</Modal.Body>
-        <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose}>
-            Close
-            </Button>
-        </Modal.Footer>
-        </Modal>
+      <div class="row thanks-row">
+        <div class="thanks-message-cont">
+          <h4>Thanks for submitting your application 🙂</h4>
+          <p>
+            You'll receive an email acknowledgement from us shortly.
+          </p>
+        </div>
+      </div>
     </Layout>
   )
 }
