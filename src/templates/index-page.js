@@ -40,12 +40,6 @@ export const IndexPageTemplate = ({
               <h6 className="homepage-header-companies-heading">OUR HIRING PARTNERS</h6>
               <div className="homepage-header-companies-container">
               <div className="homepage-header-individual-company">
-                  <StaticImage src="../../static/img/homepage/govtech-color-logo.png" alt="govtech logo" placeholder="blurred" />
-              </div>
-              <div className="homepage-header-individual-company">
-                  <StaticImage src="../../static/img/gotrade.png" alt="gotrade logo" placeholder="blurred" />
-              </div>
-              <div className="homepage-header-individual-company">
                 <a href="https://www.99.co/team/" target="_blank" rel="noopener noreferrer">
                   <StaticImage 
                     src='../../static/img/homepage/ninetynineco-color-logo.png' alt="ninetynineco logo" 
@@ -54,10 +48,10 @@ export const IndexPageTemplate = ({
                 </a>
               </div>
               <div className="homepage-header-individual-company">
-                  <StaticImage 
-                    src='../../static/img/homepage/glints-color-logo.png' alt="glints logo" 
-                    placeholder="blurred"
-                    />
+                  <StaticImage src="../../static/img/about-page/about-advanceai-icon.png" alt="advanceai logo" placeholder="blurred" />
+              </div>
+              <div className="homepage-header-individual-company">
+                  <StaticImage src="../../static/img/homepage/cakedefi-logo.png" alt="cakedefi logo" placeholder="blurred" />
               </div>
               <div className="homepage-header-individual-company">
                   <StaticImage 
@@ -67,9 +61,33 @@ export const IndexPageTemplate = ({
               </div>
               <div className="homepage-header-individual-company">
                   <StaticImage 
+                    src='../../static/img/homepage/glints-color-logo.png' alt="glints logo" 
+                    placeholder="blurred"
+                    />
+              </div>
+              
+              <div className="homepage-header-individual-company">
+                  <StaticImage src="../../static/img/gotrade.png" alt="gotrade logo" placeholder="blurred" />
+              </div>
+              
+              <div className="homepage-header-individual-company">
+                  <StaticImage src="../../static/img/homepage/govtech-color-logo.png" alt="govtech logo" placeholder="blurred" />
+              </div>
+              <div className="homepage-header-individual-company">
+                  <StaticImage src="../../static/img/about-page/about-kargo-icon.png" alt="kargo logo" placeholder="blurred" />
+              </div>
+              
+              <div className="homepage-header-individual-company">
+                  <StaticImage 
                     src='../../static/img/about-page/about-stashaway-icon.png' alt="stashaway logo" 
                     placeholder="blurred"
                     />
+              </div>
+              <div className="homepage-header-individual-company">
+                  <StaticImage src="../../static/img/about-page/about-Unit21-icon.png" alt="unit21 logo" placeholder="blurred" />
+              </div>
+              <div className="homepage-header-individual-company">
+                  <StaticImage src="../../static/img/about-page/about-xendit-icon.png" alt="xendit logo" placeholder="blurred" />
               </div>
               <div className="homepage-header-individual-company">
                   <StaticImage 
