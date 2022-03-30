@@ -5,8 +5,14 @@
   align-items: center;
   justify-content: center;
   height: 100vw;
-  @include variables.md {
+  @include variables.sm {
     height: 75vw;
+  }
+  @include variables.lg {
+    height: 50vw;
+  }
+  @include variables.xl {
+    height: 60vw;
   }
   .thanks-message-cont {
     background-color: $light;
