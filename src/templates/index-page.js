@@ -73,9 +73,6 @@ export const IndexPageTemplate = ({
               <div className="homepage-header-individual-company">
                   <StaticImage src="../../static/img/about-page/about-kargo-icon.png" alt="kargo logo" placeholder="blurred" />
               </div>
-              <div className="homepage-header-individual-company">
-                  <StaticImage src="../../static/img/about-page/about-payfazz-icon.jpeg" alt="payfazz logo" placeholder="blurred" />
-              </div>
               
               <div className="homepage-header-individual-company">
                   <StaticImage 
