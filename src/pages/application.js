@@ -7,7 +7,6 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
 import '../styles/main.scss';
 import Layout from '../components/Layout';
-import Modal from 'react-bootstrap/Modal';
 import { navigate } from 'gatsby';
 
 const ApplicationForm = () => {
@@ -20,15 +19,6 @@ const ApplicationForm = () => {
 
   const [inputs, setInputs] = useState({});
   
-  const [show, setShow] = useState(false);
-
-  const handleClose = () => {
-    setShow(false);
-    navigate('/');
-  } 
-  
-  const handleShow = () => setShow(true);
-
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
@@ -46,7 +36,6 @@ const ApplicationForm = () => {
 
     } else {
       event.preventDefault();
-      handleShow();
       fetch('/.netlify/functions/apply-now', {
         method: 'POST', 
         headers: {
@@ -57,6 +46,7 @@ const ApplicationForm = () => {
       .then(response => response.json())
       .then(data => {
         console.log('Success:', data);
+        navigate('/thanks');
       })
       .catch((error) => {
         console.error('Error:', error);
@@ -256,17 +246,6 @@ const ApplicationForm = () => {
         </Form.Group>
       <Button className="submit-button" type="submit">Submit form</Button>
     </Form>
-    <Modal show={show} onHide={handleClose} centered>
-      <Modal.Header closeButton>
-        <Modal.Title>Thanks for your application 🙂</Modal.Title>
-      </Modal.Header>
-      <Modal.Body>You'll receive an email acknowledgement from us shortly.</Modal.Body>
-      <Modal.Footer>
-        <Button variant="secondary" onClick={handleClose}>
-          Close
-        </Button>
-      </Modal.Footer>
-    </Modal>
     </div>
     </Layout>
   </>
