@@ -51,6 +51,9 @@ export const IndexPageTemplate = ({
                   <StaticImage src="../../static/img/about-page/about-advanceai-icon.png" alt="advanceai logo" placeholder="blurred" />
               </div>
               <div className="homepage-header-individual-company">
+                  <StaticImage src="../../static/img/homepage/cakedefi-logo.png" alt="cakedefi logo" placeholder="blurred" />
+              </div>
+              <div className="homepage-header-individual-company">
                   <StaticImage 
                     src='../../static/img/about-page/about-carousell-icon.png' alt="carousell logo" 
                     placeholder="blurred"
