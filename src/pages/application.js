@@ -46,6 +46,11 @@ const ApplicationForm = () => {
       .then(response => response.json())
       .then(data => {
         console.log('Success:', data);
+        if (typeof window !== "undefined") {
+          if (window.fbq != null) {
+            window.fbq('track', 'SubmitApplication');
+          }
+        };
         navigate('/thanks');
       })
       .catch((error) => {
