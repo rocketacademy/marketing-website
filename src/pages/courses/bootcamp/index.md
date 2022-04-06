@@ -27,18 +27,15 @@ overview:
     - image: /img/bootcamp-page/bootcamp-interview-prep-icon.png
       text: Unlimited interview prep
   testimonial:
-    quote: >
-      “Rocket Academy gave me a learning structure curated from industry
-      experience. I would not have known what to focus my energy and time on if
-      I were studying on my own.”
-    image: /img/homepage/govtech-color-logo.png
-    name: SAMANTHA KOH
-    position: Former Business Analyst  | Software Engineer at GovTech
+    quote: “I chose Rocket Academy over other programs as it was a more
+      comprehensive and rigorous program that took only 6 months to complete."
+    image: /img/gotrade.png
+    name: JIA EN CHIEW
+    position: Former Architectural Graduate | Software Engineer at GoTrade
 curriculum:
   heading: Curriculum
   sidebarlabel: Curriculum
-  subheading:
-    Rocket Academy focuses on coding concepts, not languages. Throughout
+  subheading: Rocket Academy focuses on coding concepts, not languages. Throughout
     the program, we cover key topics in software engineering that are highly
     relevant to today's industry, subject to minor alterations to match the
     changing demands of our students and industry needs.
@@ -135,8 +132,7 @@ admissions:
       text: |
         If you pass the video application, we will send you a registration link.
   suitabilityheading: Is this program right for me?
-  suitabilitysubheading:
-    "The Rocket Bootcamp is designed for motivated people who
+  suitabilitysubheading: "The Rocket Bootcamp is designed for motivated people who
     have basic skills in JavaScript, and aptitude for problem solving, and
     strong communication and collaboration skills. We welcome students from all
     work experiences and fields of study who are looking to boost their career.
@@ -155,7 +151,8 @@ tuition:
     - frequency: /img/homepage/part-time-icon.png
       prevcost: S$9,999
       currentcost: S$4,999
-      text: Part-Time Bootcamp covers the same material over twice the time (12 months)
+      text: Part-Time Bootcamp covers the same material over twice the time (12
+        months)
     - frequency: /img/homepage/full-time-icon.png
       prevcost: S$9,999
       currentcost: S$4,999
