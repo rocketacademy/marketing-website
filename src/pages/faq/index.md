@@ -36,7 +36,7 @@ general:
 
 
         3. Rocket is led by software engineers from top schools and companies such as Stanford, Cambridge and Facebook that have strong connections to the tech industry.
-    - question: Why choose Rocket's courses over other online bootcamps?
+    - question: Why choose Rocket's courses over other bootcamps?
       answers: >-
         1. Rocket offers a more comprehensive Bootcamp course, covering app
         development and algorithms, with full time (6 months) and part time (12
