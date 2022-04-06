@@ -36,6 +36,15 @@ general:
 
 
         3. Rocket is led by software engineers from top schools and companies such as Stanford, Cambridge and Facebook that have strong connections to the tech industry.
+    - question: Why choose Rocket's courses over other online bootcamps?
+      answers: >-
+        1. Rocket offers a more comprehensive Bootcamp course, covering app
+        development and algorithms, with full time (6 months) and part time (12
+        months) options.
+
+        2. We have a high-calibre alumni network, driven by selective admissions that screens upfront for coding aptitude and communication skills.
+
+        3. Rocket has seen an abundance of tech company hiring partners that trust our selection process and quality of education - as attested to by our depth and breath of hiring partners such as Carousell, Xendit, Advance.AI, StashAway, Payfazz, Unit21 and Kargo.
     - question: Why choose Rocket over self-learning?
       answers: >
         1. Rocket provides a structured and guided path to getting a coding job
@@ -132,15 +141,6 @@ general:
         2. Details on Software Engineering Bootcamp tuition fees can be found here. We accept payment via credit card, or if you are based in Singapore, PayNow. 
 
         3. Payment is required prior to the start of the course to secure your spot in the program.
-    - question: Why choose Rocket's courses over other online bootcamps?
-      answers: >-
-        1. Rocket offers a more comprehensive Bootcamp course, covering app
-        development and algorithms, with full time (6 months) and part time (12
-        months) options.
-
-        2. We have a high-calibre alumni network, driven by selective admissions that screens upfront for coding aptitude and communication skills.
-
-        3. Rocket has seen an abundance of tech company hiring partners that trust our selection process and quality of education - as attested to by our depth and breath of hiring partners such as Carousell, Xendit, Advance.AI, StashAway, Payfazz, Unit21 and Kargo.
 codingbasics:
   heading: Coding Basics
   sidebarlabel: Coding Basics
