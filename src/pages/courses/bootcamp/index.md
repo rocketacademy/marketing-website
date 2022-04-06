@@ -198,14 +198,14 @@ course:
         - topic: Sequelize
         - topic: Webpack
     - heading: 4-6
-      project: Full-stack react app
+      project: Full-stack React app
       topics:
         - topic: JSX
         - topic: React state and components
         - topic: React dev tools
         - topic: Error boundaries
     - heading: 4-6
-      project: Advanced full-stack react app
+      project: Advanced full-stack React app
       topics:
         - topic: React router
         - topic: React hooks
