@@ -3,6 +3,7 @@ import Table from 'react-bootstrap/Table';
 import Accordion from 'react-bootstrap/Accordion';
 import Tabs from 'react-bootstrap/Tabs';
 import Tab from 'react-bootstrap/Tab';
+import MarkdownContent from '../ConvertMarkdown';
 
 
 const BootcampCourseSection = ({ course }) => {
@@ -13,9 +14,7 @@ const BootcampCourseSection = ({ course }) => {
             <div className='bootcamp-course-header' >
                 {course.heading}
             </div>
-            <div className='bootcamp-course-subheading'>
-                {course.subheading}
-            </div>
+            <MarkdownContent content={course.subheading} className={'bootcamp-course-subheading'} />
             <div className='bootcamp-course-content-desktop'>
                 <Tabs defaultActiveKey="0" className="mb-3">
                     {months.map((month, index) => {

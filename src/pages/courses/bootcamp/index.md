@@ -171,7 +171,7 @@ course:
     Our Full-Time Bootcamp schedule runs from Mondays to Fridays, 10am-12pm SGT.
     Part-Time Bootcamp covers the same material over twice the time (12 months),
     meeting Tuesdays 7:30-9:30pm SGT and Saturdays 10am-12pm SGT. [See full
-    course curriculum here](http://swebootcamp.rocketacademy.co/)
+    course curriculum here.](http://swebootcamp.rocketacademy.co/)
   schedule:
     - heading: 1-3
       project: "Front-End Application: Video Poker"
