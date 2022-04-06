@@ -35,10 +35,14 @@ overview:
 curriculum:
   heading: Curriculum
   sidebarlabel: Curriculum
-  subheading: Rocket Academy focuses on coding concepts, not languages. Throughout
-    the program, we cover key topics in software engineering that are highly
+  subheading: >-
+    Rocket Academy focuses on coding concepts, not languages. Throughout the
+    program, we cover key topics in software engineering that are highly
     relevant to today's industry, subject to minor alterations to match the
     changing demands of our students and industry needs.
+
+
+    Compared to similar bootcamp programs online, we offer a more comprehensive course, covering app development and algorithms, with full time (6 months) and part time (12 months) options. We have a high-calibre alumni network, driven by selective admissions that screens upfront for coding aptitude and communication skills. Rocket has also seen an abundance of tech company hiring partners that trust our selection process and quality of education - as attested to by our depth and breath of hiring partners such as Carousell, Xendit, Advance.AI, StashAway, Payfazz, Unit21 and Kargo.
   sections:
     - heading: Technical Excellence
       section1: Frontend and backend frameworks
