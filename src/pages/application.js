@@ -1,16 +1,20 @@
 import React from 'react'
 import { useEffect, useState } from 'react';
-import countries from '../helper/countries';
-import Form from 'react-bootstrap/Form';
-import Col from 'react-bootstrap/Col';
-import InputGroup from 'react-bootstrap/InputGroup';
 import Button from 'react-bootstrap/Button';
-import '../styles/main.scss';
-import Layout from '../components/Layout';
+import Col from 'react-bootstrap/Col';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+
 import { navigate } from 'gatsby';
+import ReCAPTCHA from 'react-google-recaptcha';
+
+import countries from '../helper/countries';
+import Layout from '../components/Layout';
+import '../styles/main.scss';
+
+const RECAPTCHA_KEY = '6LeSI1cfAAAAAFOnF1Fli9m5TYV_6MxqZgEkEvEu'
 
 const ApplicationForm = () => {
-
   useEffect(() => {
     countries();
   }, []);
@@ -18,13 +22,36 @@ const ApplicationForm = () => {
   const [validated, setValidated] = useState(false);
 
   const [inputs, setInputs] = useState({});
-  
+
+  const [buttonDisabled, setButtonDisabled] = useState(true)
+
+  const recaptchaRef = React.createRef()
+
   const handleChange = (event) => {
     const name = event.target.name;
     const value = event.target.value;
+
     setInputs(values => ({...values, [name]: value}))
   }
 
+  const handleSubmitCaptcha = (event) => {
+    event.preventDefault();
+    const form = event.target
+    const recaptchaValue = recaptchaRef.current.getValue()
+
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: JSON.parse({
+        'form-name': form.getAttribute('name'),
+        'g-recaptcha-response': recaptchaValue,
+      }),
+    })
+    .then(() => setButtonDisabled(false))
+    .catch((error) => {
+      console.error('Error:', error);
+    });
+  }
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -57,9 +84,6 @@ const ApplicationForm = () => {
         console.error('Error:', error);
       }); 
     }
-
-   
-    
   };
 
   return (
@@ -77,7 +101,13 @@ const ApplicationForm = () => {
       </div>
     </div>
     <div className='container application-form-container'>
-    <Form name="application-form" noValidate validated={validated} onSubmit={handleSubmit} data-netlify="true" data-netlify-recaptcha="true" >
+    <Form
+      name="application-form"
+      data-netlify="true"
+      data-netlify-recaptcha="true"
+      noValidate validated={validated}
+      onSubmit={handleSubmit}
+    >
       
         <Form.Group as={Col} className="mb-3" md="6" controlId="validationCustom01">
           <Form.Label>First name</Form.Label>
@@ -249,9 +279,21 @@ const ApplicationForm = () => {
             <Form.Control.Feedback type="invalid">Please select a course.</Form.Control.Feedback>
           </Form.Check>
         </Form.Group>
-      <div data-netlify-recaptcha="true"></div>
+      <ReCAPTCHA
+        ref={recaptchaRef}
+        sitekey={RECAPTCHA_KEY}
+        size="normal"
+        id="recaptcha-google"
+        onChange={() => handleSubmitCaptcha()}
+      />
       <input type="hidden" name="application-form" value="application-form" />
-      <Button className="submit-button" type="submit">Submit form</Button>
+      <Button
+        className="submit-button"
+        type="submit"
+        disabled={buttonDisabled}
+      >
+        Submit form
+      </Button>
     </Form>
     </div>
     </Layout>
