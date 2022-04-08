@@ -48,7 +48,7 @@ const ApplicationForm = () => {
       }),
     })
     .then((response) => {
-      console.log(response)
+      response.json()
       setButtonDisabled(false)
     })
     .catch((error) => {
