@@ -34,7 +34,7 @@ const ApplicationForm = () => {
     setInputs(values => ({...values, [name]: value}))
   }
 
-  const handleSubmitCaptcha = (event) => {
+  const handleSubmitRecaptcha = (event) => {
     event.preventDefault();
     const form = event.target
     const recaptchaValue = recaptchaRef.current.getValue()
@@ -47,7 +47,10 @@ const ApplicationForm = () => {
         'g-recaptcha-response': recaptchaValue,
       }),
     })
-    .then(() => setButtonDisabled(false))
+    .then((response) => {
+      console.log(response)
+      setButtonDisabled(false)
+    })
     .catch((error) => {
       console.error('Error:', error);
     });
@@ -284,7 +287,7 @@ const ApplicationForm = () => {
         sitekey={RECAPTCHA_KEY}
         size="normal"
         id="recaptcha-google"
-        onChange={() => handleSubmitCaptcha()}
+        onChange={() => handleSubmitRecaptcha()}
       />
       <input type="hidden" name="application-form" value="application-form" />
       <Button
