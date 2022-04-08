@@ -77,7 +77,7 @@ const ApplicationForm = () => {
       </div>
     </div>
     <div className='container application-form-container'>
-    <Form noValidate validated={validated} onSubmit={handleSubmit} >
+    <Form name="application-form" noValidate validated={validated} onSubmit={handleSubmit} data-netlify="true" data-netlify-recaptcha="true" >
       
         <Form.Group as={Col} className="mb-3" md="6" controlId="validationCustom01">
           <Form.Label>First name</Form.Label>
@@ -249,6 +249,8 @@ const ApplicationForm = () => {
             <Form.Control.Feedback type="invalid">Please select a course.</Form.Control.Feedback>
           </Form.Check>
         </Form.Group>
+      <div data-netlify-recaptcha="true"></div>
+      <input type="hidden" name="application-form" value="application-form" />
       <Button className="submit-button" type="submit">Submit form</Button>
     </Form>
     </div>
