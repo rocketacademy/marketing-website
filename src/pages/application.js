@@ -47,10 +47,8 @@ const ApplicationForm = () => {
         'g-recaptcha-response': recaptchaValue,
       }),
     })
-    .then((response) => {
-      response.json()
-      setButtonDisabled(false)
-    })
+    .then(response => response.json())
+    .then(setButtonDisabled(false))
     .catch((error) => {
       console.error('Error:', error);
     });
