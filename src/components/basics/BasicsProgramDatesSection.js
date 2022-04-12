@@ -20,7 +20,7 @@ const BasicsProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
 
     return (
       <tr>
-        <td className='basics-program-dates-duration'>5 weeks</td>
+        <td className='basics-program-dates-duration'>6 weeks</td>
         <td className='basics-program-dates-firstclass'>
           <div className='basics-program-dates-content'>
             <div>
