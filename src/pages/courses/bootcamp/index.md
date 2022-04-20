@@ -150,12 +150,12 @@ tuition:
   card:
     - frequency: /img/homepage/part-time-icon.png
       prevcost: S$9,999
-      currentcost: S$4,999
+      currentcost: S$4,999/HK$29,999/AU$4,999
       text: Part-Time Bootcamp covers the same material over twice the time (12
         months)
     - frequency: /img/homepage/full-time-icon.png
       prevcost: S$9,999
-      currentcost: S$4,999
+      currentcost: S$4,999/HK$29,999/AU$4,999
       text: "     "
 programdates:
   heading: Upcoming Program Dates
@@ -164,11 +164,10 @@ programdates:
 course:
   heading: Course Overview
   sidebarlabel: Course Overview
-  subheading: >
-    Our Full-Time Bootcamp schedule runs from Mondays to Fridays, 10am-12pm SGT.
-    Part-Time Bootcamp covers the same material over twice the time (12 months),
-    meeting Tuesdays 7:30-9:30pm SGT and Saturdays 10am-12pm SGT. [See full
-    course curriculum here.](http://swebootcamp.rocketacademy.co/)
+  subheading: Our Full-Time Bootcamp schedule runs from Mondays to Fridays,
+    10am-12pm SGT. Part-Time Bootcamp covers the same material over twice the
+    time (12 months), meeting Tuesdays 7:30-9:30pm SGT and Saturdays 10am-12pm
+    SGT. [See full course curriculum here.](http://bootcamp.rocketacademy.co)
   schedule:
     - heading: 1-3
       project: "Front-End Application: Video Poker"
