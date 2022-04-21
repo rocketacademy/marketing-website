@@ -1,9 +1,9 @@
 ---
 templateKey: bootcamp-page
-title: Software Engineering Bootcamp
+title: Software Engineering Coding Bootcamp
 pagename: bootcamp
 header:
-  heading: Software Engineering Bootcamp
+  heading: Software Engineering Coding Bootcamp
   subheading: Learn in-demand skills and launch a new career path as a Software Engineer
   image:
     image: /img/bootcamp-page/bootcamp-header-image.png
@@ -14,10 +14,10 @@ header:
     - reason: Part-time or Full-time
 overview:
   heading: Become a Software Engineer
-  subheading: Software Engineering Bootcamp is Rocket Academy's flagship career
-    conversion course, primarily taught in JavaScript and Python. On successful
-    completion of the Bootcamp course, students can expect to be job-ready
-    full-stack software engineers.
+  subheading: Software Engineering Coding Bootcamp is Rocket Academy's flagship
+    career conversion course, primarily taught in JavaScript and Python. On
+    successful completion of the Bootcamp course, students can expect to be
+    job-ready full-stack software engineers.
   sidebarlabel: Overview
   reasons:
     - image: /img/bootcamp-page/bootcamp-projects-icon.png
@@ -27,18 +27,19 @@ overview:
     - image: /img/bootcamp-page/bootcamp-interview-prep-icon.png
       text: Unlimited interview prep
   testimonial:
-    quote: “I chose Rocket Academy over other programs as it was a more
-      comprehensive and rigorous program that took only 6 months to complete."
+    quote: “I chose Rocket Academy over other coding bootcamp programs as it was
+      more comprehensive and rigorous that took only 6 months to complete."
     image: /img/gotrade.png
     name: JIA EN CHIEW
     position: Former Architectural Graduate | Software Engineer at GoTrade
 curriculum:
   heading: Curriculum
   sidebarlabel: Curriculum
-  subheading: Rocket Academy focuses on coding concepts, not languages. Throughout
-    the program, we cover key topics in software engineering that are highly
-    relevant to today's industry, subject to minor alterations to match the
-    changing demands of our students and industry needs.
+  subheading: Rocket Academy's coding bootcamp cirriculum focuses on coding
+    concepts, not languages. Throughout the program, we cover key topics in
+    software engineering that are highly relevant to today's industry, subject
+    to minor alterations to match the changing demands of our students and
+    industry needs.
   sections:
     - heading: Technical Excellence
       section1: Frontend and backend frameworks
@@ -111,11 +112,11 @@ admissions:
   sidebarlabel: Admissions
   subheading: >-
     Rocket’s Basics course is recommended as a pre-requisite for joining our
-    Bootcamp program. Learn more about [Rocket’s Coding
+    Coding Bootcamp program. Learn more about [Rocket’s Coding
     Basics](https://codingbasics.rocketacademy.co/).
 
 
-    If you already have some prior experience/knowledge in coding and would like to join Rocket's Bootcamp program, we may waive the Coding Basics requirement - reach out to us at [hello@rocketacademy.co](mailto:hello@rocketacademy.co) to find out more!
+    If you already have some prior experience/knowledge in coding and would like to join Rocket's Coding Bootcamp program, we may waive the Coding Basics requirement - reach out to us at [hello@rocketacademy.co](mailto:hello@rocketacademy.co) to find out more!
   steps:
     - image: /img/basics-page/basics-1.png
       heading: Applicant screening
@@ -132,11 +133,11 @@ admissions:
       text: |
         If you pass the video application, we will send you a registration link.
   suitabilityheading: Is this program right for me?
-  suitabilitysubheading: "The Rocket Bootcamp is designed for motivated people who
-    have basic skills in JavaScript, and aptitude for problem solving, and
-    strong communication and collaboration skills. We welcome students from all
-    work experiences and fields of study who are looking to boost their career.
-    If you are:"
+  suitabilitysubheading: "The Rocket Academy Coding Bootcamp program is designed
+    for motivated people who have basic skills in JavaScript, and aptitude for
+    problem solving, and strong communication and collaboration skills. We
+    welcome students from all work experiences and fields of study who are
+    looking to boost their career. If you are:"
   suitabilityobjectives:
     - objective: Proficiency with technical syntax and tools
     - objective: Code quality (naming, code comments)
@@ -151,7 +152,7 @@ tuition:
     - frequency: /img/homepage/part-time-icon.png
       prevcost: S$9,999
       currentcost: S$4,999/HK$29,999/AU$4,999
-      text: Part-Time Bootcamp covers the same material over twice the time (12
+      text: Part-Time Coding Bootcamp covers the same material over twice the time (12
         months)
     - frequency: /img/homepage/full-time-icon.png
       prevcost: S$9,999
@@ -164,10 +165,11 @@ programdates:
 course:
   heading: Course Overview
   sidebarlabel: Course Overview
-  subheading: Our Full-Time Bootcamp schedule runs from Mondays to Fridays,
-    10am-12pm SGT. Part-Time Bootcamp covers the same material over twice the
-    time (12 months), meeting Tuesdays 7:30-9:30pm SGT and Saturdays 10am-12pm
-    SGT. [See full course curriculum here.](http://bootcamp.rocketacademy.co)
+  subheading: Our Full-Time Coding Bootcamp schedule runs from Mondays to Fridays,
+    10am-12pm SGT. Part-Time Coding Bootcamp covers the same material over twice
+    the time (12 months), meeting Tuesdays 7:30-9:30pm SGT and Saturdays
+    10am-12pm SGT. [See full course curriculum
+    here.](http://bootcamp.rocketacademy.co)
   schedule:
     - heading: 1-3
       project: "Front-End Application: Video Poker"
