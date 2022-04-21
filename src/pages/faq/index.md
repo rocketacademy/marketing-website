@@ -9,23 +9,23 @@ general:
   heading: General
   sidebarlabel: General
   questions:
-    - question: Why choose Rocket’s Basics course?
+    - question: Why choose Rocket’s Coding Basics course?
       answers: >-
-        1. Basics is a pathway course, enabling top graduates to enrol in
+        1. Coding Basics is a pathway course, enabling top graduates to enrol in
         Rocket’s software engineering bootcamp should they wish to switch
         careers or learn professional coding.
 
-        2. Basics has been taken and recommended by students from top tech companies such as Facebook, Stripe, Grab, Shopee, Rakuten, Ninja Van, McKinsey, and more.
+        2. Coding Basics has been taken and recommended by students from top tech companies such as Facebook, Stripe, Grab, Shopee, Rakuten, Ninja Van, McKinsey, and more.
 
-        3. Basics is free.
-    - question: Why choose Rocket’s Bootcamp course?
+        3. Coding Basics is free.
+    - question: Why choose Rocket’s Coding Bootcamp course?
       answers: >-
         1. Rocket’s past students received offers from companies such as
         GovTech, Ninja Van, Xfers, 99.co, Glints, and more.
 
-        2. Rocket’s Bootcamp is longer, comprehensively covering topics in frontend, backend, cloud, and algorithms that other bootcamps typically skim over, resulting in a more standout portfolio.
+        2. Rocket’s Coding Bootcamp is longer, comprehensively covering topics in frontend, backend, cloud, and algorithms that other coding bootcamps typically skim over, resulting in a more standout portfolio.
 
-        3. Rocket’s Bootcamp only accepts top students, guaranteeing a strong network of classmates and alumni.
+        3. Rocket’s Coding Bootcamp only accepts top students, guaranteeing a strong network of classmates and alumni.
     - question: Why choose Rocket over university or polytechnic courses?
       answers: >
         1. Rocket is project-based, not exam-based. You will graduate with a
@@ -36,15 +36,15 @@ general:
 
 
         3. Rocket is led by software engineers from top schools and companies such as Stanford, Cambridge and Facebook that have strong connections to the tech industry.
-    - question: Why choose Rocket's courses over other bootcamps?
+    - question: Why choose Rocket's courses over other coding bootcamps?
       answers: >-
-        1. Rocket offers a more comprehensive Bootcamp course, covering app
-        development and algorithms, with full time (6 months) and part time (12
-        months) options.
+        1. Rocket offers a more comprehensive Coding Bootcamp course, covering
+        app development and algorithms, with full time (6 months) and part time
+        (12 months) options.
 
         2. We have a high-calibre alumni network, driven by selective admissions that screens upfront for coding aptitude and communication skills.
 
-        3. Rocket has seen an abundance of tech company hiring partners that trust our selection process and quality of education - as attested to by our depth and breath of hiring partners such as Carousell, Xendit, Advance.AI, StashAway, Payfazz, Unit21 and Kargo.
+        3. Employers want our students! Rocket has seen an abundance of tech company hiring partners that trust our selection process and quality of education - as attested to by our depth and breath of hiring partners such as Carousell, Xendit, Advance.AI, StashAway, Payfazz, Unit21 and Kargo.
     - question: Why choose Rocket over self-learning?
       answers: >
         1. Rocket provides a structured and guided path to getting a coding job
@@ -57,14 +57,14 @@ general:
       answers: >-
         1. Rocket has no physical campus and conducts classes over Zoom and
         Slack. This helps reduce course fees and commute time, while still
-        achieving the best bootcamp outcomes in Singapore.
+        achieving the best coding bootcamp outcomes.
 
         2. Students code together daily over video call and group chat. There are fewer than 10 students per instructor, enabling interactive classes where students ask questions and get feedback.
     - question: How is Rocket different from online courses?
-      answers: >
-        1. Rocket Academy is live and cohort-based. Students ask questions in
-        class daily and enjoy a community of classmates learning at the same
-        pace.
+      answers: >-
+        1. Rocket Academy's coding bootcamp course is live and cohort-based.
+        Students ask questions in class daily and enjoy a community of
+        classmates learning at the same pace.
 
         2. Rocket Academy cultivates a strong alumni network that significantly helps graduates with their careers.
     - question: What is the difference between software engineering, programming, and
@@ -90,7 +90,7 @@ general:
 
         2. Rocket Academy has had successful graduates from unrelated fields like cooking and horse racing.
 
-        3. Bootcamps exist because universities are unable to produce enough engineers. Companies will hire great engineers, regardless of professional qualifications.
+        3. Coding Bootcamps exist because universities are unable to produce enough engineers. Companies will hire great engineers, regardless of professional qualifications.
     - question: I’m bad at math. Can I be a software engineer?
       answers: |
         1. Math is not a pre-requisite for coding but logical thinking is.
@@ -114,23 +114,23 @@ general:
         us and we can advise whether self-studying or joining a course is
         appropriate.
 
-        2. If you already have some prior experience/knowledge in coding and would like to join Rocket's Bootcamp program, we may waive the Coding Basics requirement - reach out to us at hello at rocketacademy.co to find out more!
+        2. If you already have some prior experience/knowledge in coding and would like to join Rocket's Coding Bootcamp program, we may waive the Coding Basics requirement - reach out to us at hello at rocketacademy.co to find out more!
 
-        3. Many of our most successful graduates have had prior coding experience before joining Rocket. Our Software Engineering Bootcamp then provided them with the conceptual foundations, interview prep, and professional network they needed to complete their career switch.
+        3. Many of our most successful graduates have had prior coding experience before joining Rocket. Our Software Engineering Coding Bootcamp then provided them with the conceptual foundations, interview prep, and professional network they needed to complete their career switch.
     - question: Can I join Rocket’s courses while working a full-time job?
       answers: >-
-        1. Software Engineering Bootcamp has both full-time and part-time
+        1. Software Engineering Coding Bootcamp has both full-time and part-time
         options.
 
-        2. Full-Time Bootcamp requires students to commit 10am-6pm SGT Mon-Fri for 24 weeks. We discourage working a full-time job while enrolled in the full-time Bootcamp.
+        2. Full-Time Coding Bootcamp requires students to commit 10am-6pm SGT Mon-Fri for 24 weeks. We discourage working a full-time job while enrolled in the full-time Coding Bootcamp.
 
-        3. Part-Time Bootcamp requires students to commit 7.30-9.30pm SGT Tuesday evenings, and 10am-12pm SGT Saturday mornings, with roughly 20 hours of work per week for 48 weeks.
+        3. Part-Time Coding Bootcamp requires students to commit 7.30-9.30pm SGT Tuesday evenings, and 10am-12pm SGT Saturday mornings, with roughly 20 hours of work per week for 48 weeks.
     - question: How many classes can I miss?
       answers: >-
         1. Classes are mandatory, live Zoom meetings where we review and
         solidify concepts through discussion and exercises.
 
-        2. There is no strict attendance requirement for Rocket’s courses, but students who are not performing will be removed from their course.
+        2. There is no strict attendance requirement for Rocket’s coding courses, but students who are not performing will be removed from their course.
 
         3. If you need to miss class for any reason, please let your instructor know ahead of time.
     - question: How much do Rocket Academy's courses cost?
@@ -138,9 +138,9 @@ general:
         1. Coding Basics is currently free for all interested students. [Apply
         now](https://rocketacademy.co/application)!
 
-        2. Details on Software Engineering Bootcamp tuition fees can be found here. We accept payment via credit card, or if you are based in Singapore, PayNow. 
+        2. Details on Software Engineering Coding Bootcamp tuition fees can be found here. We accept payment via credit card, or if you are based in Singapore, PayNow. 
 
-        3. Payment is required prior to the start of the course to secure your spot in the program.
+        3. Payment is required prior to the start of the coding course to secure your spot in the program.
 codingbasics:
   heading: Coding Basics
   sidebarlabel: Coding Basics
@@ -164,20 +164,20 @@ codingbasics:
         our Software Engineering Bootcamp where we dive deeper into web and
         general application development.
 softwareengineeringbootcamp:
-  heading: Software Engineering Bootcamp
-  sidebarlabel: Software Engineering Bootcamp
+  heading: Software Engineering Coding Bootcamp
+  sidebarlabel: Software Engineering Coding Bootcamp
   questions:
-    - question: What languages will I learn in Bootcamp?
+    - question: What languages will I learn in Coding Bootcamp?
       answers: >-
         1. Rocket’s courses focus on teaching coding concepts, not languages.
         This is because coding concepts are applicable to all languages, but
         language syntax may only be relevant to that specific language.
 
-        2. Rocket's Software Engineering Bootcamp teaches the most popular languages and frameworks such as JavaScript, Python, SQL, Bash, Express, and React.
+        2. Rocket's Software Engineering Coding Bootcamp teaches the most popular languages and frameworks such as JavaScript, Python, SQL, Bash, Express, and React.
 
         3. More important than languages, Bootcamp concepts will be applicable to almost all languages, frameworks, and apps.
     - question: What career support does Rocket provide?
-      answers: >
+      answers: >-
         1. Regular student-only Q&A sessions with software engineers from
         industry to answer student questions and build students’ professional
         networks.
@@ -186,5 +186,5 @@ softwareengineeringbootcamp:
 
         3. Comprehensive and unlimited resume and portfolio review.
 
-        4. Comprehensive and unlimited referrals to companies in Rocket Academy’s network (most tech companies in Singapore so far). Rocket Academy only accepts high-performing Coding Basics students to Software Engineering Bootcamp, and companies trust that Rocket attracts and produces top talent.
+        4. Comprehensive and unlimited referrals to companies in Rocket Academy’s network (most tech companies in Singapore so far). Rocket Academy only accepts high-performing Coding Basics students to Software Engineering Coding Bootcamp, and companies trust that Rocket attracts and produces top talent.
 ---
