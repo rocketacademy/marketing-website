@@ -85,14 +85,15 @@ curriculum:
 formerstudents:
   - image: /img/gotrade.png
     testimonial: >
-      “I chose Rocket Academy over other programs as it was a more comprehensive
-      and rigorous program that took only 6 months to complete." 
+      “I chose Rocket Academy over other coding bootcamp programs as it was more
+      comprehensive and rigorous that took only 6 months to complete." 
     studentname: Jia En Chiew
     position: Former Architectural Graduate | Software Engineer at GoTrade
   - image: /img/homepage/glints-color-logo.png
     testimonial: >
-      “It has been very rewarding. I feel proud of all the projects I've done
-      and have a better sense of what to learn as a software engineer.”
+      “My Rocket Academy's coding bootcamp experience has been very rewarding. I
+      feel proud of all the projects I've done and have a better sense of what
+      to learn as a software engineer.”
     studentname: Perry Lim
     position: |
       Former Chef | Software Engineer at Glints
