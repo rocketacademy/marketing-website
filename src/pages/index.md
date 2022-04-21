@@ -3,8 +3,8 @@ templateKey: index-page
 title: Become a Software Engineer
 header:
   heading: Become a Software Engineer
-  subheading: 100% of our Bootcamp grads have received software engineering offers
-    from companies like 99.co, Xfers and GovTech.
+  subheading: 100% of our Coding Bootcamp grads have received software engineering
+    offers from companies like 99.co, Xfers and GovTech.
   headerimage:
     alt: kai's photo
     image: /img/homepage/homepage-image.png
@@ -39,7 +39,7 @@ courses:
   details:
     - type: Part Time
       image: /img/homepage/part-time-icon.png
-      heading: Basics
+      heading: Coding Basics
       subheading: Learn basic coding by building simple apps.
       prevprice: S$999
       currentprice: FREE
@@ -47,16 +47,16 @@ courses:
       conditions: ✓ Live and online
     - type: Part Time
       image: /img/homepage/part-time-icon.png
-      heading: Bootcamp
-      subheading: Switch careers to coding. Basics course recommended.
+      heading: Coding Bootcamp
+      subheading: Switch careers with our coding bootcamp. Basics course recommended.
       prevprice: S$9,999
       currentprice: S$4,999/HK$29,999/AU$4,999
       duration: ✓ 48 Weeks (12 Months)
       conditions: ✓ Live and online
     - type: Full Time
       image: /img/homepage/full-time-icon.png
-      heading: Bootcamp
-      subheading: Switch careers to coding. Basics course recommended.
+      heading: Coding Bootcamp
+      subheading: Switch careers with our coding bootcamp. Basics course recommended.
       prevprice: S$9,999
       currentprice: S$4,999/HK$29,999/AU$4,999
       duration: ✓ 24 Weeks (6 Months)
@@ -64,8 +64,8 @@ courses:
 curriculum:
   smalltext: 🚀 Q&A with Industry Experts
   heading: Curriculum designed by industry experts
-  subheading: Our concept-focused courses are designed to support students at
-    every level as they progress as professional programmers.
+  subheading: Our concept-focused coding bootcamp courses are designed to support
+    students at every level as they progress as professional programmers.
   image:
     alt: class screenshot
     image: /img/homepage/class-screenshot.png
