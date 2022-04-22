@@ -4,14 +4,21 @@ import React from 'react'
 const NextBatchDates = ({ details, upcomingCourseDates }) => {
     
     if (upcomingCourseDates) {
-        
+        let heading = '';
+
+        if (details.heading === 'Coding Basics') {
+            heading = 'Basics';
+        } else if (details.heading === 'Coding Bootcamp') {
+            heading = 'Bootcamp'
+        }
+    
         const relevantDates = upcomingCourseDates.filter(course =>
-            course.node.summary.includes(details.heading));
+            course.node.summary.includes(heading));
 
         let nextStartDate = '';
         let nextEndDate = '';
 
-        if (details.heading === 'Basics') {
+        if (heading === 'Basics') {
             nextStartDate = relevantDates[0].node.start.dateTime;
             nextEndDate = relevantDates[0].node.end.dateTime;
         } else {
