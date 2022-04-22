@@ -9,7 +9,7 @@ const CourseCard = ({ details, upcomingCourseDates }) => {
   
   let courseLink;
 
-  if (details.heading === 'Basics') {
+  if (details.heading === 'Coding Basics') {
     courseLink = '/courses/basics';
   } else {
     courseLink = '/courses/bootcamp';
@@ -21,7 +21,7 @@ const CourseCard = ({ details, upcomingCourseDates }) => {
           <div className='card-type'>
             <PreviewCompatibleImage imageInfo={details.image} />
           </div>
-            <Card.Title className={`${details.heading === 'Basics' ? "basics" : "bootcamp"}`}>{details.heading}</Card.Title>
+            <Card.Title className={`${details.heading === 'Coding Basics' ? "basics" : "bootcamp"}`}>{details.heading}</Card.Title>
             <Card.Subtitle>{details.subheading}</Card.Subtitle>
             <Card.Text>
                 <span className='prev-price'>{details.prevprice}&nbsp;</span> 
