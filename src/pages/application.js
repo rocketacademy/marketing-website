@@ -47,11 +47,15 @@ const ApplicationForm = () => {
       .then(response => response.json())
       .then(data => {
         console.log('Success:', data);
+        // facebook ads
         if (typeof window !== "undefined") {
           if (window.fbq != null) {
             window.fbq('track', 'SubmitApplication');
           }
         };
+        // google ads
+        typeof window !== "undefined" && window.gtag('event', 'conversion', { 'send_to': 'AW-10817488949'})
+        
         navigate('/thanks');
       })
       .catch((error) => {
@@ -67,8 +71,14 @@ const ApplicationForm = () => {
       <div className='container application-form-header-inner-container'>
         <div className='row application-form-header-row'>
           <div className='col-12 col-md-8 application-form-header-text-col'>
-            Start Your Coding Journey Today
+            <div className='application-form-header-heading'>
+              Start Your Coding Journey Today
+            </div>
+            <div className='application-form-header-subheading'>
+              Learn everything you need to succeed as a software engineer with Rocket Academy’s Coding Bootcamp course
+            </div>
           </div>
+          
           <div className='col-12 col-md-4'>
           </div>
         </div>
