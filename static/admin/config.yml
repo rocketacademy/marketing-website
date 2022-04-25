@@ -827,3 +827,17 @@ collections:
                   },
                 ],
             }
+      - file: src/pages/privacy-policy/index.md
+        label: Privacy Policy
+        name: privacy-policy
+        fields:
+          - {
+              label: Template Key,
+              name: templateKey,
+              widget: hidden,
+              default: privacy-policy-page,
+            }
+          - { label: Title, name: title, widget: string }
+          - { label: Pagename, name: pagename, widget: string }
+          - { label: Heading, name: heading, widget: string }
+          - { label: Content, name: content, widget: markdown }

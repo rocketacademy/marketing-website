@@ -19,7 +19,19 @@
     }
     .application-form-header-text-col {
       display: flex;
+      flex-direction: column;
       justify-content: flex-start;
+      .application-form-header-subheading {
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 20px;
+        padding-top: 20px;
+        @include variables.md {
+          padding-top: 30px;
+          font-size: 20px;
+          line-height: 30px;
+        }
+      }
     }
     .application-form-header-icon-col {
       display: none;

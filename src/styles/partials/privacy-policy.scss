@@ -1,0 +1,25 @@
+.privacy-policy-outer-container {
+  background-color: variables.$light;
+  padding: 30px 20px;
+
+  @include variables.md {
+    padding: 50px 30px;
+  }
+  .privacy-policy-header-container {
+    font-family: variables.$primary-font;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 36px;
+    @include variables.md {
+      font-size: 52px;
+      line-height: 61px;
+    }
+  }
+}
+.privacy-policy-content-container {
+  padding: 20px 24px;
+  @include variables.md {
+    padding: 20px 12px;
+  }
+}
