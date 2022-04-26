@@ -9,7 +9,7 @@ header:
     alt: kai's photo
     image: /img/homepage/homepage-image.png
 success:
-  heading: Everything You Need to Succeed
+  heading: Our Coding Bootcamp Covers Everything You Need to Succeed
   blurbs:
     - image: /img/homepage/portfolio-icon.png
       heading: Project Portfolio
