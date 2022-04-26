@@ -63,7 +63,7 @@ courses:
       conditions: ✓ Live and online
 curriculum:
   smalltext: 🚀 Q&A with Industry Experts
-  heading: Curriculum designed by industry experts
+  heading: Coding bootcamp curriculum designed by industry experts
   subheading: Our concept-focused coding bootcamp courses are designed to support
     students at every level as they progress as professional programmers.
   image:
