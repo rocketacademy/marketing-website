@@ -32,7 +32,7 @@ success:
         Classmates and alumni from top companies and schools committed to
         helping each other succeed.
 courses:
-  heading: Learn relevant skills and land a new job
+  heading: Learn relevant coding skills and become a software engineer
   image:
     alt: building blocks image
     image: /img/homepage/building-blocks-icon.png
