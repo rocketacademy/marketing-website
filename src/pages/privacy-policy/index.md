@@ -13,34 +13,31 @@ content: >-
   • Advertising
 
 
-  Facebook Lookalike Audience, Google Ad Manager, Google Ads Similar audiences 
+  Facebook Lookalike Audience, Google Ad Manager, Google Ads Similar audiences   
 
   Personal Data: Cookies; Usage Data
+    
 
-
+    
   • Analytics
-
-
-
+    
   Google Analytics, Facebook Ads conversion tracking (Facebook pixel), Hotjar Form Analysis & Conversion Funnels, HubSpot Analytics, LinkedIn conversion tracking, Google Ads conversion tracking, Google Analytics with anonymized IP and Analytics collected directly
+    
 
-
-
+    
   • Personal Data: Cookies; Usage Data
+    
+  Google Analytics Advertising Reporting Features  
 
-
-  Google Analytics Advertising Reporting Features
-
-  Personal Data: Cookies; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example); various types of Data as specified in the privacy policy of the service
-
+  Personal Data: Cookies; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example); various types of Data as specified in the privacy policy of the service  
+    
 
   • User ID extension for Google Analytics
 
 
-  Personal Data: Cookies
+  Personal Data: Cookies  
 
-  Google Analytics Demographics and Interests reports
-
+  Google Analytics Demographics and Interests reports  
 
   Personal Data: Cookies; unique device identifiers for advertising (Google Advertiser ID or IDFA, for example)
 
@@ -51,9 +48,9 @@ content: >-
   Contacting the User - Contact form
 
 
-  Personal Data: email address; first name; last name
+  Personal Data: email address; first name; last name  
 
-  Phone contact
+  Phone contact  
 
   Personal Data: phone number
 
@@ -67,7 +64,7 @@ content: >-
   • Displaying content from external platforms
 
 
-  YouTube video widget, Instagram widget
+  YouTube video widget, Instagram widget  
 
   Personal Data: Cookies; Usage Data
 
@@ -75,7 +72,7 @@ content: >-
   • Heat mapping and session recording
 
 
-  Hotjar Heat Maps & Recordings
+  Hotjar Heat Maps & Recordings  
 
   Personal Data: Cookies; Usage Data; various types of Data as specified in the privacy policy of the service
 
@@ -83,7 +80,7 @@ content: >-
   • Managing contacts and sending messages
 
 
-  HubSpot Email
+  HubSpot Email  
 
   Personal Data: email address; Usage Data
 
@@ -126,7 +123,7 @@ content: >-
   • User database management
 
 
-  HubSpot CRM
+  HubSpot CRM  
 
   Personal Data: email address; phone number; various types of Data as specified in the privacy policy of the service
 
@@ -139,6 +136,6 @@ content: >-
   Contact information
 
 
-  1. Owner and Data Controller: Rocket Academy
+  1. Owner and Data Controller: Rocket Academy  
      Owner contact email: admin@rocketacademy.com
 ---
