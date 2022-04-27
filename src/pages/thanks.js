@@ -1,9 +1,13 @@
 import React from 'react';
 import Layout from '../components/Layout';
-
+import { useEffect } from 'react';
 
 const ApplicationSuccessful = () => {
 
+  useEffect(() => {
+    typeof window !== "undefined" && window.gtag('event', 'conversion', { 'send_to': 'AW-10817488949/-jLiCLDBr7cDELWQl6Yo' })
+
+  }, [])
 
   return (
     <Layout>
