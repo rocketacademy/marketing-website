@@ -53,9 +53,7 @@ const ApplicationForm = () => {
             window.fbq('track', 'SubmitApplication');
           }
         };
-        // google ads
-        typeof window !== "undefined" && window.gtag('event', 'conversion', { 'send_to': 'AW-10817488949'})
-        
+      
         navigate('/thanks');
       })
       .catch((error) => {
