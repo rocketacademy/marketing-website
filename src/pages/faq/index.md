@@ -23,7 +23,7 @@ general:
         1. Rocket’s past students received offers from companies such as
         GovTech, Ninja Van, Xfers, 99.co, Glints, and more.
 
-        2. Rocket’s Coding Bootcamp is longer, comprehensively covering topics in frontend, backend, cloud, and algorithms that other coding bootcamps typically skim over, resulting in a more standout portfolio.
+        2. Rocket’s Coding Bootcamp comprehensively covers topics in frontend, backend, cloud, and algorithms that other coding bootcamps typically skim over, resulting in a more standout portfolio.
 
         3. Rocket’s Coding Bootcamp only accepts top students, guaranteeing a strong network of classmates and alumni.
     - question: Why choose Rocket over university or polytechnic courses?
@@ -39,8 +39,8 @@ general:
     - question: Why choose Rocket's courses over other coding bootcamps?
       answers: >-
         1. Rocket offers a more comprehensive Coding Bootcamp course, covering
-        app development and algorithms, with full time (6 months) and part time
-        (12 months) options.
+        app development and algorithms, with full time (4 months) and part time
+        (8 months) options.
 
         2. We have a high-calibre alumni network, driven by selective admissions that screens upfront for coding aptitude and communication skills.
 
@@ -122,9 +122,9 @@ general:
         1. Software Engineering Coding Bootcamp has both full-time and part-time
         options.
 
-        2. Full-Time Coding Bootcamp requires students to commit 10am-6pm SGT Mon-Fri for 24 weeks. We discourage working a full-time job while enrolled in the full-time Coding Bootcamp.
+        2. Full-Time Coding Bootcamp requires students to commit 10am-6pm SGT Mon-Fri for 4 months. We discourage working a full-time job while enrolled in the full-time Coding Bootcamp.
 
-        3. Part-Time Coding Bootcamp requires students to commit 7.30-9.30pm SGT Tuesday evenings, and 10am-12pm SGT Saturday mornings, with roughly 20 hours of work per week for 48 weeks.
+        3. Part-Time Coding Bootcamp requires students to commit 7.30-9.30pm SGT Tuesday evenings, and 10am-12pm SGT Saturday mornings, with roughly 20 hours of work per week for 8 months.
     - question: How many classes can I miss?
       answers: >-
         1. Classes are mandatory, live Zoom meetings where we review and
@@ -138,7 +138,7 @@ general:
         1. Coding Basics is currently free for all interested students. [Apply
         now](https://rocketacademy.co/application)!
 
-        2. Details on Software Engineering Coding Bootcamp tuition fees can be found here. We accept payment via credit card, or if you are based in Singapore, PayNow. 
+        2. Details on Software Engineering Coding Bootcamp tuition fees can be found here. We accept payment via credit card, or if you are based in Singapore, PayNow. We also offer a 3-month installment plan via Atome for Singapore-based credit card users only. 
 
         3. Payment is required prior to the start of the coding course to secure your spot in the program.
 codingbasics:
