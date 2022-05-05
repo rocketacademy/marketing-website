@@ -28,7 +28,7 @@ overview:
       text: Unlimited interview prep
   testimonial:
     quote: “I chose Rocket Academy over other coding bootcamp programs as it was
-      more comprehensive and rigorous that took only 6 months to complete."
+      more comprehensive and rigorous."
     image: /img/gotrade.png
     name: JIA EN CHIEW
     position: Former Architectural Graduate | Software Engineer at GoTrade
