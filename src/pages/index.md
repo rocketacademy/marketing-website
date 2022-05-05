@@ -59,7 +59,7 @@ courses:
       subheading: Switch careers with our coding bootcamp. Basics course recommended.
       prevprice: S$9,999
       currentprice: S$4,999/HK$29,999/AU$4,999
-      duration: ✓ 24 Weeks (6 Months)
+      duration: ✓ 16 Weeks (4 Months)
       conditions: ✓ Live and online
 curriculum:
   smalltext: 🚀 Q&A with Industry Experts
@@ -86,7 +86,7 @@ formerstudents:
   - image: /img/gotrade.png
     testimonial: >
       “I chose Rocket Academy over other coding bootcamp programs as it was more
-      comprehensive and rigorous that took only 6 months to complete." 
+      comprehensive and rigorous." 
     studentname: Jia En Chiew
     position: Former Architectural Graduate | Software Engineer at GoTrade
   - image: /img/homepage/glints-color-logo.png
