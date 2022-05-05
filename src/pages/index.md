@@ -43,7 +43,7 @@ courses:
       subheading: Learn basic coding by building simple apps.
       prevprice: S$999
       currentprice: FREE
-      duration: ✓ 5 weeks
+      duration: ✓ 6 weeks
       conditions: ✓ Live and online
     - type: Part Time
       image: /img/homepage/part-time-icon.png
