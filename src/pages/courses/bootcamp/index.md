@@ -35,12 +35,11 @@ overview:
 curriculum:
   heading: Curriculum
   sidebarlabel: Curriculum
-  subheading: "Rocket Academy's coding bootcamp cirriculum focuses on coding
+  subheading: Rocket Academy's coding bootcamp cirriculum focuses on coding
     concepts, not languages. Throughout the program, we cover key topics in
     software engineering that are highly relevant to today's industry, subject
     to minor alterations to match the changing demands of our students and
-    industry needs. Coding Bootcamp applies a flipped classroom model that
-    consists of 2 components: self-learning and live classes. "
+    industry needs.
   sections:
     - heading: Technical Excellence
       section1: Frontend and backend frameworks
