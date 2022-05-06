@@ -4,7 +4,7 @@ title: Coding Basics
 pagename: basics
 header:
   heading: Coding Basics
-  subheading: A live and online, 5-week part-time intro to coding course for
+  subheading: A live and online, 6-week part-time intro to coding course for
     beginners, taught in JavaScript.
   image1:
     image: /img/basics-page/basics-header-desktop.jpg
@@ -83,15 +83,15 @@ admissions:
     - objective: Understand software engineering
 programdates:
   heading: Upcoming Program Dates
-  subheading: >
-    New Batch Every 6 Weeks
-    Every Monday and Thursday from 7.30pm-9.30pm GMT +08
+  subheading: |
+    New Batch Every 6 Weeks Every Monday and Thursday from 7.30pm-9.30pm GMT +08
   sidebarlabel: Program Dates
 lessons:
   heading: Course Overview
   sidebarlabel: Course Overview
-  subheading: |
+  subheading: >
     Coding Basics applies a flipped classroom model that consists of 2
+
     components: self-learning and live classes. Refer to our [course curriculum](https://codingbasics.rocketacademy.co/) for more information.
   lesson:
     - week: 0-1
@@ -112,7 +112,7 @@ lessons:
           * Required Hardware and Software
           * Pre-Class Material
         * Section Introductions and Icebreakers
-      project:
+      project: N.A.
     - week: 0-1
       number: "1"
       title: "     "
@@ -126,7 +126,7 @@ lessons:
           * 2.3.1 Functions I
       inclass: |
         * Data Manipulation and Functions
-      project:
+      project: N.A.
     - week: 0-1
       number: "2"
       title: "      "
@@ -193,7 +193,7 @@ lessons:
           * 5.2 CSS
       inclass: |
         * Pairwork: Beat That!
-      project:
+      project: "* Beat That!"
     - week: "4"
       number: "7"
       title: "       "
@@ -217,7 +217,7 @@ lessons:
         * 6.2 DOM Manipulation
       inclass: |
         * Pairwork: Blackjack
-      project:
+      project: "* Blackjack"
     - week: "5"
       number: "9"
       title: "      "
