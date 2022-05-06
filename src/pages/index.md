@@ -50,7 +50,9 @@ courses:
     - type: Part Time
       image: /img/homepage/part-time-icon.png
       heading: Coding Bootcamp
-      subheading: Switch careers with our coding bootcamp. Basics course recommended.
+      subheading: "Switch careers with our coding bootcamp. Basics course recommended.
+        Coding Bootcamp applies a flipped classroom model that consists of 2
+        components: self-learning and live classes. "
       prevprice: S$9,999
       currentprice: S$4,999/HK$29,999/AU$4,999
       duration: ✓ 48 Weeks (12 Months)
@@ -58,7 +60,9 @@ courses:
     - type: Full Time
       image: /img/homepage/full-time-icon.png
       heading: Coding Bootcamp
-      subheading: Switch careers with our coding bootcamp. Basics course recommended.
+      subheading: "Switch careers with our coding bootcamp. Basics course recommended.
+        Coding Bootcamp applies a flipped classroom model that consists of 2
+        components: self-learning and live classes. "
       prevprice: S$9,999
       currentprice: S$4,999/HK$29,999/AU$4,999
       duration: ✓ 16 Weeks (4 Months)
