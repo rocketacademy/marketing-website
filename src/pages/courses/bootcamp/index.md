@@ -35,11 +35,12 @@ overview:
 curriculum:
   heading: Curriculum
   sidebarlabel: Curriculum
-  subheading: Rocket Academy's coding bootcamp cirriculum focuses on coding
+  subheading: "Rocket Academy's coding bootcamp cirriculum focuses on coding
     concepts, not languages. Throughout the program, we cover key topics in
     software engineering that are highly relevant to today's industry, subject
     to minor alterations to match the changing demands of our students and
-    industry needs.
+    industry needs. Coding Bootcamp applies a flipped classroom model that
+    consists of 2 components: self-learning and live classes. "
   sections:
     - heading: Technical Excellence
       section1: Frontend and backend frameworks
@@ -152,12 +153,14 @@ tuition:
     - frequency: /img/homepage/part-time-icon.png
       prevcost: S$9,999
       currentcost: S$4,999/HK$29,999/AU$4,999
-      text: Part-Time Coding Bootcamp covers the same material over twice the time (12
-        months)
+      text: "Part-Time Coding Bootcamp covers the same material over twice the time
+        (12 months). Coding Bootcamp applies a flipped classroom model that
+        consists of 2 components: self-learning and live classes. "
     - frequency: /img/homepage/full-time-icon.png
       prevcost: S$9,999
       currentcost: S$4,999/HK$29,999/AU$4,999
-      text: "     "
+      text: "Coding Bootcamp applies a flipped classroom model that consists of 2
+        components: self-learning and live classes. "
 programdates:
   heading: Upcoming Program Dates
   sidebarlabel: Program Dates
