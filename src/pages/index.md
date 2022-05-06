@@ -40,7 +40,9 @@ courses:
     - type: Part Time
       image: /img/homepage/part-time-icon.png
       heading: Coding Basics
-      subheading: Learn basic coding by building simple apps.
+      subheading: "Learn basic coding by building simple apps. Coding Basics applies a
+        flipped classroom model that consists of 2 components: self-learning and
+        live classes. "
       prevprice: S$999
       currentprice: FREE
       duration: ✓ 6 weeks
