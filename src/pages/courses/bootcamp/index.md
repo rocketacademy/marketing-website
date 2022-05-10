@@ -6,7 +6,7 @@ header:
   heading: Software Engineering Coding Bootcamp
   subheading: Learn in-demand skills and launch a new career path as a Software Engineer
   image:
-    image: /img/bootcamp-page/bootcamp-header-image.png
+    image: /img/group-photo-980x650size-03.jpg
     alt: student at computer
   reasons:
     - reason: Develop your edge
@@ -28,7 +28,7 @@ overview:
       text: Unlimited interview prep
   testimonial:
     quote: “I chose Rocket Academy over other coding bootcamp programs as it was
-      more comprehensive and rigorous that took only 6 months to complete."
+      more comprehensive and rigorous."
     image: /img/gotrade.png
     name: JIA EN CHIEW
     position: Former Architectural Graduate | Software Engineer at GoTrade
@@ -152,12 +152,14 @@ tuition:
     - frequency: /img/homepage/part-time-icon.png
       prevcost: S$9,999
       currentcost: S$4,999/HK$29,999/AU$4,999
-      text: Part-Time Coding Bootcamp covers the same material over twice the time (12
-        months)
+      text: "Part-Time Coding Bootcamp covers the same material over twice the time
+        (12 months). Coding Bootcamp applies a flipped classroom model that
+        consists of 2 components: self-learning and live classes. "
     - frequency: /img/homepage/full-time-icon.png
       prevcost: S$9,999
       currentcost: S$4,999/HK$29,999/AU$4,999
-      text: "     "
+      text: "Coding Bootcamp applies a flipped classroom model that consists of 2
+        components: self-learning and live classes. "
 programdates:
   heading: Upcoming Program Dates
   sidebarlabel: Program Dates

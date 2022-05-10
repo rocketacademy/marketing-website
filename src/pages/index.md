@@ -10,7 +10,7 @@ header:
     alt: masterclass ad image
     image: /img/homepage/free-masterclass.jpg
 success:
-  heading: Everything You Need to Succeed
+  heading: Our Coding Bootcamp Covers Everything You Need to Succeed
   blurbs:
     - image: /img/homepage/portfolio-icon.png
       heading: Project Portfolio
@@ -33,7 +33,7 @@ success:
         Classmates and alumni from top companies and schools committed to
         helping each other succeed.
 courses:
-  heading: Learn relevant skills and land a new job
+  heading: Learn relevant coding skills and become a software engineer
   image:
     alt: building blocks image
     image: /img/homepage/building-blocks-icon.png
@@ -41,15 +41,19 @@ courses:
     - type: Part Time
       image: /img/homepage/part-time-icon.png
       heading: Coding Basics
-      subheading: Learn basic coding by building simple apps.
+      subheading: "Learn basic coding by building simple apps. Coding Basics applies a
+        flipped classroom model that consists of 2 components: self-learning and
+        live classes. "
       prevprice: S$999
       currentprice: FREE
-      duration: ✓ 5 weeks
+      duration: ✓ 6 weeks
       conditions: ✓ Live and online
     - type: Part Time
       image: /img/homepage/part-time-icon.png
       heading: Coding Bootcamp
-      subheading: Switch careers with our coding bootcamp. Basics course recommended.
+      subheading: "Switch careers with our coding bootcamp. Basics course recommended.
+        Coding Bootcamp applies a flipped classroom model that consists of 2
+        components: self-learning and live classes. "
       prevprice: S$9,999
       currentprice: S$4,999/HK$29,999/AU$4,999
       duration: ✓ 48 Weeks (12 Months)
@@ -57,16 +61,17 @@ courses:
     - type: Full Time
       image: /img/homepage/full-time-icon.png
       heading: Coding Bootcamp
-      subheading: Switch careers with our coding bootcamp. Basics course recommended.
+      subheading: "Switch careers with our coding bootcamp. Basics course recommended.
+        Coding Bootcamp applies a flipped classroom model that consists of 2
+        components: self-learning and live classes. "
       prevprice: S$9,999
       currentprice: S$4,999/HK$29,999/AU$4,999
-      duration: ✓ 24 Weeks (6 Months)
+      duration: ✓ 16 Weeks (4 Months)
       conditions: ✓ Live and online
 curriculum:
   smalltext: 🚀 Q&A with Industry Experts
-  heading: Curriculum designed by industry experts
-  subheading:
-    Our concept-focused coding bootcamp courses are designed to support
+  heading: Coding bootcamp curriculum designed by industry experts
+  subheading: Our concept-focused coding bootcamp courses are designed to support
     students at every level as they progress as professional programmers.
   image:
     alt: class screenshot
@@ -88,7 +93,7 @@ formerstudents:
   - image: /img/gotrade.png
     testimonial: >
       “I chose Rocket Academy over other coding bootcamp programs as it was more
-      comprehensive and rigorous that took only 6 months to complete."
+      comprehensive and rigorous." 
     studentname: Jia En Chiew
     position: Former Architectural Graduate | Software Engineer at GoTrade
   - image: /img/homepage/glints-color-logo.png
