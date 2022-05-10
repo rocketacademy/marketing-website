@@ -3,11 +3,12 @@ templateKey: index-page
 title: Become a Software Engineer
 header:
   heading: Become a Software Engineer
-  subheading: 100% of our Coding Bootcamp grads have received software engineering
+  subheading:
+    100% of our Coding Bootcamp grads have received software engineering
     offers from companies like 99.co, Xfers and GovTech.
   headerimage:
-    alt: kai's photo
-    image: /img/homepage/homepage-image.png
+    alt: masterclass ad image
+    image: /img/homepage/free-masterclass.jpg
 success:
   heading: Everything You Need to Succeed
   blurbs:
@@ -64,7 +65,8 @@ courses:
 curriculum:
   smalltext: 🚀 Q&A with Industry Experts
   heading: Curriculum designed by industry experts
-  subheading: Our concept-focused coding bootcamp courses are designed to support
+  subheading:
+    Our concept-focused coding bootcamp courses are designed to support
     students at every level as they progress as professional programmers.
   image:
     alt: class screenshot
@@ -86,7 +88,7 @@ formerstudents:
   - image: /img/gotrade.png
     testimonial: >
       “I chose Rocket Academy over other coding bootcamp programs as it was more
-      comprehensive and rigorous that took only 6 months to complete." 
+      comprehensive and rigorous that took only 6 months to complete."
     studentname: Jia En Chiew
     position: Former Architectural Graduate | Software Engineer at GoTrade
   - image: /img/homepage/glints-color-logo.png
