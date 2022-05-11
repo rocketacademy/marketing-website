@@ -12,7 +12,7 @@ general:
     - question: Why choose Rocket’s Coding Basics course?
       answers: >-
         1. Coding Basics is a pathway course, enabling top graduates to enrol in
-        Rocket’s software engineering bootcamp should they wish to switch
+        Rocket’s coding bootcamp should they wish to switch
         careers or learn professional coding.
 
         2. Coding Basics has been taken and recommended by students from top tech companies such as Facebook, Stripe, Grab, Shopee, Rakuten, Ninja Van, McKinsey, and more.
@@ -67,13 +67,15 @@ general:
         classmates learning at the same pace.
 
         2. Rocket Academy cultivates a strong alumni network that significantly helps graduates with their careers.
-    - question: What is the difference between software engineering, programming, and
+    - question:
+        What is the difference between software engineering, programming, and
         coding?
       answers: There is no practical difference. Software engineering is a
         professional term describing strong proficiency in following a
         systematic process of understanding requirements, working effectively
         with stakeholders, and developing a solution that fulfils their needs.
-    - question: What is the difference between software engineering, data science, and
+    - question:
+        What is the difference between software engineering, data science, and
         data analytics?
       answers: >-
         1. Software engineers build apps and the underlying “pipes” for data to
@@ -98,7 +100,8 @@ general:
         2. We believe anyone can coding given sufficient time and determination.
 
         3. If you’re unsure whether coding is for you, try Coding Basics!
-    - question: I’ve tried coding but find it difficult. Can I still be a software
+    - question:
+        I’ve tried coding but find it difficult. Can I still be a software
         engineer?
       answers: >-
         1. It is normal to find coding challenging - this is common among all
@@ -116,10 +119,10 @@ general:
 
         2. If you already have some prior experience/knowledge in coding and would like to join Rocket's Coding Bootcamp program, we may waive the Coding Basics requirement - reach out to us at hello at rocketacademy.co to find out more!
 
-        3. Many of our most successful graduates have had prior coding experience before joining Rocket. Our Software Engineering Coding Bootcamp then provided them with the conceptual foundations, interview prep, and professional network they needed to complete their career switch.
+        3. Many of our most successful graduates have had prior coding experience before joining Rocket. Our Coding Bootcamp then provided them with the conceptual foundations, interview prep, and professional network they needed to complete their career switch.
     - question: Can I join Rocket’s courses while working a full-time job?
       answers: >-
-        1. Software Engineering Coding Bootcamp has both full-time and part-time
+        1. Coding Bootcamp has both full-time and part-time
         options.
 
         2. Full-Time Coding Bootcamp requires students to commit 10am-6pm SGT Mon-Fri for 4 months. We discourage working a full-time job while enrolled in the full-time Coding Bootcamp.
@@ -138,7 +141,7 @@ general:
         1. Coding Basics is currently free for all interested students. [Apply
         now](https://rocketacademy.co/application)!
 
-        2. Details on Software Engineering Coding Bootcamp tuition fees can be found here. We accept payment via credit card, or if you are based in Singapore, PayNow. We also offer a 3-month installment plan via Atome for Singapore-based credit card users only. 
+        2. Details on Coding Bootcamp tuition fees can be found here. We accept payment via credit card, or if you are based in Singapore, PayNow. We also offer a 3-month installment plan via Atome for Singapore-based credit card users only. 
 
         3. Payment is required prior to the start of the coding course to secure your spot in the program.
 codingbasics:
@@ -157,15 +160,16 @@ codingbasics:
         1. Coding Basics teaches basic coding syntax, tools, and computational
         thinking, and not advanced frameworks such as React or Redux.
 
-        2. The concepts we learn in Basics will give students the foundation to better harness frameworks such as React or Redux during Software Engineering Bootcamp.
+        2. The concepts we learn in Basics will give students the foundation to better harness frameworks such as React or Redux during Coding Bootcamp.
     - question: Will Basics teach me how to make a website?
-      answers: Coding Basics teaches basic coding syntax, tools, and computational
+      answers:
+        Coding Basics teaches basic coding syntax, tools, and computational
         thinking, not web development. Rocket accepts top Basics students into
-        our Software Engineering Bootcamp where we dive deeper into web and
+        our Coding Bootcamp where we dive deeper into web and
         general application development.
 softwareengineeringbootcamp:
-  heading: Software Engineering Coding Bootcamp
-  sidebarlabel: Software Engineering Coding Bootcamp
+  heading: Coding Bootcamp
+  sidebarlabel: Coding Bootcamp
   questions:
     - question: What languages will I learn in Coding Bootcamp?
       answers: >-
@@ -173,7 +177,7 @@ softwareengineeringbootcamp:
         This is because coding concepts are applicable to all languages, but
         language syntax may only be relevant to that specific language.
 
-        2. Rocket's Software Engineering Coding Bootcamp teaches the most popular languages and frameworks such as JavaScript, Python, SQL, Bash, Express, and React.
+        2. Rocket's Coding Bootcamp teaches the most popular languages and frameworks such as JavaScript, Python, SQL, Bash, Express, and React.
 
         3. More important than languages, Bootcamp concepts will be applicable to almost all languages, frameworks, and apps.
     - question: What career support does Rocket provide?
@@ -186,5 +190,5 @@ softwareengineeringbootcamp:
 
         3. Comprehensive and unlimited resume and portfolio review.
 
-        4. Comprehensive and unlimited referrals to companies in Rocket Academy’s network (most tech companies in Singapore so far). Rocket Academy only accepts high-performing Coding Basics students to Software Engineering Coding Bootcamp, and companies trust that Rocket attracts and produces top talent.
+        4. Comprehensive and unlimited referrals to companies in Rocket Academy’s network (most tech companies in Singapore so far). Rocket Academy only accepts high-performing Coding Basics students to Coding Bootcamp, and companies trust that Rocket attracts and produces top talent.
 ---
