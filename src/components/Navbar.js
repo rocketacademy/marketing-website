@@ -44,7 +44,7 @@ const SiteNavbar = () => {
                         </NavDropdown.Item>
                         <NavDropdown.Item>
                             <Link to="/courses/bootcamp">
-                                Software Engineering Bootcamp
+                                Coding Bootcamp
                             </Link>
                         </NavDropdown.Item>
                     </NavDropdown>

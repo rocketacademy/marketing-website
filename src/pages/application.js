@@ -244,7 +244,7 @@ const ApplicationForm = () => {
               onChange={handleChange}
               required />
             <Form.Check.Label>
-              <h6>Coding Basics and Software Engineering Bootcamp</h6>
+              <h6>Coding Basics and Coding Bootcamp</h6>
               <p><em>I'm new to coding but I am thinking about becoming a software engineer</em></p>
             </Form.Check.Label>
           </Form.Check>
@@ -256,7 +256,7 @@ const ApplicationForm = () => {
               onChange={handleChange}
               required />
             <Form.Check.Label>
-              <h6>Software Engineering Bootcamp</h6>
+              <h6>Coding Bootcamp</h6>
               <p><em>I have written small programs before and am thinking about becoming a software engineer</em></p>
             </Form.Check.Label>
             <Form.Control.Feedback type="invalid">Please select a course.</Form.Control.Feedback>
