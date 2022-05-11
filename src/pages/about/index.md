@@ -70,7 +70,7 @@ leadership:
         Cita in San Francisco, New York, Singapore, and Jakarta.
 
 
-        Kai started Rocket Academy after experiencing the industry-wide shortage of good software engineers. Rocket’s 6-month full time Coding Bootcamp is a middle ground between long and expensive university courses and short and insufficient 12-week software engineering coding bootcamps.
+        Kai started Rocket Academy after experiencing the industry-wide shortage of good software engineers. Rocket’s 6-month full time Coding Bootcamp is a middle ground between long and expensive university courses and short and insufficient 12-week coding bootcamps.
     - image: /img/homepage/foong-homepage.jpg
       name: Foong Leung
       position: Head of Operations

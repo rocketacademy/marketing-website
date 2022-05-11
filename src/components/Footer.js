@@ -29,7 +29,7 @@ const Footer = () => {
                           </li>
                         <li>
                           <Link to="/courses/bootcamp">
-                            Software Engineering Bootcamp
+                            Coding Bootcamp
                           </Link>     
                         </li>
                     </ul>
