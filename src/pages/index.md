@@ -3,8 +3,7 @@ templateKey: index-page
 title: Become a Software Engineer
 header:
   heading: Become a Software Engineer
-  subheading:
-    100% of our Coding Bootcamp grads have received software engineering
+  subheading: 100% of our Coding Bootcamp grads have received software engineering
     offers from companies like 99.co, Xfers and GovTech.
   headerimage:
     alt: masterclass ad image
@@ -56,7 +55,7 @@ courses:
         components: self-learning and live classes. "
       prevprice: S$9,999
       currentprice: S$4,999/HK$29,999/AU$4,999
-      duration: ✓ 48 Weeks (12 Months)
+      duration: ✓ 8 Months
       conditions: ✓ Live and online
     - type: Full Time
       image: /img/homepage/full-time-icon.png
@@ -66,7 +65,7 @@ courses:
         components: self-learning and live classes. "
       prevprice: S$9,999
       currentprice: S$4,999/HK$29,999/AU$4,999
-      duration: ✓ 16 Weeks (4 Months)
+      duration: ✓ 4 Months
       conditions: ✓ Live and online
 curriculum:
   smalltext: 🚀 Q&A with Industry Experts
