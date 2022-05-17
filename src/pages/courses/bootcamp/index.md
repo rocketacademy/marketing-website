@@ -14,10 +14,10 @@ header:
     - reason: Part-time or Full-time
 overview:
   heading: Become a Software Engineer
-  subheading: Coding Bootcamp is Rocket Academy's flagship
-    career conversion course, primarily taught in JavaScript and Python. On
-    successful completion of the Bootcamp course, students can expect to be
-    job-ready full-stack software engineers.
+  subheading: Coding Bootcamp is Rocket Academy's flagship career conversion
+    course, primarily taught in JavaScript and Python. On successful completion
+    of the Bootcamp course, students can expect to be job-ready full-stack
+    software engineers.
   sidebarlabel: Overview
   reasons:
     - image: /img/bootcamp-page/bootcamp-projects-icon.png
@@ -152,15 +152,13 @@ tuition:
     - frequency: /img/homepage/part-time-icon.png
       prevcost: S$9,999
       currentcost: S$4,999/HK$29,999/AU$4,999
-      text:
-        "Part-Time Coding Bootcamp covers the same material over twice the time
-        (12 months). Coding Bootcamp applies a flipped classroom model that
-        consists of 2 components: self-learning and live classes. "
+      text: "Part-Time Coding Bootcamp covers the same material over twice the time (8
+        months). Coding Bootcamp applies a flipped classroom model that consists
+        of 2 components: self-learning and live classes. "
     - frequency: /img/homepage/full-time-icon.png
       prevcost: S$9,999
       currentcost: S$4,999/HK$29,999/AU$4,999
-      text:
-        "Coding Bootcamp applies a flipped classroom model that consists of 2
+      text: "Coding Bootcamp applies a flipped classroom model that consists of 2
         components: self-learning and live classes. "
 programdates:
   heading: Upcoming Program Dates
@@ -169,10 +167,9 @@ programdates:
 course:
   heading: Course Overview
   sidebarlabel: Course Overview
-  subheading:
-    Our Full-Time Coding Bootcamp schedule runs from Mondays to Fridays,
+  subheading: Our Full-Time Coding Bootcamp schedule runs from Mondays to Fridays,
     10am-12pm SGT. Part-Time Coding Bootcamp covers the same material over twice
-    the time (12 months), meeting Tuesdays 7:30-9:30pm SGT and Saturdays
+    the time (8 months), meeting Tuesdays 7:30-9:30pm SGT and Saturdays
     10am-12pm SGT. [See full course curriculum
     here.](http://bootcamp.rocketacademy.co)
   schedule:
