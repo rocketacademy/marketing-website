@@ -872,30 +872,31 @@
           font-weight: normal;
           font-size: 14px;
           line-height: 20px;
-          padding: 15px 15px 15px 10px;
+          padding: 15px 15px 15px 0px;
         }
-
-        .bootcamp-course-lesson-number,
-        .bootcamp-course-lesson-title {
+        .bootcamp-course-module {
           margin-bottom: 0;
           font-weight: 600;
           font-size: 16px;
           line-height: 23px;
         }
-        .bootcamp-course-lesson-topics {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: flex-start;
-          .bootcamp-course-lesson-topic {
-            color: variables.$red;
-            background: #fef2f2;
+        .bootcamp-course-topics {
+          .bootcamp-course-topic {
+            display: inline-flex;
             border-radius: 5px;
             padding: 3px 5px;
-            margin: 3px 5px 3px 0;
+            margin: 5px 5px 5px 5px;
             font-weight: 600;
-            font-size: 14px;
-            line-height: 19px;
+            line-height: 30px;
           }
+        }
+        .technologies {
+          color: variables.$red;
+          background: #fef2f2;
+        }
+        .algorithms {
+          color: variables.$blue;
+          background: #b6dbfabb;
         }
       }
       .bootcamp-course-content-mobile {
@@ -906,25 +907,26 @@
         .accordion-body {
           padding: 20px 20px 0;
         }
-        .bootcamp-course-accordion-lesson {
-          font-size: 16px;
-          font-weight: bold;
-          margin-bottom: 10px;
+        .bootcamp-course-topics {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: flex-start;
+          .bootcamp-course-topic {
+            border-radius: 5px;
+            padding: 3px 5px;
+            margin: 3px 5px 3px 0;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 19px;
+          }
         }
-        .bootcamp-course-accordion-content {
-          font-weight: 600;
-          font-size: 12px;
-          line-height: 16px;
+        .technologies {
           color: variables.$red;
           background: #fef2f2;
-          border-radius: 4px;
-          padding: 5px;
-          margin: 10px 5px 10px 0;
-          width: 95%;
         }
-        .bootcamp-course-accordion-heading {
-          font-weight: bold;
-          font-size: 14px;
+        .algorithms {
+          color: variables.$blue;
+          background: #b6dbfabb;
         }
         .accordion-button:focus {
           outline: 0 !important;
