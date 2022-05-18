@@ -173,7 +173,7 @@ course:
     10am-12pm SGT. [See full course curriculum
     here.](http://bootcamp.rocketacademy.co)
   schedule:
-    - heading: 1-3
+    - heading: Module 1
       project: "Front-End Application: Video Poker"
       topics:
         - topic: HTML
@@ -182,7 +182,7 @@ course:
         - topic: HTTP
         - topic: Javascript
         - topic: Node.js, Bootstrap
-    - heading: 1-3
+    - heading: Module 2
       project: Server-side web application
       topics:
         - topic: HTTP requests
@@ -191,7 +191,7 @@ course:
         - topic: Promises
         - topic: Web authentication
         - topic: SQL, Express, Heroku
-    - heading: 1-3
+    - heading: Module 3
       project: Full-stack game
       topics:
         - topic: MVC
@@ -200,21 +200,21 @@ course:
         - topic: AJAX
         - topic: Sequelize
         - topic: Webpack
-    - heading: 4-6
+    - heading: Module 4
       project: Full-stack React app
       topics:
         - topic: JSX
         - topic: React state and components
         - topic: React dev tools
         - topic: Error boundaries
-    - heading: 4-6
+    - heading: Module 1
       project: Advanced full-stack React app
       topics:
         - topic: React router
         - topic: React hooks
         - topic: Styled components
         - topic: Integration of APIs / Complex user interfaces
-    - heading: 4-6
+    - heading: Module 4
       project: Capstone
       topics:
         - topic: Student's choice
