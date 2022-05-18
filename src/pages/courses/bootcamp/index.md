@@ -167,55 +167,59 @@ programdates:
 course:
   heading: Course Overview
   sidebarlabel: Course Overview
-  subheading: Our Full-Time Coding Bootcamp schedule runs from Mondays to Fridays,
-    10am-12pm SGT. Part-Time Coding Bootcamp covers the same material over twice
-    the time (8 months), meeting Tuesdays 7:30-9:30pm SGT and Saturdays
-    10am-12pm SGT. [See full course curriculum
-    here.](http://bootcamp.rocketacademy.co)
+  subheading:
+    Full-Time Coding Bootcamp (FTBC) classes are Mondays to Thursdays, 10am-12pm GMT+8 for 4 months. Part-Time Coding Bootcamp (PTBC) classes are Tuesday evenings 7.30pm-9.30pm GMT+8 and Saturday mornings 10am-12pm GMT+8 for 8 months. Both FTBC and PTBC cover the same material. Refer to the [full course curriculum](http://bootcamp.rocketacademy.co).
   schedule:
-    - heading: Module 1
-      project: "Front-End Application: Video Poker"
+    - heading: "Module 1: Frontend App"
       topics:
+        - topic: Command line
+        - topic: Git
+        - topic: GitHub
         - topic: HTML
         - topic: CSS
-        - topic: DOM
+        - topic: Node
+        - topic: React
+      algorithms:
+        - topic: Arrays
+        - topic: Hash tables
+    - heading: "Module 2: Full-Stack App (Firebase)"
+      topics:
         - topic: HTTP
-        - topic: Javascript
-        - topic: Node.js, Bootstrap
-    - heading: Module 2
-      project: Server-side web application
-      topics:
-        - topic: HTTP requests
-        - topic: Relationship models
-        - topic: Database & Data storage fundamentals
-        - topic: Promises
-        - topic: Web authentication
-        - topic: SQL, Express, Heroku
-    - heading: Module 3
-      project: Full-stack game
-      topics:
-        - topic: MVC
-        - topic: Async/await, Try/catch
-        - topic: RESTful routing
-        - topic: AJAX
-        - topic: Sequelize
+        - topic: JavaScript promises
+        - topic: NoSQL
+        - topic: Firebase Realtime Database
+        - topic: Firebase Storage
+        - topic: Firebase Authentication
+        - topic: React Router
+        - topic: React higher-order components
+        - topic: React Context
         - topic: Webpack
-    - heading: Module 4
-      project: Full-stack React app
+      algorithms:
+        - topic: Object-oriented programming
+        - topic: Stacks
+        - topic: Linked lists
+        - topic: Queues
+        - topic: Recursion
+    - heading: "Module 3: Full-Stack App (Express)"
       topics:
-        - topic: JSX
-        - topic: React state and components
-        - topic: React dev tools
-        - topic: Error boundaries
-    - heading: Module 1
-      project: Advanced full-stack React app
+        - topic: Express
+        - topic: SQL
+        - topic: PostgreSQL
+        - topic: Sequelize
+        - topic: JWT Authentication
+        - topic: Socket.IO
+      algorithms:
+        - topic: Trees
+        - topic: Graphs
+        - topic: Heaps
+    - heading: "Module 4: Capstone"
       topics:
-        - topic: React router
-        - topic: React hooks
-        - topic: Styled components
-        - topic: Integration of APIs / Complex user interfaces
-    - heading: Module 4
-      project: Capstone
-      topics:
-        - topic: Student's choice
+        - topic: Unit tests
+        - topic: Continuous integration
+        - topic: Containers
+        - topic: Web security
+        - topic: TypeScript
+      algorithms:
+        - topic: Dynamic programming
+        - topic: Bit manipulation
 ---

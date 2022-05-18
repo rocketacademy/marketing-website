@@ -194,8 +194,10 @@ query bootcampPageQuery {
         subheading
         schedule {
           heading
-          project
           topics {
+            topic
+          }
+          algorithms {
             topic
           }
         }
