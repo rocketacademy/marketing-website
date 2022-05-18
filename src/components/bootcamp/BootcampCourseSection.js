@@ -6,7 +6,7 @@ import MarkdownContent from '../ConvertMarkdown';
 const BootcampCourseSection = ({ course }) => {
     return (
         <div className='container bootcamp-course-container section' id={course.sidebarlabel.replace(/ /g, "-").toLowerCase()}>
-            <div className='bootcamp-course-header' >
+            <div className='bootcamp-course-header'>
                 {course.heading}
             </div>
             <MarkdownContent content={course.subheading} className={'bootcamp-course-subheading'} />
@@ -99,7 +99,6 @@ const BootcampCourseSection = ({ course }) => {
                             </Accordion.Item>
                         )
                     })}
-                    
                 </Accordion>
             </div>
         </div>
