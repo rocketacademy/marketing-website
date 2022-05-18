@@ -783,10 +783,16 @@ collections:
                     fields:
                       [
                         { label: Heading, name: heading, widget: string },
-                        { label: Project, name: project, widget: string },
                         {
                           label: Topics,
                           name: topics,
+                          widget: list,
+                          fields:
+                            [{ label: Topic, name: topic, widget: string }],
+                        },
+                        {
+                          label: Algorithms,
+                          name: algorithms,
                           widget: list,
                           fields:
                             [{ label: Topic, name: topic, widget: string }],
