@@ -99,9 +99,7 @@ export const IndexPageTemplate = ({
           </div> 
           <div className="col-12 col-md-6 order-1 order-md-2 homepage-header-col-right">
               <div className="homepage-header-col-right-img">
-                <a href="https://www.eventbrite.sg/e/328577222317" target="_blank" rel="noopener noreferrer">
-                  <PreviewCompatibleImage imageInfo={header.headerimage} />
-                </a>
+                <PreviewCompatibleImage imageInfo={header.headerimage} />
               </div>
           </div>
       </div>
