@@ -3,11 +3,12 @@ templateKey: index-page
 title: Become a Software Engineer
 header:
   heading: Become a Software Engineer
-  subheading: 100% of our Coding Bootcamp grads have received software engineering
+  subheading:
+    100% of our Coding Bootcamp grads have received software engineering
     offers from companies like 99.co, Xfers and GovTech.
   headerimage:
     alt: masterclass ad image
-    image: /img/homepage/free-masterclass.jpg
+    image: /img/homepage/homepage-image.png
 success:
   heading: Our Coding Bootcamp Covers Everything You Need to Succeed
   blurbs:
@@ -40,7 +41,8 @@ courses:
     - type: Part Time
       image: /img/homepage/part-time-icon.png
       heading: Coding Basics
-      subheading: "Learn basic coding by building simple apps. Coding Basics applies a
+      subheading:
+        "Learn basic coding by building simple apps. Coding Basics applies a
         flipped classroom model that consists of 2 components: self-learning and
         live classes. "
       prevprice: S$999
@@ -50,7 +52,8 @@ courses:
     - type: Part Time
       image: /img/homepage/part-time-icon.png
       heading: Coding Bootcamp
-      subheading: "Switch careers with our coding bootcamp. Basics course recommended.
+      subheading:
+        "Switch careers with our coding bootcamp. Basics course recommended.
         Coding Bootcamp applies a flipped classroom model that consists of 2
         components: self-learning and live classes. "
       prevprice: S$9,999
@@ -60,7 +63,8 @@ courses:
     - type: Full Time
       image: /img/homepage/full-time-icon.png
       heading: Coding Bootcamp
-      subheading: "Switch careers with our coding bootcamp. Basics course recommended.
+      subheading:
+        "Switch careers with our coding bootcamp. Basics course recommended.
         Coding Bootcamp applies a flipped classroom model that consists of 2
         components: self-learning and live classes. "
       prevprice: S$9,999
@@ -70,7 +74,8 @@ courses:
 curriculum:
   smalltext: 🚀 Q&A with Industry Experts
   heading: Coding bootcamp curriculum designed by industry experts
-  subheading: Our concept-focused coding bootcamp courses are designed to support
+  subheading:
+    Our concept-focused coding bootcamp courses are designed to support
     students at every level as they progress as professional programmers.
   image:
     alt: class screenshot
@@ -92,7 +97,7 @@ formerstudents:
   - image: /img/gotrade.png
     testimonial: >
       “I chose Rocket Academy over other coding bootcamp programs as it was more
-      comprehensive and rigorous." 
+      comprehensive and rigorous."
     studentname: Jia En Chiew
     position: Former Architectural Graduate | Software Engineer at GoTrade
   - image: /img/homepage/glints-color-logo.png
