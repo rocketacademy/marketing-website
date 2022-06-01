@@ -12,3 +12,13 @@
 ### Setup Netlify locally to test application
 
 1. Install Netlify CLI globally with `npm i -g netlify-cli`
+
+## Deploy Instructions
+
+### Deploy to Staging
+
+1. Merge feature branch with `main` through PR
+
+### Deploy to Production
+
+1. Merge `main` with `production` branch once ready
