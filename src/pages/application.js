@@ -39,16 +39,14 @@ const ApplicationForm = () => {
     }
 
     // If form validated, submit form
-    fetch("/.netlify/functions/apply-now", {
+    fetch("/.netlify/functions/submit-application", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(inputs),
     })
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Success:", data);
+      .then(() => {
         // Track application submission for Facebook ads
         if (typeof window !== "undefined") {
           if (window.fbq != null) {
@@ -59,7 +57,7 @@ const ApplicationForm = () => {
         navigate("/thanks");
       })
       .catch((error) => {
-        console.error("Error:", error);
+        console.error("Error: ", error);
       });
   };
 
