@@ -18,7 +18,9 @@
 ### Deploy to Staging
 
 1. Merge feature branch with `main` through PR
+2. View staged changes at https://marketing-website-staging.netlify.app/
 
 ### Deploy to Production
 
 1. Merge `main` with `production` branch once ready
+2. View live changes at https://rocketacademy.co
