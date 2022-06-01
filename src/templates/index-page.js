@@ -5,7 +5,7 @@ import { StaticImage } from "gatsby-plugin-image";
 import GetStartedButton from "../components/GetStartedButton";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import Layout from "../components/Layout";
-import '../styles/main.scss';
+import "../styles/main.scss";
 import HomepageSuccessSection from "../components/homepage/HomepageSuccessSection";
 import HomepageCoursesSection from "../components/homepage/HomepageCoursesSection";
 import HomepageCurriculumSection from "../components/homepage/HomepageCurriculumSection";
@@ -16,110 +16,141 @@ import StartCodingSection from "../components/StartCodingSection";
 export const IndexPageTemplate = ({
   title,
   header,
-  success, 
+  success,
   courses,
   upcomingCourseDates,
   curriculum,
-  formerstudents
+  formerstudents,
 }) => {
-
   return (
     <>
-    <div className="container homepage-header-container">
-      <div className="row homepage-header-row">
+      <div className="container homepage-header-container">
+        <div className="row homepage-header-row">
           <div className="col-12 col-md-6 order-2 order-md-1 homepage-header-col-left">
-              <h2 className="homepage-header-heading">
-              {header.heading}
-              </h2>
-              <p className="homepage-header-subheading">
-              {header.subheading}
-              </p>
-              <div className="hompage-header-button-container">
+            <h2 className="homepage-header-heading">{header.heading}</h2>
+            <p className="homepage-header-subheading">{header.subheading}</p>
+            <div className="hompage-header-button-container">
               <GetStartedButton />
-              </div>
-              <h6 className="homepage-header-companies-heading">OUR HIRING PARTNERS</h6>
-              <div className="homepage-header-companies-container">
+            </div>
+            <h6 className="homepage-header-companies-heading">
+              OUR HIRING PARTNERS
+            </h6>
+            <div className="homepage-header-companies-container">
               <div className="homepage-header-individual-company">
-                <a href="https://www.99.co/team/" target="_blank" rel="noopener noreferrer">
-                  <StaticImage 
-                    src='../../static/img/homepage/ninetynineco-color-logo.png' alt="ninetynineco logo" 
+                <a
+                  href="https://www.99.co/team/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <StaticImage
+                    src="../../static/img/homepage/ninetynineco-color-logo.png"
+                    alt="ninetynineco logo"
                     placeholder="blurred"
                   />
                 </a>
               </div>
               <div className="homepage-header-individual-company">
-                  <StaticImage src="../../static/img/about-page/about-advanceai-icon.png" alt="advanceai logo" placeholder="blurred" />
+                <StaticImage
+                  src="../../static/img/about-page/about-advanceai-icon.png"
+                  alt="advanceai logo"
+                  placeholder="blurred"
+                />
               </div>
               <div className="homepage-header-individual-company">
-                  <StaticImage src="../../static/img/homepage/cakedefi-logo.png" alt="cakedefi logo" placeholder="blurred" />
+                <StaticImage
+                  src="../../static/img/homepage/cakedefi-logo.png"
+                  alt="cakedefi logo"
+                  placeholder="blurred"
+                />
               </div>
               <div className="homepage-header-individual-company">
-                  <StaticImage 
-                    src='../../static/img/about-page/about-carousell-icon.png' alt="carousell logo" 
-                    placeholder="blurred"
-                    />
+                <StaticImage
+                  src="../../static/img/about-page/about-carousell-icon.png"
+                  alt="carousell logo"
+                  placeholder="blurred"
+                />
               </div>
               <div className="homepage-header-individual-company">
-                  <StaticImage 
-                    src='../../static/img/homepage/glints-color-logo.png' alt="glints logo" 
-                    placeholder="blurred"
-                    />
+                <StaticImage
+                  src="../../static/img/homepage/glints-color-logo.png"
+                  alt="glints logo"
+                  placeholder="blurred"
+                />
               </div>
-              
-              <div className="homepage-header-individual-company">
-                  <StaticImage src="../../static/img/gotrade.png" alt="gotrade logo" placeholder="blurred" />
-              </div>
-              
-              <div className="homepage-header-individual-company">
-                  <StaticImage src="../../static/img/homepage/govtech-color-logo.png" alt="govtech logo" placeholder="blurred" />
-              </div>
-              <div className="homepage-header-individual-company">
-                  <StaticImage src="../../static/img/about-page/about-kargo-icon.png" alt="kargo logo" placeholder="blurred" />
-              </div>
-              
-              <div className="homepage-header-individual-company">
-                  <StaticImage 
-                    src='../../static/img/about-page/about-stashaway-icon.png' alt="stashaway logo" 
-                    placeholder="blurred"
-                    />
-              </div>
-              <div className="homepage-header-individual-company">
-                  <StaticImage src="../../static/img/about-page/about-Unit21-icon.png" alt="unit21 logo" placeholder="blurred" />
-              </div>
-              <div className="homepage-header-individual-company">
-                  <StaticImage src="../../static/img/about-page/about-xendit-icon.png" alt="xendit logo" placeholder="blurred" />
-              </div>
-              <div className="homepage-header-individual-company">
-                  <StaticImage 
-                    src='../../static/img/homepage/xfers-straitsx-logo.jpeg' alt="xfers-straitsx logo" 
-                    placeholder="blurred"
-                    />
-              </div>
-              </div>
-          </div> 
-          <div className="col-12 col-md-6 order-1 order-md-2 homepage-header-col-right">
-              <div className="homepage-header-col-right-img">
-                <PreviewCompatibleImage imageInfo={header.headerimage} />
-              </div>
-          </div>
-      </div>
-    </div>
-    <HomepageSuccessSection 
-      success={success} 
-    />
-    <HomepageCoursesSection 
-      courses={courses} 
-      upcomingCourseDates={upcomingCourseDates}
-    />
-    <HomepageCurriculumSection curriculum={curriculum} />
-    <HomepageFormerStudentsSection formerstudents={formerstudents} />
-    <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
-    </>
 
+              <div className="homepage-header-individual-company">
+                <StaticImage
+                  src="../../static/img/gotrade.png"
+                  alt="gotrade logo"
+                  placeholder="blurred"
+                />
+              </div>
+
+              <div className="homepage-header-individual-company">
+                <StaticImage
+                  src="../../static/img/homepage/govtech-color-logo.png"
+                  alt="govtech logo"
+                  placeholder="blurred"
+                />
+              </div>
+              <div className="homepage-header-individual-company">
+                <StaticImage
+                  src="../../static/img/about-page/about-kargo-icon.png"
+                  alt="kargo logo"
+                  placeholder="blurred"
+                />
+              </div>
+
+              <div className="homepage-header-individual-company">
+                <StaticImage
+                  src="../../static/img/about-page/about-stashaway-icon.png"
+                  alt="stashaway logo"
+                  placeholder="blurred"
+                />
+              </div>
+              <div className="homepage-header-individual-company">
+                <StaticImage
+                  src="../../static/img/about-page/about-Unit21-icon.png"
+                  alt="unit21 logo"
+                  placeholder="blurred"
+                />
+              </div>
+              <div className="homepage-header-individual-company">
+                <StaticImage
+                  src="../../static/img/about-page/about-xendit-icon.png"
+                  alt="xendit logo"
+                  placeholder="blurred"
+                />
+              </div>
+              <div className="homepage-header-individual-company">
+                <StaticImage
+                  src="../../static/img/homepage/xfers-straitsx-logo.jpeg"
+                  alt="xfers-straitsx logo"
+                  placeholder="blurred"
+                />
+              </div>
+            </div>
+          </div>
+          <div className="col-12 col-md-6 order-1 order-md-2 homepage-header-col-right">
+            <div className="homepage-header-col-right-img">
+              <PreviewCompatibleImage imageInfo={header.headerimage} />
+            </div>
+          </div>
+        </div>
+      </div>
+      <HomepageSuccessSection success={success} />
+      <HomepageCoursesSection
+        courses={courses}
+        upcomingCourseDates={upcomingCourseDates}
+      />
+      <HomepageCurriculumSection curriculum={curriculum} />
+      <HomepageFormerStudentsSection formerstudents={formerstudents} />
+      <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
+    </>
   );
 };
 
-IndexPageTemplate.propTypes = { 
+IndexPageTemplate.propTypes = {
   title: PropTypes.string,
   header: PropTypes.shape({
     heading: PropTypes.string,
@@ -137,17 +168,17 @@ IndexPageTemplate.propTypes = {
   }),
 };
 
-const IndexPage = ({ data }) => { 
+const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
- 
-   // from rocket's gcal events
+
+  // from rocket's gcal events
   const { edges } = data.allCalendarEvent;
 
   const today = new Date().toISOString();
 
-  const upcomingCourseDates = edges
-      .filter(event => event.node.start.dateTime > today);
-
+  const upcomingCourseDates = edges.filter(
+    (event) => event.node.start.dateTime > today
+  );
 
   return (
     <Layout>
@@ -182,7 +213,7 @@ export const pageQuery = graphql`
     file {
       id
     }
-    markdownRemark(frontmatter: {templateKey: {eq: "index-page"}}) {
+    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
       frontmatter {
         header {
           heading
@@ -191,7 +222,11 @@ export const pageQuery = graphql`
             alt
             image {
               childImageSharp {
-                gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 660)
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  placeholder: BLURRED
+                  width: 660
+                )
               }
             }
           }
@@ -259,7 +294,11 @@ export const pageQuery = graphql`
         formerstudents {
           image {
             childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 300)
+              gatsbyImageData(
+                layout: CONSTRAINED
+                placeholder: BLURRED
+                width: 300
+              )
             }
           }
           position
@@ -274,12 +313,12 @@ export const pageQuery = graphql`
           description
           summary
           end {
-              dateTime
-              date
+            dateTime
+            date
           }
           start {
-              dateTime
-              date
+            dateTime
+            date
           }
         }
       }

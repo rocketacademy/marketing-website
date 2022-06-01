@@ -1,26 +1,29 @@
-import React from 'react';
-import Layout from '../components/Layout';
-import { useEffect } from 'react';
+import React from "react";
+import Layout from "../components/Layout";
+import { useEffect } from "react";
 
 const ApplicationSuccessful = () => {
-
   useEffect(() => {
-    typeof window !== "undefined" && window.gtag('event', 'conversion', { 'send_to': 'AW-10817488949/-jLiCLDBr7cDELWQl6Yo' })
-
-  }, [])
+    if (typeof window !== "undefined") {
+      window.gtag("event", "conversion", {
+        send_to: "AW-10817488949/-jLiCLDBr7cDELWQl6Yo",
+      });
+    }
+  }, []);
 
   return (
     <Layout>
       <div class="row thanks-row">
         <div class="thanks-message-cont">
-          <h4>Thanks for submitting your application 🙂</h4>
+          <h4>Thank you for choosing Rocket Academy!</h4>
           <p>
-            You'll receive an email acknowledgement from us shortly.
+            We have received your application and you will receive an email
+            acknowledgement from us shortly.
           </p>
         </div>
       </div>
     </Layout>
-  )
-}
+  );
+};
 
-export default ApplicationSuccessful
+export default ApplicationSuccessful;

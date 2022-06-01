@@ -1,206 +1,217 @@
-import React from 'react'
-import Layout from '../components/Layout';
-import { graphql } from 'gatsby';
-import BasicsHeaderSection from '../components/basics/BasicsHeaderSection';
-import BasicsContentSection from '../components/basics/BasicsContentSection';
-import StartCodingSection from '../components/StartCodingSection';
-
+import React from "react";
+import Layout from "../components/Layout";
+import { graphql } from "gatsby";
+import BasicsHeaderSection from "../components/basics/BasicsHeaderSection";
+import BasicsContentSection from "../components/basics/BasicsContentSection";
+import StartCodingSection from "../components/StartCodingSection";
 
 // eslint-disable-next-line
 export const BasicsPageTemplate = ({
-    header,
-    pagename,
-    overview,
-    curriculum,
-    instructors,
-    admissions,
-    programdates,
-    lessons,
-    upcomingCourseDates
+  header,
+  pagename,
+  overview,
+  curriculum,
+  instructors,
+  admissions,
+  programdates,
+  lessons,
+  upcomingCourseDates,
 }) => {
-
   return (
-      <>
-          <BasicsHeaderSection header={header} upcomingCourseDates={upcomingCourseDates} pagename={pagename} />
-          <BasicsContentSection 
-            pagename={pagename}
-            overview={overview}
-            curriculum={curriculum}
-            instructors={instructors}
-            admissions={admissions}
-            programdates={programdates}
-            lessons={lessons}
-            upcomingCourseDates={upcomingCourseDates}
-          />
-          <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
-      </>
-  )
-}
+    <>
+      <BasicsHeaderSection
+        header={header}
+        upcomingCourseDates={upcomingCourseDates}
+        pagename={pagename}
+      />
+      <BasicsContentSection
+        pagename={pagename}
+        overview={overview}
+        curriculum={curriculum}
+        instructors={instructors}
+        admissions={admissions}
+        programdates={programdates}
+        lessons={lessons}
+        upcomingCourseDates={upcomingCourseDates}
+      />
+      <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
+    </>
+  );
+};
 
 const BasicsPage = ({ data }) => {
-    const { frontmatter } = data.markdownRemark;
+  const { frontmatter } = data.markdownRemark;
 
-     // from rocket's gcal events
-    const { edges } = data.allCalendarEvent;
+  // from rocket's gcal events
+  const { edges } = data.allCalendarEvent;
 
-    const today = new Date().toISOString();
+  const today = new Date().toISOString();
 
-    const upcomingCourseDates = edges
-        .filter(event => event.node.start.dateTime > today);
+  const upcomingCourseDates = edges.filter(
+    (event) => event.node.start.dateTime > today
+  );
 
+  return (
+    <Layout>
+      <BasicsPageTemplate
+        pagename={frontmatter.pagename}
+        header={frontmatter.header}
+        overview={frontmatter.overview}
+        curriculum={frontmatter.curriculum}
+        instructors={frontmatter.instructors}
+        admissions={frontmatter.admissions}
+        programdates={frontmatter.programdates}
+        lessons={frontmatter.lessons}
+        upcomingCourseDates={upcomingCourseDates}
+      />
+    </Layout>
+  );
+};
 
-    return (
-        <Layout>
-            <BasicsPageTemplate 
-                pagename={frontmatter.pagename}
-                header={frontmatter.header}
-                overview={frontmatter.overview}
-                curriculum={frontmatter.curriculum}
-                instructors={frontmatter.instructors}
-                admissions={frontmatter.admissions}
-                programdates={frontmatter.programdates}
-                lessons={frontmatter.lessons}
-                upcomingCourseDates={upcomingCourseDates}
-            />
-        </Layout>
-    )
-}
-
-export default BasicsPage
+export default BasicsPage;
 
 export const basicsPageQuery = graphql`
-query basicsPageQuery {
-  file {
-    id
-  }
-  markdownRemark(frontmatter: {templateKey: {eq: "basics-page"}}) {
-    id
-    frontmatter {
-      pagename
-      admissions {
-        cardheading
-        currentcost
-        heading
-        prevcost
-        sidebarlabel
-        subheading
-        objectives {
-          objective
-        }
-      }
-      header {
-        heading
-        subheading
-        image1 {
-            alt
-            image {
-                childImageSharp {
-                    gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
-                }
-            }
-        }
-        image2 {
-            alt
-            image {
-                childImageSharp {
-                    gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
-                }
-            }
-        }
-        reasons {
-          reason
-        }
-      }
-      overview {
-        heading
-        sidebarlabel
-        learningstyle {
+  query basicsPageQuery {
+    file {
+      id
+    }
+    markdownRemark(frontmatter: { templateKey: { eq: "basics-page" } }) {
+      id
+      frontmatter {
+        pagename
+        admissions {
+          cardheading
+          currentcost
           heading
-          card {
+          prevcost
+          sidebarlabel
+          subheading
+          objectives {
+            objective
+          }
+        }
+        header {
+          heading
+          subheading
+          image1 {
+            alt
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
+              }
+            }
+          }
+          image2 {
+            alt
+            image {
+              childImageSharp {
+                gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
+              }
+            }
+          }
+          reasons {
+            reason
+          }
+        }
+        overview {
+          heading
+          sidebarlabel
+          learningstyle {
             heading
+            card {
+              heading
+              image {
+                childImageSharp {
+                  gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+                }
+              }
+              text
+            }
+          }
+          studentexperience {
+            heading
+            text
             image {
               childImageSharp {
                 gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
               }
             }
-            text
+          }
+          testimonial {
+            name
+            position
+            quote
+            image {
+              childImageSharp {
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  placeholder: BLURRED
+                  width: 150
+                )
+              }
+            }
           }
         }
-        studentexperience {
+        programdates {
           heading
-          text
-          image {
-            childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED)
+          sidebarlabel
+          subheading
+        }
+        curriculum {
+          heading
+          sidebarlabel
+          topics {
+            topic
+          }
+        }
+        instructors {
+          heading
+          sidebarlabel
+          profile {
+            name
+            position
+            image {
+              childImageSharp {
+                gatsbyImageData(
+                  layout: CONSTRAINED
+                  placeholder: BLURRED
+                  width: 200
+                  height: 200
+                )
+              }
             }
           }
         }
-        testimonial {
-          name
-          position
-          quote
-          image {
-            childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 150)
-            }
+        lessons {
+          heading
+          sidebarlabel
+          subheading
+          lesson {
+            week
+            inclass
+            number
+            preclass
+            title
+            project
           }
         }
       }
-      programdates {
-        heading
-        sidebarlabel
-        subheading
-      }
-      curriculum {
-        heading
-        sidebarlabel
-        topics {
-          topic
-        }
-      }
-      instructors {
-        heading
-        sidebarlabel
-        profile {
-          name
-          position
-          image {
-            childImageSharp {
-              gatsbyImageData(layout: CONSTRAINED, placeholder: BLURRED, width: 200, height: 200)
-            }
+    }
+    allCalendarEvent {
+      edges {
+        node {
+          description
+          summary
+          end {
+            dateTime
+            date
           }
-        }
-      }
-      lessons {
-        heading
-        sidebarlabel
-        subheading
-        lesson {
-          week
-          inclass
-          number
-          preclass
-          title
-          project
+          start {
+            dateTime
+            date
+          }
         }
       }
     }
   }
-  allCalendarEvent {
-    edges {
-      node {
-        description
-        summary
-        end {
-            dateTime
-            date
-        }
-        start {
-            dateTime
-            date
-        }
-      }
-    }
-  }
-}
-`
+`;

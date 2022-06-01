@@ -1,4 +1,4 @@
-require('dotenv').config()
+require("dotenv").config();
 const Sentry = require("@sentry/node");
 
 Sentry.init({
@@ -7,50 +7,76 @@ Sentry.init({
   maxValueLength: 8000, // without this error output gets truncated
 });
 
-exports.handler = async (event, context) => {
-  try {
-    if (event.httpMethod !== 'POST') {
-      // Block GET requests
-      return { statusCode: 400, body: null }
-    }
+const handleSubmissionSuccess = () => {
+  return { statusCode: 200, body: JSON.stringify({ success: true }) };
+};
 
-    const hubspot = require('@hubspot/api-client');
-
-    const hubspotClient = new hubspot.Client({"apiKey":process.env.HUBSPOT_API_KEY});
-
-    const data = JSON.parse(event.body)
-
-    let bootcampFunnelStatus;
-
-    if (data.course_type.includes('basics')) {
-      bootcampFunnelStatus = 'basics_apply';
-    } else {
-      bootcampFunnelStatus = 'bootcamp_apply';
-    }
-
-    const hubspotData = {
-      properties: {
-        ...data,
-        contact_source: 'website_apply_form',
-        bootcamp_funnel_status: bootcampFunnelStatus,
-      }
-    };
-   
-    const apiResponse = await hubspotClient.crm.contacts.basicApi.create(hubspotData);
-    
-    // Return a 200 if it succeeds
-    return { statusCode: 200, body: JSON.stringify({ success: true }) }
-
-  } catch (e) {
-    Sentry.captureException(e);
-
-    e.message === 'HTTP request failed'
+const handleSubmissionError = (e) => {
+  // Log error in Sentry
+  Sentry.captureException(e);
+  // Log error details locally
+  e.message === "HTTP request failed"
     ? console.error(JSON.stringify(e.response, null, 2))
-    : console.error(e)
+    : console.error(e);
+  // Return 500 with error
+  return {
+    statusCode: 500,
+    body: `Failed request. Error: ${e}`,
+  };
+};
 
-    return {
-      statusCode: 500,
-      body: 'request failed',
-    }
+exports.handler = async (event, context) => {
+  // Block GET requests
+  if (event.httpMethod !== "POST") {
+    return { statusCode: 400, body: null };
   }
-}
+
+  // Initialise HubSpot client
+  const hubspot = require("@hubspot/api-client");
+  const hubspotClient = new hubspot.Client({
+    apiKey: process.env.HUBSPOT_API_KEY,
+  });
+
+  // Initialise HubSpot contact data
+  const formData = JSON.parse(event.body);
+  let bootcampFunnelStatus;
+  if (formData.course_type.includes("basics")) {
+    bootcampFunnelStatus = "basics_apply";
+  } else {
+    bootcampFunnelStatus = "bootcamp_apply";
+  }
+  const contactData = {
+    properties: {
+      ...formData,
+      contact_source: "website_apply_form",
+      bootcamp_funnel_status: bootcampFunnelStatus,
+    },
+  };
+
+  // Create new HubSpot contact. If contact exists, update existing contact.
+  let existingContactId;
+  try {
+    await hubspotClient.crm.contacts.basicApi.create(contactData);
+    return handleSubmissionSuccess();
+  } catch (e) {
+    // If error is not contact already exists, return error
+    if (!e.body.message.includes("Contact already exists")) {
+      return handleSubmissionError(e);
+    }
+    // If error is contact already exists, set existing contact ID
+    existingContactId = e.body.message.split("Existing ID: ")[1];
+  }
+
+  // If contact already exists, try to update contact
+  try {
+    await hubspotClient.crm.contacts.basicApi.update(
+      existingContactId,
+      contactData
+    );
+  } catch (e) {
+    return handleSubmissionError(e);
+  }
+
+  // If all successful, return success
+  return handleSubmissionSuccess();
+};
