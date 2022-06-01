@@ -112,8 +112,9 @@ admissions:
   sidebarlabel: Admissions
   subheading: >-
     Rocket’s Basics course is recommended as a pre-requisite for joining our
-    Coding Bootcamp program. Learn more about [Rocket’s Coding
-    Basics](https://codingbasics.rocketacademy.co/).
+    Coding Bootcamp program. Learn more about
+    [t](https://codingbasics.rocketacademy.co/)he admissions process
+    [here](https://basics.rocketacademy.co/course-logistics/post-course/bootcamp-admission-criteria). 
 
 
     If you already have some prior experience/knowledge in coding and would like to join Rocket's Coding Bootcamp program, we may waive the Coding Basics requirement - reach out to us at [hello@rocketacademy.co](mailto:hello@rocketacademy.co) to find out more!
@@ -167,8 +168,11 @@ programdates:
 course:
   heading: Course Overview
   sidebarlabel: Course Overview
-  subheading:
-    Full-Time Coding Bootcamp (FTBC) classes are Mondays to Thursdays, 10am-12pm GMT+8 for 4 months. Part-Time Coding Bootcamp (PTBC) classes are Tuesday evenings 7.30pm-9.30pm GMT+8 and Saturday mornings 10am-12pm GMT+8 for 8 months. Both FTBC and PTBC cover the same material. Refer to the [full course curriculum](http://bootcamp.rocketacademy.co).
+  subheading: Full-Time Coding Bootcamp (FTBC) classes are Mondays to Thursdays,
+    10am-12pm GMT+8 for 4 months. Part-Time Coding Bootcamp (PTBC) classes are
+    Tuesday evenings 7.30pm-9.30pm GMT+8 and Saturday mornings 10am-12pm GMT+8
+    for 8 months. Both FTBC and PTBC cover the same material. Refer to the [full
+    course curriculum](http://bootcamp.rocketacademy.co).
   schedule:
     - heading: "Module 1: Frontend App"
       topics:
