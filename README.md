@@ -9,9 +9,11 @@
 3. Run `gatsby develop` from the root of the repo
 4. View the page at `localhost:8000`
 
-### Setup Netlify locally to test application
+### Setup Netlify locally to test Netlify Functions
 
 1. Install Netlify CLI globally with `npm i -g netlify-cli`
+2. Run `netlify dev` from the root of the repo
+3. View the page at `localhost:8888`
 
 ## Deploy Instructions
 
