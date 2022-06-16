@@ -20,7 +20,6 @@ const BootcampTuitionSection = ({ tuition }) => {
                         <Card>
                             <Card.Body>
                                 <div className='bootcamp-tuition-top'>
-
                                     <div className='bootcamp-tuition-cardheading'>
                                         <PreviewCompatibleImage imageInfo={card.frequency} />
                                     </div>

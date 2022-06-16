@@ -489,7 +489,6 @@ collections:
                   { label: Heading, name: heading, widget: string },
                   { label: Subheading, name: subheading, widget: text },
                   { label: Sidebarlabel, name: sidebarlabel, widget: string },
-                  { label: Cardheading, name: cardheading, widget: string },
                   { label: Prevcost, name: prevcost, widget: string },
                   { label: Currentcost, name: currentcost, widget: string },
                   {
