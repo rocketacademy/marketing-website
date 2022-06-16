@@ -76,7 +76,7 @@ admissions:
     internet, webcam and passion!
   cardheading: Free for a limited time only
   prevcost: S$999
-  currentcost: FREE
+  currentcost: S$199/HK$1199/AU$209
   objectives:
     - objective: Build simple apps
     - objective: Learn coding fundamentals
