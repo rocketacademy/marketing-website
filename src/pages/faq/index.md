@@ -16,8 +16,6 @@ general:
         careers or learn professional coding.
 
         2. Coding Basics has been taken and recommended by students from top tech companies such as Facebook, Stripe, Grab, Shopee, Rakuten, Ninja Van, McKinsey, and more.
-
-        3. Coding Basics is free.
     - question: Why choose Rocket’s Coding Bootcamp course?
       answers: >-
         1. Rocket’s past students received offers from companies such as
@@ -138,7 +136,7 @@ general:
         3. If you need to miss class for any reason, please let your instructor know ahead of time.
     - question: How much do Rocket Academy's courses cost?
       answers: >-
-        1. Coding Basics is currently free for all interested students. [Apply
+        1. Coding Basics currently costs S$199 for all interested students. [Apply
         now](https://rocketacademy.co/application)!
 
         2. Details on Coding Bootcamp tuition fees can be found here. We accept payment via credit card, or if you are based in Singapore, PayNow. We also offer a 3-month installment plan via Atome for Singapore-based credit card users only. 

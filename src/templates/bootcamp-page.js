@@ -198,7 +198,6 @@ export const bootcampPageQuery = graphql`
         programdates {
           heading
           sidebarlabel
-          subheading
         }
         course {
           heading

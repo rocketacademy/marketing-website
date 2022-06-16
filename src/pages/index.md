@@ -46,7 +46,7 @@ courses:
         flipped classroom model that consists of 2 components: self-learning and
         live classes. "
       prevprice: S$999
-      currentprice: FREE
+      currentprice: S$199 / HK$1,199 / AU$209
       duration: ✓ 6 weeks
       conditions: ✓ Live and online
     - type: Part Time
@@ -57,7 +57,7 @@ courses:
         Coding Bootcamp applies a flipped classroom model that consists of 2
         components: self-learning and live classes. "
       prevprice: S$9,999
-      currentprice: S$4,999/HK$29,999/AU$4,999
+      currentprice: S$4,999 / HK$29,999 / AU$4,999
       duration: ✓ 8 Months
       conditions: ✓ Live and online
     - type: Full Time
@@ -68,7 +68,7 @@ courses:
         Coding Bootcamp applies a flipped classroom model that consists of 2
         components: self-learning and live classes. "
       prevprice: S$9,999
-      currentprice: S$4,999/HK$29,999/AU$4,999
+      currentprice: S$4,999 / HK$29,999 / AU$4,999
       duration: ✓ 4 Months
       conditions: ✓ Live and online
 curriculum:

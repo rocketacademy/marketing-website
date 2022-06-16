@@ -80,7 +80,6 @@ export const basicsPageQuery = graphql`
       frontmatter {
         pagename
         admissions {
-          cardheading
           currentcost
           heading
           prevcost

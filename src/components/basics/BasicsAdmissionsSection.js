@@ -16,9 +16,6 @@ const BasicsAdmissionsSection = ({ admissions }) => {
             <Card>
                 <Card.Body>
                     <div className='basics-admissions-top'>
-                        <div className='basics-admissions-cardheading'>
-                            {admissions.cardheading}
-                        </div>
                         <span className='basics-admissions-prevcost'>
                             {admissions.prevcost}&nbsp;
                         </span>
