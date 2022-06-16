@@ -68,7 +68,6 @@ const BasicsPagePreview = ({  entry, getAsset }) => {
                 heading: entry.getIn(['data', 'admissions', 'heading']),
                 subheading: entry.getIn(['data', 'admissions', 'subheading']),
                 sidebarlabel: entry.getIn(['data', 'admissions', 'sidebarlabel']),
-                cardheading: entry.getIn(['data', 'admissions', 'cardheading']),
                 prevcost: entry.getIn(['data', 'admissions', 'prevcost']),
                 currentcost: entry.getIn(['data', 'admissions', 'currentcost']),
                 objectives,

@@ -13,7 +13,6 @@ header:
     image: /img/basics-page/basics-header-mobile.jpg
     alt: basics page header mobile image
   reasons:
-    - reason: Free
     - reason: Great for beginners
     - reason: Live and online
 overview:
@@ -74,9 +73,8 @@ admissions:
   sidebarlabel: Admission and Tuition
   subheading: No math or coding background required, just a computer with
     internet, webcam and passion!
-  cardheading: Free for a limited time only
   prevcost: S$999
-  currentcost: FREE
+  currentcost: S$199/HK$1199/AU$209
   objectives:
     - objective: Build simple apps
     - objective: Learn coding fundamentals

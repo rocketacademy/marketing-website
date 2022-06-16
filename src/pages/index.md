@@ -46,7 +46,7 @@ courses:
         flipped classroom model that consists of 2 components: self-learning and
         live classes. "
       prevprice: S$999
-      currentprice: FREE
+      currentprice: S$199/HK$1199/AU$209
       duration: ✓ 6 weeks
       conditions: ✓ Live and online
     - type: Part Time
