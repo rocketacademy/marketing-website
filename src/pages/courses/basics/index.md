@@ -4,7 +4,7 @@ title: Coding Basics
 pagename: basics
 header:
   heading: Coding Basics
-  subheading: A live and online, 6-week part-time intro to coding course for
+  subheading: A live and online, part-time intro to coding course for
     beginners, taught in JavaScript.
   image1:
     image: /img/basics-page/basics-header-desktop.jpg
@@ -82,7 +82,7 @@ admissions:
 programdates:
   heading: Upcoming Program Dates
   subheading: |
-    New Batch Every 6 Weeks Every Monday and Thursday from 7.30pm-9.30pm GMT +08
+    Every Monday and Thursday from 7.30pm-9.30pm GMT +08
   sidebarlabel: Program Dates
 lessons:
   heading: Course Overview
