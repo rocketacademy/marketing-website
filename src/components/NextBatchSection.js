@@ -29,7 +29,7 @@ const NextBatchSection = ({ upcomingCourseDates, pagename }) => {
             <div className='container basics-next-batch-container'>
                 <div className='basics-next-batch-content'>
                     <p className='basics-next-batch-heading'>🚀 Next Launch</p>
-                    <p className='basics-next-batch-text'>Now enrolling for {getFormattedDate(nextStartDate)}</p>
+                    <p className='basics-next-batch-text'>Now enrolling for 22 Aug 2022</p>
                 </div>
                 <div className='basics-next-batch-button-container'>
                     <GetStartedButton />

@@ -14,9 +14,7 @@ const BasicsContentSection = ({
     curriculum,
     instructors,
     admissions,
-    programdates,
     lessons,
-    upcomingCourseDates
  }) => {
 
     const sectionArray = [
@@ -24,7 +22,6 @@ const BasicsContentSection = ({
         curriculum,
         instructors,
         admissions,
-        programdates,
         lessons,
     ];
 
@@ -38,10 +35,7 @@ const BasicsContentSection = ({
                         <BasicsCurriculumSection curriculum={curriculum} />
                         <BasicsInstructorsSection instructors={instructors} />
                         <BasicsAdmissionsSection admissions={admissions} />
-                        <BasicsProgramDatesSection 
-                            programdates={programdates}
-                            upcomingCourseDates={upcomingCourseDates} 
-                        />
+                        <BasicsProgramDatesSection />
                         <BasicsCourseSection lessons={lessons} />
                     </div>
                 </div>
