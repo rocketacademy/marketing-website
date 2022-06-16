@@ -47,11 +47,6 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
       <div className='bootcamp-program-dates-heading'>
         {programdates.heading}
       </div>
-
-      <div className='bootcamp-program-dates-subheading'>
-        {programdates.subheading}
-      </div>
-
       <div className='row bootcamp-program-dates-row-desktop'>
         <Table borderless className='bootcamp-program-dates-row'>
           <thead>

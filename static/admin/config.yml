@@ -763,7 +763,6 @@ collections:
                 [
                   { label: Heading, name: heading, widget: string },
                   { label: Sidebarlabel, name: sidebarlabel, widget: string },
-                  { label: Subheading, name: subheading, widget: text },
                 ],
             }
           - {

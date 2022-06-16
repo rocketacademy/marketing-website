@@ -163,7 +163,6 @@ tuition:
 programdates:
   heading: Upcoming Program Dates
   sidebarlabel: Program Dates
-  subheading: New Batches Every 6 Weeks
 course:
   heading: Course Overview
   sidebarlabel: Course Overview
