@@ -51,7 +51,7 @@ const StartCodingSection = ({ upcomingCourseDates }) => {
                         Coding Basics
                     </div>
                     <div className='startcoding-basics-date'>
-                        {nextBasicsStartDate}
+                        22 Aug 2022
                     </div>
                     </div>
                     <div className='startcoding-info'>

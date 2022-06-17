@@ -4,7 +4,7 @@ title: Coding Basics
 pagename: basics
 header:
   heading: Coding Basics
-  subheading: A live and online, 6-week part-time intro to coding course for
+  subheading: A live and online, part-time intro to coding course for
     beginners, taught in JavaScript.
   image1:
     image: /img/basics-page/basics-header-desktop.jpg
@@ -13,7 +13,6 @@ header:
     image: /img/basics-page/basics-header-mobile.jpg
     alt: basics page header mobile image
   reasons:
-    - reason: Free
     - reason: Great for beginners
     - reason: Live and online
 overview:
@@ -74,9 +73,8 @@ admissions:
   sidebarlabel: Admission and Tuition
   subheading: No math or coding background required, just a computer with
     internet, webcam and passion!
-  cardheading: Free for a limited time only
   prevcost: S$999
-  currentcost: FREE
+  currentcost: S$199/HK$1199/AU$209
   objectives:
     - objective: Build simple apps
     - objective: Learn coding fundamentals
@@ -84,7 +82,7 @@ admissions:
 programdates:
   heading: Upcoming Program Dates
   subheading: |
-    New Batch Every 6 Weeks Every Monday and Thursday from 7.30pm-9.30pm GMT +08
+    Every Monday and Thursday from 7.30pm-9.30pm GMT +08
   sidebarlabel: Program Dates
 lessons:
   heading: Course Overview

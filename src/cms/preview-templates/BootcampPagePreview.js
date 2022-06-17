@@ -91,7 +91,6 @@ const BootcampPagePreview = ({ entry, getAsset }) => {
         programdates={{
             heading: entry.getIn(['data', 'programdates', 'heading']),
             sidebarlabel: entry.getIn(['data', 'programdates', 'sidebarlabel']),
-            subheading: entry.getIn(['data', 'programdates', 'subheading']),
         }}
         course={{
             heading: entry.getIn(['data', 'course', 'heading']),

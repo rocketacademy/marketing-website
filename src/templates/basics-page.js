@@ -13,7 +13,6 @@ export const BasicsPageTemplate = ({
   curriculum,
   instructors,
   admissions,
-  programdates,
   lessons,
   upcomingCourseDates,
 }) => {
@@ -30,9 +29,7 @@ export const BasicsPageTemplate = ({
         curriculum={curriculum}
         instructors={instructors}
         admissions={admissions}
-        programdates={programdates}
         lessons={lessons}
-        upcomingCourseDates={upcomingCourseDates}
       />
       <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
     </>
@@ -60,7 +57,6 @@ const BasicsPage = ({ data }) => {
         curriculum={frontmatter.curriculum}
         instructors={frontmatter.instructors}
         admissions={frontmatter.admissions}
-        programdates={frontmatter.programdates}
         lessons={frontmatter.lessons}
         upcomingCourseDates={upcomingCourseDates}
       />
@@ -80,7 +76,6 @@ export const basicsPageQuery = graphql`
       frontmatter {
         pagename
         admissions {
-          cardheading
           currentcost
           heading
           prevcost

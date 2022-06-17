@@ -436,15 +436,6 @@
           .card {
             border-radius: 10px;
           }
-          .basics-admissions-cardheading {
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 26px;
-            @include variables.md {
-              font-size: 16px;
-              line-height: 26px;
-            }
-          }
           .basics-admissions-prevcost {
             font-weight: bold;
             font-size: 22px;

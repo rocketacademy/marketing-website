@@ -44,6 +44,11 @@ const NextBatchDates = ({ details, upcomingCourseDates }) => {
 
         const displayDate = `${getFormattedDate(startDate)} - ${getFormattedDate(endDate)}`;
 
+        if (heading === 'Basics') {
+            return (
+                <li>✓ Next Batch: 22 Aug 2022 - 3 Oct 2022</li>
+            )
+        }
         return (
             <li>✓ Next Batch: {displayDate}</li>
         )
