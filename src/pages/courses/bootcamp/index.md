@@ -113,7 +113,7 @@ admissions:
   subheading: >-
     Rocket’s Basics course is recommended as a pre-requisite for joining our
     Coding Bootcamp program. Learn more about [Rocket’s Coding
-    Basics](https://codingbasics.rocketacademy.co/).
+    Basics](https://basics.rocketacademy.co/).
 
 
     If you already have some prior experience/knowledge in coding and would like to join Rocket's Coding Bootcamp program, we may waive the Coding Basics requirement - reach out to us at [hello@rocketacademy.co](mailto:hello@rocketacademy.co) to find out more!
