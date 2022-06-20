@@ -90,7 +90,7 @@ lessons:
   subheading: >
     Coding Basics applies a flipped classroom model that consists of 2
 
-    components: self-learning and live classes. Refer to our [course curriculum](https://codingbasics.rocketacademy.co/) for more information.
+    components: self-learning and live classes. Refer to our [course curriculum](https://basics.rocketacademy.co/) for more information.
   lesson:
     - week: 0-1
       number: "0"
