@@ -18,7 +18,6 @@ const NextBatchSection = ({ upcomingCourseDates, pagename }) => {
         let toPath;
 
         if (pagename === 'basics') {
-            // const basicsStartDates = upcomingCourseDates.filter(course => course.node.summary.includes('Basics'));
             nextStartDate = new Date("2022-08-22")
             toPath = "http://learn-staging.rocketacademy.co/student/"
         } else {

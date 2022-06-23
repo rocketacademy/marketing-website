@@ -298,11 +298,6 @@ const ApplicationForm = () => {
                 Please tell us about yourself.
               </Form.Control.Feedback>
             </Form.Group>
-            <input
-              type="hidden"
-              name="application-form"
-              value="bootcamp"
-            />
             <div data-netlify-recaptcha="true"></div>
             <input
               type="hidden"
