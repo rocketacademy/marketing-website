@@ -10,10 +10,10 @@ const CourseSelection = () => {
     return (
         <>
             <Layout>
-                <div style={{ height: '40rem'}} className="container-fluid py-5 bg-light d-flex align-items-center">
+                <div className="container-fluid py-5 bg-light d-flex align-items-center">
                     <div className="container">
                         <div className="row mt-5">
-                            <h1 className="mt-5 text-center">
+                            <h1 className="text-center">
                                 Start your coding journey today
                             </h1>
                         </div>
