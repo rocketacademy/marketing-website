@@ -15,12 +15,10 @@
       line-height: 61px;
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
     }
     .application-form-header-text-col {
       display: flex;
       flex-direction: column;
-      justify-content: flex-start;
       .application-form-header-subheading {
         font-weight: normal;
         font-size: 14px;
@@ -31,14 +29,6 @@
           font-size: 20px;
           line-height: 30px;
         }
-      }
-    }
-    .application-form-header-icon-col {
-      display: none;
-      @include variables.md {
-        display: flex;
-        align-items: flex-start;
-        justify-content: flex-end;
       }
     }
   }

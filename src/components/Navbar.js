@@ -64,7 +64,7 @@ const SiteNavbar = () => {
                     <Nav.Link as={ Link } to="/faq" activeClassName="nav-active" className="no-dropdown">FAQ</Nav.Link>
                     <Nav.Item className="button-container">
                         <Button variant="outline-primary" className="btn navbar-btn btn-outline-primary">
-                            <a href="/application" target="_blank"  rel="noopener noreferrer">
+                            <a href="/get-started/" target="_blank"  rel="noopener noreferrer">
                                 Get Started
                             </a>   
                         </Button>
