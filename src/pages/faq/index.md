@@ -137,9 +137,9 @@ general:
     - question: How much do Rocket Academy's courses cost?
       answers: >-
         1. Coding Basics is currently S$199 for all interested students. [Apply
-        now](https://rocketacademy.co/application)!
+        now](https://learn-staging.rocketacademy.co/student/)!
 
-        2. Details on Coding Bootcamp tuition fees can be found here. We accept payment via credit card, or if you are based in Singapore, PayNow. We also offer a 3-month installment plan via Atome for Singapore-based credit card users only. 
+        2. Details on Coding Bootcamp tuition fees can be found [here](https://rocketacademy.co/courses/bootcamp/). We accept payment via credit card, or if you are based in Singapore, PayNow. We also offer a 3-month installment plan via Atome for Singapore-based credit card users only. 
 
         3. Payment is required prior to the start of the coding course to secure your spot in the program.
 codingbasics:
