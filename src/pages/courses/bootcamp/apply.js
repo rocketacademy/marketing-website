@@ -7,9 +7,9 @@ import InputGroup from "react-bootstrap/InputGroup";
 
 import { navigate } from "gatsby";
 
-import countries from "../helper/countries";
-import Layout from "../components/Layout";
-import "../styles/main.scss";
+import countries from "../../../helper/countries";
+import Layout from "../../../components/Layout";
+import "../../../styles/main.scss";
 
 const ApplicationForm = () => {
   useEffect(() => {
@@ -69,7 +69,7 @@ const ApplicationForm = () => {
             <div className="row application-form-header-row">
               <div className="col-12 col-md-8 application-form-header-text-col">
                 <div className="application-form-header-heading">
-                  Start Your Coding Journey Today
+                  Ready for a career switch?
                 </div>
                 <div className="application-form-header-subheading">
                   Learn everything you need to succeed as a software engineer
@@ -298,68 +298,11 @@ const ApplicationForm = () => {
                 Please tell us about yourself.
               </Form.Control.Feedback>
             </Form.Group>
-            <Form.Group
-              as={Col}
-              className="mb-3"
-              md="6"
-              controlId="validationCustom09"
-            >
-              <Form.Label>Which courses are you interested in? </Form.Label>
-              <Form.Check>
-                <Form.Check.Input
-                  name="course_type"
-                  type="radio"
-                  value="basics"
-                  onChange={handleChange}
-                  required
-                />
-                <Form.Check.Label>
-                  <h6>Coding Basics</h6>
-                  <p>
-                    <em>I just want to learn something new</em>
-                  </p>
-                </Form.Check.Label>
-              </Form.Check>
-              <Form.Check>
-                <Form.Check.Input
-                  name="course_type"
-                  type="radio"
-                  value="basics;bootcamp"
-                  onChange={handleChange}
-                  required
-                />
-                <Form.Check.Label>
-                  <h6>Coding Basics and Coding Bootcamp</h6>
-                  <p>
-                    <em>
-                      I'm new to coding but I am thinking about becoming a
-                      software engineer
-                    </em>
-                  </p>
-                </Form.Check.Label>
-              </Form.Check>
-              <Form.Check>
-                <Form.Check.Input
-                  name="course_type"
-                  type="radio"
-                  value="bootcamp"
-                  onChange={handleChange}
-                  required
-                />
-                <Form.Check.Label>
-                  <h6>Coding Bootcamp</h6>
-                  <p>
-                    <em>
-                      I have written small programs before and am thinking about
-                      becoming a software engineer
-                    </em>
-                  </p>
-                </Form.Check.Label>
-                <Form.Control.Feedback type="invalid">
-                  Please select a course.
-                </Form.Control.Feedback>
-              </Form.Check>
-            </Form.Group>
+            <input
+              type="hidden"
+              name="application-form"
+              value="bootcamp"
+            />
             <div data-netlify-recaptcha="true"></div>
             <input
               type="hidden"

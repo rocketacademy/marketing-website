@@ -72,7 +72,7 @@ const StartCodingSection = ({ upcomingCourseDates }) => {
                     </div>
                     </div>
             </div>
-            <GetStartedButton />
+            <GetStartedButton toPath={"/get-started/"}/>
         </div>
     </div>
     )
