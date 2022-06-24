@@ -39,17 +39,11 @@ exports.handler = async (event, context) => {
 
   // Initialise HubSpot contact data
   const formData = JSON.parse(event.body);
-  let bootcampFunnelStatus;
-  if (formData.course_type.includes("basics")) {
-    bootcampFunnelStatus = "basics_apply";
-  } else {
-    bootcampFunnelStatus = "bootcamp_apply";
-  }
   const contactData = {
     properties: {
       ...formData,
       contact_source: "website_apply_form",
-      bootcamp_funnel_status: bootcampFunnelStatus,
+      bootcamp_funnel_status: 'bootcamp_apply',
     },
   };
 

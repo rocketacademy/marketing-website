@@ -15,13 +15,15 @@ const NextBatchSection = ({ upcomingCourseDates, pagename }) => {
         }
 
         let nextStartDate;
+        let toPath;
 
         if (pagename === 'basics') {
-            const basicsStartDates = upcomingCourseDates.filter(course => course.node.summary.includes('Basics'));
             nextStartDate = new Date("2022-08-22");
+            toPath = "http://learn-staging.rocketacademy.co/student/"
         } else {
             const bootcampStartDates = upcomingCourseDates.filter(course => course.node.description.includes('Full Time') || course.node.description.includes('Part Time'));
             nextStartDate = bootcampStartDates[0].node.start.dateTime;
+            toPath = "/courses/bootcamp/apply/"
         }
         
 
@@ -32,7 +34,7 @@ const NextBatchSection = ({ upcomingCourseDates, pagename }) => {
                     <p className='basics-next-batch-text'>Now enrolling for {getFormattedDate(nextStartDate)}</p>
                 </div>
                 <div className='basics-next-batch-button-container'>
-                    <GetStartedButton />
+                    <GetStartedButton toPath={toPath}/>
                 </div>
             </div>
         )
