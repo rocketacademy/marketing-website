@@ -36,9 +36,9 @@ const CourseSelection = () => {
                                 <Card.Body>
                                     <Card.Title><h3>Coding Bootcamp</h3></Card.Title>
                                     <h5>S$7,999 / HK$45,999 / AU$8,399</h5>
-                                    <Card.Text className="mt-4">Rocket Academy's flagship course, designed to get you ready for a career transition into software engineering in the most efficient yet effective manner.</Card.Text>
-                                    <Card.Text>Taught in JavaScript, the course introduces modern frameworks regularly used in the industry. It also trains you to understand Data Structure and Algorithm problems often used in interviews.</Card.Text>
-                                    <Card.Text>As a community, Rocket's Bootcampers support one another, offering you the foundation of your new network as you venture into the software engineering industry.</Card.Text>
+                                    <Card.Text className="mt-4">Rocket Academy's flagship course gets you ready to be a software engineer.</Card.Text>
+                                    <Card.Text>Taught in JavaScript, you will be introduced to modern frameworks commonly used in the industry. The course also delves into Data Structures and Algorithms vital for interviews as well as efficient applications.</Card.Text>
+                                    <Card.Text>The community at Rocket's bootcamp supports each other, providing students with an unshakable network of peers as they venture into software engineering.</Card.Text>
                                     <Card.Text>Sign up now if you're ready to take that next step!</Card.Text>
                                     <button className="btn get-started-btn btn-primary my-4">
                                         <Link to="/courses/bootcamp/apply/"  target="_blank" style={{ textDecoration: "none", color: "white" }}>
