@@ -18,7 +18,7 @@ const NextBatchSection = ({ upcomingCourseDates, pagename }) => {
 
         if (pagename === 'basics') {
             const basicsStartDates = upcomingCourseDates.filter(course => course.node.summary.includes('Basics'));
-            nextStartDate = basicsStartDates[0].node.start.dateTime;
+            nextStartDate = new Date("2022-08-22");
         } else {
             const bootcampStartDates = upcomingCourseDates.filter(course => course.node.description.includes('Full Time') || course.node.description.includes('Part Time'));
             nextStartDate = bootcampStartDates[0].node.start.dateTime;
@@ -29,7 +29,7 @@ const NextBatchSection = ({ upcomingCourseDates, pagename }) => {
             <div className='container basics-next-batch-container'>
                 <div className='basics-next-batch-content'>
                     <p className='basics-next-batch-heading'>🚀 Next Launch</p>
-                    <p className='basics-next-batch-text'>Now enrolling for 22 Aug 2022</p>
+                    <p className='basics-next-batch-text'>Now enrolling for {getFormattedDate(nextStartDate)}</p>
                 </div>
                 <div className='basics-next-batch-button-container'>
                     <GetStartedButton />
