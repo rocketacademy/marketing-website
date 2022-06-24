@@ -60,9 +60,14 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
             <tbody>
               {upcomingCourseDates ? (
                 bootcampDates.map((batch) => {
-                return (
-                  <BootcampProgramDatesRow batch={batch}/>
-                )
+                  const startDate = new Date(batch.node.start.dateTime);
+                  const deadline = new Date().setTime(startDate.setDate(startDate.getDate() - 14));
+                  const currentDate = new Date();
+                  if (deadline > currentDate.getTime()) {
+                    return (
+                      <BootcampProgramDatesRow batch={batch}/>
+                    )
+                  }
               })
               ) : (
                 <div>dynamic data from gcal</div>
