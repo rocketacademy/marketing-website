@@ -26,7 +26,7 @@ const CourseSelection = () => {
                                     <Card.Text>Perfect for beginners looking to dip their toes into expansive field through computational thinking. The course is taught in JavaScript, and will even show you the basics of HTML and CSS.</Card.Text>
                                     <Card.Text>If you're looking to take that first step, look no further and register now!</Card.Text>
                                     <button className="btn get-started-btn btn-primary my-4">
-                                        <Link to="https://learn-staging.rocketacademy.co/student/"  target="_blank" style={{ textDecoration: "none", color: "white" }}>
+                                        <Link to="https://learn.rocketacademy.co/student/"  target="_blank" style={{ textDecoration: "none", color: "white" }}>
                                             Register now
                                         </Link>
                                     </button>
