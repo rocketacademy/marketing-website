@@ -40,7 +40,7 @@ const BootcampTuitionSection = ({ tuition }) => {
             })}
         </div>
         <div className='bootcamp-tuition-get-started-button-container'>
-            <GetStartedButton />
+            <GetStartedButton toPath={"/courses/bootcamp/apply/"}/>
         </div>
     </div>
   )

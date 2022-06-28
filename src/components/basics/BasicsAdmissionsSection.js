@@ -40,7 +40,7 @@ const BasicsAdmissionsSection = ({ admissions }) => {
             </div>
         </div>
         <div className='basics-admissions-get-started-button-container'>
-            <GetStartedButton />
+            <GetStartedButton toPath={"https://learn.rocketacademy.co/student/"}/>
         </div>
     </div>
   )
