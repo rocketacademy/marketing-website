@@ -43,7 +43,7 @@ exports.handler = async (event, context) => {
     properties: {
       ...formData,
       contact_source: "website_apply_form",
-      bootcamp_funnel_status: 'bootcamp_apply',
+      bootcamp_funnel_status: "bootcamp_apply",
     },
   };
 

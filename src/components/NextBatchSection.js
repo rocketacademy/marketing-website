@@ -21,7 +21,8 @@ const NextBatchSection = ({ upcomingCourseDates, pagename }) => {
             nextStartDate = new Date("2022-08-22");
             toPath = "https://learn.rocketacademy.co/student/"
         } else {
-            nextStartDate = new Date("2022-08-30");
+            const bootcampStartDates = upcomingCourseDates.filter(course => course.node.description.includes('Full Time') || course.node.description.includes('Part Time'));
+            nextStartDate = bootcampStartDates[0].node.start.dateTime;
             toPath = "/courses/bootcamp/apply/"
         }
         
