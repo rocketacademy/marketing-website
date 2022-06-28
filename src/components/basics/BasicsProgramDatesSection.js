@@ -34,7 +34,7 @@ const BasicsProgramDatesSection = () => {
                   </div>
                 </div>
               </td>
-              <td>3 Oct 2022</td>
+              <td>29 Sep 2022</td>
               <td>8 Aug 2022</td>
             </tr>
             </tbody>
@@ -50,7 +50,7 @@ const BasicsProgramDatesSection = () => {
               <StaticImage src="../../img/basics-arrow-right.png" alt="right arrow" />
             </span>
             <span>
-              3 Oct 2022
+              29 Sep 2022
             </span>
           </div>
           <div className='basics-program-dates-deadline'>
