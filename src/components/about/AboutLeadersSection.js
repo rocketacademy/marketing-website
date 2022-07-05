@@ -12,7 +12,7 @@ const AboutLeadersSection = ({ leadership }) => {
   return (
     <div className='container about-leaders-container'>
         <h2 className='about-leaders-heading'>{leadership.heading}</h2>
-        <div className='row about-profiles-row'>
+        <div className='row about-profiles-row my-5'>
             {leadership.profiles.map((profile) => {
                 return (
                     <>
