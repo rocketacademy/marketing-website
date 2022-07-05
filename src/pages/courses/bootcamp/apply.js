@@ -242,7 +242,7 @@ const ApplicationForm = () => {
               md="6"
               controlId="validationCustom07"
             >
-              <Form.Label>LinkedIn profile</Form.Label>
+              <Form.Label>LinkedIn profile (optional)</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="https://linkedin.com/in/example"
@@ -284,7 +284,7 @@ const ApplicationForm = () => {
               className="mb-3"
               md="6"
             >
-              <Form.Label>Referral code</Form.Label>
+              <Form.Label>Referral code (optional)</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="--"
