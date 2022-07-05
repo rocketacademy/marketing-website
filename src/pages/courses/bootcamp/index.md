@@ -144,7 +144,7 @@ admissions:
 tuition:
   heading: Tuition
   sidebarlabel: Tuition
-  subheading: Fees are payable upfront before course commencement.
+  subheading: We accept bank transfers, paynow, credit cards, and installment payments via Atome. Additional charges apply to credit cards and Atome payments. Fees are payable upfront before course commencement.
   payment: Fees are payable upfront before course commencement.
   card:
     - frequency: /img/homepage/part-time-icon.png
@@ -168,7 +168,7 @@ course:
     10am-12pm GMT+8 for 4 months. Part-Time Coding Bootcamp (PTBC) classes are
     Tuesday evenings 7.30pm-9.30pm GMT+8 and Saturday mornings 10am-12pm GMT+8
     for 8 months. Both FTBC and PTBC cover the same material. Refer to the [full
-    course curriculum](http://bootcamp.rocketacademy.co).
+    course curriculum](http://bc.rocketacademy.co).
   schedule:
     - heading: "Module 1: Frontend App"
       topics:

@@ -94,17 +94,4 @@ leadership:
 
 
         Now, Foong pursues both passions in operations and software engineering at Rocket Academy. He keeps operations running smoothly for the delivery of quality education and helps others pursue their goals in software engineering.
-    - image: /img/homepage/teresa-homepage.jpeg
-      name: Teresa Chang
-      position: Head of Growth
-      description: >
-        Teresa has 20 years of experience in global and regional integrated
-        marketing, demand generation, and digital marketing for multinational
-        firms and startups...
-      experience: >
-        Teresa has 20 years of experience in global and regional integrated
-        marketing, demand generation, and digital marketing for multinational
-        firms and startups. 
-
-        She received her MBA with Merit from the University of Nottingham, for which she received a distinction in her thesis on behavioral economics.
 ---
