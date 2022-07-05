@@ -4,7 +4,7 @@ import { useEffect } from "react";
 
 const ApplicationSuccessful = () => {
   useEffect(() => {
-    if (typeof window !== "undefined") {
+    if (typeof window.gtag !== "undefined") {
       window.gtag("event", "conversion", {
         send_to: "AW-10817488949/-jLiCLDBr7cDELWQl6Yo",
       });

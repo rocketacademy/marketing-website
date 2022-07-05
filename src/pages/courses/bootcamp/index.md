@@ -144,7 +144,7 @@ admissions:
 tuition:
   heading: Tuition
   sidebarlabel: Tuition
-  subheading: We accept bank transfers, PayNow, credit cards, and installment payments via Atome. Additional charges apply to credit cards and Atome payments. Fees are payable upfront before course commencement.
+  subheading: We accept bank transfers, PayNow, credit cards, and instalment payments via Atome. Additional charges apply to credit cards and Atome payments. Fees are payable upfront before course commencement.
   payment: Fees are payable upfront before course commencement.
   card:
     - frequency: /img/homepage/part-time-icon.png
