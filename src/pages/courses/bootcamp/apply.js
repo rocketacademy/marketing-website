@@ -242,7 +242,7 @@ const ApplicationForm = () => {
               md="6"
               controlId="validationCustom07"
             >
-              <Form.Label>LinkedIn profile</Form.Label>
+              <Form.Label>LinkedIn profile (optional)</Form.Label>
               <Form.Control
                 type="text"
                 placeholder="https://linkedin.com/in/example"
@@ -257,7 +257,7 @@ const ApplicationForm = () => {
               md="6"
               controlId="validationCustom08"
             >
-              <Form.Label>How did you hear about us? </Form.Label>
+              <Form.Label>How did you hear about us?</Form.Label>
               <Form.Select
                 required
                 id="source"
@@ -278,6 +278,21 @@ const ApplicationForm = () => {
               <Form.Control.Feedback type="invalid">
                 Please make a valid choice.
               </Form.Control.Feedback>
+            </Form.Group>
+            <Form.Group
+              as={Col}
+              className="mb-3"
+              md="6"
+            >
+              <Form.Label>Referral code (optional)</Form.Label>
+              <Form.Control
+                type="text"
+                placeholder="--"
+                name="referral_code"
+                value={inputs.referral_code || ""}
+                onChange={handleChange}
+              />
+              <Form.Control.Feedback>Looks good!</Form.Control.Feedback>
             </Form.Group>
             <Form.Group
               as={Col}
