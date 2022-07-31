@@ -33,21 +33,15 @@ export const IndexPageTemplate = ({
               <GetStartedButton toPath="/get-started/" />
             </div>
             <h6 className="homepage-header-companies-heading">
-              OUR HIRING PARTNERS
+              SELECT HIRING PARTNERS
             </h6>
             <div className="homepage-header-companies-container">
               <div className="homepage-header-individual-company">
-                <a
-                  href="https://www.99.co/team/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <StaticImage
-                    src="../../static/img/homepage/ninetynineco-color-logo.png"
-                    alt="ninetynineco logo"
-                    placeholder="blurred"
-                  />
-                </a>
+                <StaticImage
+                  src="../../static/img/homepage/ninetynineco-color-logo.png"
+                  alt="ninetynineco logo"
+                  placeholder="blurred"
+                />
               </div>
               <div className="homepage-header-individual-company">
                 <StaticImage
