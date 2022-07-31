@@ -1,15 +1,18 @@
-import React from 'react'
-import { Link } from 'gatsby';
+import React from "react";
+import { Link } from "gatsby";
 
-
-const GetStartedButton = ({toPath}) => {
+const GetStartedButton = ({ toPath }) => {
   return (
     <button className="btn get-started-btn btn-primary">
-      <Link to={toPath} target="_blank" style={{ textDecoration: "none", color: "white" }}>
+      <Link
+        to={toPath}
+        target="_blank"
+        style={{ textDecoration: "none", color: "white" }}
+      >
         Get Started
       </Link>
     </button>
-  )
-}
+  );
+};
 
-export default GetStartedButton
+export default GetStartedButton;

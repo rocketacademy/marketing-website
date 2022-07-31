@@ -1,49 +1,55 @@
-import React from 'react'
-import GetStartedButton from './GetStartedButton'
+import React from "react";
+import GetStartedButton from "./GetStartedButton";
 
 const NextBatchSection = ({ upcomingCourseDates, pagename }) => {
+  if (upcomingCourseDates) {
+    const getFormattedDate = (d) => {
+      const dateObj = new Date(d);
+      const ye = new Intl.DateTimeFormat("en", { year: "numeric" }).format(
+        dateObj
+      );
+      const mo = new Intl.DateTimeFormat("en", { month: "short" }).format(
+        dateObj
+      );
+      const da = new Intl.DateTimeFormat("en", { day: "numeric" }).format(
+        dateObj
+      );
 
-    if (upcomingCourseDates) {
+      return `${da} ${mo} ${ye}`;
+    };
 
-        const getFormattedDate = (d) => {
-            const dateObj = new Date(d);
-            const ye = new Intl.DateTimeFormat('en', { year: 'numeric' }).format(dateObj);
-            const mo = new Intl.DateTimeFormat('en', { month: 'short' }).format(dateObj);
-            const da = new Intl.DateTimeFormat('en', { day: 'numeric' }).format(dateObj);
+    let nextStartDate;
+    let toPath;
 
-            return `${da} ${mo} ${ye}`;
-        }
-
-        let nextStartDate;
-        let toPath;
-
-        if (pagename === 'basics') {
-            nextStartDate = new Date("2022-08-22");
-            toPath = "https://learn.rocketacademy.co/student/"
-        } else {
-            const bootcampStartDates = upcomingCourseDates.filter(course => course.node.description.includes('Full Time') || course.node.description.includes('Part Time'));
-            nextStartDate = bootcampStartDates[0].node.start.dateTime;
-            toPath = "/courses/bootcamp/apply/"
-        }
-        
-
-        return (
-            <div className='container basics-next-batch-container'>
-                <div className='basics-next-batch-content'>
-                    <p className='basics-next-batch-heading'>🚀 Next Launch</p>
-                    <p className='basics-next-batch-text'>Now enrolling for {getFormattedDate(nextStartDate)}</p>
-                </div>
-                <div className='basics-next-batch-button-container'>
-                    <GetStartedButton toPath={toPath}/>
-                </div>
-            </div>
-        )
+    if (pagename === "basics") {
+      nextStartDate = new Date("2022-08-22");
+      toPath = "https://learn.rocketacademy.co/student/";
     } else {
-        return (
-            <div>dynamic data from gcal</div>
-        )
+      const bootcampStartDates = upcomingCourseDates.filter(
+        (course) =>
+          course.node.description.includes("Full Time") ||
+          course.node.description.includes("Part Time")
+      );
+      nextStartDate = bootcampStartDates[0].node.start.dateTime;
+      toPath = "/courses/bootcamp/apply/";
     }
-    
-}
 
-export default NextBatchSection
+    return (
+      <div className="container basics-next-batch-container">
+        <div className="basics-next-batch-content">
+          <p className="basics-next-batch-heading">🚀 Next Launch</p>
+          <p className="basics-next-batch-text">
+            Now enrolling for {getFormattedDate(nextStartDate)}
+          </p>
+        </div>
+        <div className="basics-next-batch-button-container">
+          <GetStartedButton toPath={toPath} />
+        </div>
+      </div>
+    );
+  } else {
+    return <div>dynamic data from gcal</div>;
+  }
+};
+
+export default NextBatchSection;

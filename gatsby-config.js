@@ -1,10 +1,10 @@
-
 module.exports = {
   siteMetadata: {
     title: "Rocket Academy: Leading Coding Bootcamp",
     description:
       "Get ahead with a new career. Learn from the best with an easy-to-follow curriculum taught by industry experts. Top alumni, strong industry networks.",
-    keywords: "coding, bootcamp, fullstack, developer, education, career, transition, software, engineering, programming, learning",
+    keywords:
+      "coding, bootcamp, fullstack, developer, education, career, transition, software, engineering, programming, learning",
   },
   plugins: [
     "gatsby-plugin-react-helmet",
@@ -37,7 +37,7 @@ module.exports = {
       },
     },
     {
-    resolve: `gatsby-plugin-hotjar`,
+      resolve: `gatsby-plugin-hotjar`,
       options: {
         includeInDevelopment: false, // optional parameter to include script in development
         id: 2891409,
@@ -123,15 +123,13 @@ module.exports = {
     {
       resolve: `gatsby-source-google-calendar`,
       options: {
-        calendarIds: [
-          'c_lsjc4qn7b09nb293b6u80blimc@group.calendar.google.com',
-        ],
+        calendarIds: ["c_lsjc4qn7b09nb293b6u80blimc@group.calendar.google.com"],
         // options to retrieve the next 10 upcoming events
-        timeMin: (new Date().toISOString()),
+        timeMin: new Date().toISOString(),
         maxResults: 10,
         singleEvents: true,
-        orderBy: 'startTime',
-      }
+        orderBy: "startTime",
+      },
     },
     {
       resolve: "gatsby-plugin-no-sourcemaps",
