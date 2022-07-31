@@ -28,7 +28,7 @@ why:
         Classmates and alumni from top companies and schools committed to
         helping each other succeed.
 companies:
-  heading: Our hiring partners
+  heading: Select hiring partners
   icons:
     - image: /img/about-page/about-advanceai-icon.png
     - image: /img/about-page/about-carousell-icon.png

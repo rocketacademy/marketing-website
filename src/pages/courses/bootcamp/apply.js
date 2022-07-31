@@ -279,11 +279,7 @@ const ApplicationForm = () => {
                 Please make a valid choice.
               </Form.Control.Feedback>
             </Form.Group>
-            <Form.Group
-              as={Col}
-              className="mb-3"
-              md="6"
-            >
+            <Form.Group as={Col} className="mb-3" md="6">
               <Form.Label>Referral code (optional)</Form.Label>
               <Form.Control
                 type="text"

@@ -4,7 +4,11 @@ import { GatsbyImage } from "gatsby-plugin-image";
 
 const PreviewCompatibleImage = ({ imageInfo }) => {
   const imageStyle = { borderRadius: "10px" };
-  const previewImageStyle = { width: "200px", height: "200px", borderRadius: "10px" }
+  const previewImageStyle = {
+    width: "200px",
+    height: "200px",
+    borderRadius: "10px",
+  };
   const { alt = "", childImageSharp, image } = imageInfo;
 
   if (!!image && !!image.childImageSharp) {
@@ -25,11 +29,11 @@ const PreviewCompatibleImage = ({ imageInfo }) => {
         placeholder="blurred"
       />
     );
-    // for Netlify CMS 
+    // for Netlify CMS
   } else if (image) {
-    return <img style={{previewImageStyle}} src={image} alt={alt} />;
+    return <img style={{ previewImageStyle }} src={image} alt={alt} />;
   } else {
-    return null
+    return null;
   }
 };
 

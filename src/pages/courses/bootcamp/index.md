@@ -150,13 +150,15 @@ tuition:
     - frequency: /img/homepage/part-time-icon.png
       prevcost: S$9,999
       currentcost: S$7,999 / HK$45,999 / AU$8,399
-      text: "Part-Time Coding Bootcamp covers the same material over twice the time (8
+      text:
+        "Part-Time Coding Bootcamp covers the same material over twice the time (8
         months). Coding Bootcamp applies a flipped classroom model that consists
         of 2 components: self-learning and live classes. "
     - frequency: /img/homepage/full-time-icon.png
       prevcost: S$9,999
       currentcost: S$7,999 / HK$45,999 / AU$8,399
-      text: "Coding Bootcamp applies a flipped classroom model that consists of 2
+      text:
+        "Coding Bootcamp applies a flipped classroom model that consists of 2
         components: self-learning and live classes. "
 programdates:
   heading: Upcoming Program Dates

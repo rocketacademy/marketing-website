@@ -30,24 +30,18 @@ export const IndexPageTemplate = ({
             <h2 className="homepage-header-heading">{header.heading}</h2>
             <p className="homepage-header-subheading">{header.subheading}</p>
             <div className="hompage-header-button-container">
-              <GetStartedButton toPath="/get-started/"/>
+              <GetStartedButton toPath="/get-started/" />
             </div>
             <h6 className="homepage-header-companies-heading">
-              OUR HIRING PARTNERS
+              SELECT HIRING PARTNERS
             </h6>
             <div className="homepage-header-companies-container">
               <div className="homepage-header-individual-company">
-                <a
-                  href="https://www.99.co/team/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <StaticImage
-                    src="../../static/img/homepage/ninetynineco-color-logo.png"
-                    alt="ninetynineco logo"
-                    placeholder="blurred"
-                  />
-                </a>
+                <StaticImage
+                  src="../../static/img/homepage/ninetynineco-color-logo.png"
+                  alt="ninetynineco logo"
+                  placeholder="blurred"
+                />
               </div>
               <div className="homepage-header-individual-company">
                 <StaticImage
