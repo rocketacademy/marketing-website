@@ -51,7 +51,6 @@
 
   .dropdown-menu.show {
     border: None;
-    // background-color: variables.$light;
     @include variables.lg {
       border: 0.5px solid grey;
       background-color: white;
