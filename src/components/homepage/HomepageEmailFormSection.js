@@ -58,11 +58,11 @@ const HomepageEmailFormSection = () => {
         <div>Click below to join: </div>
         <a href="https://discord.gg/CcDRpEfhRK">
           <Image
+            className="homepage-email-form-post-submit-discord-image"
             src={joinDiscordImg}
             alt="Join Discord"
             placeholder="blurred"
             fluid
-            style={{ maxWidth: "300px" }}
           />
         </a>
       </div>
