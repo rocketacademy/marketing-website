@@ -33,10 +33,7 @@ const SiteNavbar = () => {
           </Link>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse
-          id="basic-navbar-nav"
-          className="justify-content-end navbar-collapse"
-        >
+        <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
           <Nav>
             <NavDropdown title="Courses" id="basic-nav-dropdown">
               <NavDropdown.Item>
@@ -46,18 +43,6 @@ const SiteNavbar = () => {
                 <Link to="/courses/bootcamp">Coding Bootcamp</Link>
               </NavDropdown.Item>
             </NavDropdown>
-            {/* <NavDropdown title="Company" id="basic-nav-dropdown"> 
-                        <NavDropdown.Item>
-                            <Link to="/about">
-                                About Us
-                            </Link>
-                        </NavDropdown.Item>
-                        <NavDropdown.Item>
-                            <Link to="/careers">
-                                Careers
-                            </Link>
-                        </NavDropdown.Item>
-                    </NavDropdown> */}
             <Nav.Link
               as={Link}
               to="/about"
@@ -75,10 +60,7 @@ const SiteNavbar = () => {
               FAQ
             </Nav.Link>
             <Nav.Item className="button-container">
-              <Button
-                variant="outline-primary"
-                className="btn navbar-btn btn-outline-primary"
-              >
+              <Button variant="primary" className="navbar-btn">
                 <a
                   href="/get-started/"
                   target="_blank"
