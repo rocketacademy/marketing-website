@@ -3,7 +3,7 @@ import PreviewCompatibleImage from "../PreviewCompatibleImage";
 
 const HomepageFormerStudentsSection = ({ formerstudents }) => {
   return (
-    <div className="container homepage-formerstudents-container">
+    <div className="container-fluid homepage-formerstudents-container">
       <div className="row homepage-formerstudents-row">
         {formerstudents.map((student, index) => {
           return (
