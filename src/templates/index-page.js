@@ -6,6 +6,7 @@ import GetStartedButton from "../components/GetStartedButton";
 import PreviewCompatibleImage from "../components/PreviewCompatibleImage";
 import Layout from "../components/Layout";
 import "../styles/main.scss";
+import HomepageEmailFormSection from "../components/homepage/HomepageEmailFormSection";
 import HomepageSuccessSection from "../components/homepage/HomepageSuccessSection";
 import HomepageCoursesSection from "../components/homepage/HomepageCoursesSection";
 import HomepageCurriculumSection from "../components/homepage/HomepageCurriculumSection";
@@ -94,7 +95,6 @@ export const IndexPageTemplate = ({
                   placeholder="blurred"
                 />
               </div>
-
               <div className="homepage-header-individual-company">
                 <StaticImage
                   src="../../static/img/about-page/about-stashaway-icon.png"
@@ -132,6 +132,7 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </div>
+      <HomepageEmailFormSection />
       <HomepageSuccessSection success={success} />
       <HomepageCoursesSection
         courses={courses}
