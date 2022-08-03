@@ -30,7 +30,7 @@ export const IndexPageTemplate = ({
           <div className="col-12 col-md-6 order-2 order-md-1 homepage-header-col-left">
             <h2 className="homepage-header-heading">{header.heading}</h2>
             <p className="homepage-header-subheading">{header.subheading}</p>
-            <div className="hompage-header-button-container">
+            <div className="homepage-header-button-container">
               <GetStartedButton toPath="/get-started/" />
             </div>
             <h6 className="homepage-header-companies-heading">
