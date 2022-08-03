@@ -42,14 +42,14 @@ const HomepageEmailFormSection = () => {
     setHasSubmit(true);
   };
 
-  const postSubmitSuccessMessage = <p>Thank you for joining!</p>;
+  const postSubmitSuccessMessage = <div>Thank you for joining!</div>;
 
   const postSubmitErrorMessage = (
-    <p>
+    <div>
       Oops! Something went wrong saving your email. Please email{" "}
       <a href="mailto:hello@rocketacademy.co">hello@rocketacademy.co</a> and we
       would be happy to help!
-    </p>
+    </div>
   );
 
   const postSubmitMessage = (
