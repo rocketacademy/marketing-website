@@ -55,7 +55,7 @@ const HomepageEmailFormSection = () => {
     <div>
       <div className="homepage-email-form-post-submit-discord-section">
         <div>Click below to join: </div>
-        <a href="https://discord.gg/CcDRpEfhRK">
+        <a href="https://discord.gg/CcDRpEfhRK" target="_blank">
           <Image
             className="homepage-email-form-post-submit-discord-image"
             src={joinDiscordImg}
@@ -81,19 +81,22 @@ const HomepageEmailFormSection = () => {
         data-netlify-recaptcha="true"
         onSubmit={handleSubmit}
       >
-        <Form.Control
-          className="homepage-email-form-control"
-          type="email"
-          placeholder="iloverocket@gmail.com"
-          onChange={handleChange}
-        />
-        <Button
-          variant="primary"
-          type="submit"
-          className="homepage-email-form-button"
-        >
-          →
-        </Button>
+        <Form.Group>
+          <Form.Control
+            className="homepage-email-form-control"
+            type="email"
+            placeholder="iloverocket@gmail.com"
+            onChange={handleChange}
+            required
+          />
+          <Button
+            variant="primary"
+            type="submit"
+            className="homepage-email-form-button"
+          >
+            →
+          </Button>
+        </Form.Group>
       </Form>
     </div>
   );
