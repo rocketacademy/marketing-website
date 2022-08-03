@@ -23,7 +23,7 @@
       line-height: 30px;
     }
   }
-  .hompage-header-button-container {
+  .homepage-header-button-container {
     margin: 30px 0;
   }
   .homepage-header-companies-heading {
@@ -78,6 +78,7 @@
     padding-bottom: 30px;
   }
 }
+
 .homepage-message-bubble-row {
   margin: 20px 0 40px;
   .homepage-message-bubble-container {
@@ -92,8 +93,45 @@
   }
 }
 
-.homepage-success-outer-container {
+.homepage-email-form-container {
   background-color: variables.$light;
+  text-align: center;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .homepage-email-form-header {
+    margin-bottom: 20px;
+  }
+
+  .homepage-email-form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .homepage-email-form-control {
+      width: 50%;
+      min-width: 200px;
+      max-width: 300px;
+      margin: 0px 10px;
+      border: 0px;
+      display: inline;
+    }
+
+    .homepage-email-form-button {
+      color: white;
+    }
+  }
+
+  .homepage-email-form-post-submit-discord-section {
+    margin-bottom: 10px;
+
+    .homepage-email-form-post-submit-discord-image {
+      max-width: 300px;
+    }
+  }
+}
+
+.homepage-success-outer-container {
   .homepage-success-inner-container {
     padding-top: 20px;
     padding-bottom: 20px;
@@ -136,6 +174,7 @@
 }
 
 .homepage-courses-container {
+  background-color: variables.$light;
   padding-top: 20px;
   padding-bottom: 20px;
   @include variables.md {
@@ -237,7 +276,6 @@
 }
 
 .homepage-curriculum-outer-container {
-  background-color: variables.$light;
   padding-top: 30px;
   padding-bottom: 20px;
   @include variables.md {
@@ -342,6 +380,7 @@
 }
 
 .homepage-formerstudents-container {
+  background-color: variables.$light;
   font-family: variables.$secondary-font;
   font-style: normal;
   min-height: 3px;

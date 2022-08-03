@@ -9,18 +9,22 @@ const Footer = () => {
         <div className="row footer-top-row">
           <div className="col-12 col-md-4 footer-top-left-col">
             <div className="rocket-logo-container-desktop">
-              <StaticImage
-                className="desktop-brand"
-                src="../img/rocket-brand-footer.png"
-                alt="footer brand desktop logo"
-              />
+              <Link to="/">
+                <StaticImage
+                  className="desktop-brand"
+                  src="../img/rocket-brand-footer.png"
+                  alt="footer brand desktop logo"
+                />
+              </Link>
             </div>
             <div className="rocket-logo-container-mobile">
-              <StaticImage
-                className="mobile-brand"
-                src="../img/rocket-footer-mobile-logo.png"
-                alt="footer brand mobile logo"
-              />
+              <Link to="/">
+                <StaticImage
+                  className="mobile-brand"
+                  src="../img/rocket-footer-mobile-logo.png"
+                  alt="footer brand mobile logo"
+                />
+              </Link>
             </div>
           </div>
           <div className="col-12 col-md-8 footer-top-middle-col">
