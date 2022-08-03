@@ -75,13 +75,12 @@ const HomepageEmailFormSection = () => {
         Sign up to join Rocket's Discord community and receive our newsletters!
       </h6>
       <Form
-        className="homepage-email-form"
         name="homepage-email-form"
         data-netlify="true"
         data-netlify-recaptcha="true"
         onSubmit={handleSubmit}
       >
-        <Form.Group>
+        <Form.Group className="homepage-email-form-group">
           <Form.Control
             className="homepage-email-form-control"
             type="email"
