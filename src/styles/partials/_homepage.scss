@@ -76,6 +76,10 @@
   }
   .homepage-header-col-left {
     padding-bottom: 30px;
+    text-align: center;
+    @include variables.sm {
+      text-align: left;
+    }
   }
 }
 
