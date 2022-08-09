@@ -7,7 +7,7 @@ const BasicsProgramDatesSection = () => {
     <div className="container basics-program-dates-container section">
       <div className="basics-program-dates-heading">Upcoming Program Dates</div>
       <div className="basics-program-dates-subheading">
-        Every Monday and Thursday from 7.30pm-9.30pm GMT +08
+        Every Monday and Thursday from 7.30pm-9.30pm GMT+08
       </div>
       <div className="row basics-program-dates-row-desktop">
         <Table borderless className="basics-program-dates-row">
@@ -34,7 +34,7 @@ const BasicsProgramDatesSection = () => {
                 </div>
               </td>
               <td>29 Sep 2022</td>
-              <td>8 Aug 2022</td>
+              <td>16 Aug 2022</td>
             </tr>
           </tbody>
         </Table>
