@@ -1,0 +1,16 @@
+.announcement-bar {
+  text-align: center;
+  border: 0;
+  margin-bottom: 0;
+  border-radius: 0;
+  background-color: variables.$blue;
+  color: white;
+
+  .announcement-bar-heading {
+    margin-bottom: 0;
+
+    .announcement-bar-link {
+      color: white;
+    }
+  }
+}
