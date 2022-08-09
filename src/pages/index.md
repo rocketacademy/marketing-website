@@ -5,7 +5,7 @@ header:
   heading: Become a Software Engineer
   subheading:
     100% of our Coding Bootcamp grads have received software engineering
-    offers from companies like 99.co, Xfers and GovTech.
+    offers from companies like Grab, Ninja Van and Zendesk.
   headerimage:
     alt: masterclass ad image
     image: /img/homepage/homepage-image.png

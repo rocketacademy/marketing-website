@@ -38,6 +38,9 @@ const Footer = () => {
                   <li>
                     <Link to="/courses/bootcamp">Coding Bootcamp</Link>
                   </li>
+                  <li>
+                    <Link to="/faq">FAQ</Link>
+                  </li>
                 </ul>
               </div>
               <div className="col-6 col-md-4 footer-top-right-col">
@@ -52,11 +55,8 @@ const Footer = () => {
                 </ul>
               </div>
               <div className="col-6 col-md-4 footer-top-right-col">
-                <p className="footer-top-right-col-heading">SUPPORT</p>
+                <p className="footer-top-right-col-heading">CONTACT US</p>
                 <ul className="footer-top-right-col-list">
-                  <li>
-                    <Link to="/faq">FAQ</Link>
-                  </li>
                   <li>
                     <a href="mailto:hello@rocketacademy.co">
                       hello@rocketacademy.co
