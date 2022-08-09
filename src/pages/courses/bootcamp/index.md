@@ -6,7 +6,7 @@ header:
   heading: Coding Bootcamp
   subheading: Learn in-demand skills and launch a new career path as a Software Engineer
   image:
-    image: /img/group-photo-980x650size-03.jpg
+    image: /img/bootcamp-header.png
     alt: student at computer
   reasons:
     - reason: Develop your edge

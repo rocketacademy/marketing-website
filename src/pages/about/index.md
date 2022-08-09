@@ -8,7 +8,7 @@ header:
     our students succeed, we succeed."
 image:
   alt: picture of students
-  image: /img/about-page/about-header.png
+  image: /img/about-page/about-header.jpg
 why:
   heading: Why Rocket Academy?
   reasons:
