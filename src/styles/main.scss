@@ -14,9 +14,9 @@ $theme-colors: (
 
 @import "../../node_modules/bootstrap/scss/bootstrap";
 
-@import "partials/homepage", "partials/navbar", "partials/layout",
-  "partials/getStartedButton", "partials/footer", "partials/about-page",
-  "partials/carousel-slide", "partials/faq-page", "partials/basics-page",
-  "partials/start-coding", "partials/sidebar-section", "partials/bootcamp-page",
-  "partials/application-form", "partials/careers-page", "partials/thanks",
-  "partials/privacy-policy";
+@import "partials/homepage", "partials/navbar", "partials/announcement-bar",
+  "partials/layout", "partials/getStartedButton", "partials/footer",
+  "partials/about-page", "partials/carousel-slide", "partials/faq-page",
+  "partials/basics-page", "partials/start-coding", "partials/sidebar-section",
+  "partials/bootcamp-page", "partials/application-form", "partials/careers-page",
+  "partials/thanks", "partials/privacy-policy";
