@@ -8,13 +8,13 @@ const AnnouncementBar = () => (
       <Alert.Heading className="announcement-bar-heading">
         Sign up for our free webinar
         <br />
-        <a
+        <Alert.Link
           href="https://rkt.ac/yntc"
           target="_blank"
           className="announcement-bar-link"
         >
           You Need to Code!
-        </a>
+        </Alert.Link>
       </Alert.Heading>
     </Container>
   </Alert>
