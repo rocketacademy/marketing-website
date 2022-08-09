@@ -7,7 +7,7 @@ header:
   subheading: A live and online, part-time intro to coding course for
     beginners, taught in JavaScript.
   image1:
-    image: /img/basics-page/basics-header-desktop.jpg
+    image: /img/basics-page/basics-header-desktop.png
     alt: basics page header desktop image
   image2:
     image: /img/basics-page/basics-header-mobile.jpg

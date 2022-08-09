@@ -3,8 +3,7 @@ templateKey: index-page
 title: Become a Software Engineer
 header:
   heading: Become a Software Engineer
-  subheading:
-    100% of our Coding Bootcamp grads have received software engineering
+  subheading: 100% of our Bootcamp grads have received job
     offers from companies like Grab, Ninja Van and Zendesk.
   headerimage:
     alt: masterclass ad image
@@ -79,7 +78,7 @@ curriculum:
     students at every level as they progress as professional programmers.
   image:
     alt: class screenshot
-    image: /img/homepage/class-screenshot.png
+    image: /img/homepage/industry-experts.jpg
   instructors:
     - image: /img/homepage/kai-curriculum.png
       name: KAI YUAN NEO
