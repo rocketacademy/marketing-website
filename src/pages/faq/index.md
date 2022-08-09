@@ -18,8 +18,8 @@ general:
         2. Coding Basics has been taken and recommended by students from top tech companies such as Facebook, Stripe, Grab, Shopee, Rakuten, Ninja Van, McKinsey, and more.
     - question: Why choose Rocket’s Coding Bootcamp course?
       answers: >-
-        1. Rocket’s past students received offers from companies such as
-        GovTech, Ninja Van, Xfers, 99.co, Glints, and more.
+        1. Rocket’s past students have received offers from companies such as
+        Grab, Ninja Van, Zendesk, GovTech, Circles.Life, StashAway, 99.co, Xfers and Gotrade.
 
         2. Rocket’s Coding Bootcamp comprehensively covers topics in frontend, backend, cloud, and algorithms that other coding bootcamps typically skim over, resulting in a more standout portfolio.
 
@@ -188,5 +188,5 @@ softwareengineeringbootcamp:
 
         3. Comprehensive and unlimited resume and portfolio review.
 
-        4. Comprehensive and unlimited referrals to companies in Rocket Academy’s network (most tech companies in Singapore so far). Rocket Academy only accepts high-performing Coding Basics students to Coding Bootcamp, and companies trust that Rocket attracts and produces top talent.
+        4. Comprehensive and unlimited referrals to companies in Rocket Academy’s network (almost all companies). Rocket Academy only accepts high-performing Coding Basics students to Coding Bootcamp, and companies trust that Rocket attracts and produces top talent.
 ---
