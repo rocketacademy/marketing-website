@@ -82,7 +82,7 @@ admissions:
 programdates:
   heading: Upcoming Program Dates
   subheading: |
-    Every Monday and Thursday from 7.30pm-9.30pm GMT +08
+    Every Monday and Thursday from 7.30pm-9.30pm GMT+08
   sidebarlabel: Program Dates
 lessons:
   heading: Course Overview

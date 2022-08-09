@@ -52,7 +52,7 @@ const BasicsProgramDatesSection = () => {
             <span>29 Sep 2022</span>
           </div>
           <div className="basics-program-dates-deadline">
-            Admissions deadline: 8 Aug 2022
+            Admissions deadline: 16 Aug 2022
           </div>
         </div>
       </div>
