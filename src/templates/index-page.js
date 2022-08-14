@@ -28,6 +28,9 @@ export const IndexPageTemplate = ({
       <div className="container homepage-header-container">
         <div className="row homepage-header-row">
           <div className="col-12 col-md-6 order-2 order-md-1 homepage-header-col-left">
+            <div style={{ color: "red" }}>
+              LEARN ONLINE, FROM ANYWHERE IN THE 🌏
+            </div>
             <h2 className="homepage-header-heading">{header.heading}</h2>
             <p className="homepage-header-subheading">{header.subheading}</p>
             <div className="homepage-header-button-container">

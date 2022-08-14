@@ -1,17 +1,14 @@
 import React from "react";
+import Button from "react-bootstrap/Button";
 import { Link } from "gatsby";
 
 const GetStartedButton = ({ toPath }) => {
   return (
-    <button className="btn get-started-btn btn-primary">
-      <Link
-        to={toPath}
-        target="_blank"
-        style={{ textDecoration: "none", color: "white" }}
-      >
-        Get Started
+    <Button className="get-started-btn">
+      <Link to={toPath} target="_blank" className="get-started-btn-link">
+        Start Learning
       </Link>
-    </button>
+    </Button>
   );
 };
 
