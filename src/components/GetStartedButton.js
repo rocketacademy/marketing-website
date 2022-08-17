@@ -3,15 +3,13 @@ import { Link } from "gatsby";
 
 const GetStartedButton = ({ toPath }) => {
   return (
-    <button className="btn get-started-btn btn-primary">
-      <Link
-        to={toPath}
-        target="_blank"
-        style={{ textDecoration: "none", color: "white" }}
-      >
-        Get Started
-      </Link>
-    </button>
+    <Link
+      to={toPath}
+      target="_blank"
+      style={{ textDecoration: "none", color: "white" }}
+    >
+      <button className="btn get-started-btn btn-primary">Get Started</button>
+    </Link>
   );
 };
 

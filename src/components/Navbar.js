@@ -59,15 +59,11 @@ const SiteNavbar = () => {
               FAQ
             </Nav.Link>
             <Nav.Item className="button-container">
-              <Button variant="primary" className="navbar-btn">
-                <a
-                  href="/get-started/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+              <Link href="/get-started/" target="_blank">
+                <Button variant="primary" className="navbar-btn">
                   Get Started
-                </a>
-              </Button>
+                </Button>
+              </Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>

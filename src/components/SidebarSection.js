@@ -2,7 +2,6 @@ import React, { useEffect } from "react";
 import Nav from "react-bootstrap/Nav";
 import Dropdown from "react-bootstrap/Dropdown";
 import { Link } from "gatsby";
-import { AnchorLink } from "gatsby-plugin-anchor-links";
 
 const SidebarSection = ({ sectionArray, pagename }) => {
   useEffect(() => {
@@ -42,9 +41,9 @@ const SidebarSection = ({ sectionArray, pagename }) => {
             const eventKey = `link-${index}`;
             let pagelink = "";
             if (pagename === "basics" || pagename === "bootcamp") {
-              pagelink = `/courses/${pagename}/#${sectionId}`;
+              pagelink = `/courses/${pagename}#${sectionId}`;
             } else {
-              pagelink = `/${pagename}/#${sectionId}`;
+              pagelink = `/${pagename}#${sectionId}`;
             }
 
             return (
@@ -64,7 +63,9 @@ const SidebarSection = ({ sectionArray, pagename }) => {
 
       <div className="col-12 sidebar-col-mobile">
         <Dropdown>
-          <Dropdown.Toggle variant="outline-dark">--</Dropdown.Toggle>
+          <Dropdown.Toggle variant="outline-dark">
+            Navigate to a specific section
+          </Dropdown.Toggle>
 
           <Dropdown.Menu>
             {sectionArray.map((section) => {
@@ -73,14 +74,16 @@ const SidebarSection = ({ sectionArray, pagename }) => {
                 .toLowerCase();
               let pagelink = "";
               if (pagename === "basics" || pagename === "bootcamp") {
-                pagelink = `/courses/${pagename}/#${sectionId}`;
+                pagelink = `/courses/${pagename}#${sectionId}`;
               } else {
-                pagelink = `/${pagename}/#${sectionId}`;
+                pagelink = `/${pagename}#${sectionId}`;
               }
 
               return (
                 <Dropdown.Item key={section.sidebarlabel}>
-                  <AnchorLink to={pagelink}>{section.sidebarlabel}</AnchorLink>
+                  <Nav.Link as={Link} to={pagelink}>
+                    {section.sidebarlabel}
+                  </Nav.Link>
                 </Dropdown.Item>
               );
             })}
