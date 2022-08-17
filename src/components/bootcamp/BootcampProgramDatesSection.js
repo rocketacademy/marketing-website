@@ -75,16 +75,13 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
             {upcomingCourseDates ? (
               bootcampDates.map((batch) => {
                 const startDate = new Date(batch.node.start.dateTime);
-                const deadline = new Date().setTime(
-                  startDate.setDate(startDate.getDate() - 14)
-                );
-                const currentDate = new Date();
-                if (deadline > currentDate.getTime()) {
-                  return <BootcampProgramDatesRow batch={batch} />;
-                }
+                return <BootcampProgramDatesRow batch={batch} />;
               })
             ) : (
-              <div>dynamic data from gcal</div>
+              <div>
+                Oops! Something went wrong. Please contact us at
+                hello@rocketacademy.co for upcoming course dates!
+              </div>
             )}
           </tbody>
         </Table>
@@ -114,7 +111,10 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
             );
           })
         ) : (
-          <div>dynamic dates from gcal</div>
+          <div>
+            Oops! Something went wrong. Please contact us at
+            hello@rocketacademy.co for upcoming course dates!
+          </div>
         )}
       </div>
     </div>
