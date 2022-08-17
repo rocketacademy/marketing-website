@@ -34,7 +34,7 @@ const BasicsProgramDatesSection = () => {
                 </div>
               </td>
               <td>29 Sep 2022</td>
-              <td>16 Aug 2022</td>
+              <td>21 Aug 2022</td>
             </tr>
           </tbody>
         </Table>
@@ -52,7 +52,7 @@ const BasicsProgramDatesSection = () => {
             <span>29 Sep 2022</span>
           </div>
           <div className="basics-program-dates-deadline">
-            Admissions deadline: 16 Aug 2022
+            Admissions deadline: 21 Aug 2022
           </div>
         </div>
       </div>
