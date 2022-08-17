@@ -34,15 +34,15 @@ const CourseSelection = () => {
                     If you're looking to take that first step, look no further
                     and register now!
                   </Card.Text>
-                  <button className="btn get-started-btn btn-primary my-4">
-                    <Link
-                      to="https://learn.rocketacademy.co/student/"
-                      target="_blank"
-                      style={{ textDecoration: "none", color: "white" }}
-                    >
+                  <Link
+                    to="https://learn.rocketacademy.co/student/"
+                    target="_blank"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <button className="btn get-started-btn btn-primary my-4">
                       Register now
-                    </Link>
-                  </button>
+                    </button>
+                  </Link>
                 </Card.Body>
               </Card>
               <Card style={{ width: "28rem" }} className="mx-3 mb-5">
@@ -69,15 +69,15 @@ const CourseSelection = () => {
                   <Card.Text>
                     Sign up now if you're ready to take that next step!
                   </Card.Text>
-                  <button className="btn get-started-btn btn-primary my-4">
-                    <Link
-                      to="/courses/bootcamp/apply/"
-                      target="_blank"
-                      style={{ textDecoration: "none", color: "white" }}
-                    >
+                  <Link
+                    to="/courses/bootcamp/apply/"
+                    target="_blank"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <button className="btn get-started-btn btn-primary my-4">
                       Apply now
-                    </Link>
-                  </button>
+                    </button>
+                  </Link>
                 </Card.Body>
               </Card>
             </div>
