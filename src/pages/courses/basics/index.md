@@ -52,15 +52,15 @@ overview:
           Get on-demand help over group chat any time of day. Never let yourself
           get stuck!
 curriculum:
-  heading: 💻 Technical Knowledge you will learn
+  heading: 💻 Technical concepts you will learn
   sidebarlabel: Curriculum
   topics:
-    - topic: Coding Tools
-    - topic: Arrays and Loops
-    - topic: Functions & Conditionals
-    - topic: JavaScript Objects Development Strategy
-    - topic: Program State
-    - topic: Final Project Advanced Debugging
+    - topic: Variables
+    - topic: Functions
+    - topic: Conditionals
+    - topic: Loops
+    - topic: Arrays and Hash Tables
+    - topic: Version Control
 instructors:
   heading: Meet some of our instructors
   sidebarlabel: Instructors
@@ -72,7 +72,7 @@ admissions:
   heading: Admission and Tuition
   sidebarlabel: Admission and Tuition
   subheading: No math or coding background required, just a computer with
-    internet, webcam and passion!
+    internet, webcam and passion! Tuition is fully refundable until the course admissions deadline. Rocket charges an admin fee of S$49 to change batches after the admissions deadline.
   prevcost: S$999
   currentcost: S$199/HK$1199/AU$209
   objectives:
@@ -88,156 +88,120 @@ lessons:
   heading: Course Overview
   sidebarlabel: Course Overview
   subheading: >
-    Coding Basics applies a flipped classroom model that consists of 2
-
-    components: self-learning and live classes. Refer to our [course curriculum](https://basics.rocketacademy.co/) for more information.
+    Coding Basics applies a flipped classroom model that consists of self-learning before class and pair exercises during class. Refer to our [course curriculum](https://basics.rocketacademy.co/) for more information.
   lesson:
-    - week: 0-1
+    - week: "1"
       number: "0"
-      title: Pre-Course Briefing
+      title: "     "
       preclass: |
         * Course Overview
-        * Course methodology
+        * Course Methodology
+        * Required Hardware and Software
+        * What is Coding?
+        * Web Browsers
 
-        Module 0: Introduction
-
-        * 0.1: What is coding? 
-        * 0.2: Web Browsers
       inclass: |
         * Opening Brief
-
-        * Look ahead: Deliverables for Day 1:
-          * Required Hardware and Software
-          * Pre-Class Material
         * Section Introductions and Icebreakers
-      project: N.A.
-    - week: 0-1
+
+      project: "-"
+    - week: "1"
       number: "1"
       title: "     "
       preclass: |
-        Module 1: Data Structures and Manipulation:
-          * 1.1 Operations
-          * 1.2 Variables
-        Module 2: Structuring and Debugging Code:
-          * 2.1 Pseudo Coding
-          * 2.2 Our First Program
-          * 2.3.1 Functions I
+        * Command Line
+        * Operations
+        * Variables
       inclass: |
-        * Data Manipulation and Functions
-      project: N.A.
-    - week: 0-1
+        * Basic Data Manipulation
+      project: "-"
+    - week: "2"
       number: "2"
       title: "      "
       preclass: |
-        Module 2: Structuring and Debugging Code
-          * 2.3.2 Functions II
-          * 2.4 Errors
-        Module 3: Logic and Control Flow
-          * 3.1 Intro to Logic and Control Flow
-          * 3.2 Conditionals
-          * 3.3 Boolean Operators
+        * Functions
+        * Errors
       inclass: |
-        * If Statements, Boolean Operators
-      project: |-
-        Scissors Paper Stone 
-
-        * Coding Strategies: Getting Started
-        * Project Planning: Scissors Paper Stone
-        * Project 1: Scissors Paper Stone (Part 1)
+        * Functions
+      project: "-"
     - week: "2"
       number: "3"
       title: "      "
       preclass: |
-        Module 4: Scope
-        * 4.1 Intro to Scope
-        * 4.2 Global Variables
-        * 4.3 Program State for Game Modes
+        * Pseudocode
+        * Conditionals
+        * Booleans
       inclass: |
-        * Program State
-      project: |
-        Scissors Paper Stone 
-          * Project 1: Scissors Paper Stone (Part 2)
-    - week: "2"
+        * If Statements
+        * Boolean Or and And
+      project: Scissors Paper Stone
+    - week: "3"
       number: "4"
       title: "       "
       preclass: |
-        Module 3: Control Flow
-        * 3.4 Loops
+        * Conditionals for Input Validation
+        * Program Lifecycle and Global Variables
       inclass: |
-        * Loops
-        * Redux: Scissors Paper Stone (30min)
-      project: |
-        * Scissors Paper Stone
+        * Boolean And, Program State
+      project: Scissors Paper Stone
     - week: "3"
       number: "5"
       title: "      "
       preclass: |
-        Module 1: Data Structures and Manipulation
-        * 1.3 Arrays
-        Module 3: Control Flow
-        * 3.5: Looping over an Array
+        * Git
+        * GitHub Fork, Clone, Pull Request
       inclass: |
-        * Mad Libs
-      project: |
-        * Project 2: Beat That!
-    - week: "3"
+        * Scissors Paper Stone Redux
+      project: "-"
+    - week: "4"
       number: "6"
       title: "      "
       preclass: |
-        Module 3: Logic and Control Flow
-          * 3.6: Input Validation
-        Module 5: HTML & CSS
-          * 5.1 HTML
-          * 5.2 CSS
+        * Arrays
+        * Loops
       inclass: |
-        * Pairwork: Beat That!
-      project: "* Beat That!"
+        * Loops
+      project: Beat That!
     - week: "4"
       number: "7"
       title: "       "
       preclass: |
-        Module 1: Data Structures and Manipulation
-        * 1.4 Objects
-        Module 3: Logic and Control Flow
-        * 3.7: Creating Objects with Loops
+        * Loops with Arrays
       inclass: |
-        * Moar Cards / Chat Bot
-        * Redux: Beat That! (30min)
-      project: |
-        * Project Due: Beat That!
-        * Project 3: Blackjack
-    - week: "4"
+        * Loops with Arrays
+      project: Beat That!
+    - week: "5"
       number: "8"
       title: "       "
       preclass: |
-        Module 6: Document Object Model
-        * 6.1 Browser Application with DOM
-        * 6.2 DOM Manipulation
+        * GitHub Deployment
       inclass: |
-        * Pairwork: Blackjack
-      project: "* Blackjack"
+        * Beat That Redux
+      project: "-"
     - week: "5"
       number: "9"
       title: "      "
       preclass: |
-        Module 2: Structuring and Debugging Code
-        * 2.5: Advanced Debugger with Sources Tab
+        * JavaScript Objects
       inclass: |
-        * Redux: Blackjack
-        * Pairwork: Blackjack (More Comfortable)
-      project: |
-        * Project Due : Blackjack (Base)
-        * Project 3: Blackjack (More Comfortable)
-    - week: "5"
+        * Card Games and Chat Bots
+      project: Blackjack
+    - week: "6"
       number: "10"
       title: "       "
-      preclass: Lorem ipsum
+      preclass: |
+        * HTML
+        * CSS
+        * Document Object Model
+      inclass: |
+        * Blackjack
+      project: Blackjack
+    - week: "6"
+      number: "11"
+      title: "       "
+      preclass: "-"
       inclass: |
         * Project presentations
-        * Course Feedback and Reviews
-        * LinkedIn certificate presentations
-        * Class Photo 🥳
-        * Closing Ceremony 🎓
-      project: |
-        * Projet 3: Blackjack
+        * Course reviews and feedback
+      project: "-"
 ---
