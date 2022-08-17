@@ -74,7 +74,7 @@ admissions:
   subheading: No math or coding background required, just a computer with
     internet, webcam and passion! Tuition is fully refundable until the course admissions deadline. Rocket charges an admin fee of S$49 to change batches after the admissions deadline.
   prevcost: S$999
-  currentcost: S$199/HK$1199/AU$209
+  currentcost: S$199
   objectives:
     - objective: Build simple apps
     - objective: Learn coding fundamentals
