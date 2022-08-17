@@ -6,7 +6,7 @@ import Accordion from "react-bootstrap/Accordion";
 import MarkdownContent from "../ConvertMarkdown";
 
 const BasicsCourseSection = ({ lessons }) => {
-  const weeks = ["0-1", "2", "3", "4", "5"];
+  const weeks = ["1", "2", "3", "4", "5", "6"];
 
   return (
     <div
@@ -21,7 +21,7 @@ const BasicsCourseSection = ({ lessons }) => {
         />
       </div>
       <div className="basics-course-content-desktop">
-        <Tabs defaultActiveKey="Week 0-1" className="mb-3">
+        <Tabs defaultActiveKey="Week 1" className="mb-3">
           {weeks.map((week) => {
             const weekLabel = `Week ${week}`;
 

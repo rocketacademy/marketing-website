@@ -19,7 +19,7 @@ const CourseSelection = () => {
                   <Card.Title>
                     <h3>Coding Basics</h3>
                   </Card.Title>
-                  <h5>S$199 / HK$1199 / AU$209</h5>
+                  <h5>S$199</h5>
                   <Card.Text className="mt-4">
                     Learn the fundamental building blocks of what it takes to
                     code.
@@ -50,7 +50,7 @@ const CourseSelection = () => {
                   <Card.Title>
                     <h3>Coding Bootcamp</h3>
                   </Card.Title>
-                  <h5>S$7,999 / HK$45,999 / AU$8,399</h5>
+                  <h5>S$7,999</h5>
                   <Card.Text className="mt-4">
                     Rocket Academy's flagship course gets you ready to be a
                     software engineer.
