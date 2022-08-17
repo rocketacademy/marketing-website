@@ -93,7 +93,7 @@ instructors:
   profile:
     - image: /img/homepage/kai-curriculum.png
       name: KAI YUAN NEO
-      position: Founder & CEO
+      position: Founder & CEO, Rocket Academy
 admissions:
   heading: The Admissions Process
   sidebarlabel: Admissions

@@ -66,8 +66,8 @@ instructors:
   sidebarlabel: Instructors
   profile:
     - image: /img/basics-page/basics-bryan-image.jpg
-      name: BRYAN TAN
-      position: Head of Basics
+      name: BRYAN TAN (FTBC5)
+      position: Head Basics, Software Engineer, former pastor
 admissions:
   heading: Admission and Tuition
   sidebarlabel: Admission and Tuition
