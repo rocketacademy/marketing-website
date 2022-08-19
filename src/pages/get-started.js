@@ -19,7 +19,7 @@ const CourseSelection = () => {
                   <Card.Title>
                     <h3>Coding Basics</h3>
                   </Card.Title>
-                  <h5>S$199</h5>
+                  <h5>S$199 (before early bird discounts)</h5>
                   <Card.Text className="mt-4">
                     Learn the fundamental building blocks of what it takes to
                     code.
@@ -32,7 +32,15 @@ const CourseSelection = () => {
                   </Card.Text>
                   <Card.Text>
                     If you're looking to take that first step, look no further
-                    and register now!
+                    and register now!{" "}
+                    <Link
+                      to="/courses/basics#admission-and-tuition"
+                      target="_blank"
+                      className="basics-early-bird-link"
+                    >
+                      Early bird discounts apply
+                    </Link>
+                    .
                   </Card.Text>
                   <Link
                     to="https://learn.rocketacademy.co/student/"

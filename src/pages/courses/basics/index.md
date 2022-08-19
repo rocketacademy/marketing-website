@@ -71,14 +71,16 @@ instructors:
 admissions:
   heading: Admission and Tuition
   sidebarlabel: Admission and Tuition
-  subheading: No math or coding background required, just a computer with
-    internet, webcam and passion! Tuition is fully refundable until the course admissions deadline. Rocket charges an admin fee of S$49 to change batches after the admissions deadline.
+  subheading1: No math or coding background required, just a computer with
+    internet, webcam and passion!
+  subheading2: Register now to maximise early bird discount of up to S$40! Discounted price will reflect automatically on checkout (if eligible). Tuition is fully refundable until course admissions deadline.
   prevcost: S$999
   currentcost: S$199
   objectives:
     - objective: Build simple apps
     - objective: Learn coding fundamentals
     - objective: Understand software engineering
+  image: /img/basics-page/basics-early-bird-table.png
 programdates:
   heading: Upcoming Program Dates
   subheading: |
