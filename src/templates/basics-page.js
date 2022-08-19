@@ -80,9 +80,15 @@ export const basicsPageQuery = graphql`
           heading
           prevcost
           sidebarlabel
-          subheading
+          subheading1
+          subheading2
           objectives {
             objective
+          }
+          image {
+            childImageSharp {
+              gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
+            }
           }
         }
         header {

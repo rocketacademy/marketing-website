@@ -487,7 +487,8 @@ collections:
               fields:
                 [
                   { label: Heading, name: heading, widget: string },
-                  { label: Subheading, name: subheading, widget: text },
+                  { label: Subheading1, name: subheading1, widget: text },
+                  { label: Subheading2, name: subheading2, widget: text },
                   { label: Sidebarlabel, name: sidebarlabel, widget: string },
                   { label: Prevcost, name: prevcost, widget: string },
                   { label: Currentcost, name: currentcost, widget: string },
@@ -498,6 +499,7 @@ collections:
                     fields:
                       [{ label: Objective, name: objective, widget: string }],
                   },
+                  { label: Image, name: image, widget: image },
                 ],
             }
           - {
