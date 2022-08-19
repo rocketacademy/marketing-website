@@ -1,6 +1,7 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import GetStartedButton from "../GetStartedButton";
+import PreviewCompatibleImage from "../PreviewCompatibleImage";
 
 const BasicsAdmissionsSection = ({ admissions }) => {
   return (
@@ -10,8 +11,15 @@ const BasicsAdmissionsSection = ({ admissions }) => {
     >
       <div className="basics-admissions-heading">{admissions.heading}</div>
       <div className="basics-admissions-subheading">
-        {admissions.subheading}
+        {admissions.subheading1}
       </div>
+      <div className="basics-admissions-subheading">
+        {admissions.subheading2}
+      </div>
+      <div className="row basics-admissions-row">
+        <PreviewCompatibleImage imageInfo={admissions.image} />
+      </div>
+      <br />
       <div className="row basics-admissions-row">
         <div className="col-12 col-md-5 basics-admissions-col">
           <Card>
