@@ -73,7 +73,7 @@ admissions:
   sidebarlabel: Admission and Tuition
   subheading1: No math or coding background required, just a computer with
     internet, webcam and passion!
-  subheading2: Register now to maximise early bird discount of up to S$40! Discounted price reflected on checkout. Tuition is fully refundable until the course admissions deadline.
+  subheading2: Register now to maximise early bird discount of up to S$40! Discounted price reflected on checkout. Tuition is fully refundable until course admissions deadline.
   prevcost: S$999
   currentcost: S$199
   objectives:
