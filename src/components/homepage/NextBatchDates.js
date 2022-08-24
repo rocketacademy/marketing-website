@@ -54,7 +54,7 @@ const NextBatchDates = ({ details, upcomingCourseDates }) => {
     )}`;
 
     if (heading === "Basics") {
-      return <li>✓ Next Batch: 22 Aug 2022 - 29 Sep 2022</li>;
+      return <li>✓ Next Batch: 3 Oct 2022 - 14 Nov 2022</li>;
     }
     return <li>✓ Next Batch: {displayDate}</li>;
   } else {
