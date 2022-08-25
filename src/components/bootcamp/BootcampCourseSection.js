@@ -18,7 +18,7 @@ const BootcampCourseSection = ({ course }) => {
         <Table borderless>
           <thead>
             <tr>
-              <th></th>
+              <th>MODULE</th>
               <th>TECHNOLOGIES</th>
               <th>ALGORITHMS</th>
             </tr>

@@ -1,4 +1,4 @@
-import { graphql, useStaticQuery, Link } from "gatsby";
+import { graphql, Link, useStaticQuery } from "gatsby";
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
 import React from "react";
 import Button from "react-bootstrap/Button";
@@ -61,7 +61,7 @@ const SiteNavbar = () => {
             <Nav.Item className="button-container">
               <Link href="/get-started/" target="_blank">
                 <Button variant="primary" className="navbar-btn">
-                  Get Started
+                  Start Learning
                 </Button>
               </Link>
             </Nav.Item>
