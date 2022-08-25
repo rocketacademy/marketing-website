@@ -85,7 +85,7 @@ export const basicsPageQuery = graphql`
           objectives {
             objective
           }
-          image {
+          earlybirdimage {
             childImageSharp {
               gatsbyImageData(layout: FULL_WIDTH, placeholder: BLURRED)
             }
