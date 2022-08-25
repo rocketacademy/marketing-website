@@ -20,15 +20,18 @@
 
   .navbar-btn {
     width: 100%;
-    padding: 6px 0;
+    padding: 20px 0;
+    margin-top: 10px;
     border-radius: 0.25rem;
     color: white;
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 500;
     @include variables.lg {
       width: 120px;
       padding: 6px 0;
+      margin-top: 0px;
       margin-left: 10px;
+      font-size: 14px;
     }
   }
 
