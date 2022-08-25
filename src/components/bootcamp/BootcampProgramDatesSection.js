@@ -74,7 +74,6 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
           <tbody>
             {upcomingCourseDates ? (
               bootcampDates.map((batch) => {
-                const startDate = new Date(batch.node.start.dateTime);
                 return <BootcampProgramDatesRow batch={batch} />;
               })
             ) : (

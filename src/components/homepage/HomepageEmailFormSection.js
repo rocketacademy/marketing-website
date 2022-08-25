@@ -55,7 +55,11 @@ const HomepageEmailFormSection = () => {
     <div>
       <div className="homepage-email-form-post-submit-discord-section">
         <div>Click below to join: </div>
-        <a href="https://discord.gg/CcDRpEfhRK" target="_blank">
+        <a
+          href="https://discord.gg/CcDRpEfhRK"
+          target="_blank"
+          rel="noreferrer"
+        >
           <Image
             className="homepage-email-form-post-submit-discord-image"
             src={joinDiscordImg}
