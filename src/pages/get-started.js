@@ -19,7 +19,7 @@ const CourseSelection = () => {
                   <Card.Title>
                     <h3>Coding Basics</h3>
                   </Card.Title>
-                  <h5>S$199 / HK$1199 / AU$209</h5>
+                  <h5>S$199 (before early bird discounts)</h5>
                   <Card.Text className="mt-4">
                     Learn the fundamental building blocks of what it takes to
                     code.
@@ -32,17 +32,25 @@ const CourseSelection = () => {
                   </Card.Text>
                   <Card.Text>
                     If you're looking to take that first step, look no further
-                    and register now!
-                  </Card.Text>
-                  <button className="btn get-started-btn btn-primary my-4">
+                    and register now!{" "}
                     <Link
-                      to="https://learn.rocketacademy.co/student/"
+                      to="/courses/basics#admission-and-tuition"
                       target="_blank"
-                      style={{ textDecoration: "none", color: "white" }}
+                      className="basics-early-bird-link"
                     >
-                      Register now
+                      Early bird discounts apply
                     </Link>
-                  </button>
+                    .
+                  </Card.Text>
+                  <Link
+                    to="https://learn.rocketacademy.co/student/"
+                    target="_blank"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <button className="btn get-started-btn btn-primary my-4">
+                      Register now
+                    </button>
+                  </Link>
                 </Card.Body>
               </Card>
               <Card style={{ width: "28rem" }} className="mx-3 mb-5">
@@ -50,7 +58,7 @@ const CourseSelection = () => {
                   <Card.Title>
                     <h3>Coding Bootcamp</h3>
                   </Card.Title>
-                  <h5>S$7,999 / HK$45,999 / AU$8,399</h5>
+                  <h5>S$7,999</h5>
                   <Card.Text className="mt-4">
                     Rocket Academy's flagship course gets you ready to be a
                     software engineer.
@@ -69,15 +77,15 @@ const CourseSelection = () => {
                   <Card.Text>
                     Sign up now if you're ready to take that next step!
                   </Card.Text>
-                  <button className="btn get-started-btn btn-primary my-4">
-                    <Link
-                      to="/courses/bootcamp/apply/"
-                      target="_blank"
-                      style={{ textDecoration: "none", color: "white" }}
-                    >
+                  <Link
+                    to="/courses/bootcamp/apply/"
+                    target="_blank"
+                    style={{ textDecoration: "none", color: "white" }}
+                  >
+                    <button className="btn get-started-btn btn-primary my-4">
                       Apply now
-                    </Link>
-                  </button>
+                    </button>
+                  </Link>
                 </Card.Body>
               </Card>
             </div>

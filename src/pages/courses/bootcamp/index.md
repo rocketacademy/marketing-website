@@ -53,60 +53,47 @@ curriculum:
       section1: Unlimited resume and portfolio review
       section2: Unlimited interview prep
       section3: On-demand technical and career guidance
-  modulesheading: 💻 Technical Knowledge you will learn
+  modulesheading: 💻 Technical concepts you will learn
   modules1:
-    - heading: Frontend Basics
+    - heading: Frontend
       topics:
         - topic: HTML
         - topic: CSS
-        - topic: DOM
-        - topic: HTTP
-        - topic: Javascript
-        - topic: Node.js, Bootstrap
-        - topic: Hosting on Github pages and Heroku
-    - heading: Backend Basics
+        - topic: React (Components, State)
+        - topic: JavaScript
+        - topic: Web Hosting
+    - heading: Backend
       topics:
-        - topic: Handling HTTP requests
-        - topic: Relationship models
-        - topic: Database & data storage fundamentals
-        - topic: Promises
-        - topic: Web authentication
-        - topic: SQL, Express, Heroku
-    - heading: Advanced Backend and Full Stack
-      topics:
-        - topic: MVC
-        - topic: Async/await, Try/catch
-        - topic: RESTful routing
-        - topic: AJAX
-        - topic: Sequelize
-        - topic: Webpack
-        - topic: Managed cloud deployment with Heroku
+        - topic: Express.js
+        - topic: SQL
+        - topic: ORM (Sequelize)
+        - topic: Authentication
   modules2:
-    - heading: Frontend Framework - React
+    - heading: Full Stack
       topics:
-        - topic: JSX
-        - topic: React state and components
-        - topic: React dev tools
-        - topic: Error boundaries
-    - heading: Advanced React
+        - topic: Advanced React (Hooks, Routing, Context)
+        - topic: Firebase NoSQL Database
+        - topic: Firebase Cloud File Storage
+        - topic: Firebase Authentication
+        - topic: Testing and Continuous Integration
+        - topic: TypeScript
+        - topic: Security
+    - heading: Algorithms
       topics:
-        - topic: React router
-        - topic: React hooks
-        - topic: Styled components
-        - topic: Integration of APIs / complex user interfaces
-    - heading: Capstone Project
-      topics:
-        - topic: Unit, integration, and end-to-end testing
-        - topic: Test-driven development
-        - topic: Continuous integration
-        - topic: Guarding against SQL injections
+        - topic: Data Structures (Arrays, Hash Tables, Stacks, Queues, Linked Lists, Trees, Graphs, Heaps)
+        - topic: Complexity Analysis
+        - topic: Object-Oriented Programming
+        - topic: Recursion
+        - topic: Dynamic Programming
+        - topic: Bit Manipulation
+        - topic: Python
 instructors:
   heading: Meet our Head Instructor
   sidebarlabel: Instructors
   profile:
     - image: /img/homepage/kai-curriculum.png
       name: KAI YUAN NEO
-      position: Founder & CEO
+      position: Founder & CEO, Rocket Academy
 admissions:
   heading: The Admissions Process
   sidebarlabel: Admissions
@@ -149,14 +136,14 @@ tuition:
   card:
     - frequency: /img/homepage/part-time-icon.png
       prevcost: S$9,999
-      currentcost: S$7,999 / HK$45,999 / AU$8,399
+      currentcost: S$7,999
       text:
         "Part-Time Coding Bootcamp covers the same material over twice the time (8
         months). Coding Bootcamp applies a flipped classroom model that consists
         of 2 components: self-learning and live classes. "
     - frequency: /img/homepage/full-time-icon.png
       prevcost: S$9,999
-      currentcost: S$7,999 / HK$45,999 / AU$8,399
+      currentcost: S$7,999
       text:
         "Coding Bootcamp applies a flipped classroom model that consists of 2
         components: self-learning and live classes. "
@@ -170,7 +157,7 @@ course:
     10am-12pm GMT+8 for 4 months. Part-Time Coding Bootcamp (PTBC) classes are
     Tuesday evenings 7.30pm-9.30pm GMT+8 and Saturday mornings 10am-12pm GMT+8
     for 8 months. Both FTBC and PTBC cover the same material. Refer to the [full
-    course curriculum](http://bc.rocketacademy.co).
+    course curriculum](http://bc.rocketacademy.co) for curriculum details.
   schedule:
     - heading: "Module 1: Frontend App"
       topics:
@@ -194,7 +181,7 @@ course:
         - topic: Firebase Authentication
         - topic: React Router
         - topic: React higher-order components
-        - topic: React Context
+        - topic: React context
         - topic: Webpack
       algorithms:
         - topic: Object-oriented programming
@@ -209,7 +196,6 @@ course:
         - topic: PostgreSQL
         - topic: Sequelize
         - topic: JWT Authentication
-        - topic: Socket.IO
       algorithms:
         - topic: Trees
         - topic: Graphs
@@ -218,9 +204,8 @@ course:
       topics:
         - topic: Unit tests
         - topic: Continuous integration
-        - topic: Containers
-        - topic: Web security
         - topic: TypeScript
+        - topic: Web security
       algorithms:
         - topic: Dynamic programming
         - topic: Bit manipulation

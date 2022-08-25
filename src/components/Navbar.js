@@ -59,11 +59,11 @@ const SiteNavbar = () => {
               FAQ
             </Nav.Link>
             <Nav.Item className="button-container">
-              <Button variant="primary" className="navbar-btn">
-                <Link href="/get-started/" target="_blank">
+              <Link href="/get-started/" target="_blank">
+                <Button variant="primary" className="navbar-btn">
                   Start Learning
-                </Link>
-              </Button>
+                </Button>
+              </Link>
             </Nav.Item>
           </Nav>
         </Navbar.Collapse>
