@@ -17,7 +17,7 @@ const BasicsAdmissionsSection = ({ admissions }) => {
         {admissions.subheading2}
       </div>
       <div className="row basics-admissions-row">
-        <PreviewCompatibleImage imageInfo={admissions.image} />
+        <PreviewCompatibleImage imageInfo={admissions.earlybirdimage} />
       </div>
       <br />
       <div className="row basics-admissions-row">

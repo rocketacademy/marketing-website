@@ -499,7 +499,11 @@ collections:
                     fields:
                       [{ label: Objective, name: objective, widget: string }],
                   },
-                  { label: Image, name: image, widget: image },
+                  {
+                    label: Earlybirdimage,
+                    name: earlybirdimage,
+                    widget: image,
+                  },
                 ],
             }
           - {

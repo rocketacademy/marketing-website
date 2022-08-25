@@ -80,7 +80,7 @@ admissions:
     - objective: Build simple apps
     - objective: Learn coding fundamentals
     - objective: Understand software engineering
-  image: /img/basics-page/basics-early-bird-table.png
+  earlybirdimage: /img/basics-page/basics-early-bird-table.png
 programdates:
   heading: Upcoming Program Dates
   subheading: |
