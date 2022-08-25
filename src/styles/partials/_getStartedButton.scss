@@ -1,10 +1,11 @@
 .get-started-btn {
   color: white;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 500;
   width: 100%;
+  padding: 20px;
   @include variables.md {
-    width: 120px;
+    width: 200px;
   }
 }
 

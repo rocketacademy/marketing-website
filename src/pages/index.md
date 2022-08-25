@@ -3,8 +3,7 @@ templateKey: index-page
 title: Become a Software Engineer
 header:
   heading: Become a Software Engineer
-  subheading: 100% of our Bootcamp grads have received job
-    offers from companies like Grab, Ninja Van and Zendesk.
+  subheading: 100% of our Coding Bootcamp grads have received software engineering offers.
   headerimage:
     alt: masterclass ad image
     image: /img/homepage/homepage-image.png
