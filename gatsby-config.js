@@ -15,7 +15,6 @@ module.exports = {
         trackingIds: [
           "UA-160206985-1", // Google Analytics / GA
           "AW-610708425", // Google Ads / Adwords / AW (Rocket Academy account)
-          "AW-10817488949", // Google Ads / Adwords / AW (Teresa's unnamed account)
         ],
         // This object is used for configuration specific to this plugin
         pluginConfig: {
