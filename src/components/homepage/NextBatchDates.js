@@ -22,13 +22,8 @@ const NextBatchDates = ({ details, upcomingCourseDates }) => {
       nextEndDate = relevantDates[0].node.end.dateTime;
     } else {
       if (details.type === "Full Time" || details.type === "Part Time") {
-        let nextCourse = relevantDates.filter(
-          (course) => course.node.description === details.type
-        );
-
-        nextStartDate = nextCourse[0].node.start.dateTime;
-
-        nextEndDate = nextCourse[0].node.end.dateTime;
+        nextStartDate = new Date("2022-10-17");
+        nextEndDate = new Date("2023-02-10");
       }
     }
 
