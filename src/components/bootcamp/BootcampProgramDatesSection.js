@@ -19,32 +19,6 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
     return `${da} ${mo} ${ye}`;
   };
 
-  const BootcampProgramDatesRow = ({ batch }) => {
-    const startDate = new Date(batch.node.start.dateTime);
-    const deadline = startDate.setDate(startDate.getDate() - 14);
-
-    return (
-      <tr>
-        <td className="bootcamp-program-dates-frequency">
-          {batch.node.description}
-        </td>
-        <td className="bootcamp-program-dates-firstclass">
-          <div className="bootcamp-program-dates-content">
-            <div>{getFormattedDate(batch.node.start.dateTime)}</div>
-            <div className="bootcamp-program-dates-arrow-container">
-              <StaticImage
-                src="../../img/basics-arrow-right.png"
-                alt="right arrow"
-              />
-            </div>
-          </div>
-        </td>
-        <td>{getFormattedDate(batch.node.end.dateTime)}</td>
-        <td>{getFormattedDate(deadline)}</td>
-      </tr>
-    );
-  };
-
   if (upcomingCourseDates) {
     bootcampDates = upcomingCourseDates.filter(
       (course) =>
@@ -72,21 +46,74 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
             </tr>
           </thead>
           <tbody>
-            {upcomingCourseDates ? (
-              bootcampDates.map((batch) => {
-                return <BootcampProgramDatesRow batch={batch} />;
-              })
-            ) : (
-              <div>
-                Oops! Something went wrong. Please contact us at
-                hello@rocketacademy.co for upcoming course dates!
-              </div>
-            )}
+            <tr>
+              <td className="bootcamp-program-dates-frequency">Full Time</td>
+              <td className="bootcamp-program-dates-firstclass">
+                <div className="bootcamp-program-dates-content">
+                  <div>{getFormattedDate("2022-10-17")}</div>
+                  <div className="bootcamp-program-dates-arrow-container">
+                    <StaticImage
+                      src="../../img/basics-arrow-right.png"
+                      alt="right arrow"
+                    />
+                  </div>
+                </div>
+              </td>
+              <td>{getFormattedDate("2023-02-10")}</td>
+              <td>{getFormattedDate("2022-10-03")}</td>
+            </tr>
+            <tr>
+              <td className="bootcamp-program-dates-frequency">Part Time</td>
+              <td className="bootcamp-program-dates-firstclass">
+                <div className="bootcamp-program-dates-content">
+                  <div>{getFormattedDate("2022-11-26")}</div>
+                  <div className="bootcamp-program-dates-arrow-container">
+                    <StaticImage
+                      src="../../img/basics-arrow-right.png"
+                      alt="right arrow"
+                    />
+                  </div>
+                </div>
+              </td>
+              <td>{getFormattedDate("2023-06-20")}</td>
+              <td>{getFormattedDate("2022-11-12")}</td>
+            </tr>
           </tbody>
         </Table>
       </div>
       <div className="row bootcamp-program-dates-row-mobile">
-        {upcomingCourseDates ? (
+        <div className="col-12 bootcamp-program-dates-col">
+          <div className="bootcamp-program-dates-container">
+            <span>{getFormattedDate("2022-10-17")}</span>
+            <span className="bootcamp-program-dates-arrow-container">
+              <StaticImage
+                src="../../img/basics-arrow-right.png"
+                alt="right arrow"
+              />
+            </span>
+            <span>{getFormattedDate("2023-02-10")}</span>
+          </div>
+          <div className="bootcamp-program-dates-deadline">
+            Admissions deadline: {getFormattedDate("2022-10-03")}
+          </div>
+        </div>
+        <div className="col-12 bootcamp-program-dates-col">
+          <div className="bootcamp-program-dates-container">
+            <span>{getFormattedDate("2022-11-26")}</span>
+            <span className="bootcamp-program-dates-arrow-container">
+              <StaticImage
+                src="../../img/basics-arrow-right.png"
+                alt="right arrow"
+              />
+            </span>
+            <span>{getFormattedDate("2023-06-20")}</span>
+          </div>
+          <div className="bootcamp-program-dates-deadline">
+            Admissions deadline: {getFormattedDate("2022-11-12")}
+          </div>
+        </div>
+
+        {/* {upcomingCourseDates ? (
           bootcampDates.map((batch) => {
             const startDate = new Date(batch.node.start.dateTime);
             const deadline = startDate.setDate(startDate.getDate() - 14);
@@ -114,7 +141,7 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
             Oops! Something went wrong. Please contact us at
             hello@rocketacademy.co for upcoming course dates!
           </div>
-        )}
+        )} */}
       </div>
     </div>
   );
