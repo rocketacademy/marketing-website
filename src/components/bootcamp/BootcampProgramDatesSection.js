@@ -35,6 +35,7 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
       <div className="bootcamp-program-dates-heading">
         {programdates.heading}
       </div>
+
       <div className="row bootcamp-program-dates-row-desktop">
         <Table borderless className="bootcamp-program-dates-row">
           <thead>
@@ -81,6 +82,7 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
           </tbody>
         </Table>
       </div>
+
       <div className="row bootcamp-program-dates-row-mobile">
         <div className="col-12 bootcamp-program-dates-col">
           <div className="bootcamp-program-dates-container">
@@ -112,36 +114,6 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
             Admissions deadline: {getFormattedDate("2022-11-12")}
           </div>
         </div>
-
-        {/* {upcomingCourseDates ? (
-          bootcampDates.map((batch) => {
-            const startDate = new Date(batch.node.start.dateTime);
-            const deadline = startDate.setDate(startDate.getDate() - 14);
-
-            return (
-              <div className="col-12 bootcamp-program-dates-col">
-                <div className="bootcamp-program-dates-container">
-                  <span>{getFormattedDate(batch.node.start.dateTime)}</span>
-                  <span className="bootcamp-program-dates-arrow-container">
-                    <StaticImage
-                      src="../../img/basics-arrow-right.png"
-                      alt="right arrow"
-                    />
-                  </span>
-                  <span>{getFormattedDate(batch.node.end.dateTime)}</span>
-                </div>
-                <div className="bootcamp-program-dates-deadline">
-                  Admissions deadline: {getFormattedDate(deadline)}
-                </div>
-              </div>
-            );
-          })
-        ) : (
-          <div>
-            Oops! Something went wrong. Please contact us at
-            hello@rocketacademy.co for upcoming course dates!
-          </div>
-        )} */}
       </div>
     </div>
   );
