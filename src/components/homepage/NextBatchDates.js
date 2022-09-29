@@ -10,16 +10,12 @@ const NextBatchDates = ({ details, upcomingCourseDates }) => {
       heading = "Bootcamp";
     }
 
-    const relevantDates = upcomingCourseDates.filter((course) =>
-      course.node.summary.includes(heading)
-    );
-
     let nextStartDate = "";
     let nextEndDate = "";
 
     if (heading === "Basics") {
-      nextStartDate = relevantDates[0].node.start.dateTime;
-      nextEndDate = relevantDates[0].node.end.dateTime;
+      nextStartDate = new Date("2022-10-03");
+      nextEndDate = new Date("2022-11-14");
     } else {
       if (details.type === "Full Time" || details.type === "Part Time") {
         nextStartDate = new Date("2022-10-17");

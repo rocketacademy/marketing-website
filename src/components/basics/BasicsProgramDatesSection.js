@@ -36,6 +36,22 @@ const BasicsProgramDatesSection = () => {
               <td>14 Nov 2022</td>
               <td>26 Sep 2022</td>
             </tr>
+            <tr>
+              <td className="basics-program-dates-duration">6 weeks</td>
+              <td className="basics-program-dates-firstclass">
+                <div className="basics-program-dates-content">
+                  <div>21 Nov 2022</div>
+                  <div className="basics-program-dates-arrow-container">
+                    <StaticImage
+                      src="../../img/basics-arrow-right.png"
+                      alt="right arrow"
+                    />
+                  </div>
+                </div>
+              </td>
+              <td>12 Jan 2023</td>
+              <td>14 Nov 2022</td>
+            </tr>
           </tbody>
         </Table>
       </div>
@@ -53,6 +69,21 @@ const BasicsProgramDatesSection = () => {
           </div>
           <div className="basics-program-dates-deadline">
             Admissions deadline: 26 Sep 2022
+          </div>
+        </div>
+        <div className="col-12 basics-program-dates-col">
+          <div className="basics-program-dates-container">
+            <span>21 Nov 2022</span>
+            <span className="basics-program-dates-arrow-container">
+              <StaticImage
+                src="../../img/basics-arrow-right.png"
+                alt="right arrow"
+              />
+            </span>
+            <span>12 Jan 2023</span>
+          </div>
+          <div className="basics-program-dates-deadline">
+            Admissions deadline: 14 Nov 2022
           </div>
         </div>
       </div>

@@ -19,13 +19,16 @@ const NextBatchSection = ({ upcomingCourseDates, pagename }) => {
     };
 
     let nextStartDate;
+    let followingStartDate;
     let toPath;
 
     if (pagename === "basics") {
       nextStartDate = new Date("2022-10-03");
+      followingStartDate = new Date("2022-11-21");
       toPath = "https://learn.rocketacademy.co/student/";
     } else {
       nextStartDate = new Date("2022-10-17");
+      followingStartDate = new Date("2022-11-26");
       toPath = "/courses/bootcamp/apply/";
     }
 
@@ -33,8 +36,14 @@ const NextBatchSection = ({ upcomingCourseDates, pagename }) => {
       <div className="container basics-next-batch-container">
         <div className="basics-next-batch-content">
           <p className="basics-next-batch-heading">🚀 Next Launch</p>
-          <p className="basics-next-batch-text">
-            Now enrolling for {getFormattedDate(nextStartDate)}
+          <p className="basics-next-batch-text basics-next-batch-text-desktop">
+            Now enrolling for {getFormattedDate(nextStartDate)} and{" "}
+            {getFormattedDate(followingStartDate)}
+          </p>
+          <p className="basics-next-batch-text basics-next-batch-text-mobile">
+            Now enrolling for <br />
+            {getFormattedDate(nextStartDate)},{" "}
+            {getFormattedDate(followingStartDate)}
           </p>
         </div>
         <div className="basics-next-batch-button-container">
