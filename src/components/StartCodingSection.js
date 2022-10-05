@@ -10,7 +10,9 @@ const StartCodingSection = () => {
           <div className="startcoding-info-container">
             <div className="startcoding-info">
               <div className="startcoding-basics-text">Coding Basics</div>
-              <div className="startcoding-basics-date">3 Oct, 21 Nov 2022</div>
+              <div className="startcoding-basics-date">
+                21 Nov 2022, 26 Jan 2023
+              </div>
             </div>
             <div className="startcoding-info">
               <div className="startcoding-bootcampft-text">
