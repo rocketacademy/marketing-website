@@ -56,7 +56,7 @@ courses:
         components: self-learning and live classes. "
       prevprice: S$9,999
       currentprice: S$7,999
-      duration: ✓ 8 Months
+      duration: ✓ 8 months
       conditions: ✓ Live and online
     - type: Full Time
       image: /img/homepage/full-time-icon.png
@@ -67,7 +67,7 @@ courses:
         components: self-learning and live classes. "
       prevprice: S$9,999
       currentprice: S$7,999
-      duration: ✓ 4 Months
+      duration: ✓ 4 months
       conditions: ✓ Live and online
 curriculum:
   smalltext: 🚀 Q&A with Industry Experts
