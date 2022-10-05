@@ -3,8 +3,6 @@ import Table from "react-bootstrap/Table";
 import { StaticImage } from "gatsby-plugin-image";
 
 const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
-  let bootcampDates;
-
   const getFormattedDate = (d) => {
     const dateObj = new Date(d);
     const ye = new Intl.DateTimeFormat("en", { year: "numeric" }).format(
@@ -18,14 +16,6 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
     );
     return `${da} ${mo} ${ye}`;
   };
-
-  if (upcomingCourseDates) {
-    bootcampDates = upcomingCourseDates.filter(
-      (course) =>
-        course.node.description.includes("Full Time") ||
-        course.node.description.includes("Part Time")
-    );
-  }
 
   return (
     <div
