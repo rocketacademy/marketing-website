@@ -9,6 +9,23 @@ module.exports = {
   plugins: [
     "gatsby-plugin-react-helmet",
     {
+      resolve: "gatsby-plugin-google-tagmanager",
+      options: {
+        id: "GTM-WM4DSKQ",
+
+        // datalayer to be set before GTM is loaded
+        // should be an object or a function that is executed in the browser
+        //
+        // Defaults to null
+        defaultDataLayer: { platform: "gatsby" },
+
+        // Defaults to false
+        enableWebVitalsTracking: true,
+        // Defaults to https://www.googletagmanager.com
+        selfHostedOrigin: "https://rocketacademy.co",
+      },
+    },
+    {
       resolve: `gatsby-plugin-google-gtag`,
       options: {
         // You can add multiple tracking ids and a pageview event will be fired for all of them.
