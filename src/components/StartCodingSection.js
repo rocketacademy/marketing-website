@@ -18,7 +18,7 @@ const StartCodingSection = () => {
               <div className="startcoding-bootcampft-text">
                 Bootcamp (Full Time)
               </div>
-              <div className="startcoding-bootcampft-date">17 Oct 2022</div>
+              <div className="startcoding-bootcampft-date">30 Jan 2023</div>
             </div>
             <div className="startcoding-info">
               <div className="startcoding-bootcampft-text">

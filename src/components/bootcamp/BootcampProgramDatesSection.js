@@ -38,22 +38,6 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
           </thead>
           <tbody>
             <tr>
-              <td className="bootcamp-program-dates-frequency">Full Time</td>
-              <td className="bootcamp-program-dates-firstclass">
-                <div className="bootcamp-program-dates-content">
-                  <div>{getFormattedDate("2022-10-17")}</div>
-                  <div className="bootcamp-program-dates-arrow-container">
-                    <StaticImage
-                      src="../../img/basics-arrow-right.png"
-                      alt="right arrow"
-                    />
-                  </div>
-                </div>
-              </td>
-              <td>{getFormattedDate("2023-02-10")}</td>
-              <td>{getFormattedDate("2022-10-03")}</td>
-            </tr>
-            <tr>
               <td className="bootcamp-program-dates-frequency">Part Time</td>
               <td className="bootcamp-program-dates-firstclass">
                 <div className="bootcamp-program-dates-content">
@@ -69,26 +53,27 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
               <td>{getFormattedDate("2023-06-20")}</td>
               <td>{getFormattedDate("2022-11-12")}</td>
             </tr>
+            <tr>
+              <td className="bootcamp-program-dates-frequency">Full Time</td>
+              <td className="bootcamp-program-dates-firstclass">
+                <div className="bootcamp-program-dates-content">
+                  <div>{getFormattedDate("2023-01-30")}</div>
+                  <div className="bootcamp-program-dates-arrow-container">
+                    <StaticImage
+                      src="../../img/basics-arrow-right.png"
+                      alt="right arrow"
+                    />
+                  </div>
+                </div>
+              </td>
+              <td>{getFormattedDate("2023-05-18")}</td>
+              <td>{getFormattedDate("2023-01-16")}</td>
+            </tr>
           </tbody>
         </Table>
       </div>
 
       <div className="row bootcamp-program-dates-row-mobile">
-        <div className="col-12 bootcamp-program-dates-col">
-          <div className="bootcamp-program-dates-container">
-            <span>{getFormattedDate("2022-10-17")}</span>
-            <span className="bootcamp-program-dates-arrow-container">
-              <StaticImage
-                src="../../img/basics-arrow-right.png"
-                alt="right arrow"
-              />
-            </span>
-            <span>{getFormattedDate("2023-02-10")}</span>
-          </div>
-          <div className="bootcamp-program-dates-deadline">
-            Admissions deadline: {getFormattedDate("2022-10-03")}
-          </div>
-        </div>
         <div className="col-12 bootcamp-program-dates-col">
           <div className="bootcamp-program-dates-container">
             <span>{getFormattedDate("2022-11-26")}</span>
@@ -102,6 +87,21 @@ const BootcampProgramDatesSection = ({ programdates, upcomingCourseDates }) => {
           </div>
           <div className="bootcamp-program-dates-deadline">
             Admissions deadline: {getFormattedDate("2022-11-12")}
+          </div>
+        </div>
+        <div className="col-12 bootcamp-program-dates-col">
+          <div className="bootcamp-program-dates-container">
+            <span>{getFormattedDate("2023-01-30")}</span>
+            <span className="bootcamp-program-dates-arrow-container">
+              <StaticImage
+                src="../../img/basics-arrow-right.png"
+                alt="right arrow"
+              />
+            </span>
+            <span>{getFormattedDate("2023-05-18")}</span>
+          </div>
+          <div className="bootcamp-program-dates-deadline">
+            Admissions deadline: {getFormattedDate("2023-01-16")}
           </div>
         </div>
       </div>
