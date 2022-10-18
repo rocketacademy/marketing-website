@@ -19,8 +19,8 @@ const NextBatchDates = ({ details, upcomingCourseDates }) => {
     nextStartDate = new Date("2022-11-26");
     nextEndDate = new Date("2023-06-20");
   } else if (details.type === "Full Time") {
-    nextStartDate = new Date("2022-10-17");
-    nextEndDate = new Date("2023-02-10");
+    nextStartDate = new Date("2023-01-30");
+    nextEndDate = new Date("2023-05-18");
   }
 
   const getFormattedDate = (d) => {
