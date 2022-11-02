@@ -17,7 +17,6 @@ export const AboutPageTemplate = ({
   companies,
   rocket,
   leadership,
-  upcomingCourseDates,
 }) => {
   return (
     <>
@@ -26,22 +25,13 @@ export const AboutPageTemplate = ({
       <AboutRocketSection rocket={rocket} />
       <AboutLeadersSection leadership={leadership} />
       <AboutCompaniesSection companies={companies} />
-      <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
+      <StartCodingSection />
     </>
   );
 };
 
 const AboutPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
-  // from rocket's gcal events
-  const { edges } = data.allCalendarEvent;
-
-  const today = new Date().toISOString();
-
-  const upcomingCourseDates = edges.filter(
-    (event) => event.node.start.dateTime > today
-  );
 
   return (
     <Layout>
@@ -53,7 +43,6 @@ const AboutPage = ({ data }) => {
         companies={frontmatter.companies}
         rocket={frontmatter.rocket}
         leadership={frontmatter.leadership}
-        upcomingCourseDates={upcomingCourseDates}
       />
     </Layout>
   );
@@ -134,22 +123,6 @@ export const aboutPageQuery = graphql`
             position
             description
             experience
-          }
-        }
-      }
-    }
-    allCalendarEvent {
-      edges {
-        node {
-          description
-          summary
-          end {
-            dateTime
-            date
-          }
-          start {
-            dateTime
-            date
           }
         }
       }

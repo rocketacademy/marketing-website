@@ -131,17 +131,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-source-google-calendar`,
-      options: {
-        calendarIds: ["c_lsjc4qn7b09nb293b6u80blimc@group.calendar.google.com"],
-        // options to retrieve the next 10 upcoming events
-        timeMin: new Date().toISOString(),
-        maxResults: 10,
-        singleEvents: true,
-        orderBy: "startTime",
-      },
-    },
-    {
       resolve: "gatsby-plugin-no-sourcemaps",
     },
     {
