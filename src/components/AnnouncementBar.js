@@ -6,6 +6,7 @@ const AnnouncementBar = () => (
   <a
     href="https://rkt.ac/open-night"
     target="_blank"
+    rel="noreferrer"
     className="announcement-bar-link"
   >
     <Alert variant="blue" className="announcement-bar">
