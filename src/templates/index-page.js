@@ -169,15 +169,6 @@ IndexPageTemplate.propTypes = {
 const IndexPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
 
-  // from rocket's gcal events
-  const { edges } = data.allCalendarEvent;
-
-  const today = new Date().toISOString();
-
-  const upcomingCourseDates = edges.filter(
-    (event) => event.node.start.dateTime > today
-  );
-
   return (
     <Layout>
       <IndexPageTemplate
@@ -185,7 +176,6 @@ const IndexPage = ({ data }) => {
         header={frontmatter.header}
         success={frontmatter.success}
         courses={frontmatter.courses}
-        upcomingCourseDates={upcomingCourseDates}
         curriculum={frontmatter.curriculum}
         formerstudents={frontmatter.formerstudents}
       />
@@ -302,22 +292,6 @@ export const pageQuery = graphql`
           position
           studentname
           testimonial
-        }
-      }
-    }
-    allCalendarEvent {
-      edges {
-        node {
-          description
-          summary
-          end {
-            dateTime
-            date
-          }
-          start {
-            dateTime
-            date
-          }
         }
       }
     }

@@ -14,15 +14,10 @@ export const BasicsPageTemplate = ({
   instructors,
   admissions,
   lessons,
-  upcomingCourseDates,
 }) => {
   return (
     <>
-      <BasicsHeaderSection
-        header={header}
-        upcomingCourseDates={upcomingCourseDates}
-        pagename={pagename}
-      />
+      <BasicsHeaderSection header={header} pagename={pagename} />
       <BasicsContentSection
         pagename={pagename}
         overview={overview}
@@ -31,22 +26,13 @@ export const BasicsPageTemplate = ({
         admissions={admissions}
         lessons={lessons}
       />
-      <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
+      <StartCodingSection />
     </>
   );
 };
 
 const BasicsPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
-  // from rocket's gcal events
-  const { edges } = data.allCalendarEvent;
-
-  const today = new Date().toISOString();
-
-  const upcomingCourseDates = edges.filter(
-    (event) => event.node.start.dateTime > today
-  );
 
   return (
     <Layout>
@@ -58,7 +44,6 @@ const BasicsPage = ({ data }) => {
         instructors={frontmatter.instructors}
         admissions={frontmatter.admissions}
         lessons={frontmatter.lessons}
-        upcomingCourseDates={upcomingCourseDates}
       />
     </Layout>
   );
@@ -194,22 +179,6 @@ export const basicsPageQuery = graphql`
             preclass
             title
             project
-          }
-        }
-      }
-    }
-    allCalendarEvent {
-      edges {
-        node {
-          description
-          summary
-          end {
-            dateTime
-            date
-          }
-          start {
-            dateTime
-            date
           }
         }
       }

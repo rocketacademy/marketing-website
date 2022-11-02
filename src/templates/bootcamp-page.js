@@ -2,7 +2,6 @@ import React from "react";
 import Layout from "../components/Layout";
 import { graphql } from "gatsby";
 import "../styles/main.scss";
-import getUpcomingCourseDates from "../helper/getUpcomingCourseDates";
 import BootcampHeaderSection from "../components/bootcamp/BootcampHeaderSection";
 import BootcampContentSection from "../components/bootcamp/BootcampContentSection";
 import StartCodingSection from "../components/StartCodingSection";
@@ -18,15 +17,10 @@ export const BootcampPageTemplate = ({
   tuition,
   programdates,
   course,
-  upcomingCourseDates,
 }) => {
   return (
     <>
-      <BootcampHeaderSection
-        header={header}
-        upcomingCourseDates={upcomingCourseDates}
-        pagename={pagename}
-      />
+      <BootcampHeaderSection header={header} pagename={pagename} />
       <BootcampContentSection
         pagename={pagename}
         overview={overview}
@@ -36,17 +30,14 @@ export const BootcampPageTemplate = ({
         programdates={programdates}
         tuition={tuition}
         course={course}
-        upcomingCourseDates={upcomingCourseDates}
       />
-      <StartCodingSection upcomingCourseDates={upcomingCourseDates} />
+      <StartCodingSection />
     </>
   );
 };
 
 const BootcampPage = ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-
-  const upcomingCourseDates = getUpcomingCourseDates(data);
 
   return (
     <Layout>
@@ -61,7 +52,6 @@ const BootcampPage = ({ data }) => {
         tuition={frontmatter.tuition}
         programdates={frontmatter.programdates}
         course={frontmatter.course}
-        upcomingCourseDates={upcomingCourseDates}
       />
     </Layout>
   );
@@ -211,22 +201,6 @@ export const bootcampPageQuery = graphql`
             algorithms {
               topic
             }
-          }
-        }
-      }
-    }
-    allCalendarEvent {
-      edges {
-        node {
-          description
-          summary
-          end {
-            dateTime
-            date
-          }
-          start {
-            dateTime
-            date
           }
         }
       }
