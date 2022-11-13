@@ -1,7 +1,6 @@
 import * as React from "react";
 import { Helmet } from "react-helmet";
 
-import AnnouncementBar from "./AnnouncementBar";
 import SiteNavbar from "./Navbar";
 import useSiteMetadata from "./SiteMetadata";
 import Footer from "./Footer";
@@ -74,7 +73,6 @@ const TemplateWrapper = ({ children }) => {
         <meta name="twitter:creator" content="@rocketacademyco" />
       </Helmet>
       <SiteNavbar />
-      <AnnouncementBar />
       <div>{children}</div>
       <Footer />
     </div>
